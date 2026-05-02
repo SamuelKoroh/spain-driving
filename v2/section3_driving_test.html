@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The driving test | Rules of the Road</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
+.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
+.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
+.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
+.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
+.header-meta{display:flex;gap:24px;margin-top:16px;flex-wrap:wrap}
+.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
+.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
+.content{padding:32px 40px;max-width:960px;margin:0 auto}
+.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.quiz-header h3{font-size:18px;color:#fff}
+.quiz-progress{display:flex;align-items:center;gap:12px}
+.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
+.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
+.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
+.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
+.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
+.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
+.options{display:flex;flex-direction:column;gap:8px}
+.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
+.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
+.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
+.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
+.option-btn:disabled{cursor:default}
+.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
+.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
+.btn:active{transform:scale(0.97)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
+.btn:hover{opacity:0.88}
+.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
+.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
+.result-score span{color:var(--gold)}
+.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
+.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px;flex-wrap:wrap;gap:12px}
+.quiz-page-info{font-size:13px;color:var(--text-light)}
+.quiz-controls{display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:768px){.header{padding:16px 16px 12px}.header h1{font-size:22px}.header p{font-size:12px}.header-meta{gap:12px;flex-wrap:wrap}.header-stat .val{font-size:18px}.header-stat .lbl{font-size:10px}.content{padding:20px 16px;max-width:100%}.quiz-header{padding:16px 12px;flex-direction:column;align-items:flex-start}.quiz-header h3{font-size:16px}.progress-bar{width:150px}.question-card{padding:16px 12px}.question-text{font-size:14px}.option-btn{padding:12px 12px;font-size:13px}.btn{padding:12px 16px;font-size:12px}.quiz-controls{flex-direction:column}.quiz-controls .btn{width:100%}.result-score{font-size:48px}}
+@media(max-width:480px){.header{padding:12px 12px 8px}.header h1{font-size:18px;margin-bottom:2px}.header p{font-size:11px}.header-badge{font-size:9px;padding:3px 8px}.header-meta{gap:8px}.header-stat .val{font-size:16px}.tab-bar{padding:0 8px;gap:0}.tab-btn{padding:10px 8px;font-size:11px}.content{padding:16px 12px}.quiz-header{padding:12px 12px}.quiz-header h3{font-size:14px}.progress-bar{width:100px}.question-card{padding:12px 12px}.question-num{font-size:10px;margin-bottom:6px}.question-text{font-size:13px;margin-bottom:12px}.option-btn{padding:11px 10px;font-size:12px;min-height:44px;display:flex;align-items:center}.btn{padding:12px 16px;font-size:12px;min-height:44px;border-radius:6px;width:100%}.quiz-page-info{font-size:12px}.result-score{font-size:42px}.result-msg{font-size:14px}.result-grade{font-size:13px;padding:6px 16px}body{font-size:14px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">Rules of the Road</div>
+  <h1>The driving test</h1>
+  <p>How to book, prepare for and pass the practical driving test.</p>
+  <div class="header-meta">
+    <div class="header-stat"><div class="val">100</div><div class="lbl">Questions</div></div>
+    <div class="header-stat"><div class="val">Section 3</div><div class="lbl">Chapter</div></div>
+  </div>
+</div>
+<div class="content">
+  <div class="quiz-header">
+    <h3>Section 3 Quiz</h3>
+    <div class="quiz-progress">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <div class="score-display">Score: <span id="score-display">0</span></div>
+    </div>
+  </div>
+  <div id="quiz-body">
+    <div class="question-card">
+      <div class="question-num" id="q-num"></div>
+      <div class="question-text" id="q-text"></div>
+      <div class="options" id="q-options"></div>
+      <div class="explanation" id="q-exp"></div>
+    </div>
+    <div class="quiz-nav">
+      <div class="quiz-page-info" id="q-page"></div>
+      <div class="quiz-controls">
+        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
+        <button class="btn btn-outline" id="btn-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <div class="quiz-result" id="quiz-result">
+    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">100</span></div>
+    <div class="result-msg" id="res-msg"></div>
+    <div class="result-grade" id="res-grade"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:24px">
+      <button class="btn btn-gold" onclick="initQuiz()" style="flex:1;min-width:140px">Try Again</button>
+      <button class="btn btn-navy" onclick="window.location.href='section4_vehicle_safety.html'" style="flex:1;min-width:140px">Next Section →</button>
+    </div>
+  </div>
+</div>
+<script>
+let qCur=0,qScore=0,qAnswered=false;
+const questions=[
+  {
+    "topic": "How to apply for your driving test",
+    "q": "What should you remember about how to apply for your driving test?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "What should you remember about how to apply for your driving test?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "What should you remember about test arrival requirements?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "What should you remember about test arrival requirements?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "What should you remember about vehicle documentation?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "What should you remember about vehicle documentation?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "What should you remember about test assessment areas?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "What should you remember about test assessment areas?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate?",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate?",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "What should you remember about speed and control?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "What should you remember about speed and control?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction?",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction?",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "What should you remember about results and appeals?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "What should you remember about results and appeals?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals?",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Observation and signals",
+    "q": "What do observation and signals generally indicate? (continued)",
+    "opts": [
+      "Directions or rules",
+      "The weather",
+      "Engine problems",
+      "Radio stations"
+    ],
+    "ans": 0,
+    "exp": "Observation and signals indicate rules, warnings or directions to drivers."
+  },
+  {
+    "topic": "Speed and control",
+    "q": "Which statement is correct about about speed and control? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Speed and control is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Reversing and parking",
+    "q": "Is it legal to park on a yellow box junction? (continued)",
+    "opts": [
+      "Yes",
+      "Only if no traffic",
+      "No",
+      "Only at night"
+    ],
+    "ans": 2,
+    "exp": "Parking on a yellow box junction is prohibited."
+  },
+  {
+    "topic": "Results and appeals",
+    "q": "Which statement is correct about about results and appeals? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Results and appeals is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "How to apply for your driving test",
+    "q": "Which statement is correct about about how to apply for your driving test? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "How to apply for your driving test is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test arrival requirements",
+    "q": "Which statement is correct about about test arrival requirements? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test arrival requirements is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Vehicle documentation",
+    "q": "Which statement is correct about about vehicle documentation? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Vehicle documentation is important for safe driving and exam preparation."
+  },
+  {
+    "topic": "Test assessment areas",
+    "q": "Which statement is correct about about test assessment areas? (continued)",
+    "opts": [
+      "It is optional",
+      "It is always wrong",
+      "It is important for safety",
+      "It applies only to trucks"
+    ],
+    "ans": 2,
+    "exp": "Test assessment areas is important for safe driving and exam preparation."
+  }
+];
+function initQuiz(){qCur=0;qScore=0;qAnswered=false;document.getElementById('quiz-body').style.display='block';document.getElementById('quiz-result').style.display='none';renderQuestion();}
+function renderQuestion(){if(qCur>=questions.length){showResult();return;}const q=questions[qCur];document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;document.getElementById('q-text').textContent=q.q;const cont=document.getElementById('q-options');cont.innerHTML='';q.opts.forEach((opt,i)=>{const b=document.createElement('button');b.className='option-btn';b.textContent=String.fromCharCode(65+i)+'. '+opt;b.addEventListener('click',()=>pickAnswer(i,b,q));cont.appendChild(b);});document.getElementById('q-exp').style.display='none';document.getElementById('q-exp').textContent='';qAnswered=false;document.getElementById('btn-next').disabled=true;updateProgress();}
+function pickAnswer(i,btn,q){if(qAnswered)return;const btns=document.querySelectorAll('#q-options .option-btn');qAnswered=true;btns.forEach(b=>b.disabled=true);if(i===q.ans){btn.classList.add('correct');qScore++;}else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}const exp=document.getElementById('q-exp');exp.textContent=q.exp;exp.style.display='block';document.getElementById('btn-next').disabled=false;document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);}
+function updateProgress(){const pct=questions.length?Math.round(qCur/questions.length*100):0;document.getElementById('progress-fill').style.width=pct+'%';document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;}
+function showResult(){document.getElementById('quiz-body').style.display='none';const res=document.getElementById('quiz-result');res.style.display='block';const pct=Math.round(qScore/questions.length*100);document.getElementById('res-num').textContent=qScore;document.getElementById('res-den').textContent=questions.length;let msg='',cls='';if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}document.getElementById('res-msg').textContent=msg;document.getElementById('res-grade').style.cssText=cls;document.getElementById('res-grade').textContent=pct+'%';}
+document.addEventListener('DOMContentLoaded',()=>{initQuiz();document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});document.getElementById('btn-restart').addEventListener('click',initQuiz);});
+</script>
+</body>
+</html>
