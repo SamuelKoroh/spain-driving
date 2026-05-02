@@ -1,748 +1,3160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Theme 9 – Basic Information on the Vehicle | Spanish Driving Theory (Licence B)</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --navy: #0d1b2a; --navy2: #1b2d42; --gold: #e8a020; --gold-light: #faecd6; --gold-dark: #b57d10;
-    --green: #1a6e3c; --green-light: #e0f2e9; --red: #b52b27; --red-light: #fce8e8;
-    --blue: #1a4e8a; --blue-light: #e4eef9; --text: #0d1b2a; --text-muted: #4a5568;
-    --text-light: #718096; --bg: #f7f5f0; --surface: #ffffff; --border: #e2ddd4;
-    --border-strong: #c9c0b4; --radius: 8px; --radius-lg: 12px;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.65; }
-  h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
-
-  .header { background: var(--navy); color: #fff; padding: 28px 40px 24px; position: relative; overflow: hidden; }
-  .header::before { content:''; position: absolute; top: -30px; right: -40px; width: 220px; height: 220px; border: 40px solid rgba(232,160,32,0.12); border-radius: 50%; }
-  .header-badge { display: inline-block; background: var(--gold); color: var(--navy); font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 10px; }
-  .header h1 { font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 4px; }
-  .header p { font-size: 14px; color: rgba(255,255,255,0.65); font-weight: 300; }
-  .header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
-  .header-stat .val { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: var(--gold); }
-  .header-stat .lbl { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; }
-
-  .tab-bar { background: var(--navy2); display: flex; gap: 2px; padding: 0 24px; overflow-x: auto; scrollbar-width: none; }
-  .tab-bar::-webkit-scrollbar { display: none; }
-  .tab-btn { background: none; border: none; color: rgba(255,255,255,0.5); font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; padding: 12px 18px; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; transition: color .2s, border-color .2s; }
-  .tab-btn:hover { color: rgba(255,255,255,0.85); }
-  .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
-
-  .content { padding: 32px 40px; max-width: 960px; margin: 0 auto; }
-  .tab-panel { display: none; }
-  .tab-panel.active { display: block; }
-
-  .section-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 6px; padding-bottom: 8px; border-bottom: 2px solid var(--gold); display: inline-block; }
-  .section-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 24px; margin-top: 4px; }
-
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 16px; }
-  .card-title { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-  .card-title .icon { width: 28px; height: 28px; background: var(--gold-light); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
-  .card p, .card li { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
-  .card ul { padding-left: 18px; margin-top: 6px; }
-  .card li { margin-bottom: 4px; }
-
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
-  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
-  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
-  @media(max-width:700px) { .grid-2,.grid-3,.grid-4 { grid-template-columns: 1fr; } }
-
-  .def-block { border-left: 3px solid var(--gold); padding: 12px 16px; background: var(--gold-light); border-radius: 0 var(--radius) var(--radius) 0; margin-bottom: 12px; }
-  .def-block .term { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
-  .def-block .def { font-size: 13px; color: var(--text-muted); }
-  .def-block.green { border-left-color: var(--green); background: var(--green-light); }
-  .def-block.blue { border-left-color: var(--blue); background: var(--blue-light); }
-  .def-block.red { border-left-color: var(--red); background: var(--red-light); }
-
-  .styled-table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); margin-bottom: 24px; }
-  .styled-table th { background: var(--navy); color: #fff; font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; padding: 10px 14px; text-align: left; }
-  .styled-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
-  .styled-table tr:last-child td { border-bottom: none; }
-  .styled-table tr:hover td { background: var(--bg); }
-  .styled-table td:first-child { font-weight: 600; color: var(--navy); }
-
-  .badge { display: inline-block; font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; }
-  .badge-gold { background: var(--gold-light); color: var(--gold-dark); }
-  .badge-green { background: var(--green-light); color: var(--green); }
-  .badge-blue { background: var(--blue-light); color: var(--blue); }
-  .badge-red { background: var(--red-light); color: var(--red); }
-  .badge-navy { background: var(--navy); color: #fff; }
-
-  .highlight { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; font-size: 13px; }
-  .highlight.important { border-left: 4px solid var(--red); background: var(--red-light); }
-  .highlight.tip { border-left: 4px solid var(--gold); background: var(--gold-light); }
-  .highlight.info { border-left: 4px solid var(--blue); background: var(--blue-light); }
-  .highlight.ok { border-left: 4px solid var(--green); background: var(--green-light); }
-  .highlight .hi-title { font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px; }
-  .highlight.important .hi-title { color: var(--red); }
-  .highlight.tip .hi-title { color: var(--gold-dark); }
-  .highlight.info .hi-title { color: var(--blue); }
-  .highlight.ok .hi-title { color: var(--green); }
-  .highlight p, .highlight li { color: var(--text-muted); line-height: 1.6; }
-  .highlight ul { padding-left: 18px; margin-top: 4px; }
-  .highlight li { margin-bottom: 3px; }
-
-  .subsection { margin-bottom: 28px; }
-  .subsection h3 { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-  .subsection h3::before { content: ''; display: block; width: 3px; height: 16px; background: var(--gold); border-radius: 2px; }
-
-  .number-fact { text-align: center; padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
-  .number-fact .num { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 700; color: var(--navy); }
-  .number-fact .unit { font-size: 12px; color: var(--gold-dark); font-weight: 600; }
-  .number-fact .desc { font-size: 11px; color: var(--text-light); margin-top: 3px; }
-
-  .qr-row { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
-  .qr-row:last-child { border-bottom: none; }
-  .qr-key { font-weight: 600; color: var(--navy); min-width: 220px; }
-  .qr-val { color: var(--text-muted); flex: 1; }
-
-  /* Quiz */
-  .quiz-header { background: var(--navy); color: #fff; border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-  .quiz-header h3 { font-size: 18px; color: #fff; }
-  .progress-bar { width: 200px; height: 6px; background: rgba(255,255,255,0.2); border-radius: 3px; }
-  .progress-fill { height: 100%; background: var(--gold); border-radius: 3px; transition: width .3s; }
-  .score-display { font-family: 'Syne', sans-serif; font-size: 16px; color: var(--gold); }
-  .question-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 24px; margin-bottom: 16px; }
-  .question-card.q-correct { border-color: var(--green); }
-  .question-card.q-wrong { border-color: var(--red); }
-  .question-num { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); margin-bottom: 8px; }
-  .question-text { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 16px; line-height: 1.5; }
-  .options { display: flex; flex-direction: column; gap: 8px; }
-  .option-btn { background: var(--bg); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 10px 16px; text-align: left; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text); cursor: pointer; transition: background .15s, border-color .15s; line-height: 1.4; }
-  .option-btn:hover:not(:disabled) { background: var(--blue-light); border-color: var(--blue); }
-  .option-btn.correct { background: var(--green-light); border-color: var(--green); color: var(--green); font-weight: 500; }
-  .option-btn.wrong { background: var(--red-light); border-color: var(--red); color: var(--red); }
-  .option-btn.reveal { background: var(--green-light); border-color: var(--green); color: var(--green); }
-  .option-btn:disabled { cursor: default; }
-  .explanation { margin-top: 10px; padding: 10px 14px; background: var(--bg); border-radius: var(--radius); font-size: 13px; color: var(--text-muted); line-height: 1.6; border-left: 3px solid var(--gold); display: none; }
-  .quiz-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
-  .btn { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 600; padding: 10px 22px; border-radius: var(--radius); cursor: pointer; transition: opacity .15s, transform .1s; border: none; }
-  .btn:active { transform: scale(0.97); }
-  .btn-gold { background: var(--gold); color: var(--navy); }
-  .btn-navy { background: var(--navy); color: #fff; }
-  .btn-outline { background: transparent; border: 1.5px solid var(--border-strong); color: var(--text); }
-  .btn:hover { opacity: 0.88; }
-  .quiz-result { text-align: center; padding: 40px 24px; background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border); display: none; }
-  .result-score { font-family: 'Syne', sans-serif; font-size: 64px; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 8px; }
-  .result-score span { color: var(--gold); }
-  .result-msg { font-size: 18px; color: var(--text-muted); margin-bottom: 24px; }
-  .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
-  .filter-btn { background: var(--surface); border: 1.5px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s; font-family: 'DM Sans', sans-serif; }
-  .filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
-  p { color: var(--text-muted); font-size: 14px; line-height: 1.65; margin-bottom: 10px; }
-  ul { padding-left: 18px; margin-bottom: 12px; }
-  li { color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 4px; }
-  strong { color: var(--navy); }
-</style>
-</head>
-<body>
-
-<div class="header">
-  <div class="header-badge">Permiso B – Teoría</div>
-  <h1>Theme 9: Basic Information on the Vehicle</h1>
-  <p>Complete study guide for the Spanish Driving Theory Examination</p>
-  <div class="header-meta">
-    <div class="header-stat"><div class="val">6</div><div class="lbl">Study sections</div></div>
-    <div class="header-stat"><div class="val">5</div><div class="lbl">Engine systems</div></div>
-    <div class="header-stat"><div class="val">100</div><div class="lbl">Quiz questions</div></div>
-    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
-  </div>
-</div>
-
-<div class="tab-bar" id="tabBar">
-  <button class="tab-btn active" data-tab="engine">Engine &amp; Systems</button>
-  <button class="tab-btn" data-tab="electrical">Electrical</button>
-  <button class="tab-btn" data-tab="transmission">Transmission</button>
-  <button class="tab-btn" data-tab="tyres">Tyres &amp; Brakes</button>
-  <button class="tab-btn" data-tab="accessories">Accessories</button>
-  <button class="tab-btn" data-tab="quickref">Quick Reference</button>
-  <button class="tab-btn" data-tab="quiz">Quiz (100 Qs)</button>
-</div>
-
-<div class="content">
-
-<!-- ENGINE TAB -->
-<div class="tab-panel active" id="tab-engine">
-  <div class="section-title">1 &amp; 2: The Engine &amp; Its Systems</div>
-  <p class="section-desc">Understanding how the engine works and its key systems is essential — these topics appear frequently in the theory exam.</p>
-
-  <div class="subsection">
-    <h3>What is an engine?</h3>
-    <p>The engine is a machine designed to <strong>convert energy into mechanical power (motion)</strong>. In a car, fuel burns inside cylinders, pushing pistons that ultimately drive the wheels. A 4-stroke petrol cycle: <strong>Intake → Compression → Power → Exhaust</strong>. Diesel engines omit the spark plug — compression alone ignites the fuel.</p>
-    <div class="grid-4">
-      <div class="number-fact"><div class="num">4</div><div class="unit">strokes</div><div class="desc">per combustion cycle</div></div>
-      <div class="number-fact"><div class="num">2</div><div class="unit">circuits</div><div class="desc">in the fuel system</div></div>
-      <div class="number-fact"><div class="num">2</div><div class="unit">years</div><div class="desc">coolant protection life</div></div>
-      <div class="number-fact"><div class="num">MIN–MAX</div><div class="unit">dipstick</div><div class="desc">correct oil range</div></div>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>2.1 Fuel System</h3>
-    <p>Provides the engine with the correct <strong>air-fuel mixture</strong>. Comprises two circuits:</p>
-    <div class="grid-2">
-      <div class="def-block"><div class="term">Air feeding circuit</div><div class="def">Draws in and filters outside air through the air filter before delivering it to the intake manifold.</div></div>
-      <div class="def-block"><div class="term">Fuel feeding circuit</div><div class="def">Draws fuel from the tank through the fuel filter and pump to the injectors or carburettor.</div></div>
-    </div>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div>
-      <ul>
-        <li>Check the <strong>air filter</strong> regularly — it gets dirtier in summer than winter. Replace per manufacturer schedule.</li>
-        <li>Check <strong>idling speed</strong> — if too fast, fuel consumption and contamination both increase.</li>
-        <li>Replace the <strong>fuel filter</strong> following the manufacturer's recommendations.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>2.2 Exhaust System</h3>
-    <p>Conveys exhaust gases from the engine to the exterior. Comprises two key components:</p>
-    <div class="grid-2">
-      <div class="def-block.green def-block"><div class="term">Muffler (Silenciador)</div><div class="def">Reduces noise and lowers gas temperature before release.</div></div>
-      <div class="def-block blue def-block"><div class="term">Catalytic Converter (Catalizador)</div><div class="def">Chemically transforms toxic gases (CO, HC, NOx) into less harmful compounds. Works best at operating temperature.</div></div>
-    </div>
-    <div class="highlight important"><div class="hi-title">Warning</div>
-      <p>A damaged catalytic converter increases harmful emissions and will cause the vehicle to fail its ITV inspection.</p>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>2.3 Lubrication System</h3>
-    <p>Distributes thin layers of motor oil around engine components to <strong>reduce friction, heat, and wear</strong>. Includes an oil pressure gauge with a warning light.</p>
-    <div class="grid-2">
-      <div class="highlight ok"><div class="hi-title">Light OFF</div><p>Engine is properly lubricated — normal operation.</p></div>
-      <div class="highlight important"><div class="hi-title">Light ON</div><p>Oil pressure is below minimum. <strong>Stop immediately</strong> — serious engine damage can result.</p></div>
-    </div>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div>
-      <ul>
-        <li>Check oil level: vehicle on a <strong>flat surface</strong>, engine <strong>OFF and COLD</strong>. Level must be between MIN and MAX on the dipstick.</li>
-        <li>Change oil: vehicle on a <strong>flat surface</strong>, engine <strong>HOT</strong>. Drain via the crankcase drain plug (bottom). Refill via the oil filter cap (top/cylinder head).</li>
-        <li>Change the oil filter as often as the manufacturer recommends.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>2.4 Cooling System</h3>
-    <p>Draws out part of the heat produced by engine activity to prevent overheating. Uses water-based coolant circulated through the radiator.</p>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div>
-      <ul>
-        <li>Check coolant level in the reservoir: engine must be <strong>COLD</strong>. Level must be between MIN and MAX.</li>
-        <li>Change coolant per manufacturer's instructions — protective effectiveness typically lasts <strong>~2 years</strong>.</li>
-        <li>In winter, add <strong>antifreeze fluid</strong> to prevent coolant from freezing.</li>
-      </ul>
-    </div>
-    <div class="highlight info"><div class="hi-title">Note</div><p>Rust on coolant hoses may indicate a loss of coolant — inspect the cooling system carefully.</p></div>
-  </div>
-</div>
-
-<!-- ELECTRICAL TAB -->
-<div class="tab-panel" id="tab-electrical">
-  <div class="section-title">3: Electrical Equipment</div>
-  <p class="section-desc">The vehicle's electrical systems power everything from starting to lighting — all are tested in the exam.</p>
-
-  <div class="subsection">
-    <h3>3.1 Battery</h3>
-    <p>Supplies electrical power when the <strong>engine is motionless</strong> (starting, lights with engine off, accessories).</p>
-    <div class="def-block"><div class="term">Electrolyte solution</div><div class="def">A mixture of distilled water and sulphuric acid. The battery plates must always be fully submerged in this solution.</div></div>
-    <table class="styled-table">
-      <thead><tr><th>Battery type</th><th>Maintenance required</th></tr></thead>
-      <tbody>
-        <tr><td>Low maintenance</td><td>Check electrolyte solution level every <strong>6 months</strong>. Add distilled water if plates are exposed.</td></tr>
-        <tr><td>Free maintenance</td><td>No solution level check needed. However, <strong>terminals must always be tight and clean</strong>.</td></tr>
-      </tbody>
-    </table>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div>
-      <ul>
-        <li>Check electrolyte level — add <strong>distilled water only</strong> if plates are exposed.</li>
-        <li>Clean terminals and apply a coat of <strong>vaseline or soft grease</strong> to prevent corrosion.</li>
-        <li>Keep battery caps clean.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>3.2 Charging System</h3>
-    <p>Supplies electrical power when the <strong>engine is running</strong>. The alternator generates electricity and recharges the battery simultaneously.</p>
-    <div class="highlight important"><div class="hi-title">Warning</div>
-      <p>If the charging system dashboard light illuminates while driving, it may indicate an alternator malfunction, broken, or slack belt. Reduce electrical load and drive safely to a garage.</p>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>3.3 Starting System</h3>
-    <p>The starter motor prompts the first turns of the engine to initiate combustion.</p>
-    <table class="styled-table">
-      <thead><tr><th>Symptom</th><th>Likely cause</th><th>Solution</th></tr></thead>
-      <tbody>
-        <tr><td>Key on — starter doesn't crank, dashboard lights fade</td><td>Low battery charge, poor condition, or switched-off terminals</td><td>Check terminals are tight; replace battery if necessary</td></tr>
-        <tr><td>Key on — engine runs, starter cranks very slowly</td><td>Discharged battery or connections in poor condition</td><td>Check terminals are tight; recharge or replace battery</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="subsection">
-    <h3>3.4 Ignition System</h3>
-    <p>Spark plugs trigger a spark inside <strong>petrol engines only</strong> to ignite the air-fuel mixture. Diesel engines use compression ignition — no spark plugs.</p>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div><p>Check and replace spark plugs following the manufacturer's instructions. Worn plugs cause misfires, difficult starting, and increased fuel consumption.</p></div>
-  </div>
-
-  <div class="subsection">
-    <h3>3.5 Lighting System</h3>
-    <p>Enables the driver to <strong>see, be seen, and signal manoeuvres</strong>. Includes: dipped headlights, full beam, fog lights, direction indicators, hazard lights, rear lights, brake lights, and reversing lights.</p>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div><p>Replace any failed bulb as soon as possible — defective lights are a traffic infraction and create genuine safety hazards.</p></div>
-  </div>
-</div>
-
-<!-- TRANSMISSION TAB -->
-<div class="tab-panel" id="tab-transmission">
-  <div class="section-title">4: Transmission, Steering &amp; Suspension</div>
-  <p class="section-desc">The transmission transfers engine power to the wheels. Understanding drive types is essential for the exam.</p>
-
-  <div class="subsection">
-    <h3>Drive types</h3>
-    <div class="grid-3">
-      <div class="card"><div class="card-title"><div class="icon">⬆</div>Front-wheel drive</div><p><span class="badge badge-gold">Tracción</span></p><p style="margin-top:8px">Engine torque drives the front wheels, which also steer. Common in small and medium cars. The front wheels both pull and guide the vehicle.</p></div>
-      <div class="card"><div class="card-title"><div class="icon">⬇</div>Rear-wheel drive</div><p><span class="badge badge-blue">Propulsión</span></p><p style="margin-top:8px">Engine torque drives the rear wheels. Better balance under hard acceleration. Common in sports and larger cars.</p></div>
-      <div class="card"><div class="card-title"><div class="icon">◎</div>All-wheel drive (4x4)</div><p><span class="badge badge-green">4x4</span></p><p style="margin-top:8px">All four wheels receive engine torque. Best traction on slippery or off-road surfaces. Used in SUVs and off-road vehicles.</p></div>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>Gearbox types</h3>
-    <table class="styled-table">
-      <thead><tr><th>Type</th><th>Features</th></tr></thead>
-      <tbody>
-        <tr><td>Manual</td><td>Driver operates clutch pedal and gear lever. Greater control, generally better fuel efficiency.</td></tr>
-        <tr><td>Automatic</td><td>No clutch pedal — gears change automatically. Easier in heavy urban traffic.</td></tr>
-        <tr><td>CVT</td><td>Continuously Variable Transmission — no fixed gears, seamless power delivery.</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="subsection">
-    <h3>Power steering &amp; Suspension</h3>
-    <div class="grid-2">
-      <div class="card"><div class="card-title"><div class="icon">🔄</div>Power steering (Dirección asistida)</div><p>Hydraulic or electric assistance reduces the effort required to steer, particularly at low speeds and when parking.</p>
-        <div style="margin-top:10px" class="highlight tip"><div class="hi-title">Maintenance</div><p>For hydraulic systems: check power steering fluid level regularly.</p></div>
-      </div>
-      <div class="card"><div class="card-title"><div class="icon">〰</div>Suspension system</div><p>Absorbs road irregularities to maintain tyre contact and passenger comfort. Key components: springs, shock absorbers (amortiguadores), and anti-roll bars.</p>
-        <div style="margin-top:10px" class="highlight tip"><div class="hi-title">Maintenance</div><p>Check for oil leaks or excessive bouncing — worn shock absorbers increase braking distance.</p></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- TYRES & BRAKES TAB -->
-<div class="tab-panel" id="tab-tyres">
-  <div class="section-title">Tyres &amp; Braking System</div>
-  <p class="section-desc">Tyre condition and braking are among the most safety-critical topics and regularly appear in exam questions.</p>
-
-  <div class="subsection">
-    <h3>Tyre key facts</h3>
-    <div class="grid-4">
-      <div class="number-fact"><div class="num">1.6</div><div class="unit">mm minimum</div><div class="desc">Legal tread depth in Spain</div></div>
-      <div class="number-fact"><div class="num">80</div><div class="unit">km/h max</div><div class="desc">Spare tyre speed limit</div></div>
-      <div class="number-fact"><div class="num">50–200</div><div class="unit">km max</div><div class="desc">Spare tyre distance</div></div>
-      <div class="number-fact"><div class="num">COLD</div><div class="unit">tyres</div><div class="desc">When to check pressure</div></div>
-    </div>
-    <p>Tyre markings example: <strong>205/55 R16 91V</strong> — width (205 mm) / profile ratio (55%) / Radial / rim diameter (16 in) / load index (91 = 615 kg) / speed index (V = max 240 km/h).</p>
-    <div class="highlight important"><div class="hi-title">Critical</div><p>Tyres with cracks, bulges, or cuts in the sidewall must be replaced immediately — they are illegal and risk sudden blowout.</p></div>
-    <div class="highlight info"><div class="hi-title">Note</div><p>In Spain, winter tyres or chains are compulsory on certain mountain roads when indicated by signs.</p></div>
-  </div>
-
-  <div class="subsection">
-    <h3>Hydraulic brake system</h3>
-    <p>Pressing the brake pedal pushes brake fluid through pipes to calipers (disc brakes) or wheel cylinders (drum brakes), creating friction to slow the vehicle.</p>
-    <div class="highlight tip"><div class="hi-title">Maintenance</div>
-      <ul>
-        <li>Check brake fluid level — must be between MIN and MAX in the reservoir.</li>
-        <li>Brake fluid is <strong>hygroscopic</strong> (absorbs moisture over time), which lowers its boiling point. Change per manufacturer schedule (typically every 2 years).</li>
-        <li>A spongy pedal may indicate air in the system — requires immediate professional attention.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>ABS (Anti-lock Braking System)</h3>
-    <p>Prevents wheel lock during emergency braking, allowing the driver to <strong>maintain steering while stopping</strong>. ABS does not always shorten stopping distance — its primary benefit is maintaining steerability.</p>
-    <div class="grid-2">
-      <div class="highlight info"><div class="hi-title">When ABS activates</div><p>You feel a <strong>pulsating sensation</strong> in the brake pedal. This is normal — keep firm, steady pressure and steer to safety. Do NOT release the pedal.</p></div>
-      <div class="highlight important"><div class="hi-title">ABS warning light ON</div><p>Brakes still work conventionally, but ABS assistance is disabled. Have the system checked at a garage.</p></div>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>Parking brake (Freno de mano)</h3>
-    <p>Acts typically on the <strong>rear wheels</strong> via a mechanical cable or electric actuator. Must always be applied when parking.</p>
-    <div class="highlight important"><div class="hi-title">Warning</div><p>Never use the handbrake as an emergency brake at speed — it can cause rear-wheel skid and loss of vehicle control.</p></div>
-  </div>
-</div>
-
-<!-- ACCESSORIES TAB -->
-<div class="tab-panel" id="tab-accessories">
-  <div class="section-title">5: Accessories, Spare Parts &amp; Tools</div>
-  <p class="section-desc">The mandatory equipment requirements are heavily tested — memorise the fire extinguisher classes and V-16 specifications.</p>
-
-  <div class="subsection">
-    <h3>Required equipment by vehicle category</h3>
-    <div class="grid-2">
-      <div class="card"><div class="card-title"><div class="icon">🚗</div>Cars, mixed &amp; goods (MAM ≤ 3,500 kg)</div>
-        <ul>
-          <li>V-16 hazard pre-signalling device</li>
-          <li>High visibility waistcoat</li>
-          <li>Spare / temporary tyre <em>or</em> alternative system</li>
-          <li>All tools necessary to change a tyre</li>
-        </ul>
-        <p style="margin-top:8px;font-size:12px;color:var(--text-light)">Excludes 3-wheelers and quads</p>
-      </div>
-      <div class="card"><div class="card-title"><div class="icon">🚌</div>Buses, mixed &amp; goods (MAM &gt; 3,500 kg) + combinations</div>
-        <ul>
-          <li>V-16 hazard pre-signalling device</li>
-          <li>High visibility waistcoat</li>
-          <li><strong>Approved fire extinguisher</strong> (suitable and operable)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>Fire extinguisher requirements</h3>
-    <table class="styled-table">
-      <thead><tr><th>Vehicle type</th><th>Required class</th></tr></thead>
-      <tbody>
-        <tr><td>Up to 9 seats incl. driver (general)</td><td>Not mandatory</td></tr>
-        <tr><td>Taxis (up to 9 seats)</td><td>1 × <strong>5A/21B</strong></td></tr>
-        <tr><td>10 to 23 seats incl. driver</td><td>1 × <strong>8A/34B</strong></td></tr>
-        <tr><td>More than 23 seats incl. driver</td><td>1 × <strong>21A/113B</strong></td></tr>
-        <tr><td>School transport &gt;23 seats incl. driver</td><td>2 × <strong>21A/113B</strong></td></tr>
-        <tr><td>Goods: MMA 3,500–7,000 kg</td><td>1 × <strong>21A/113B</strong></td></tr>
-        <tr><td>Goods: MMA 7,000–20,000 kg</td><td>1 × <strong>34A/144B</strong></td></tr>
-        <tr><td>Goods: MMA &gt;20,000 kg</td><td>2 × <strong>34A/144B</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="subsection">
-    <h3>High visibility waistcoat</h3>
-    <div class="grid-2">
-      <div class="def-block"><div class="term">Approved colours</div><div class="def">Yellow, orangy red, or red. No other colours are permitted.</div></div>
-      <div class="def-block"><div class="term">When to wear it</div><div class="def">When leaving the vehicle and occupying the roadway or hard shoulder on interurban roads.</div></div>
-      <div class="def-block"><div class="term">Storage</div><div class="def">Not exposed to light, but accessible — so you can put it on BEFORE leaving the vehicle.</div></div>
-      <div class="def-block"><div class="term">Pilot / escort vehicles</div><div class="def">Driver AND every member of auxiliary staff must wear it.</div></div>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>V-16 device specifications</h3>
-    <div class="grid-2">
-      <div class="number-fact"><div class="num">360°</div><div class="unit">horizontal visibility</div><div class="desc">Visible from all directions</div></div>
-      <div class="number-fact"><div class="num">30</div><div class="unit">minutes minimum</div><div class="desc">Luminous intensity maintained</div></div>
-      <div class="number-fact"><div class="num">0.8–2</div><div class="unit">Hz flash rate</div><div class="desc">Required frequency range</div></div>
-      <div class="number-fact"><div class="num">100</div><div class="unit">seconds</div><div class="desc">GPS reporting interval</div></div>
-    </div>
-    <div class="highlight info"><div class="hi-title">V-16 Technical requirements</div>
-      <ul>
-        <li>Horizontal visibility: 360°; vertical: minimum ±8°</li>
-        <li>Luminous intensity: 40–700 candlepower (grade 0); 25–600 at ±8 grades</li>
-        <li>Protection: at least IP54 (dust and splash resistant)</li>
-        <li>Flash frequency: 0.8–2 Hz</li>
-        <li>Autonomous power supply (from vehicle battery or rechargeable battery)</li>
-        <li>Communicates activation, deactivation, and GPS to national traffic access point every <strong>100 seconds</strong></li>
-      </ul>
-    </div>
-    <div class="highlight tip"><div class="hi-title">Spare tyre limits</div>
-      <ul>
-        <li>Maximum speed: <strong>80 km/h</strong></li>
-        <li>Maximum travel distance: <strong>50–200 km</strong></li>
-        <li>An alternative tyre system is allowed if it offers similar roadworthy guarantees</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- QUICK REFERENCE TAB -->
-<div class="tab-panel" id="tab-quickref">
-  <div class="section-title">Quick Reference</div>
-  <p class="section-desc">Key numbers, rules, and facts to memorise before the exam.</p>
-
-  <div class="subsection">
-    <h3>Critical numbers</h3>
-    <div class="card">
-      <div class="qr-row"><div class="qr-key">Oil check — engine state</div><div class="qr-val">Engine OFF and COLD, vehicle on flat surface</div></div>
-      <div class="qr-row"><div class="qr-key">Oil change — engine state</div><div class="qr-val">Engine HOT, vehicle on flat surface</div></div>
-      <div class="qr-row"><div class="qr-key">Coolant check — engine state</div><div class="qr-val">Engine COLD only (risk of scalding if hot)</div></div>
-      <div class="qr-row"><div class="qr-key">Coolant protection lifespan</div><div class="qr-val">~2 years</div></div>
-      <div class="qr-row"><div class="qr-key">Low maintenance battery check</div><div class="qr-val">Every 6 months</div></div>
-      <div class="qr-row"><div class="qr-key">Minimum tyre tread depth</div><div class="qr-val">1.6 mm (legal minimum in Spain)</div></div>
-      <div class="qr-row"><div class="qr-key">Spare tyre max speed</div><div class="qr-val">80 km/h</div></div>
-      <div class="qr-row"><div class="qr-key">Spare tyre max distance</div><div class="qr-val">50–200 km</div></div>
-      <div class="qr-row"><div class="qr-key">Check tyre pressure when</div><div class="qr-val">Tyres COLD (before driving or max 2 km)</div></div>
-      <div class="qr-row"><div class="qr-key">V-16 visibility</div><div class="qr-val">360° horizontal, ±8° vertical minimum</div></div>
-      <div class="qr-row"><div class="qr-key">V-16 luminous intensity (grade 0)</div><div class="qr-val">40–700 candlepower</div></div>
-      <div class="qr-row"><div class="qr-key">V-16 flash frequency</div><div class="qr-val">0.8–2 Hz</div></div>
-      <div class="qr-row"><div class="qr-key">V-16 minimum operation time</div><div class="qr-val">30 minutes</div></div>
-      <div class="qr-row"><div class="qr-key">V-16 GPS reporting interval</div><div class="qr-val">Every 100 seconds</div></div>
-      <div class="qr-row"><div class="qr-key">V-16 IP protection</div><div class="qr-val">At least IP54</div></div>
-    </div>
-  </div>
-
-  <div class="subsection">
-    <h3>ITV (Inspección Técnica de Vehículos)</h3>
-    <table class="styled-table">
-      <thead><tr><th>Vehicle age</th><th>Inspection frequency</th></tr></thead>
-      <tbody>
-        <tr><td>New car — first 4 years</td><td>No inspection required</td></tr>
-        <tr><td>First ITV</td><td>At 4 years from registration</td></tr>
-        <tr><td>4–10 years old</td><td>Every <strong>2 years</strong></td></tr>
-        <tr><td>Over 10 years old</td><td>Every <strong>year</strong></td></tr>
-        <tr><td>Taxis, ambulances, driving school cars</td><td>Every year from first registration</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="subsection">
-    <h3>Dashboard warning lights</h3>
-    <table class="styled-table">
-      <thead><tr><th>Light</th><th>Meaning</th><th>Action</th></tr></thead>
-      <tbody>
-        <tr><td>Oil pressure (red)</td><td>Oil pressure below minimum</td><td><strong>Stop immediately</strong></td></tr>
-        <tr><td>Engine temperature (red)</td><td>Engine overheating</td><td>Stop safely, switch off</td></tr>
-        <tr><td>Battery warning</td><td>Charging system fault (alternator)</td><td>Reduce load, drive to garage</td></tr>
-        <tr><td>ABS warning</td><td>ABS fault — conventional brakes work</td><td>Visit garage</td></tr>
-        <tr><td>TPMS</td><td>Low tyre pressure detected</td><td>Check and inflate when cold</td></tr>
-        <tr><td>Check engine (MIL)</td><td>Engine management fault</td><td>Diagnostics at garage</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- QUIZ TAB -->
-<div class="tab-panel" id="tab-quiz">
-  <div class="quiz-header">
-    <div><h3>Theme 9 Quiz — 100 Questions</h3><p style="color:rgba(255,255,255,0.6);font-size:13px;margin:0">Click an option to answer. Explanations appear after each question.</p></div>
-    <div>
-      <div class="score-display" id="scoreDisplay">0 / 0 correct</div>
-      <div class="progress-bar" style="margin-top:6px"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
-    </div>
-  </div>
-  <div class="quiz-controls">
-    <button class="btn btn-gold" onclick="resetQuiz()">Reset Quiz</button>
-    <button class="filter-btn active" onclick="filterQuiz('all',this)">All (100)</button>
-    <button class="filter-btn" onclick="filterQuiz('wrong',this)">Wrong only</button>
-    <button class="filter-btn" onclick="filterQuiz('Engine',this)">Engine</button>
-    <button class="filter-btn" onclick="filterQuiz('Electrical',this)">Electrical</button>
-    <button class="filter-btn" onclick="filterQuiz('Transmission',this)">Transmission</button>
-    <button class="filter-btn" onclick="filterQuiz('Tyres',this)">Tyres &amp; Brakes</button>
-    <button class="filter-btn" onclick="filterQuiz('Accessories',this)">Accessories</button>
-    <button class="filter-btn" onclick="filterQuiz('ITV',this)">ITV &amp; Dashboard</button>
-  </div>
-  <div id="quizContainer"></div>
-  <div class="quiz-result" id="quizResult">
-    <div class="result-score" id="resultScore">0<span>/100</span></div>
-    <div class="result-msg" id="resultMsg">Keep studying and try again!</div>
-    <button class="btn btn-navy" onclick="resetQuiz()">Try Again</button>
-  </div>
-</div>
-
-</div><!-- end .content -->
-
-<script>
-var qs=[
-{n:1,cat:"Engine",q:"What is the primary purpose of a vehicle engine?",opts:["To store fuel for the vehicle","To convert energy into mechanical power and motion","To cool the engine compartment","To supply electrical power to accessories"],a:1,exp:"The engine converts energy (from burning fuel) into mechanical power — producing the motion that drives the vehicle."},
-{n:2,cat:"Engine",q:"The fuel system provides the engine with:",opts:["Water and coolant","Motor oil and grease","Air and fuel in the correct mixture","Electrical power"],a:2,exp:"The fuel system has two circuits: an air feeding circuit and a fuel feeding circuit, together supplying the correct air-fuel mixture."},
-{n:3,cat:"Engine",q:"The air filter gets dirtier more quickly during:",opts:["Winter","Spring","Summer","Autumn"],a:2,exp:"The air filter accumulates more dirt in summer — check and replace it following the manufacturer's recommendations."},
-{n:4,cat:"Engine",q:"What happens if the engine idles too fast?",opts:["Fuel consumption decreases","Fuel consumption and contamination increase","The engine cools down faster","Nothing changes"],a:1,exp:"A fast idle means the engine rotates faster, burning more fuel and releasing more exhaust pollutants."},
-{n:5,cat:"Engine",q:"What is the function of the catalytic converter?",opts:["To reduce engine noise","To filter incoming air","To reduce toxic gases released into the atmosphere","To cool the exhaust gases"],a:2,exp:"The catalytic converter converts harmful exhaust gases (CO, HC, NOx) into less harmful substances before release."},
-{n:6,cat:"Engine",q:"What is the function of the muffler (silenciador)?",opts:["To filter fuel","To reduce noise and lower gas temperature","To ignite the fuel mixture","To reduce toxic emissions"],a:1,exp:"The muffler (silencer) reduces the noise of exhaust gases and lowers their temperature before they exit."},
-{n:7,cat:"Engine",q:"The lubrication system's primary role is to:",opts:["Cool the engine with water","Distribute thin layers of oil to reduce friction and deterioration","Provide fuel to the cylinders","Start the engine"],a:1,exp:"The lubrication system distributes motor oil around engine components to minimise friction, heat, and wear."},
-{n:8,cat:"Engine",q:"When should you check the motor oil level?",opts:["Engine hot and running","Engine hot and switched off","Engine cold and switched off on a flat surface","While driving slowly"],a:2,exp:"Always check oil on a flat surface with the engine cold and off — to get an accurate dipstick reading."},
-{n:9,cat:"Engine",q:"The dipstick oil level must be:",opts:["Above the maximum mark","Below the minimum mark","Between the minimum and maximum marks","Exactly at the minimum mark"],a:2,exp:"The oil level must always be between the MIN and MAX marks on the dipstick for safe engine operation."},
-{n:10,cat:"Engine",q:"The oil pressure warning light being ON indicates:",opts:["The engine is correctly lubricated","Oil level is too high","Oil pressure is below the minimum — stop immediately","The oil filter needs changing soon"],a:2,exp:"A lit oil pressure light means pressure has dropped below the minimum. Stop driving immediately to avoid engine damage."},
-{n:11,cat:"Engine",q:"When the oil pressure warning light is OFF, this means:",opts:["There is a lubrication problem","The oil is completely empty","The engine is properly lubricated","The light is malfunctioning"],a:2,exp:"The oil pressure light being off confirms that oil pressure is normal and the engine is properly lubricated."},
-{n:12,cat:"Engine",q:"To change the motor oil, the vehicle should be on a flat surface with the engine:",opts:["Cold","Warm but not hot","Hot","Either cold or hot"],a:2,exp:"For an oil change: flat surface + engine hot. The drain plug is in the crankcase (bottom); new oil goes in via the cap on top (cylinder head)."},
-{n:13,cat:"Engine",q:"The coolant level should be checked when the engine is:",opts:["Hot and running","Cold","Warm after a short drive","Either hot or cold"],a:1,exp:"Always check coolant with the engine cold — opening a hot radiator cap can cause serious scalding from pressurised steam."},
-{n:14,cat:"Engine",q:"Cooling fluid protective effectiveness typically lasts approximately:",opts:["6 months","1 year","2 years","5 years"],a:2,exp:"Manufacturers typically recommend changing coolant every ~2 years as its anti-corrosion and antifreeze properties degrade over time."},
-{n:15,cat:"Engine",q:"Rust on coolant hoses may indicate:",opts:["Normal wear and tear","A loss of coolant","The engine is overheating","Incorrect fuel type"],a:1,exp:"Rust deposits on coolant hoses can indicate coolant leakage — inspect the hoses and the cooling system carefully."},
-{n:16,cat:"Engine",q:"In winter, what should be added to the cooling system?",opts:["Distilled water","Motor oil","Antifreeze fluid","Brake fluid"],a:2,exp:"Antifreeze fluid is added to prevent coolant from freezing in cold temperatures, which could crack the engine block."},
-{n:17,cat:"Engine",q:"The exhaust system's main function is to:",opts:["Cool the engine","Filter incoming fuel","Convey exhaust gases from the engine to the exterior","Lubricate the engine"],a:2,exp:"The exhaust system routes combustion gases from the engine cylinders out through the exhaust pipe to the exterior."},
-{n:18,cat:"Engine",q:"The exhaust system consists of:",opts:["Air filter and fuel filter","Radiator and water pump","Mufflers and catalytic converter","Alternator and starter motor"],a:2,exp:"The exhaust system includes the muffler (reduces noise/temperature) and the catalytic converter (reduces toxic emissions)."},
-{n:19,cat:"Engine",q:"Where is new motor oil added to the engine?",opts:["Through the drain plug at the bottom","Through the dipstick tube","Through the oil filler cap on top (cylinder head)","Through the coolant reservoir"],a:2,exp:"New oil is poured through the oil filler cap located on top of the engine (cylinder head cover)."},
-{n:20,cat:"Engine",q:"The coolant reservoir level must be kept:",opts:["Always completely full","Between the maximum and minimum levels","Below the minimum level","Above the maximum level"],a:1,exp:"Coolant must be maintained between the MIN and MAX marks. Too little risks overheating; too much can cause pressure issues."},
-{n:21,cat:"Engine",q:"Which component of the exhaust system reduces toxic gases?",opts:["The muffler","The exhaust manifold","The catalytic converter","The air filter"],a:2,exp:"The catalytic converter chemically transforms toxic exhaust gases (CO, HC, NOx) into less harmful compounds."},
-{n:22,cat:"Engine",q:"The fuel system includes two circuits. They are:",opts:["Petrol circuit and diesel circuit","Air feeding circuit and fuel feeding circuit","Hot circuit and cold circuit","Primary circuit and secondary circuit"],a:1,exp:"The fuel system has an air feeding circuit and a fuel feeding circuit — together providing the engine with the correct air-fuel mixture."},
-{n:23,cat:"Engine",q:"The purpose of the cooling system is to:",opts:["Lubricate engine moving parts","Filter exhaust gases","Draw out part of the heat produced by engine activity","Supply fuel to the engine"],a:2,exp:"The cooling system removes excess heat from the engine to prevent overheating and maintain optimal operating temperature."},
-{n:24,cat:"Engine",q:"The fuel filter should be replaced:",opts:["Every 500 km","Every year without exception","Only when the engine stalls","Following the manufacturer's recommendations"],a:3,exp:"Fuel filter replacement intervals vary by vehicle — always follow the manufacturer's recommended schedule."},
-{n:25,cat:"Engine",q:"A diesel engine differs from a petrol engine in that it:",opts:["Does not need a fuel system","Does not use spark plugs — fuel ignites via compression","Has no exhaust system","Does not need an air filter"],a:1,exp:"Diesel engines compress air so much that it becomes hot enough to ignite the injected fuel — no spark plug is required."},
-{n:26,cat:"Electrical",q:"The battery supplies electrical power:",opts:["When the engine is running at speed","When the engine is motionless","Only in emergencies","Equally at all times"],a:1,exp:"The battery provides electricity when the engine is not running — for starting, lights with engine off, and accessories."},
-{n:27,cat:"Electrical",q:"The battery electrolyte solution is a mixture of:",opts:["Water and motor oil","Distilled water and sulphuric acid","Coolant and antifreeze","Brake fluid and alcohol"],a:1,exp:"The electrolyte is a mixture of distilled water and sulphuric acid. It must completely submerge the battery plates."},
-{n:28,cat:"Electrical",q:"The battery plates must always be:",opts:["Dry and exposed to air","Partially submerged","Fully submerged in the electrolyte solution","Coated with vaseline"],a:2,exp:"Battery plates must always be fully submerged in the electrolyte solution to function correctly."},
-{n:29,cat:"Electrical",q:"How often should a low maintenance battery's solution be checked?",opts:["Every month","Every 3 months","Every 6 months","Every 2 years"],a:2,exp:"Low maintenance batteries should have the electrolyte solution level checked every 6 months."},
-{n:30,cat:"Electrical",q:"A free maintenance battery requires:",opts:["Monthly solution level checks","Solution checks every 6 months","No solution level check — but terminals must be tight and clean","Complete replacement every year"],a:2,exp:"Free maintenance batteries need no electrolyte checks, but their terminals must always be kept tight and clean."},
-{n:31,cat:"Electrical",q:"The charging system supplies electrical power:",opts:["When the engine is switched off","When the engine is running","Only in an emergency","From the battery"],a:1,exp:"The charging system (alternator) generates electricity while the engine runs, powering systems and recharging the battery."},
-{n:32,cat:"Electrical",q:"A charging system warning light while driving may indicate:",opts:["The oil level is low","The battery is fully charged","An alternator malfunction or broken/slack belt","The engine needs cooling"],a:2,exp:"The charging warning light signals a fault in the charging system — alternator failure or a damaged drive belt."},
-{n:33,cat:"Electrical",q:"The starting system's function is to:",opts:["Keep the engine running","Prompt the first turns of the engine","Charge the battery","Supply electricity when engine is off"],a:1,exp:"The starter motor turns the engine over at starting speed until combustion begins and the engine can run independently."},
-{n:34,cat:"Electrical",q:"You turn the key, the starter doesn't crank and dashboard lights fade. This indicates:",opts:["A broken alternator belt","Fuel pump failure","Low battery charge, poor condition, or switched-off terminals","Ignition system failure"],a:2,exp:"Fading dashboard lights with no starter crank points to insufficient battery charge or poor terminal connections."},
-{n:35,cat:"Electrical",q:"The engine cranks very slowly when you turn the key. The likely cause is:",opts:["A broken spark plug","Discharged battery or connections in poor condition","Catalytic converter failure","Fuel filter blockage"],a:1,exp:"Slow cranking indicates the battery lacks sufficient charge or has poor electrical connections to the starter circuit."},
-{n:36,cat:"Electrical",q:"Spark plugs are used in:",opts:["Diesel engines only","Both petrol and diesel engines","Petrol engines only","Electric vehicles"],a:2,exp:"Spark plugs are used exclusively in petrol (gasoline) engines. Diesel engines use compression ignition — no spark plug needed."},
-{n:37,cat:"Electrical",q:"What is the function of spark plugs?",opts:["To filter fuel entering the engine","To trigger a spark igniting the air-fuel mixture","To cool the engine","To measure oil pressure"],a:1,exp:"Spark plugs produce an electrical spark at the correct moment to ignite the compressed air-fuel mixture in the cylinder."},
-{n:38,cat:"Electrical",q:"Spark plug maintenance requires:",opts:["Replacement every 500 km","No maintenance ever","Checking and replacing following manufacturer's instructions","Washing with water regularly"],a:2,exp:"Spark plugs wear gradually. Check and replace them per the manufacturer's recommended schedule."},
-{n:39,cat:"Electrical",q:"The lighting system's purpose is to:",opts:["Supply power to the starter","Enable seeing, being seen, and signalling manoeuvres","Charge the battery","Start the engine"],a:1,exp:"The lighting system serves three purposes: allow the driver to see, make the vehicle visible to others, and signal manoeuvres."},
-{n:40,cat:"Electrical",q:"Battery terminal maintenance involves:",opts:["Replacing them monthly","Cleaning them and applying vaseline or soft grease","Washing them with water","Leaving them to naturally oxidise"],a:1,exp:"Battery terminals should be cleaned of corrosion and coated with vaseline or soft grease to prevent further oxidation."},
-{n:41,cat:"Electrical",q:"The alternator's role in the electrical system is to:",opts:["Store electrical energy","Start the engine","Generate electrical power while the engine runs","Provide the ignition spark"],a:2,exp:"The alternator converts mechanical energy (from the engine belt) into electrical energy to power the vehicle and charge the battery."},
-{n:42,cat:"Electrical",q:"If the alternator warning light illuminates while driving, you should:",opts:["Ignore it and continue normally","Accelerate to increase charging","Reduce electrical load and drive carefully to a garage","Open the bonnet immediately"],a:2,exp:"An alternator warning means the battery is discharging. Reduce electrical load (turn off A/C, heated seats) and drive to a garage."},
-{n:43,cat:"Electrical",q:"Battery caps must be kept:",opts:["Loosened for ventilation","Clean","Removed when not driving","Covered with insulating tape"],a:1,exp:"Battery caps must be kept clean to prevent contamination of the electrolyte and to avoid short circuits."},
-{n:44,cat:"Electrical",q:"Which battery type requires no checking of solution level?",opts:["Low maintenance battery","Sealed lead-acid battery","Free maintenance battery","Conventional battery"],a:2,exp:"Free maintenance batteries are fully sealed and require no electrolyte checks — only terminal cleaning and tightening."},
-{n:45,cat:"Electrical",q:"The starter cranks normally but a petrol engine doesn't start. The first system to suspect is:",opts:["Lubrication system","Cooling system","Ignition system (spark plugs/coils)","Exhaust system"],a:2,exp:"If cranking is fine but the engine won't fire, the ignition system (spark plugs, ignition coil) is the first suspect."},
-{n:46,cat:"Transmission",q:"The function of the transmission is to:",opts:["Generate power from fuel","Cool the engine","Provide torque from the engine to the driving wheels","Filter exhaust gases"],a:2,exp:"The transmission transfers engine torque through the clutch, gearbox, driveshafts, and differential to the driving wheels."},
-{n:47,cat:"Transmission",q:"A front-wheel drive vehicle is also described as:",opts:["A propulsion vehicle","A traction vehicle","A 4x4 vehicle","A rear-drive vehicle"],a:1,exp:"Front-wheel drive is called tracción — the front wheels pull (tract) the vehicle forward."},
-{n:48,cat:"Transmission",q:"A rear-wheel drive vehicle is also described as:",opts:["A traction vehicle","A propulsion vehicle","An all-wheel drive vehicle","A hybrid vehicle"],a:1,exp:"Rear-wheel drive is called propulsión — the rear wheels push (propel) the vehicle forward."},
-{n:49,cat:"Transmission",q:"All-wheel drive (4x4) means:",opts:["Only front wheels receive torque","Only rear wheels receive torque","All four wheels receive torque from the engine","The vehicle has a four-cylinder engine"],a:2,exp:"4x4 / all-wheel drive distributes engine torque to all four wheels, improving traction on slippery or off-road surfaces."},
-{n:50,cat:"Transmission",q:"In a front-wheel drive car, the front wheels are responsible for:",opts:["Braking only","Driving and steering simultaneously","Driving and suspension","Steering and braking only"],a:1,exp:"In a front-wheel drive vehicle, the front wheels must both transmit engine power (drive) and change the direction of travel (steer)."},
-{n:51,cat:"Transmission",q:"Power steering (dirección asistida) helps the driver by:",opts:["Increasing engine power output","Automatically steering the car","Reducing the effort needed to turn the steering wheel","Locking the wheels at high speed"],a:2,exp:"Power steering uses hydraulic or electric assistance to reduce steering effort, particularly helpful at low speeds and when parking."},
-{n:52,cat:"Transmission",q:"An automatic gearbox differs from a manual in that it:",opts:["Only offers two gear ratios","Has no clutch pedal and changes gears automatically","Always provides all-wheel drive","Uses a smaller engine"],a:1,exp:"An automatic gearbox selects gears automatically and eliminates the clutch pedal, making driving easier in heavy traffic."},
-{n:53,cat:"Tyres",q:"The minimum legal tyre tread depth in Spain is:",opts:["0.8 mm","1.6 mm","2.0 mm","3.0 mm"],a:1,exp:"Spanish law requires a minimum tread depth of 1.6 mm. Below this the tyre is illegal and unsafe."},
-{n:54,cat:"Tyres",q:"Tyre pressure should be checked when tyres are:",opts:["Hot after a long drive","Cold","At any temperature","Only at a tyre centre"],a:1,exp:"Always check tyre pressure when cold — heat from driving expands air and gives a falsely high reading."},
-{n:55,cat:"Tyres",q:"Driving with incorrect tyre pressure affects:",opts:["Nothing significant","Only fuel consumption","Safety, handling, fuel consumption, and tyre wear","Only tyre wear"],a:2,exp:"Incorrect pressure has multiple effects: reduced safety, poor handling, increased fuel consumption, and accelerated/uneven tyre wear."},
-{n:56,cat:"Tyres",q:"A spare (temporary/emergency) tyre has a maximum speed of:",opts:["50 km/h","80 km/h","100 km/h","120 km/h"],a:1,exp:"Temporary spare tyres are restricted to a maximum speed of 80 km/h. They are for emergency use only."},
-{n:57,cat:"Tyres",q:"The maximum distance that should be travelled on a spare tyre is:",opts:["Up to 50 km","50–200 km","200–500 km","Unlimited, until repaired"],a:1,exp:"Temporary spare tyres should only be used to travel between 50 and 200 km — enough to reach a tyre centre."},
-{n:58,cat:"Tyres",q:"ABS (Anti-lock Braking System) primarily:",opts:["Shortens braking distance on all surfaces","Prevents wheel lock during emergency braking, maintaining steering control","Applies the brakes automatically","Eliminates the need for brake fluid"],a:1,exp:"ABS prevents wheels from locking during hard braking, allowing the driver to continue steering while stopping."},
-{n:59,cat:"Tyres",q:"Brake fluid is described as 'hygroscopic', meaning:",opts:["It evaporates quickly in heat","It corrodes metal components","It absorbs moisture over time, lowering its boiling point","It thickens in hot weather"],a:2,exp:"Brake fluid absorbs moisture from the air. This water content lowers its boiling point, risking vapour-lock under heavy braking."},
-{n:60,cat:"Tyres",q:"The parking brake (freno de mano) typically acts on:",opts:["The front wheels only","The rear wheels only","All four wheels equally","The engine directly"],a:1,exp:"The parking brake most commonly acts on the rear wheels via a mechanical cable or electric actuator."},
-{n:61,cat:"Tyres",q:"When ABS activates, you feel a pulsating pedal. You should:",opts:["Release the brake pedal immediately","Pump the brakes rapidly","Keep firm, steady pressure on the pedal and steer to safety","Press harder then release alternately"],a:2,exp:"ABS is designed to be used with sustained firm pressure — the system does the 'pumping' automatically. Maintain pressure and steer."},
-{n:62,cat:"Tyres",q:"A permanent ABS warning light while driving indicates:",opts:["ABS is actively working correctly","A fault — brakes still work but without ABS assistance","Brake fluid is low","Tyres are under-inflated"],a:1,exp:"A permanent ABS warning light means the ABS system has a fault. Conventional braking still works, but ABS assistance is unavailable."},
-{n:63,cat:"Tyres",q:"Tyres showing cracks, bulges, or cuts in the sidewall:",opts:["Can be used until the tread wears out","Are only dangerous at high speed","Must be replaced immediately — they are illegal and dangerous","Only need repair if the bulge grows"],a:2,exp:"Sidewall damage compromises the structural integrity of the tyre and can lead to sudden blowout. Replace immediately."},
-{n:64,cat:"Tyres",q:"Uneven tyre wear may indicate:",opts:["Normal use of the tyre","Incorrect tyre pressure or wheel misalignment","Brand new tyres","Low engine oil level"],a:1,exp:"Uneven wear patterns suggest tyre pressure is incorrect or wheels are out of alignment — both should be corrected promptly."},
-{n:65,cat:"Tyres",q:"Brake fluid level should be:",opts:["Always full to the reservoir cap","Between the minimum and maximum levels","Below the minimum level","Changed every month"],a:1,exp:"Brake fluid must be maintained between the MIN and MAX marks in its reservoir for the hydraulic braking system to work correctly."},
-{n:66,cat:"Accessories",q:"Cars under 3,500 kg MAM must carry all of the following EXCEPT:",opts:["V-16 hazard pre-signalling device","High visibility waistcoat","An approved fire extinguisher (mandatory for all private cars)","Spare tyre or alternative system and tools"],a:2,exp:"Fire extinguishers are NOT mandatory for private cars under 3,500 kg MAM (but ARE required for buses and heavier vehicles). V-16, waistcoat, and spare tyre/tools ARE required."},
-{n:67,cat:"Accessories",q:"The V-16 pre-signalling device replaced which item in Spain?",opts:["The fire extinguisher","The first aid kit","Traditional emergency warning triangles","The spare tyre"],a:2,exp:"Since July 2021, the V-16 connected device replaced the traditional warning triangles as the required breakdown pre-signalling device."},
-{n:68,cat:"Accessories",q:"The V-16 device must maintain its luminous intensity for at least:",opts:["10 minutes","20 minutes","30 minutes","60 minutes"],a:2,exp:"The V-16 device is required to maintain its luminous intensity for a minimum of 30 minutes after activation."},
-{n:69,cat:"Accessories",q:"The horizontal visibility of the V-16 device must be:",opts:["90°","180°","270°","360°"],a:3,exp:"The V-16 device must be visible through 360° horizontally so that it can be seen from all directions."},
-{n:70,cat:"Accessories",q:"The approved colours for the high visibility waistcoat are:",opts:["Any bright colour","Only yellow","Yellow, orangy red, or red","Only fluorescent green"],a:2,exp:"The waistcoat must be authorised and may be yellow, orangy red, or red. Other colours are not permitted."},
-{n:71,cat:"Accessories",q:"The high visibility waistcoat must be worn when:",opts:["Only when changing a tyre","Only at night","When leaving the vehicle on the roadway or hard shoulder of interurban roads","Whenever driving on motorways"],a:2,exp:"The waistcoat must be worn when exiting the vehicle and occupying the carriageway or hard shoulder on interurban roads."},
-{n:72,cat:"Accessories",q:"The high visibility waistcoat should be stored:",opts:["In the boot of the car","In the glove compartment","In a place not exposed to light but accessible so you can wear it before leaving the vehicle","Anywhere in the vehicle"],a:2,exp:"It must be accessible so you can put it on BEFORE leaving the vehicle. Direct light exposure degrades the reflective properties."},
-{n:73,cat:"Accessories",q:"Vehicles carrying more than 23 passengers including the driver must carry a fire extinguisher of:",opts:["5A/21B","8A/34B","21A/113B","34A/144B"],a:2,exp:"Vehicles with more than 23 seats (including driver) require one fire extinguisher of class 21A/113B."},
-{n:74,cat:"Accessories",q:"School transport with more than 23 seats including the driver must carry:",opts:["One extinguisher of 21A/113B","Two extinguishers of 21A/113B","One extinguisher of 34A/144B","No extinguisher required"],a:1,exp:"School transport vehicles with more than 23 seats must carry TWO fire extinguishers of class 21A/113B."},
-{n:75,cat:"Accessories",q:"Taxis must carry a fire extinguisher of class:",opts:["Not required","5A/21B","8A/34B","21A/113B"],a:1,exp:"Taxis are specifically required to carry one fire extinguisher of class 5A/21B under taxi regulations."},
-{n:76,cat:"Accessories",q:"Vehicles carrying between 10 and 23 passengers including the driver require a fire extinguisher of:",opts:["5A/21B","8A/34B","21A/113B","34A/144B"],a:1,exp:"Vehicles with 10 to 23 seats (including driver) must carry one fire extinguisher of class 8A/34B."},
-{n:77,cat:"Accessories",q:"A goods vehicle with MMA between 7,000 and 20,000 kg must carry:",opts:["One 21A/113B","One 34A/144B","Two 21A/113B","Two 34A/144B"],a:1,exp:"Goods vehicles with MMA between 7,000 and 20,000 kg must carry one fire extinguisher of class 34A/144B."},
-{n:78,cat:"Accessories",q:"The V-16 device flash frequency must be between:",opts:["0.1 and 0.5 Hz","0.8 and 2 Hz","2 and 5 Hz","5 and 10 Hz"],a:1,exp:"The V-16 must flash between 0.8 and 2 Hz — slow enough to be clearly perceived as a warning signal."},
-{n:79,cat:"Accessories",q:"The V-16 device must communicate its geolocation every:",opts:["30 seconds","60 seconds","100 seconds","5 minutes"],a:2,exp:"The V-16 transmits its activation, deactivation, and GPS position to the national traffic access point every 100 seconds."},
-{n:80,cat:"Accessories",q:"When a vehicle acts as an escort/pilot vehicle, who must wear a high visibility waistcoat?",opts:["Only the driver","Only the auxiliary staff","The driver and every member of the auxiliary staff","No one — vests are optional for pilot vehicles"],a:2,exp:"When functioning as a pilot/escort vehicle, both the driver and all auxiliary staff members must wear a high visibility waistcoat."},
-{n:81,cat:"Accessories",q:"A goods vehicle with MMA over 20,000 kg must carry:",opts:["One 21A/113B","One 34A/144B","Two 34A/144B","Two 21A/113B"],a:2,exp:"Goods vehicles with MMA exceeding 20,000 kg must carry two fire extinguishers of class 34A/144B."},
-{n:82,cat:"Accessories",q:"The V-16 device must have a degree of protection of at least:",opts:["IP44","IP54","IP65","IP67"],a:1,exp:"The V-16 device requires at least IP54 protection — shielded against dust ingress and water splashing from any direction."},
-{n:83,cat:"Accessories",q:"An alternative tyre system (instead of a spare tyre) is acceptable provided it:",opts:["Is cheaper than a spare tyre","Offers similar roadworthy guarantees","Is approved only for motorway use","Is only used in urban areas"],a:1,exp:"The alternative system must offer similar roadworthy guarantees to a spare tyre. Its speed and distance limitations must be respected."},
-{n:84,cat:"Accessories",q:"The V-16 luminous intensity at grade 0 must be between:",opts:["10–100 candlepower","40–700 candlepower","100–1,000 candlepower","25–300 candlepower"],a:1,exp:"At grade 0, the V-16 must emit between 40 and 700 effective candlepower."},
-{n:85,cat:"Accessories",q:"Goods vehicles with MMA between 3,500 and 7,000 kg must carry a fire extinguisher of class:",opts:["5A/21B","8A/34B","21A/113B","34A/144B"],a:2,exp:"Goods vehicles with MMA between 3,500 and 7,000 kg must carry one fire extinguisher of class 21A/113B."},
-{n:86,cat:"ITV",q:"When is the first compulsory ITV inspection due for a new private car?",opts:["After 2 years","After 3 years","After 4 years","After 5 years"],a:2,exp:"New private cars in Spain must undergo their first ITV at 4 years from first registration."},
-{n:87,cat:"ITV",q:"Between 4 and 10 years old, how often must a private car be inspected?",opts:["Every year","Every 2 years","Every 3 years","Every 4 years"],a:1,exp:"Private cars between 4 and 10 years old must pass the ITV every 2 years."},
-{n:88,cat:"ITV",q:"Once a private car is over 10 years old, ITV frequency becomes:",opts:["Every 6 months","Every year","Every 2 years","Every 3 years"],a:1,exp:"Cars over 10 years old must undergo annual ITV inspections."},
-{n:89,cat:"ITV",q:"A lit oil pressure warning light (red oil can) means:",opts:["Oil level is too high","You should change oil soon","Oil pressure is below minimum — stop driving immediately","The oil filter needs replacing"],a:2,exp:"The red oil pressure light is a critical warning — oil pressure has dropped dangerously low. Stop immediately to avoid catastrophic engine damage."},
-{n:90,cat:"ITV",q:"If the engine temperature gauge enters the red zone, you should:",opts:["Continue at lower speed","Open the bonnet while driving","Stop safely, switch off the engine and let it cool","Add water to the radiator immediately"],a:2,exp:"An overheating engine must be stopped immediately. Continuing to drive risks head gasket failure and severe engine damage."},
-{n:91,cat:"ITV",q:"A battery warning light while driving indicates a problem with:",opts:["The starter motor","The ignition system","The charging system (alternator)","The brake fluid level"],a:2,exp:"The battery light warns that the charging system (alternator) is not generating sufficient power — the battery is discharging."},
-{n:92,cat:"ITV",q:"The TPMS (tyre pressure monitoring system) warning light means:",opts:["A tyre has been punctured","One or more tyres have significantly low pressure","Tyre temperature is dangerously high","The ABS system has activated"],a:1,exp:"The TPMS light activates when one or more tyres drop significantly below the recommended pressure. Check and inflate when cold."},
-{n:93,cat:"ITV",q:"Spain requires vehicles to display a DGT environmental label which:",opts:["Is purely decorative","Determines access to certain low-emission urban zones (ZBE)","Is only for commercial vehicles","Is only required for vehicles over 10 years old"],a:1,exp:"The DGT environmental label classifies vehicles by emissions and determines whether they can access ZBE (Zonas de Bajas Emisiones) in cities."},
-{n:94,cat:"ITV",q:"Which DGT environmental label is awarded to fully electric vehicles?",opts:["B label","C label","ECO label","Zero label"],a:3,exp:"The 'Zero Emissions' label is given to battery electric vehicles (BEV), hydrogen fuel cell vehicles, and PHEVs with ≥40 km electric range."},
-{n:95,cat:"ITV",q:"Which driving habit most reduces fuel consumption and emissions?",opts:["Driving at maximum engine RPM","Frequent hard acceleration and braking","Smooth, anticipatory driving at moderate speed with correct gear selection","Using air conditioning constantly"],a:2,exp:"Smooth, anticipatory, eco-driving with gentle acceleration, engine braking, and the highest appropriate gear significantly reduces fuel use and emissions."},
-{n:96,cat:"ITV",q:"Taxis, ambulances, and driving school cars must undergo ITV:",opts:["First at 4 years, then every 2 years","Every year from first registration","Every 6 months","Every 3 years"],a:1,exp:"Vehicles used for taxi, ambulance, or driving instruction must undergo annual ITV inspections from the date of first registration."},
-{n:97,cat:"ITV",q:"Driving a vehicle with an expired ITV in Spain is:",opts:["Permitted if the vehicle appears roadworthy","An infraction that can result in a fine and vehicle immobilisation","Only prohibited on motorways","Allowed for journeys under 10 km"],a:1,exp:"Driving with an expired ITV is an infraction under Spanish traffic law. The vehicle can be fined and immobilised until it passes inspection."},
-{n:98,cat:"ITV",q:"The DGT 'C' label is awarded to:",opts:["Electric and hydrogen vehicles","Hybrid and CNG vehicles","Petrol cars from January 2006 and diesel from September 2015","Petrol cars from January 2001 and diesel from 2006"],a:2,exp:"The 'C' label is given to petrol cars/vans from January 2006 and diesel cars/vans from September 2015 onwards."},
-{n:99,cat:"ITV",q:"The check engine light (MIL — Malfunction Indicator Lamp) indicates:",opts:["The engine needs oil","An engine management system fault requiring diagnostics","The engine is about to seize","Fuel level is critically low"],a:1,exp:"The MIL or 'check engine' light signals a fault detected by the engine management system — diagnostics are needed at a garage."},
-{n:100,cat:"ITV",q:"MAM (Masa Máxima Autorizada / MMA) refers to:",opts:["The weight of the vehicle when completely empty","The weight of the engine and fuel only","The maximum authorised total weight of the fully loaded vehicle","The weight limit of the driving axle only"],a:2,exp:"MAM/MMA is the maximum total weight permitted for the vehicle including all load, passengers, and fuel."}
-];
-
-var answered={};
-var currentFilter='all';
-
-function renderQuiz(){
-  var c=document.getElementById('quizContainer');
-  if(!c)return;
-  var toShow=qs;
-  if(currentFilter==='wrong') toShow=qs.filter(function(q){return answered[q.n]===false;});
-  else if(currentFilter!=='all') toShow=qs.filter(function(q){return q.cat===currentFilter;});
-  var html='';
-  toShow.forEach(function(q){
-    var state=answered[q.n];
-    var cls='question-card'+(state===true?' q-correct':state===false?' q-wrong':'');
-    html+='<div class="'+cls+'" id="qw-'+q.n+'">';
-    html+='<div class="question-num">Question '+q.n+' &mdash; '+q.cat+'</div>';
-    html+='<div class="question-text">'+q.q+'</div>';
-    html+='<div class="options">';
-    q.opts.forEach(function(o,i){
-      var ocls='option-btn';
-      if(state!==undefined){
-        if(i===q.a) ocls+=' correct';
-        else if(answered[q.n+'_c']===i) ocls+=' wrong';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Theme 9 – Basic Information on the Vehicle | Spanish Driving Theory
+      (Licence B)
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #0d1b2a;
+        --navy2: #1b2d42;
+        --gold: #e8a020;
+        --gold-light: #faecd6;
+        --gold-dark: #b57d10;
+        --green: #1a6e3c;
+        --green-light: #e0f2e9;
+        --red: #b52b27;
+        --red-light: #fce8e8;
+        --blue: #1a4e8a;
+        --blue-light: #e4eef9;
+        --text: #0d1b2a;
+        --text-muted: #4a5568;
+        --text-light: #718096;
+        --bg: #f7f5f0;
+        --surface: #ffffff;
+        --border: #e2ddd4;
+        --border-strong: #c9c0b4;
+        --radius: 8px;
+        --radius-lg: 12px;
       }
-      html+='<button class="'+ocls+'"'+(state!==undefined?' disabled':'')+' onclick="answer('+q.n+','+i+')">'+String.fromCharCode(65+i)+'. '+o+'</button>';
-    });
-    html+='</div>';
-    html+='<div class="explanation" id="qe-'+q.n+'"'+(state!==undefined?' style="display:block"':'')+'>'+q.exp+'</div>';
-    html+='</div>';
-  });
-  if(toShow.length===0) html='<div class="card"><p>No questions match this filter yet — answer some questions first!</p></div>';
-  c.innerHTML=html;
-  updateScore();
-}
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: 'Syne', sans-serif;
+      }
 
-function answer(n,chosen){
-  var q=qs.find(function(x){return x.n===n;});
-  answered[n]=(chosen===q.a);
-  answered[n+'_c']=chosen;
-  var wrap=document.getElementById('qw-'+n);
-  if(wrap){
-    wrap.className='question-card '+(answered[n]?'q-correct':'q-wrong');
-    wrap.querySelectorAll('.option-btn').forEach(function(b,i){
-      b.disabled=true;
-      if(i===q.a) b.className='option-btn correct';
-      else if(i===chosen) b.className='option-btn wrong';
-    });
-    var exp=document.getElementById('qe-'+n);
-    if(exp) exp.style.display='block';
-  }
-  updateScore();
-}
+      .header {
+        background: var(--navy);
+        color: #fff;
+        padding: 28px 40px 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .header::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -40px;
+        width: 220px;
+        height: 220px;
+        border: 40px solid rgba(232, 160, 32, 0.12);
+        border-radius: 50%;
+      }
+      .header-badge {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--navy);
+        font-family: 'Syne', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      .header p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        font-weight: 300;
+      }
+      .header-meta {
+        display: flex;
+        gap: 24px;
+        margin-top: 16px;
+        flex-wrap: wrap;
+      }
+      .header-stat .val {
+        font-family: 'Syne', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold);
+      }
+      .header-stat .lbl {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-function updateScore(){
-  var ans=Object.keys(answered).filter(function(k){return!isNaN(k);}).length;
-  var correct=Object.keys(answered).filter(function(k){return!isNaN(k)&&answered[k]===true;}).length;
-  var pct=ans>0?Math.round(correct/ans*100):0;
-  var pf=document.getElementById('progressFill');
-  var sd=document.getElementById('scoreDisplay');
-  if(pf) pf.style.width=pct+'%';
-  if(sd) sd.textContent=correct+' / '+ans+' correct';
-}
+      .tab-bar {
+        background: var(--navy2);
+        display: flex;
+        gap: 2px;
+        padding: 0 24px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      .tab-bar::-webkit-scrollbar {
+        display: none;
+      }
+      .tab-btn {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 12px 18px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .tab-btn:hover {
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .tab-btn.active {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+      }
 
-function filterQuiz(type,btn){
-  currentFilter=type;
-  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
-  btn.classList.add('active');
-  renderQuiz();
-}
+      .content {
+        padding: 32px 40px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+      }
 
-function resetQuiz(){
-  answered={};
-  currentFilter='all';
-  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
-  document.querySelector('.filter-btn').classList.add('active');
-  renderQuiz();
-}
+      .section-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 6px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--gold);
+        display: inline-block;
+      }
+      .section-desc {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin-bottom: 24px;
+        margin-top: 4px;
+      }
 
-document.getElementById('tabBar').addEventListener('click',function(e){
-  var btn=e.target.closest('.tab-btn');
-  if(!btn)return;
-  var id=btn.dataset.tab;
-  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
-  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
-  btn.classList.add('active');
-  document.getElementById('tab-'+id).classList.add('active');
-  if(id==='quiz') renderQuiz();
-});
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+      }
+      .card-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .card-title .icon {
+        width: 28px;
+        height: 28px;
+        background: var(--gold-light);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+      .card p,
+      .card li {
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .card ul {
+        padding-left: 18px;
+        margin-top: 6px;
+      }
+      .card li {
+        margin-bottom: 4px;
+      }
 
-renderQuiz();
-</script>
-</body>
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        .header {
+          padding: 16px 16px 12px;
+        }
+        .header h1 {
+          font-size: 22px;
+        }
+        .header p {
+          font-size: 12px;
+        }
+        .tab-bar {
+          padding: 0 12px;
+        }
+        .tab-btn {
+          padding: 10px 12px;
+          font-size: 12px;
+        }
+        .content {
+          padding: 20px 16px;
+        }
+        .card {
+          padding: 14px;
+        }
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 480px) {
+        .header {
+          padding: 12px 12px 8px;
+        }
+        .header h1 {
+          font-size: 18px;
+        }
+        .header p {
+          font-size: 11px;
+        }
+        .tab-bar {
+          padding: 0 8px;
+        }
+        .tab-btn {
+          padding: 10px 8px;
+          font-size: 11px;
+        }
+        .content {
+          padding: 16px 12px;
+        }
+        .card {
+          padding: 12px;
+        }
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+        body {
+          font-size: 13px;
+        }
+        .btn {
+          min-height: 44px;
+          width: 100%;
+        }
+      }
+
+      .def-block {
+        border-left: 3px solid var(--gold);
+        padding: 12px 16px;
+        background: var(--gold-light);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        margin-bottom: 12px;
+      }
+      .def-block .term {
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 3px;
+      }
+      .def-block .def {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .def-block.green {
+        border-left-color: var(--green);
+        background: var(--green-light);
+      }
+      .def-block.blue {
+        border-left-color: var(--blue);
+        background: var(--blue-light);
+      }
+      .def-block.red {
+        border-left-color: var(--red);
+        background: var(--red-light);
+      }
+
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--border);
+        margin-bottom: 24px;
+      }
+      .styled-table th {
+        background: var(--navy);
+        color: #fff;
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        padding: 10px 14px;
+        text-align: left;
+      }
+      .styled-table td {
+        padding: 9px 14px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-muted);
+        vertical-align: top;
+      }
+      .styled-table tr:last-child td {
+        border-bottom: none;
+      }
+      .styled-table tr:hover td {
+        background: var(--bg);
+      }
+      .styled-table td:first-child {
+        font-weight: 600;
+        color: var(--navy);
+      }
+
+      .badge {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 20px;
+      }
+      .badge-gold {
+        background: var(--gold-light);
+        color: var(--gold-dark);
+      }
+      .badge-green {
+        background: var(--green-light);
+        color: var(--green);
+      }
+      .badge-blue {
+        background: var(--blue-light);
+        color: var(--blue);
+      }
+      .badge-red {
+        background: var(--red-light);
+        color: var(--red);
+      }
+      .badge-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+
+      .highlight {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 18px;
+        margin-bottom: 16px;
+        font-size: 13px;
+      }
+      .highlight.important {
+        border-left: 4px solid var(--red);
+        background: var(--red-light);
+      }
+      .highlight.tip {
+        border-left: 4px solid var(--gold);
+        background: var(--gold-light);
+      }
+      .highlight.info {
+        border-left: 4px solid var(--blue);
+        background: var(--blue-light);
+      }
+      .highlight.ok {
+        border-left: 4px solid var(--green);
+        background: var(--green-light);
+      }
+      .highlight .hi-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 5px;
+      }
+      .highlight.important .hi-title {
+        color: var(--red);
+      }
+      .highlight.tip .hi-title {
+        color: var(--gold-dark);
+      }
+      .highlight.info .hi-title {
+        color: var(--blue);
+      }
+      .highlight.ok .hi-title {
+        color: var(--green);
+      }
+      .highlight p,
+      .highlight li {
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .highlight ul {
+        padding-left: 18px;
+        margin-top: 4px;
+      }
+      .highlight li {
+        margin-bottom: 3px;
+      }
+
+      .subsection {
+        margin-bottom: 28px;
+      }
+      .subsection h3 {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .subsection h3::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 16px;
+        background: var(--gold);
+        border-radius: 2px;
+      }
+
+      .number-fact {
+        text-align: center;
+        padding: 14px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+      .number-fact .num {
+        font-family: 'Syne', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--navy);
+      }
+      .number-fact .unit {
+        font-size: 12px;
+        color: var(--gold-dark);
+        font-weight: 600;
+      }
+      .number-fact .desc {
+        font-size: 11px;
+        color: var(--text-light);
+        margin-top: 3px;
+      }
+
+      .qr-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 13px;
+      }
+      .qr-row:last-child {
+        border-bottom: none;
+      }
+      .qr-key {
+        font-weight: 600;
+        color: var(--navy);
+        min-width: 220px;
+      }
+      .qr-val {
+        color: var(--text-muted);
+        flex: 1;
+      }
+
+      /* Quiz */
+      .quiz-header {
+        background: var(--navy);
+        color: #fff;
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .quiz-header h3 {
+        font-size: 18px;
+        color: #fff;
+      }
+      .progress-bar {
+        width: 200px;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: var(--gold);
+        border-radius: 3px;
+        transition: width 0.3s;
+      }
+      .score-display {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        color: var(--gold);
+      }
+      .question-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 22px 24px;
+        margin-bottom: 16px;
+      }
+      .question-card.q-correct {
+        border-color: var(--green);
+      }
+      .question-card.q-wrong {
+        border-color: var(--red);
+      }
+      .question-num {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--text-light);
+        margin-bottom: 8px;
+      }
+      .question-text {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .option-btn {
+        background: var(--bg);
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius);
+        padding: 10px 16px;
+        text-align: left;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        color: var(--text);
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+        line-height: 1.4;
+      }
+      .option-btn:hover:not(:disabled) {
+        background: var(--blue-light);
+        border-color: var(--blue);
+      }
+      .option-btn.correct {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+        font-weight: 500;
+      }
+      .option-btn.wrong {
+        background: var(--red-light);
+        border-color: var(--red);
+        color: var(--red);
+      }
+      .option-btn.reveal {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+      }
+      .option-btn:disabled {
+        cursor: default;
+      }
+      .explanation {
+        margin-top: 10px;
+        padding: 10px 14px;
+        background: var(--bg);
+        border-radius: var(--radius);
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        border-left: 3px solid var(--gold);
+        display: none;
+      }
+      .quiz-controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+      .btn {
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition:
+          opacity 0.15s,
+          transform 0.1s;
+        border: none;
+      }
+      .btn:active {
+        transform: scale(0.97);
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+      }
+      .btn-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .btn-outline {
+        background: transparent;
+        border: 1.5px solid var(--border-strong);
+        color: var(--text);
+      }
+      .btn:hover {
+        opacity: 0.88;
+      }
+      .quiz-result {
+        text-align: center;
+        padding: 40px 24px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        display: none;
+      }
+      .result-score {
+        font-family: 'Syne', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .result-score span {
+        color: var(--gold);
+      }
+      .result-msg {
+        font-size: 18px;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+      }
+      .filter-bar {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .filter-btn {
+        background: var(--surface);
+        border: 1.5px solid var(--border);
+        border-radius: 20px;
+        padding: 5px 14px;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.15s;
+        font-family: 'DM Sans', sans-serif;
+      }
+      .filter-btn.active {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      p {
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.65;
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 18px;
+        margin-bottom: 12px;
+      }
+      li {
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 4px;
+      }
+      strong {
+        color: var(--navy);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-badge">Permiso B – Teoría</div>
+      <h1>Theme 9: Basic Information on the Vehicle</h1>
+      <p>Complete study guide for the Spanish Driving Theory Examination</p>
+      <div class="header-meta">
+        <div class="header-stat">
+          <div class="val">6</div>
+          <div class="lbl">Study sections</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">5</div>
+          <div class="lbl">Engine systems</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">100</div>
+          <div class="lbl">Quiz questions</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">B</div>
+          <div class="lbl">Licence class</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-bar" id="tabBar">
+      <button class="tab-btn active" data-tab="engine">
+        Engine &amp; Systems
+      </button>
+      <button class="tab-btn" data-tab="electrical">Electrical</button>
+      <button class="tab-btn" data-tab="transmission">Transmission</button>
+      <button class="tab-btn" data-tab="tyres">Tyres &amp; Brakes</button>
+      <button class="tab-btn" data-tab="accessories">Accessories</button>
+      <button class="tab-btn" data-tab="quickref">Quick Reference</button>
+      <button class="tab-btn" data-tab="quiz">Quiz (100 Qs)</button>
+    </div>
+
+    <div class="content">
+      <!-- ENGINE TAB -->
+      <div class="tab-panel active" id="tab-engine">
+        <div class="section-title">1 &amp; 2: The Engine &amp; Its Systems</div>
+        <p class="section-desc">
+          Understanding how the engine works and its key systems is essential —
+          these topics appear frequently in the theory exam.
+        </p>
+
+        <div class="subsection">
+          <h3>What is an engine?</h3>
+          <p>
+            The engine is a machine designed to
+            <strong>convert energy into mechanical power (motion)</strong>. In a
+            car, fuel burns inside cylinders, pushing pistons that ultimately
+            drive the wheels. A 4-stroke petrol cycle:
+            <strong>Intake → Compression → Power → Exhaust</strong>. Diesel
+            engines omit the spark plug — compression alone ignites the fuel.
+          </p>
+          <div class="grid-4">
+            <div class="number-fact">
+              <div class="num">4</div>
+              <div class="unit">strokes</div>
+              <div class="desc">per combustion cycle</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">2</div>
+              <div class="unit">circuits</div>
+              <div class="desc">in the fuel system</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">2</div>
+              <div class="unit">years</div>
+              <div class="desc">coolant protection life</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">MIN–MAX</div>
+              <div class="unit">dipstick</div>
+              <div class="desc">correct oil range</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.1 Fuel System</h3>
+          <p>
+            Provides the engine with the correct
+            <strong>air-fuel mixture</strong>. Comprises two circuits:
+          </p>
+          <div class="grid-2">
+            <div class="def-block">
+              <div class="term">Air feeding circuit</div>
+              <div class="def">
+                Draws in and filters outside air through the air filter before
+                delivering it to the intake manifold.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">Fuel feeding circuit</div>
+              <div class="def">
+                Draws fuel from the tank through the fuel filter and pump to the
+                injectors or carburettor.
+              </div>
+            </div>
+          </div>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <ul>
+              <li>
+                Check the <strong>air filter</strong> regularly — it gets
+                dirtier in summer than winter. Replace per manufacturer
+                schedule.
+              </li>
+              <li>
+                Check <strong>idling speed</strong> — if too fast, fuel
+                consumption and contamination both increase.
+              </li>
+              <li>
+                Replace the <strong>fuel filter</strong> following the
+                manufacturer's recommendations.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.2 Exhaust System</h3>
+          <p>
+            Conveys exhaust gases from the engine to the exterior. Comprises two
+            key components:
+          </p>
+          <div class="grid-2">
+            <div class="def-block.green def-block">
+              <div class="term">Muffler (Silenciador)</div>
+              <div class="def">
+                Reduces noise and lowers gas temperature before release.
+              </div>
+            </div>
+            <div class="def-block blue def-block">
+              <div class="term">Catalytic Converter (Catalizador)</div>
+              <div class="def">
+                Chemically transforms toxic gases (CO, HC, NOx) into less
+                harmful compounds. Works best at operating temperature.
+              </div>
+            </div>
+          </div>
+          <div class="highlight important">
+            <div class="hi-title">Warning</div>
+            <p>
+              A damaged catalytic converter increases harmful emissions and will
+              cause the vehicle to fail its ITV inspection.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.3 Lubrication System</h3>
+          <p>
+            Distributes thin layers of motor oil around engine components to
+            <strong>reduce friction, heat, and wear</strong>. Includes an oil
+            pressure gauge with a warning light.
+          </p>
+          <div class="grid-2">
+            <div class="highlight ok">
+              <div class="hi-title">Light OFF</div>
+              <p>Engine is properly lubricated — normal operation.</p>
+            </div>
+            <div class="highlight important">
+              <div class="hi-title">Light ON</div>
+              <p>
+                Oil pressure is below minimum.
+                <strong>Stop immediately</strong> — serious engine damage can
+                result.
+              </p>
+            </div>
+          </div>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <ul>
+              <li>
+                Check oil level: vehicle on a <strong>flat surface</strong>,
+                engine <strong>OFF and COLD</strong>. Level must be between MIN
+                and MAX on the dipstick.
+              </li>
+              <li>
+                Change oil: vehicle on a <strong>flat surface</strong>, engine
+                <strong>HOT</strong>. Drain via the crankcase drain plug
+                (bottom). Refill via the oil filter cap (top/cylinder head).
+              </li>
+              <li>
+                Change the oil filter as often as the manufacturer recommends.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.4 Cooling System</h3>
+          <p>
+            Draws out part of the heat produced by engine activity to prevent
+            overheating. Uses water-based coolant circulated through the
+            radiator.
+          </p>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <ul>
+              <li>
+                Check coolant level in the reservoir: engine must be
+                <strong>COLD</strong>. Level must be between MIN and MAX.
+              </li>
+              <li>
+                Change coolant per manufacturer's instructions — protective
+                effectiveness typically lasts <strong>~2 years</strong>.
+              </li>
+              <li>
+                In winter, add <strong>antifreeze fluid</strong> to prevent
+                coolant from freezing.
+              </li>
+            </ul>
+          </div>
+          <div class="highlight info">
+            <div class="hi-title">Note</div>
+            <p>
+              Rust on coolant hoses may indicate a loss of coolant — inspect the
+              cooling system carefully.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ELECTRICAL TAB -->
+      <div class="tab-panel" id="tab-electrical">
+        <div class="section-title">3: Electrical Equipment</div>
+        <p class="section-desc">
+          The vehicle's electrical systems power everything from starting to
+          lighting — all are tested in the exam.
+        </p>
+
+        <div class="subsection">
+          <h3>3.1 Battery</h3>
+          <p>
+            Supplies electrical power when the
+            <strong>engine is motionless</strong> (starting, lights with engine
+            off, accessories).
+          </p>
+          <div class="def-block">
+            <div class="term">Electrolyte solution</div>
+            <div class="def">
+              A mixture of distilled water and sulphuric acid. The battery
+              plates must always be fully submerged in this solution.
+            </div>
+          </div>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Battery type</th>
+                <th>Maintenance required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Low maintenance</td>
+                <td>
+                  Check electrolyte solution level every
+                  <strong>6 months</strong>. Add distilled water if plates are
+                  exposed.
+                </td>
+              </tr>
+              <tr>
+                <td>Free maintenance</td>
+                <td>
+                  No solution level check needed. However,
+                  <strong>terminals must always be tight and clean</strong>.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <ul>
+              <li>
+                Check electrolyte level — add
+                <strong>distilled water only</strong> if plates are exposed.
+              </li>
+              <li>
+                Clean terminals and apply a coat of
+                <strong>vaseline or soft grease</strong> to prevent corrosion.
+              </li>
+              <li>Keep battery caps clean.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.2 Charging System</h3>
+          <p>
+            Supplies electrical power when the
+            <strong>engine is running</strong>. The alternator generates
+            electricity and recharges the battery simultaneously.
+          </p>
+          <div class="highlight important">
+            <div class="hi-title">Warning</div>
+            <p>
+              If the charging system dashboard light illuminates while driving,
+              it may indicate an alternator malfunction, broken, or slack belt.
+              Reduce electrical load and drive safely to a garage.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.3 Starting System</h3>
+          <p>
+            The starter motor prompts the first turns of the engine to initiate
+            combustion.
+          </p>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Symptom</th>
+                <th>Likely cause</th>
+                <th>Solution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Key on — starter doesn't crank, dashboard lights fade</td>
+                <td>
+                  Low battery charge, poor condition, or switched-off terminals
+                </td>
+                <td>Check terminals are tight; replace battery if necessary</td>
+              </tr>
+              <tr>
+                <td>Key on — engine runs, starter cranks very slowly</td>
+                <td>Discharged battery or connections in poor condition</td>
+                <td>Check terminals are tight; recharge or replace battery</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="subsection">
+          <h3>3.4 Ignition System</h3>
+          <p>
+            Spark plugs trigger a spark inside
+            <strong>petrol engines only</strong> to ignite the air-fuel mixture.
+            Diesel engines use compression ignition — no spark plugs.
+          </p>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <p>
+              Check and replace spark plugs following the manufacturer's
+              instructions. Worn plugs cause misfires, difficult starting, and
+              increased fuel consumption.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.5 Lighting System</h3>
+          <p>
+            Enables the driver to
+            <strong>see, be seen, and signal manoeuvres</strong>. Includes:
+            dipped headlights, full beam, fog lights, direction indicators,
+            hazard lights, rear lights, brake lights, and reversing lights.
+          </p>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <p>
+              Replace any failed bulb as soon as possible — defective lights are
+              a traffic infraction and create genuine safety hazards.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION TAB -->
+      <div class="tab-panel" id="tab-transmission">
+        <div class="section-title">
+          4: Transmission, Steering &amp; Suspension
+        </div>
+        <p class="section-desc">
+          The transmission transfers engine power to the wheels. Understanding
+          drive types is essential for the exam.
+        </p>
+
+        <div class="subsection">
+          <h3>Drive types</h3>
+          <div class="grid-3">
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">⬆</div>
+                Front-wheel drive
+              </div>
+              <p><span class="badge badge-gold">Tracción</span></p>
+              <p style="margin-top: 8px">
+                Engine torque drives the front wheels, which also steer. Common
+                in small and medium cars. The front wheels both pull and guide
+                the vehicle.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">⬇</div>
+                Rear-wheel drive
+              </div>
+              <p><span class="badge badge-blue">Propulsión</span></p>
+              <p style="margin-top: 8px">
+                Engine torque drives the rear wheels. Better balance under hard
+                acceleration. Common in sports and larger cars.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">◎</div>
+                All-wheel drive (4x4)
+              </div>
+              <p><span class="badge badge-green">4x4</span></p>
+              <p style="margin-top: 8px">
+                All four wheels receive engine torque. Best traction on slippery
+                or off-road surfaces. Used in SUVs and off-road vehicles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>Gearbox types</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Features</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manual</td>
+                <td>
+                  Driver operates clutch pedal and gear lever. Greater control,
+                  generally better fuel efficiency.
+                </td>
+              </tr>
+              <tr>
+                <td>Automatic</td>
+                <td>
+                  No clutch pedal — gears change automatically. Easier in heavy
+                  urban traffic.
+                </td>
+              </tr>
+              <tr>
+                <td>CVT</td>
+                <td>
+                  Continuously Variable Transmission — no fixed gears, seamless
+                  power delivery.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="subsection">
+          <h3>Power steering &amp; Suspension</h3>
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">🔄</div>
+                Power steering (Dirección asistida)
+              </div>
+              <p>
+                Hydraulic or electric assistance reduces the effort required to
+                steer, particularly at low speeds and when parking.
+              </p>
+              <div style="margin-top: 10px" class="highlight tip">
+                <div class="hi-title">Maintenance</div>
+                <p>
+                  For hydraulic systems: check power steering fluid level
+                  regularly.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">〰</div>
+                Suspension system
+              </div>
+              <p>
+                Absorbs road irregularities to maintain tyre contact and
+                passenger comfort. Key components: springs, shock absorbers
+                (amortiguadores), and anti-roll bars.
+              </p>
+              <div style="margin-top: 10px" class="highlight tip">
+                <div class="hi-title">Maintenance</div>
+                <p>
+                  Check for oil leaks or excessive bouncing — worn shock
+                  absorbers increase braking distance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYRES & BRAKES TAB -->
+      <div class="tab-panel" id="tab-tyres">
+        <div class="section-title">Tyres &amp; Braking System</div>
+        <p class="section-desc">
+          Tyre condition and braking are among the most safety-critical topics
+          and regularly appear in exam questions.
+        </p>
+
+        <div class="subsection">
+          <h3>Tyre key facts</h3>
+          <div class="grid-4">
+            <div class="number-fact">
+              <div class="num">1.6</div>
+              <div class="unit">mm minimum</div>
+              <div class="desc">Legal tread depth in Spain</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">80</div>
+              <div class="unit">km/h max</div>
+              <div class="desc">Spare tyre speed limit</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">50–200</div>
+              <div class="unit">km max</div>
+              <div class="desc">Spare tyre distance</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">COLD</div>
+              <div class="unit">tyres</div>
+              <div class="desc">When to check pressure</div>
+            </div>
+          </div>
+          <p>
+            Tyre markings example: <strong>205/55 R16 91V</strong> — width (205
+            mm) / profile ratio (55%) / Radial / rim diameter (16 in) / load
+            index (91 = 615 kg) / speed index (V = max 240 km/h).
+          </p>
+          <div class="highlight important">
+            <div class="hi-title">Critical</div>
+            <p>
+              Tyres with cracks, bulges, or cuts in the sidewall must be
+              replaced immediately — they are illegal and risk sudden blowout.
+            </p>
+          </div>
+          <div class="highlight info">
+            <div class="hi-title">Note</div>
+            <p>
+              In Spain, winter tyres or chains are compulsory on certain
+              mountain roads when indicated by signs.
+            </p>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>Hydraulic brake system</h3>
+          <p>
+            Pressing the brake pedal pushes brake fluid through pipes to
+            calipers (disc brakes) or wheel cylinders (drum brakes), creating
+            friction to slow the vehicle.
+          </p>
+          <div class="highlight tip">
+            <div class="hi-title">Maintenance</div>
+            <ul>
+              <li>
+                Check brake fluid level — must be between MIN and MAX in the
+                reservoir.
+              </li>
+              <li>
+                Brake fluid is <strong>hygroscopic</strong> (absorbs moisture
+                over time), which lowers its boiling point. Change per
+                manufacturer schedule (typically every 2 years).
+              </li>
+              <li>
+                A spongy pedal may indicate air in the system — requires
+                immediate professional attention.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>ABS (Anti-lock Braking System)</h3>
+          <p>
+            Prevents wheel lock during emergency braking, allowing the driver to
+            <strong>maintain steering while stopping</strong>. ABS does not
+            always shorten stopping distance — its primary benefit is
+            maintaining steerability.
+          </p>
+          <div class="grid-2">
+            <div class="highlight info">
+              <div class="hi-title">When ABS activates</div>
+              <p>
+                You feel a <strong>pulsating sensation</strong> in the brake
+                pedal. This is normal — keep firm, steady pressure and steer to
+                safety. Do NOT release the pedal.
+              </p>
+            </div>
+            <div class="highlight important">
+              <div class="hi-title">ABS warning light ON</div>
+              <p>
+                Brakes still work conventionally, but ABS assistance is
+                disabled. Have the system checked at a garage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>Parking brake (Freno de mano)</h3>
+          <p>
+            Acts typically on the <strong>rear wheels</strong> via a mechanical
+            cable or electric actuator. Must always be applied when parking.
+          </p>
+          <div class="highlight important">
+            <div class="hi-title">Warning</div>
+            <p>
+              Never use the handbrake as an emergency brake at speed — it can
+              cause rear-wheel skid and loss of vehicle control.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCESSORIES TAB -->
+      <div class="tab-panel" id="tab-accessories">
+        <div class="section-title">5: Accessories, Spare Parts &amp; Tools</div>
+        <p class="section-desc">
+          The mandatory equipment requirements are heavily tested — memorise the
+          fire extinguisher classes and V-16 specifications.
+        </p>
+
+        <div class="subsection">
+          <h3>Required equipment by vehicle category</h3>
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">🚗</div>
+                Cars, mixed &amp; goods (MAM ≤ 3,500 kg)
+              </div>
+              <ul>
+                <li>V-16 hazard pre-signalling device</li>
+                <li>High visibility waistcoat</li>
+                <li>Spare / temporary tyre <em>or</em> alternative system</li>
+                <li>All tools necessary to change a tyre</li>
+              </ul>
+              <p
+                style="
+                  margin-top: 8px;
+                  font-size: 12px;
+                  color: var(--text-light);
+                "
+              >
+                Excludes 3-wheelers and quads
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <div class="icon">🚌</div>
+                Buses, mixed &amp; goods (MAM &gt; 3,500 kg) + combinations
+              </div>
+              <ul>
+                <li>V-16 hazard pre-signalling device</li>
+                <li>High visibility waistcoat</li>
+                <li>
+                  <strong>Approved fire extinguisher</strong> (suitable and
+                  operable)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>Fire extinguisher requirements</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Vehicle type</th>
+                <th>Required class</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Up to 9 seats incl. driver (general)</td>
+                <td>Not mandatory</td>
+              </tr>
+              <tr>
+                <td>Taxis (up to 9 seats)</td>
+                <td>1 × <strong>5A/21B</strong></td>
+              </tr>
+              <tr>
+                <td>10 to 23 seats incl. driver</td>
+                <td>1 × <strong>8A/34B</strong></td>
+              </tr>
+              <tr>
+                <td>More than 23 seats incl. driver</td>
+                <td>1 × <strong>21A/113B</strong></td>
+              </tr>
+              <tr>
+                <td>School transport &gt;23 seats incl. driver</td>
+                <td>2 × <strong>21A/113B</strong></td>
+              </tr>
+              <tr>
+                <td>Goods: MMA 3,500–7,000 kg</td>
+                <td>1 × <strong>21A/113B</strong></td>
+              </tr>
+              <tr>
+                <td>Goods: MMA 7,000–20,000 kg</td>
+                <td>1 × <strong>34A/144B</strong></td>
+              </tr>
+              <tr>
+                <td>Goods: MMA &gt;20,000 kg</td>
+                <td>2 × <strong>34A/144B</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="subsection">
+          <h3>High visibility waistcoat</h3>
+          <div class="grid-2">
+            <div class="def-block">
+              <div class="term">Approved colours</div>
+              <div class="def">
+                Yellow, orangy red, or red. No other colours are permitted.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">When to wear it</div>
+              <div class="def">
+                When leaving the vehicle and occupying the roadway or hard
+                shoulder on interurban roads.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">Storage</div>
+              <div class="def">
+                Not exposed to light, but accessible — so you can put it on
+                BEFORE leaving the vehicle.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">Pilot / escort vehicles</div>
+              <div class="def">
+                Driver AND every member of auxiliary staff must wear it.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>V-16 device specifications</h3>
+          <div class="grid-2">
+            <div class="number-fact">
+              <div class="num">360°</div>
+              <div class="unit">horizontal visibility</div>
+              <div class="desc">Visible from all directions</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">30</div>
+              <div class="unit">minutes minimum</div>
+              <div class="desc">Luminous intensity maintained</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">0.8–2</div>
+              <div class="unit">Hz flash rate</div>
+              <div class="desc">Required frequency range</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">100</div>
+              <div class="unit">seconds</div>
+              <div class="desc">GPS reporting interval</div>
+            </div>
+          </div>
+          <div class="highlight info">
+            <div class="hi-title">V-16 Technical requirements</div>
+            <ul>
+              <li>Horizontal visibility: 360°; vertical: minimum ±8°</li>
+              <li>
+                Luminous intensity: 40–700 candlepower (grade 0); 25–600 at ±8
+                grades
+              </li>
+              <li>Protection: at least IP54 (dust and splash resistant)</li>
+              <li>Flash frequency: 0.8–2 Hz</li>
+              <li>
+                Autonomous power supply (from vehicle battery or rechargeable
+                battery)
+              </li>
+              <li>
+                Communicates activation, deactivation, and GPS to national
+                traffic access point every <strong>100 seconds</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="highlight tip">
+            <div class="hi-title">Spare tyre limits</div>
+            <ul>
+              <li>Maximum speed: <strong>80 km/h</strong></li>
+              <li>Maximum travel distance: <strong>50–200 km</strong></li>
+              <li>
+                An alternative tyre system is allowed if it offers similar
+                roadworthy guarantees
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK REFERENCE TAB -->
+      <div class="tab-panel" id="tab-quickref">
+        <div class="section-title">Quick Reference</div>
+        <p class="section-desc">
+          Key numbers, rules, and facts to memorise before the exam.
+        </p>
+
+        <div class="subsection">
+          <h3>Critical numbers</h3>
+          <div class="card">
+            <div class="qr-row">
+              <div class="qr-key">Oil check — engine state</div>
+              <div class="qr-val">
+                Engine OFF and COLD, vehicle on flat surface
+              </div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Oil change — engine state</div>
+              <div class="qr-val">Engine HOT, vehicle on flat surface</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Coolant check — engine state</div>
+              <div class="qr-val">
+                Engine COLD only (risk of scalding if hot)
+              </div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Coolant protection lifespan</div>
+              <div class="qr-val">~2 years</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Low maintenance battery check</div>
+              <div class="qr-val">Every 6 months</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Minimum tyre tread depth</div>
+              <div class="qr-val">1.6 mm (legal minimum in Spain)</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Spare tyre max speed</div>
+              <div class="qr-val">80 km/h</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Spare tyre max distance</div>
+              <div class="qr-val">50–200 km</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">Check tyre pressure when</div>
+              <div class="qr-val">Tyres COLD (before driving or max 2 km)</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">V-16 visibility</div>
+              <div class="qr-val">360° horizontal, ±8° vertical minimum</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">V-16 luminous intensity (grade 0)</div>
+              <div class="qr-val">40–700 candlepower</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">V-16 flash frequency</div>
+              <div class="qr-val">0.8–2 Hz</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">V-16 minimum operation time</div>
+              <div class="qr-val">30 minutes</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">V-16 GPS reporting interval</div>
+              <div class="qr-val">Every 100 seconds</div>
+            </div>
+            <div class="qr-row">
+              <div class="qr-key">V-16 IP protection</div>
+              <div class="qr-val">At least IP54</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>ITV (Inspección Técnica de Vehículos)</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Vehicle age</th>
+                <th>Inspection frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New car — first 4 years</td>
+                <td>No inspection required</td>
+              </tr>
+              <tr>
+                <td>First ITV</td>
+                <td>At 4 years from registration</td>
+              </tr>
+              <tr>
+                <td>4–10 years old</td>
+                <td>Every <strong>2 years</strong></td>
+              </tr>
+              <tr>
+                <td>Over 10 years old</td>
+                <td>Every <strong>year</strong></td>
+              </tr>
+              <tr>
+                <td>Taxis, ambulances, driving school cars</td>
+                <td>Every year from first registration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="subsection">
+          <h3>Dashboard warning lights</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Light</th>
+                <th>Meaning</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Oil pressure (red)</td>
+                <td>Oil pressure below minimum</td>
+                <td><strong>Stop immediately</strong></td>
+              </tr>
+              <tr>
+                <td>Engine temperature (red)</td>
+                <td>Engine overheating</td>
+                <td>Stop safely, switch off</td>
+              </tr>
+              <tr>
+                <td>Battery warning</td>
+                <td>Charging system fault (alternator)</td>
+                <td>Reduce load, drive to garage</td>
+              </tr>
+              <tr>
+                <td>ABS warning</td>
+                <td>ABS fault — conventional brakes work</td>
+                <td>Visit garage</td>
+              </tr>
+              <tr>
+                <td>TPMS</td>
+                <td>Low tyre pressure detected</td>
+                <td>Check and inflate when cold</td>
+              </tr>
+              <tr>
+                <td>Check engine (MIL)</td>
+                <td>Engine management fault</td>
+                <td>Diagnostics at garage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- QUIZ TAB -->
+      <div class="tab-panel" id="tab-quiz">
+        <div class="quiz-header">
+          <div>
+            <h3>Theme 9 Quiz — 100 Questions</h3>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 13px;
+                margin: 0;
+              "
+            >
+              Click an option to answer. Explanations appear after each
+              question.
+            </p>
+          </div>
+          <div>
+            <div class="score-display" id="scoreDisplay">0 / 0 correct</div>
+            <div class="progress-bar" style="margin-top: 6px">
+              <div
+                class="progress-fill"
+                id="progressFill"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-controls">
+          <button class="btn btn-gold" onclick="resetQuiz()">Reset Quiz</button>
+          <button class="filter-btn active" onclick="filterQuiz('all', this)">
+            All (100)
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('wrong', this)">
+            Wrong only
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('Engine', this)">
+            Engine
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('Electrical', this)">
+            Electrical
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('Transmission', this)">
+            Transmission
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('Tyres', this)">
+            Tyres &amp; Brakes
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('Accessories', this)">
+            Accessories
+          </button>
+          <button class="filter-btn" onclick="filterQuiz('ITV', this)">
+            ITV &amp; Dashboard
+          </button>
+        </div>
+        <div id="quizContainer"></div>
+        <div class="quiz-result" id="quizResult">
+          <div class="result-score" id="resultScore">0<span>/100</span></div>
+          <div class="result-msg" id="resultMsg">
+            Keep studying and try again!
+          </div>
+          <button class="btn btn-navy" onclick="resetQuiz()">Try Again</button>
+        </div>
+      </div>
+    </div>
+    <!-- end .content -->
+
+    <script>
+      var qs = [
+        {
+          n: 1,
+          cat: 'Engine',
+          q: 'What is the primary purpose of a vehicle engine?',
+          opts: [
+            'To store fuel for the vehicle',
+            'To convert energy into mechanical power and motion',
+            'To cool the engine compartment',
+            'To supply electrical power to accessories',
+          ],
+          a: 1,
+          exp: 'The engine converts energy (from burning fuel) into mechanical power — producing the motion that drives the vehicle.',
+        },
+        {
+          n: 2,
+          cat: 'Engine',
+          q: 'The fuel system provides the engine with:',
+          opts: [
+            'Water and coolant',
+            'Motor oil and grease',
+            'Air and fuel in the correct mixture',
+            'Electrical power',
+          ],
+          a: 2,
+          exp: 'The fuel system has two circuits: an air feeding circuit and a fuel feeding circuit, together supplying the correct air-fuel mixture.',
+        },
+        {
+          n: 3,
+          cat: 'Engine',
+          q: 'The air filter gets dirtier more quickly during:',
+          opts: ['Winter', 'Spring', 'Summer', 'Autumn'],
+          a: 2,
+          exp: "The air filter accumulates more dirt in summer — check and replace it following the manufacturer's recommendations.",
+        },
+        {
+          n: 4,
+          cat: 'Engine',
+          q: 'What happens if the engine idles too fast?',
+          opts: [
+            'Fuel consumption decreases',
+            'Fuel consumption and contamination increase',
+            'The engine cools down faster',
+            'Nothing changes',
+          ],
+          a: 1,
+          exp: 'A fast idle means the engine rotates faster, burning more fuel and releasing more exhaust pollutants.',
+        },
+        {
+          n: 5,
+          cat: 'Engine',
+          q: 'What is the function of the catalytic converter?',
+          opts: [
+            'To reduce engine noise',
+            'To filter incoming air',
+            'To reduce toxic gases released into the atmosphere',
+            'To cool the exhaust gases',
+          ],
+          a: 2,
+          exp: 'The catalytic converter converts harmful exhaust gases (CO, HC, NOx) into less harmful substances before release.',
+        },
+        {
+          n: 6,
+          cat: 'Engine',
+          q: 'What is the function of the muffler (silenciador)?',
+          opts: [
+            'To filter fuel',
+            'To reduce noise and lower gas temperature',
+            'To ignite the fuel mixture',
+            'To reduce toxic emissions',
+          ],
+          a: 1,
+          exp: 'The muffler (silencer) reduces the noise of exhaust gases and lowers their temperature before they exit.',
+        },
+        {
+          n: 7,
+          cat: 'Engine',
+          q: "The lubrication system's primary role is to:",
+          opts: [
+            'Cool the engine with water',
+            'Distribute thin layers of oil to reduce friction and deterioration',
+            'Provide fuel to the cylinders',
+            'Start the engine',
+          ],
+          a: 1,
+          exp: 'The lubrication system distributes motor oil around engine components to minimise friction, heat, and wear.',
+        },
+        {
+          n: 8,
+          cat: 'Engine',
+          q: 'When should you check the motor oil level?',
+          opts: [
+            'Engine hot and running',
+            'Engine hot and switched off',
+            'Engine cold and switched off on a flat surface',
+            'While driving slowly',
+          ],
+          a: 2,
+          exp: 'Always check oil on a flat surface with the engine cold and off — to get an accurate dipstick reading.',
+        },
+        {
+          n: 9,
+          cat: 'Engine',
+          q: 'The dipstick oil level must be:',
+          opts: [
+            'Above the maximum mark',
+            'Below the minimum mark',
+            'Between the minimum and maximum marks',
+            'Exactly at the minimum mark',
+          ],
+          a: 2,
+          exp: 'The oil level must always be between the MIN and MAX marks on the dipstick for safe engine operation.',
+        },
+        {
+          n: 10,
+          cat: 'Engine',
+          q: 'The oil pressure warning light being ON indicates:',
+          opts: [
+            'The engine is correctly lubricated',
+            'Oil level is too high',
+            'Oil pressure is below the minimum — stop immediately',
+            'The oil filter needs changing soon',
+          ],
+          a: 2,
+          exp: 'A lit oil pressure light means pressure has dropped below the minimum. Stop driving immediately to avoid engine damage.',
+        },
+        {
+          n: 11,
+          cat: 'Engine',
+          q: 'When the oil pressure warning light is OFF, this means:',
+          opts: [
+            'There is a lubrication problem',
+            'The oil is completely empty',
+            'The engine is properly lubricated',
+            'The light is malfunctioning',
+          ],
+          a: 2,
+          exp: 'The oil pressure light being off confirms that oil pressure is normal and the engine is properly lubricated.',
+        },
+        {
+          n: 12,
+          cat: 'Engine',
+          q: 'To change the motor oil, the vehicle should be on a flat surface with the engine:',
+          opts: ['Cold', 'Warm but not hot', 'Hot', 'Either cold or hot'],
+          a: 2,
+          exp: 'For an oil change: flat surface + engine hot. The drain plug is in the crankcase (bottom); new oil goes in via the cap on top (cylinder head).',
+        },
+        {
+          n: 13,
+          cat: 'Engine',
+          q: 'The coolant level should be checked when the engine is:',
+          opts: [
+            'Hot and running',
+            'Cold',
+            'Warm after a short drive',
+            'Either hot or cold',
+          ],
+          a: 1,
+          exp: 'Always check coolant with the engine cold — opening a hot radiator cap can cause serious scalding from pressurised steam.',
+        },
+        {
+          n: 14,
+          cat: 'Engine',
+          q: 'Cooling fluid protective effectiveness typically lasts approximately:',
+          opts: ['6 months', '1 year', '2 years', '5 years'],
+          a: 2,
+          exp: 'Manufacturers typically recommend changing coolant every ~2 years as its anti-corrosion and antifreeze properties degrade over time.',
+        },
+        {
+          n: 15,
+          cat: 'Engine',
+          q: 'Rust on coolant hoses may indicate:',
+          opts: [
+            'Normal wear and tear',
+            'A loss of coolant',
+            'The engine is overheating',
+            'Incorrect fuel type',
+          ],
+          a: 1,
+          exp: 'Rust deposits on coolant hoses can indicate coolant leakage — inspect the hoses and the cooling system carefully.',
+        },
+        {
+          n: 16,
+          cat: 'Engine',
+          q: 'In winter, what should be added to the cooling system?',
+          opts: [
+            'Distilled water',
+            'Motor oil',
+            'Antifreeze fluid',
+            'Brake fluid',
+          ],
+          a: 2,
+          exp: 'Antifreeze fluid is added to prevent coolant from freezing in cold temperatures, which could crack the engine block.',
+        },
+        {
+          n: 17,
+          cat: 'Engine',
+          q: "The exhaust system's main function is to:",
+          opts: [
+            'Cool the engine',
+            'Filter incoming fuel',
+            'Convey exhaust gases from the engine to the exterior',
+            'Lubricate the engine',
+          ],
+          a: 2,
+          exp: 'The exhaust system routes combustion gases from the engine cylinders out through the exhaust pipe to the exterior.',
+        },
+        {
+          n: 18,
+          cat: 'Engine',
+          q: 'The exhaust system consists of:',
+          opts: [
+            'Air filter and fuel filter',
+            'Radiator and water pump',
+            'Mufflers and catalytic converter',
+            'Alternator and starter motor',
+          ],
+          a: 2,
+          exp: 'The exhaust system includes the muffler (reduces noise/temperature) and the catalytic converter (reduces toxic emissions).',
+        },
+        {
+          n: 19,
+          cat: 'Engine',
+          q: 'Where is new motor oil added to the engine?',
+          opts: [
+            'Through the drain plug at the bottom',
+            'Through the dipstick tube',
+            'Through the oil filler cap on top (cylinder head)',
+            'Through the coolant reservoir',
+          ],
+          a: 2,
+          exp: 'New oil is poured through the oil filler cap located on top of the engine (cylinder head cover).',
+        },
+        {
+          n: 20,
+          cat: 'Engine',
+          q: 'The coolant reservoir level must be kept:',
+          opts: [
+            'Always completely full',
+            'Between the maximum and minimum levels',
+            'Below the minimum level',
+            'Above the maximum level',
+          ],
+          a: 1,
+          exp: 'Coolant must be maintained between the MIN and MAX marks. Too little risks overheating; too much can cause pressure issues.',
+        },
+        {
+          n: 21,
+          cat: 'Engine',
+          q: 'Which component of the exhaust system reduces toxic gases?',
+          opts: [
+            'The muffler',
+            'The exhaust manifold',
+            'The catalytic converter',
+            'The air filter',
+          ],
+          a: 2,
+          exp: 'The catalytic converter chemically transforms toxic exhaust gases (CO, HC, NOx) into less harmful compounds.',
+        },
+        {
+          n: 22,
+          cat: 'Engine',
+          q: 'The fuel system includes two circuits. They are:',
+          opts: [
+            'Petrol circuit and diesel circuit',
+            'Air feeding circuit and fuel feeding circuit',
+            'Hot circuit and cold circuit',
+            'Primary circuit and secondary circuit',
+          ],
+          a: 1,
+          exp: 'The fuel system has an air feeding circuit and a fuel feeding circuit — together providing the engine with the correct air-fuel mixture.',
+        },
+        {
+          n: 23,
+          cat: 'Engine',
+          q: 'The purpose of the cooling system is to:',
+          opts: [
+            'Lubricate engine moving parts',
+            'Filter exhaust gases',
+            'Draw out part of the heat produced by engine activity',
+            'Supply fuel to the engine',
+          ],
+          a: 2,
+          exp: 'The cooling system removes excess heat from the engine to prevent overheating and maintain optimal operating temperature.',
+        },
+        {
+          n: 24,
+          cat: 'Engine',
+          q: 'The fuel filter should be replaced:',
+          opts: [
+            'Every 500 km',
+            'Every year without exception',
+            'Only when the engine stalls',
+            "Following the manufacturer's recommendations",
+          ],
+          a: 3,
+          exp: "Fuel filter replacement intervals vary by vehicle — always follow the manufacturer's recommended schedule.",
+        },
+        {
+          n: 25,
+          cat: 'Engine',
+          q: 'A diesel engine differs from a petrol engine in that it:',
+          opts: [
+            'Does not need a fuel system',
+            'Does not use spark plugs — fuel ignites via compression',
+            'Has no exhaust system',
+            'Does not need an air filter',
+          ],
+          a: 1,
+          exp: 'Diesel engines compress air so much that it becomes hot enough to ignite the injected fuel — no spark plug is required.',
+        },
+        {
+          n: 26,
+          cat: 'Electrical',
+          q: 'The battery supplies electrical power:',
+          opts: [
+            'When the engine is running at speed',
+            'When the engine is motionless',
+            'Only in emergencies',
+            'Equally at all times',
+          ],
+          a: 1,
+          exp: 'The battery provides electricity when the engine is not running — for starting, lights with engine off, and accessories.',
+        },
+        {
+          n: 27,
+          cat: 'Electrical',
+          q: 'The battery electrolyte solution is a mixture of:',
+          opts: [
+            'Water and motor oil',
+            'Distilled water and sulphuric acid',
+            'Coolant and antifreeze',
+            'Brake fluid and alcohol',
+          ],
+          a: 1,
+          exp: 'The electrolyte is a mixture of distilled water and sulphuric acid. It must completely submerge the battery plates.',
+        },
+        {
+          n: 28,
+          cat: 'Electrical',
+          q: 'The battery plates must always be:',
+          opts: [
+            'Dry and exposed to air',
+            'Partially submerged',
+            'Fully submerged in the electrolyte solution',
+            'Coated with vaseline',
+          ],
+          a: 2,
+          exp: 'Battery plates must always be fully submerged in the electrolyte solution to function correctly.',
+        },
+        {
+          n: 29,
+          cat: 'Electrical',
+          q: "How often should a low maintenance battery's solution be checked?",
+          opts: [
+            'Every month',
+            'Every 3 months',
+            'Every 6 months',
+            'Every 2 years',
+          ],
+          a: 2,
+          exp: 'Low maintenance batteries should have the electrolyte solution level checked every 6 months.',
+        },
+        {
+          n: 30,
+          cat: 'Electrical',
+          q: 'A free maintenance battery requires:',
+          opts: [
+            'Monthly solution level checks',
+            'Solution checks every 6 months',
+            'No solution level check — but terminals must be tight and clean',
+            'Complete replacement every year',
+          ],
+          a: 2,
+          exp: 'Free maintenance batteries need no electrolyte checks, but their terminals must always be kept tight and clean.',
+        },
+        {
+          n: 31,
+          cat: 'Electrical',
+          q: 'The charging system supplies electrical power:',
+          opts: [
+            'When the engine is switched off',
+            'When the engine is running',
+            'Only in an emergency',
+            'From the battery',
+          ],
+          a: 1,
+          exp: 'The charging system (alternator) generates electricity while the engine runs, powering systems and recharging the battery.',
+        },
+        {
+          n: 32,
+          cat: 'Electrical',
+          q: 'A charging system warning light while driving may indicate:',
+          opts: [
+            'The oil level is low',
+            'The battery is fully charged',
+            'An alternator malfunction or broken/slack belt',
+            'The engine needs cooling',
+          ],
+          a: 2,
+          exp: 'The charging warning light signals a fault in the charging system — alternator failure or a damaged drive belt.',
+        },
+        {
+          n: 33,
+          cat: 'Electrical',
+          q: "The starting system's function is to:",
+          opts: [
+            'Keep the engine running',
+            'Prompt the first turns of the engine',
+            'Charge the battery',
+            'Supply electricity when engine is off',
+          ],
+          a: 1,
+          exp: 'The starter motor turns the engine over at starting speed until combustion begins and the engine can run independently.',
+        },
+        {
+          n: 34,
+          cat: 'Electrical',
+          q: "You turn the key, the starter doesn't crank and dashboard lights fade. This indicates:",
+          opts: [
+            'A broken alternator belt',
+            'Fuel pump failure',
+            'Low battery charge, poor condition, or switched-off terminals',
+            'Ignition system failure',
+          ],
+          a: 2,
+          exp: 'Fading dashboard lights with no starter crank points to insufficient battery charge or poor terminal connections.',
+        },
+        {
+          n: 35,
+          cat: 'Electrical',
+          q: 'The engine cranks very slowly when you turn the key. The likely cause is:',
+          opts: [
+            'A broken spark plug',
+            'Discharged battery or connections in poor condition',
+            'Catalytic converter failure',
+            'Fuel filter blockage',
+          ],
+          a: 1,
+          exp: 'Slow cranking indicates the battery lacks sufficient charge or has poor electrical connections to the starter circuit.',
+        },
+        {
+          n: 36,
+          cat: 'Electrical',
+          q: 'Spark plugs are used in:',
+          opts: [
+            'Diesel engines only',
+            'Both petrol and diesel engines',
+            'Petrol engines only',
+            'Electric vehicles',
+          ],
+          a: 2,
+          exp: 'Spark plugs are used exclusively in petrol (gasoline) engines. Diesel engines use compression ignition — no spark plug needed.',
+        },
+        {
+          n: 37,
+          cat: 'Electrical',
+          q: 'What is the function of spark plugs?',
+          opts: [
+            'To filter fuel entering the engine',
+            'To trigger a spark igniting the air-fuel mixture',
+            'To cool the engine',
+            'To measure oil pressure',
+          ],
+          a: 1,
+          exp: 'Spark plugs produce an electrical spark at the correct moment to ignite the compressed air-fuel mixture in the cylinder.',
+        },
+        {
+          n: 38,
+          cat: 'Electrical',
+          q: 'Spark plug maintenance requires:',
+          opts: [
+            'Replacement every 500 km',
+            'No maintenance ever',
+            "Checking and replacing following manufacturer's instructions",
+            'Washing with water regularly',
+          ],
+          a: 2,
+          exp: "Spark plugs wear gradually. Check and replace them per the manufacturer's recommended schedule.",
+        },
+        {
+          n: 39,
+          cat: 'Electrical',
+          q: "The lighting system's purpose is to:",
+          opts: [
+            'Supply power to the starter',
+            'Enable seeing, being seen, and signalling manoeuvres',
+            'Charge the battery',
+            'Start the engine',
+          ],
+          a: 1,
+          exp: 'The lighting system serves three purposes: allow the driver to see, make the vehicle visible to others, and signal manoeuvres.',
+        },
+        {
+          n: 40,
+          cat: 'Electrical',
+          q: 'Battery terminal maintenance involves:',
+          opts: [
+            'Replacing them monthly',
+            'Cleaning them and applying vaseline or soft grease',
+            'Washing them with water',
+            'Leaving them to naturally oxidise',
+          ],
+          a: 1,
+          exp: 'Battery terminals should be cleaned of corrosion and coated with vaseline or soft grease to prevent further oxidation.',
+        },
+        {
+          n: 41,
+          cat: 'Electrical',
+          q: "The alternator's role in the electrical system is to:",
+          opts: [
+            'Store electrical energy',
+            'Start the engine',
+            'Generate electrical power while the engine runs',
+            'Provide the ignition spark',
+          ],
+          a: 2,
+          exp: 'The alternator converts mechanical energy (from the engine belt) into electrical energy to power the vehicle and charge the battery.',
+        },
+        {
+          n: 42,
+          cat: 'Electrical',
+          q: 'If the alternator warning light illuminates while driving, you should:',
+          opts: [
+            'Ignore it and continue normally',
+            'Accelerate to increase charging',
+            'Reduce electrical load and drive carefully to a garage',
+            'Open the bonnet immediately',
+          ],
+          a: 2,
+          exp: 'An alternator warning means the battery is discharging. Reduce electrical load (turn off A/C, heated seats) and drive to a garage.',
+        },
+        {
+          n: 43,
+          cat: 'Electrical',
+          q: 'Battery caps must be kept:',
+          opts: [
+            'Loosened for ventilation',
+            'Clean',
+            'Removed when not driving',
+            'Covered with insulating tape',
+          ],
+          a: 1,
+          exp: 'Battery caps must be kept clean to prevent contamination of the electrolyte and to avoid short circuits.',
+        },
+        {
+          n: 44,
+          cat: 'Electrical',
+          q: 'Which battery type requires no checking of solution level?',
+          opts: [
+            'Low maintenance battery',
+            'Sealed lead-acid battery',
+            'Free maintenance battery',
+            'Conventional battery',
+          ],
+          a: 2,
+          exp: 'Free maintenance batteries are fully sealed and require no electrolyte checks — only terminal cleaning and tightening.',
+        },
+        {
+          n: 45,
+          cat: 'Electrical',
+          q: "The starter cranks normally but a petrol engine doesn't start. The first system to suspect is:",
+          opts: [
+            'Lubrication system',
+            'Cooling system',
+            'Ignition system (spark plugs/coils)',
+            'Exhaust system',
+          ],
+          a: 2,
+          exp: "If cranking is fine but the engine won't fire, the ignition system (spark plugs, ignition coil) is the first suspect.",
+        },
+        {
+          n: 46,
+          cat: 'Transmission',
+          q: 'The function of the transmission is to:',
+          opts: [
+            'Generate power from fuel',
+            'Cool the engine',
+            'Provide torque from the engine to the driving wheels',
+            'Filter exhaust gases',
+          ],
+          a: 2,
+          exp: 'The transmission transfers engine torque through the clutch, gearbox, driveshafts, and differential to the driving wheels.',
+        },
+        {
+          n: 47,
+          cat: 'Transmission',
+          q: 'A front-wheel drive vehicle is also described as:',
+          opts: [
+            'A propulsion vehicle',
+            'A traction vehicle',
+            'A 4x4 vehicle',
+            'A rear-drive vehicle',
+          ],
+          a: 1,
+          exp: 'Front-wheel drive is called tracción — the front wheels pull (tract) the vehicle forward.',
+        },
+        {
+          n: 48,
+          cat: 'Transmission',
+          q: 'A rear-wheel drive vehicle is also described as:',
+          opts: [
+            'A traction vehicle',
+            'A propulsion vehicle',
+            'An all-wheel drive vehicle',
+            'A hybrid vehicle',
+          ],
+          a: 1,
+          exp: 'Rear-wheel drive is called propulsión — the rear wheels push (propel) the vehicle forward.',
+        },
+        {
+          n: 49,
+          cat: 'Transmission',
+          q: 'All-wheel drive (4x4) means:',
+          opts: [
+            'Only front wheels receive torque',
+            'Only rear wheels receive torque',
+            'All four wheels receive torque from the engine',
+            'The vehicle has a four-cylinder engine',
+          ],
+          a: 2,
+          exp: '4x4 / all-wheel drive distributes engine torque to all four wheels, improving traction on slippery or off-road surfaces.',
+        },
+        {
+          n: 50,
+          cat: 'Transmission',
+          q: 'In a front-wheel drive car, the front wheels are responsible for:',
+          opts: [
+            'Braking only',
+            'Driving and steering simultaneously',
+            'Driving and suspension',
+            'Steering and braking only',
+          ],
+          a: 1,
+          exp: 'In a front-wheel drive vehicle, the front wheels must both transmit engine power (drive) and change the direction of travel (steer).',
+        },
+        {
+          n: 51,
+          cat: 'Transmission',
+          q: 'Power steering (dirección asistida) helps the driver by:',
+          opts: [
+            'Increasing engine power output',
+            'Automatically steering the car',
+            'Reducing the effort needed to turn the steering wheel',
+            'Locking the wheels at high speed',
+          ],
+          a: 2,
+          exp: 'Power steering uses hydraulic or electric assistance to reduce steering effort, particularly helpful at low speeds and when parking.',
+        },
+        {
+          n: 52,
+          cat: 'Transmission',
+          q: 'An automatic gearbox differs from a manual in that it:',
+          opts: [
+            'Only offers two gear ratios',
+            'Has no clutch pedal and changes gears automatically',
+            'Always provides all-wheel drive',
+            'Uses a smaller engine',
+          ],
+          a: 1,
+          exp: 'An automatic gearbox selects gears automatically and eliminates the clutch pedal, making driving easier in heavy traffic.',
+        },
+        {
+          n: 53,
+          cat: 'Tyres',
+          q: 'The minimum legal tyre tread depth in Spain is:',
+          opts: ['0.8 mm', '1.6 mm', '2.0 mm', '3.0 mm'],
+          a: 1,
+          exp: 'Spanish law requires a minimum tread depth of 1.6 mm. Below this the tyre is illegal and unsafe.',
+        },
+        {
+          n: 54,
+          cat: 'Tyres',
+          q: 'Tyre pressure should be checked when tyres are:',
+          opts: [
+            'Hot after a long drive',
+            'Cold',
+            'At any temperature',
+            'Only at a tyre centre',
+          ],
+          a: 1,
+          exp: 'Always check tyre pressure when cold — heat from driving expands air and gives a falsely high reading.',
+        },
+        {
+          n: 55,
+          cat: 'Tyres',
+          q: 'Driving with incorrect tyre pressure affects:',
+          opts: [
+            'Nothing significant',
+            'Only fuel consumption',
+            'Safety, handling, fuel consumption, and tyre wear',
+            'Only tyre wear',
+          ],
+          a: 2,
+          exp: 'Incorrect pressure has multiple effects: reduced safety, poor handling, increased fuel consumption, and accelerated/uneven tyre wear.',
+        },
+        {
+          n: 56,
+          cat: 'Tyres',
+          q: 'A spare (temporary/emergency) tyre has a maximum speed of:',
+          opts: ['50 km/h', '80 km/h', '100 km/h', '120 km/h'],
+          a: 1,
+          exp: 'Temporary spare tyres are restricted to a maximum speed of 80 km/h. They are for emergency use only.',
+        },
+        {
+          n: 57,
+          cat: 'Tyres',
+          q: 'The maximum distance that should be travelled on a spare tyre is:',
+          opts: [
+            'Up to 50 km',
+            '50–200 km',
+            '200–500 km',
+            'Unlimited, until repaired',
+          ],
+          a: 1,
+          exp: 'Temporary spare tyres should only be used to travel between 50 and 200 km — enough to reach a tyre centre.',
+        },
+        {
+          n: 58,
+          cat: 'Tyres',
+          q: 'ABS (Anti-lock Braking System) primarily:',
+          opts: [
+            'Shortens braking distance on all surfaces',
+            'Prevents wheel lock during emergency braking, maintaining steering control',
+            'Applies the brakes automatically',
+            'Eliminates the need for brake fluid',
+          ],
+          a: 1,
+          exp: 'ABS prevents wheels from locking during hard braking, allowing the driver to continue steering while stopping.',
+        },
+        {
+          n: 59,
+          cat: 'Tyres',
+          q: "Brake fluid is described as 'hygroscopic', meaning:",
+          opts: [
+            'It evaporates quickly in heat',
+            'It corrodes metal components',
+            'It absorbs moisture over time, lowering its boiling point',
+            'It thickens in hot weather',
+          ],
+          a: 2,
+          exp: 'Brake fluid absorbs moisture from the air. This water content lowers its boiling point, risking vapour-lock under heavy braking.',
+        },
+        {
+          n: 60,
+          cat: 'Tyres',
+          q: 'The parking brake (freno de mano) typically acts on:',
+          opts: [
+            'The front wheels only',
+            'The rear wheels only',
+            'All four wheels equally',
+            'The engine directly',
+          ],
+          a: 1,
+          exp: 'The parking brake most commonly acts on the rear wheels via a mechanical cable or electric actuator.',
+        },
+        {
+          n: 61,
+          cat: 'Tyres',
+          q: 'When ABS activates, you feel a pulsating pedal. You should:',
+          opts: [
+            'Release the brake pedal immediately',
+            'Pump the brakes rapidly',
+            'Keep firm, steady pressure on the pedal and steer to safety',
+            'Press harder then release alternately',
+          ],
+          a: 2,
+          exp: "ABS is designed to be used with sustained firm pressure — the system does the 'pumping' automatically. Maintain pressure and steer.",
+        },
+        {
+          n: 62,
+          cat: 'Tyres',
+          q: 'A permanent ABS warning light while driving indicates:',
+          opts: [
+            'ABS is actively working correctly',
+            'A fault — brakes still work but without ABS assistance',
+            'Brake fluid is low',
+            'Tyres are under-inflated',
+          ],
+          a: 1,
+          exp: 'A permanent ABS warning light means the ABS system has a fault. Conventional braking still works, but ABS assistance is unavailable.',
+        },
+        {
+          n: 63,
+          cat: 'Tyres',
+          q: 'Tyres showing cracks, bulges, or cuts in the sidewall:',
+          opts: [
+            'Can be used until the tread wears out',
+            'Are only dangerous at high speed',
+            'Must be replaced immediately — they are illegal and dangerous',
+            'Only need repair if the bulge grows',
+          ],
+          a: 2,
+          exp: 'Sidewall damage compromises the structural integrity of the tyre and can lead to sudden blowout. Replace immediately.',
+        },
+        {
+          n: 64,
+          cat: 'Tyres',
+          q: 'Uneven tyre wear may indicate:',
+          opts: [
+            'Normal use of the tyre',
+            'Incorrect tyre pressure or wheel misalignment',
+            'Brand new tyres',
+            'Low engine oil level',
+          ],
+          a: 1,
+          exp: 'Uneven wear patterns suggest tyre pressure is incorrect or wheels are out of alignment — both should be corrected promptly.',
+        },
+        {
+          n: 65,
+          cat: 'Tyres',
+          q: 'Brake fluid level should be:',
+          opts: [
+            'Always full to the reservoir cap',
+            'Between the minimum and maximum levels',
+            'Below the minimum level',
+            'Changed every month',
+          ],
+          a: 1,
+          exp: 'Brake fluid must be maintained between the MIN and MAX marks in its reservoir for the hydraulic braking system to work correctly.',
+        },
+        {
+          n: 66,
+          cat: 'Accessories',
+          q: 'Cars under 3,500 kg MAM must carry all of the following EXCEPT:',
+          opts: [
+            'V-16 hazard pre-signalling device',
+            'High visibility waistcoat',
+            'An approved fire extinguisher (mandatory for all private cars)',
+            'Spare tyre or alternative system and tools',
+          ],
+          a: 2,
+          exp: 'Fire extinguishers are NOT mandatory for private cars under 3,500 kg MAM (but ARE required for buses and heavier vehicles). V-16, waistcoat, and spare tyre/tools ARE required.',
+        },
+        {
+          n: 67,
+          cat: 'Accessories',
+          q: 'The V-16 pre-signalling device replaced which item in Spain?',
+          opts: [
+            'The fire extinguisher',
+            'The first aid kit',
+            'Traditional emergency warning triangles',
+            'The spare tyre',
+          ],
+          a: 2,
+          exp: 'Since July 2021, the V-16 connected device replaced the traditional warning triangles as the required breakdown pre-signalling device.',
+        },
+        {
+          n: 68,
+          cat: 'Accessories',
+          q: 'The V-16 device must maintain its luminous intensity for at least:',
+          opts: ['10 minutes', '20 minutes', '30 minutes', '60 minutes'],
+          a: 2,
+          exp: 'The V-16 device is required to maintain its luminous intensity for a minimum of 30 minutes after activation.',
+        },
+        {
+          n: 69,
+          cat: 'Accessories',
+          q: 'The horizontal visibility of the V-16 device must be:',
+          opts: ['90°', '180°', '270°', '360°'],
+          a: 3,
+          exp: 'The V-16 device must be visible through 360° horizontally so that it can be seen from all directions.',
+        },
+        {
+          n: 70,
+          cat: 'Accessories',
+          q: 'The approved colours for the high visibility waistcoat are:',
+          opts: [
+            'Any bright colour',
+            'Only yellow',
+            'Yellow, orangy red, or red',
+            'Only fluorescent green',
+          ],
+          a: 2,
+          exp: 'The waistcoat must be authorised and may be yellow, orangy red, or red. Other colours are not permitted.',
+        },
+        {
+          n: 71,
+          cat: 'Accessories',
+          q: 'The high visibility waistcoat must be worn when:',
+          opts: [
+            'Only when changing a tyre',
+            'Only at night',
+            'When leaving the vehicle on the roadway or hard shoulder of interurban roads',
+            'Whenever driving on motorways',
+          ],
+          a: 2,
+          exp: 'The waistcoat must be worn when exiting the vehicle and occupying the carriageway or hard shoulder on interurban roads.',
+        },
+        {
+          n: 72,
+          cat: 'Accessories',
+          q: 'The high visibility waistcoat should be stored:',
+          opts: [
+            'In the boot of the car',
+            'In the glove compartment',
+            'In a place not exposed to light but accessible so you can wear it before leaving the vehicle',
+            'Anywhere in the vehicle',
+          ],
+          a: 2,
+          exp: 'It must be accessible so you can put it on BEFORE leaving the vehicle. Direct light exposure degrades the reflective properties.',
+        },
+        {
+          n: 73,
+          cat: 'Accessories',
+          q: 'Vehicles carrying more than 23 passengers including the driver must carry a fire extinguisher of:',
+          opts: ['5A/21B', '8A/34B', '21A/113B', '34A/144B'],
+          a: 2,
+          exp: 'Vehicles with more than 23 seats (including driver) require one fire extinguisher of class 21A/113B.',
+        },
+        {
+          n: 74,
+          cat: 'Accessories',
+          q: 'School transport with more than 23 seats including the driver must carry:',
+          opts: [
+            'One extinguisher of 21A/113B',
+            'Two extinguishers of 21A/113B',
+            'One extinguisher of 34A/144B',
+            'No extinguisher required',
+          ],
+          a: 1,
+          exp: 'School transport vehicles with more than 23 seats must carry TWO fire extinguishers of class 21A/113B.',
+        },
+        {
+          n: 75,
+          cat: 'Accessories',
+          q: 'Taxis must carry a fire extinguisher of class:',
+          opts: ['Not required', '5A/21B', '8A/34B', '21A/113B'],
+          a: 1,
+          exp: 'Taxis are specifically required to carry one fire extinguisher of class 5A/21B under taxi regulations.',
+        },
+        {
+          n: 76,
+          cat: 'Accessories',
+          q: 'Vehicles carrying between 10 and 23 passengers including the driver require a fire extinguisher of:',
+          opts: ['5A/21B', '8A/34B', '21A/113B', '34A/144B'],
+          a: 1,
+          exp: 'Vehicles with 10 to 23 seats (including driver) must carry one fire extinguisher of class 8A/34B.',
+        },
+        {
+          n: 77,
+          cat: 'Accessories',
+          q: 'A goods vehicle with MMA between 7,000 and 20,000 kg must carry:',
+          opts: [
+            'One 21A/113B',
+            'One 34A/144B',
+            'Two 21A/113B',
+            'Two 34A/144B',
+          ],
+          a: 1,
+          exp: 'Goods vehicles with MMA between 7,000 and 20,000 kg must carry one fire extinguisher of class 34A/144B.',
+        },
+        {
+          n: 78,
+          cat: 'Accessories',
+          q: 'The V-16 device flash frequency must be between:',
+          opts: ['0.1 and 0.5 Hz', '0.8 and 2 Hz', '2 and 5 Hz', '5 and 10 Hz'],
+          a: 1,
+          exp: 'The V-16 must flash between 0.8 and 2 Hz — slow enough to be clearly perceived as a warning signal.',
+        },
+        {
+          n: 79,
+          cat: 'Accessories',
+          q: 'The V-16 device must communicate its geolocation every:',
+          opts: ['30 seconds', '60 seconds', '100 seconds', '5 minutes'],
+          a: 2,
+          exp: 'The V-16 transmits its activation, deactivation, and GPS position to the national traffic access point every 100 seconds.',
+        },
+        {
+          n: 80,
+          cat: 'Accessories',
+          q: 'When a vehicle acts as an escort/pilot vehicle, who must wear a high visibility waistcoat?',
+          opts: [
+            'Only the driver',
+            'Only the auxiliary staff',
+            'The driver and every member of the auxiliary staff',
+            'No one — vests are optional for pilot vehicles',
+          ],
+          a: 2,
+          exp: 'When functioning as a pilot/escort vehicle, both the driver and all auxiliary staff members must wear a high visibility waistcoat.',
+        },
+        {
+          n: 81,
+          cat: 'Accessories',
+          q: 'A goods vehicle with MMA over 20,000 kg must carry:',
+          opts: [
+            'One 21A/113B',
+            'One 34A/144B',
+            'Two 34A/144B',
+            'Two 21A/113B',
+          ],
+          a: 2,
+          exp: 'Goods vehicles with MMA exceeding 20,000 kg must carry two fire extinguishers of class 34A/144B.',
+        },
+        {
+          n: 82,
+          cat: 'Accessories',
+          q: 'The V-16 device must have a degree of protection of at least:',
+          opts: ['IP44', 'IP54', 'IP65', 'IP67'],
+          a: 1,
+          exp: 'The V-16 device requires at least IP54 protection — shielded against dust ingress and water splashing from any direction.',
+        },
+        {
+          n: 83,
+          cat: 'Accessories',
+          q: 'An alternative tyre system (instead of a spare tyre) is acceptable provided it:',
+          opts: [
+            'Is cheaper than a spare tyre',
+            'Offers similar roadworthy guarantees',
+            'Is approved only for motorway use',
+            'Is only used in urban areas',
+          ],
+          a: 1,
+          exp: 'The alternative system must offer similar roadworthy guarantees to a spare tyre. Its speed and distance limitations must be respected.',
+        },
+        {
+          n: 84,
+          cat: 'Accessories',
+          q: 'The V-16 luminous intensity at grade 0 must be between:',
+          opts: [
+            '10–100 candlepower',
+            '40–700 candlepower',
+            '100–1,000 candlepower',
+            '25–300 candlepower',
+          ],
+          a: 1,
+          exp: 'At grade 0, the V-16 must emit between 40 and 700 effective candlepower.',
+        },
+        {
+          n: 85,
+          cat: 'Accessories',
+          q: 'Goods vehicles with MMA between 3,500 and 7,000 kg must carry a fire extinguisher of class:',
+          opts: ['5A/21B', '8A/34B', '21A/113B', '34A/144B'],
+          a: 2,
+          exp: 'Goods vehicles with MMA between 3,500 and 7,000 kg must carry one fire extinguisher of class 21A/113B.',
+        },
+        {
+          n: 86,
+          cat: 'ITV',
+          q: 'When is the first compulsory ITV inspection due for a new private car?',
+          opts: [
+            'After 2 years',
+            'After 3 years',
+            'After 4 years',
+            'After 5 years',
+          ],
+          a: 2,
+          exp: 'New private cars in Spain must undergo their first ITV at 4 years from first registration.',
+        },
+        {
+          n: 87,
+          cat: 'ITV',
+          q: 'Between 4 and 10 years old, how often must a private car be inspected?',
+          opts: [
+            'Every year',
+            'Every 2 years',
+            'Every 3 years',
+            'Every 4 years',
+          ],
+          a: 1,
+          exp: 'Private cars between 4 and 10 years old must pass the ITV every 2 years.',
+        },
+        {
+          n: 88,
+          cat: 'ITV',
+          q: 'Once a private car is over 10 years old, ITV frequency becomes:',
+          opts: [
+            'Every 6 months',
+            'Every year',
+            'Every 2 years',
+            'Every 3 years',
+          ],
+          a: 1,
+          exp: 'Cars over 10 years old must undergo annual ITV inspections.',
+        },
+        {
+          n: 89,
+          cat: 'ITV',
+          q: 'A lit oil pressure warning light (red oil can) means:',
+          opts: [
+            'Oil level is too high',
+            'You should change oil soon',
+            'Oil pressure is below minimum — stop driving immediately',
+            'The oil filter needs replacing',
+          ],
+          a: 2,
+          exp: 'The red oil pressure light is a critical warning — oil pressure has dropped dangerously low. Stop immediately to avoid catastrophic engine damage.',
+        },
+        {
+          n: 90,
+          cat: 'ITV',
+          q: 'If the engine temperature gauge enters the red zone, you should:',
+          opts: [
+            'Continue at lower speed',
+            'Open the bonnet while driving',
+            'Stop safely, switch off the engine and let it cool',
+            'Add water to the radiator immediately',
+          ],
+          a: 2,
+          exp: 'An overheating engine must be stopped immediately. Continuing to drive risks head gasket failure and severe engine damage.',
+        },
+        {
+          n: 91,
+          cat: 'ITV',
+          q: 'A battery warning light while driving indicates a problem with:',
+          opts: [
+            'The starter motor',
+            'The ignition system',
+            'The charging system (alternator)',
+            'The brake fluid level',
+          ],
+          a: 2,
+          exp: 'The battery light warns that the charging system (alternator) is not generating sufficient power — the battery is discharging.',
+        },
+        {
+          n: 92,
+          cat: 'ITV',
+          q: 'The TPMS (tyre pressure monitoring system) warning light means:',
+          opts: [
+            'A tyre has been punctured',
+            'One or more tyres have significantly low pressure',
+            'Tyre temperature is dangerously high',
+            'The ABS system has activated',
+          ],
+          a: 1,
+          exp: 'The TPMS light activates when one or more tyres drop significantly below the recommended pressure. Check and inflate when cold.',
+        },
+        {
+          n: 93,
+          cat: 'ITV',
+          q: 'Spain requires vehicles to display a DGT environmental label which:',
+          opts: [
+            'Is purely decorative',
+            'Determines access to certain low-emission urban zones (ZBE)',
+            'Is only for commercial vehicles',
+            'Is only required for vehicles over 10 years old',
+          ],
+          a: 1,
+          exp: 'The DGT environmental label classifies vehicles by emissions and determines whether they can access ZBE (Zonas de Bajas Emisiones) in cities.',
+        },
+        {
+          n: 94,
+          cat: 'ITV',
+          q: 'Which DGT environmental label is awarded to fully electric vehicles?',
+          opts: ['B label', 'C label', 'ECO label', 'Zero label'],
+          a: 3,
+          exp: "The 'Zero Emissions' label is given to battery electric vehicles (BEV), hydrogen fuel cell vehicles, and PHEVs with ≥40 km electric range.",
+        },
+        {
+          n: 95,
+          cat: 'ITV',
+          q: 'Which driving habit most reduces fuel consumption and emissions?',
+          opts: [
+            'Driving at maximum engine RPM',
+            'Frequent hard acceleration and braking',
+            'Smooth, anticipatory driving at moderate speed with correct gear selection',
+            'Using air conditioning constantly',
+          ],
+          a: 2,
+          exp: 'Smooth, anticipatory, eco-driving with gentle acceleration, engine braking, and the highest appropriate gear significantly reduces fuel use and emissions.',
+        },
+        {
+          n: 96,
+          cat: 'ITV',
+          q: 'Taxis, ambulances, and driving school cars must undergo ITV:',
+          opts: [
+            'First at 4 years, then every 2 years',
+            'Every year from first registration',
+            'Every 6 months',
+            'Every 3 years',
+          ],
+          a: 1,
+          exp: 'Vehicles used for taxi, ambulance, or driving instruction must undergo annual ITV inspections from the date of first registration.',
+        },
+        {
+          n: 97,
+          cat: 'ITV',
+          q: 'Driving a vehicle with an expired ITV in Spain is:',
+          opts: [
+            'Permitted if the vehicle appears roadworthy',
+            'An infraction that can result in a fine and vehicle immobilisation',
+            'Only prohibited on motorways',
+            'Allowed for journeys under 10 km',
+          ],
+          a: 1,
+          exp: 'Driving with an expired ITV is an infraction under Spanish traffic law. The vehicle can be fined and immobilised until it passes inspection.',
+        },
+        {
+          n: 98,
+          cat: 'ITV',
+          q: "The DGT 'C' label is awarded to:",
+          opts: [
+            'Electric and hydrogen vehicles',
+            'Hybrid and CNG vehicles',
+            'Petrol cars from January 2006 and diesel from September 2015',
+            'Petrol cars from January 2001 and diesel from 2006',
+          ],
+          a: 2,
+          exp: "The 'C' label is given to petrol cars/vans from January 2006 and diesel cars/vans from September 2015 onwards.",
+        },
+        {
+          n: 99,
+          cat: 'ITV',
+          q: 'The check engine light (MIL — Malfunction Indicator Lamp) indicates:',
+          opts: [
+            'The engine needs oil',
+            'An engine management system fault requiring diagnostics',
+            'The engine is about to seize',
+            'Fuel level is critically low',
+          ],
+          a: 1,
+          exp: "The MIL or 'check engine' light signals a fault detected by the engine management system — diagnostics are needed at a garage.",
+        },
+        {
+          n: 100,
+          cat: 'ITV',
+          q: 'MAM (Masa Máxima Autorizada / MMA) refers to:',
+          opts: [
+            'The weight of the vehicle when completely empty',
+            'The weight of the engine and fuel only',
+            'The maximum authorised total weight of the fully loaded vehicle',
+            'The weight limit of the driving axle only',
+          ],
+          a: 2,
+          exp: 'MAM/MMA is the maximum total weight permitted for the vehicle including all load, passengers, and fuel.',
+        },
+      ];
+
+      var answered = {};
+      var currentFilter = 'all';
+
+      function renderQuiz() {
+        var c = document.getElementById('quizContainer');
+        if (!c) return;
+        var toShow = qs;
+        if (currentFilter === 'wrong')
+          toShow = qs.filter(function (q) {
+            return answered[q.n] === false;
+          });
+        else if (currentFilter !== 'all')
+          toShow = qs.filter(function (q) {
+            return q.cat === currentFilter;
+          });
+        var html = '';
+        toShow.forEach(function (q) {
+          var state = answered[q.n];
+          var cls =
+            'question-card' +
+            (state === true ? ' q-correct' : state === false ? ' q-wrong' : '');
+          html += '<div class="' + cls + '" id="qw-' + q.n + '">';
+          html +=
+            '<div class="question-num">Question ' +
+            q.n +
+            ' &mdash; ' +
+            q.cat +
+            '</div>';
+          html += '<div class="question-text">' + q.q + '</div>';
+          html += '<div class="options">';
+          q.opts.forEach(function (o, i) {
+            var ocls = 'option-btn';
+            if (state !== undefined) {
+              if (i === q.a) ocls += ' correct';
+              else if (answered[q.n + '_c'] === i) ocls += ' wrong';
+            }
+            html +=
+              '<button class="' +
+              ocls +
+              '"' +
+              (state !== undefined ? ' disabled' : '') +
+              ' onclick="answer(' +
+              q.n +
+              ',' +
+              i +
+              ')">' +
+              String.fromCharCode(65 + i) +
+              '. ' +
+              o +
+              '</button>';
+          });
+          html += '</div>';
+          html +=
+            '<div class="explanation" id="qe-' +
+            q.n +
+            '"' +
+            (state !== undefined ? ' style="display:block"' : '') +
+            '>' +
+            q.exp +
+            '</div>';
+          html += '</div>';
+        });
+        if (toShow.length === 0)
+          html =
+            '<div class="card"><p>No questions match this filter yet — answer some questions first!</p></div>';
+        c.innerHTML = html;
+        updateScore();
+      }
+
+      function answer(n, chosen) {
+        var q = qs.find(function (x) {
+          return x.n === n;
+        });
+        answered[n] = chosen === q.a;
+        answered[n + '_c'] = chosen;
+        var wrap = document.getElementById('qw-' + n);
+        if (wrap) {
+          wrap.className =
+            'question-card ' + (answered[n] ? 'q-correct' : 'q-wrong');
+          wrap.querySelectorAll('.option-btn').forEach(function (b, i) {
+            b.disabled = true;
+            if (i === q.a) b.className = 'option-btn correct';
+            else if (i === chosen) b.className = 'option-btn wrong';
+          });
+          var exp = document.getElementById('qe-' + n);
+          if (exp) exp.style.display = 'block';
+        }
+        updateScore();
+      }
+
+      function updateScore() {
+        var ans = Object.keys(answered).filter(function (k) {
+          return !isNaN(k);
+        }).length;
+        var correct = Object.keys(answered).filter(function (k) {
+          return !isNaN(k) && answered[k] === true;
+        }).length;
+        var pct = ans > 0 ? Math.round((correct / ans) * 100) : 0;
+        var pf = document.getElementById('progressFill');
+        var sd = document.getElementById('scoreDisplay');
+        if (pf) pf.style.width = pct + '%';
+        if (sd) sd.textContent = correct + ' / ' + ans + ' correct';
+      }
+
+      function filterQuiz(type, btn) {
+        currentFilter = type;
+        document.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        renderQuiz();
+      }
+
+      function resetQuiz() {
+        answered = {};
+        currentFilter = 'all';
+        document.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        document.querySelector('.filter-btn').classList.add('active');
+        renderQuiz();
+      }
+
+      document.getElementById('tabBar').addEventListener('click', function (e) {
+        var btn = e.target.closest('.tab-btn');
+        if (!btn) return;
+        var id = btn.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        document.querySelectorAll('.tab-panel').forEach(function (p) {
+          p.classList.remove('active');
+        });
+        btn.classList.add('active');
+        document.getElementById('tab-' + id).classList.add('active');
+        if (id === 'quiz') renderQuiz();
+      });
+
+      renderQuiz();
+    </script>
+  </body>
 </html>

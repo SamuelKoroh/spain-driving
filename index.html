@@ -1,160 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spain Driving - Study Guide Index</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .subtitle {
+        color: #666;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+
+      .content-sections {
+        display: grid;
+        gap: 30px;
+      }
+
+      .section {
+        border-left: 4px solid #667eea;
+        padding-left: 20px;
+      }
+
+      .section h2 {
+        color: #667eea;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .links-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .link-item {
+        padding: 12px 16px;
+        background: #f8f9fa;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: #333;
+        border-left: 3px solid transparent;
+      }
+
+      .link-item:hover {
+        background: #e9ecef;
+        border-left-color: #667eea;
+        transform: translateX(5px);
+      }
+
+      .link-item a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .link-item a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        text-align: center;
+        color: #999;
+        font-size: 12px;
+      }
+
+      @media (max-width: 768px) {
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+          padding: 12px;
         }
-        
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+          padding: 24px;
+          border-radius: 8px;
         }
-        
         h1 {
-            color: #333;
-            margin-bottom: 10px;
-            text-align: center;
+          font-size: 24px;
+          margin-bottom: 8px;
         }
-        
         .subtitle {
-            color: #666;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 14px;
+          font-size: 13px;
+          margin-bottom: 20px;
         }
-        
-        .content-sections {
-            display: grid;
-            gap: 30px;
-        }
-        
-        .section {
-            border-left: 4px solid #667eea;
-            padding-left: 20px;
-        }
-        
         .section h2 {
-            color: #667eea;
-            font-size: 18px;
-            margin-bottom: 15px;
+          font-size: 16px;
+          margin-bottom: 12px;
         }
-        
-        .links-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
         .link-item {
-            padding: 12px 16px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #333;
-            border-left: 3px solid transparent;
+          padding: 10px 14px;
+          font-size: 14px;
         }
-        
-        .link-item:hover {
-            background: #e9ecef;
-            border-left-color: #667eea;
-            transform: translateX(5px);
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 8px;
         }
-        
+        .container {
+          padding: 16px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
+        .subtitle {
+          font-size: 12px;
+          margin-bottom: 16px;
+        }
+        .content-sections {
+          gap: 20px;
+        }
+        .section {
+          padding-left: 16px;
+        }
+        .section h2 {
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+        .links-list {
+          gap: 8px;
+        }
+        .link-item {
+          padding: 12px 12px;
+          font-size: 13px;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+        }
         .link-item a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
+          font-size: 13px;
         }
-        
-        .link-item a:hover {
-            text-decoration: underline;
-        }
-        
         footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #999;
-            font-size: 12px;
+          margin-top: 24px;
+          padding-top: 16px;
+          font-size: 11px;
         }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>🚗 Spain Driving Study Guide</h1>
-        <p class="subtitle">Complete Navigation Index</p>
-        
-        <div class="content-sections">
-            <!-- Chapters Section -->
-            <div class="section">
-                <h2>📚 Study Chapters</h2>
-                <div class="links-list">
-                    <div class="link-item">
-                        <a href="chapter1_vehicle_types_study_guide.html">Chapter 1: Vehicle Types Study Guide</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter1_vehicle_types_study_guide1.html">Chapter 1: Vehicle Types Study Guide (Alternative)</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter2_use_of_public_roads.html">Chapter 2: Use of Public Roads</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter3_manoeuvres.html">Chapter 3: Manoeuvres</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter4_vehicle_lighting.html">Chapter 4: Vehicle Lighting</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter5_using_the_vehicle.html">Chapter 5: Using the Vehicle</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter6_documentation.html">Chapter 6: Documentation</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter7_road_accidents_study_guide.html">Chapter 7: Road Accidents Study Guide</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="chapter8_road_accidents.html">Chapter 8: Road Accidents</a>
-                    </div>
-                </div>
+      <h1>🚗 Spain Driving Study Guide</h1>
+      <p class="subtitle">Complete Navigation Index</p>
+
+      <div class="content-sections">
+        <!-- Chapters Section -->
+        <div class="section">
+          <h2>📚 Study Chapters</h2>
+          <div class="links-list">
+            <div class="link-item">
+              <a href="chapter1_vehicle_types_study_guide.html"
+                >Chapter 1: Vehicle Types Study Guide</a
+              >
             </div>
-            
-            <!-- Themes Section -->
-            <div class="section">
-                <h2>🎯 Study Themes</h2>
-                <div class="links-list">
-                    <div class="link-item">
-                        <a href="theme9_vehicle_study_guide.html">Theme 9: Vehicle Study Guide</a>
-                    </div>
-                    <div class="link-item">
-                        <a href="theme10_driving_techniques_study_guide.html">Theme 10: Driving Techniques Study Guide</a>
-                    </div>
-                </div>
+            <div class="link-item">
+              <a href="chapter1_vehicle_types_study_guide1.html"
+                >Chapter 1: Vehicle Types Study Guide (Alternative)</a
+              >
             </div>
+            <div class="link-item">
+              <a href="chapter2_use_of_public_roads.html"
+                >Chapter 2: Use of Public Roads</a
+              >
+            </div>
+            <div class="link-item">
+              <a href="chapter3_manoeuvres.html">Chapter 3: Manoeuvres</a>
+            </div>
+            <div class="link-item">
+              <a href="chapter4_vehicle_lighting.html"
+                >Chapter 4: Vehicle Lighting</a
+              >
+            </div>
+            <div class="link-item">
+              <a href="chapter5_using_the_vehicle.html"
+                >Chapter 5: Using the Vehicle</a
+              >
+            </div>
+            <div class="link-item">
+              <a href="chapter6_documentation.html">Chapter 6: Documentation</a>
+            </div>
+            <div class="link-item">
+              <a href="chapter7_road_accidents_study_guide.html"
+                >Chapter 7: Road Accidents Study Guide</a
+              >
+            </div>
+            <div class="link-item">
+              <a href="chapter8_road_accidents.html"
+                >Chapter 8: Road Accidents</a
+              >
+            </div>
+          </div>
         </div>
-        
-        <footer>
-            <p>Last updated: May 2, 2026 | Spain Driving Study Materials</p>
-        </footer>
+
+        <!-- Themes Section -->
+        <div class="section">
+          <h2>🎯 Study Themes</h2>
+          <div class="links-list">
+            <div class="link-item">
+              <a href="theme9_vehicle_study_guide.html"
+                >Theme 9: Vehicle Study Guide</a
+              >
+            </div>
+            <div class="link-item">
+              <a href="theme10_driving_techniques_study_guide.html"
+                >Theme 10: Driving Techniques Study Guide</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Last updated: May 2, 2026 | Spain Driving Study Materials</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

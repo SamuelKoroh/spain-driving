@@ -1,560 +1,2447 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 2 – Use of Public Roads | Spanish Driving Theory (Licence B)</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
-h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
-.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
-.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
-.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
-.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
-.header-meta{display:flex;gap:24px;margin-top:16px}
-.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
-.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
-.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
-.tab-bar::-webkit-scrollbar{display:none}
-.tab-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 18px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
-.tab-btn:hover{color:rgba(255,255,255,0.85)}
-.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
-.content{padding:32px 40px;max-width:960px;margin:0 auto}
-.tab-panel{display:none}.tab-panel.active{display:block}
-.section-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
-.section-desc{color:var(--text-muted);font-size:14px;margin-bottom:24px;margin-top:4px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
-.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.card-title .icon{width:28px;height:28px;background:var(--gold-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
-.card p{color:var(--text-muted);font-size:14px;line-height:1.6}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
-@media(max-width:700px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
-.def-block{border-left:3px solid var(--gold);padding:12px 16px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:12px}
-.def-block .term{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.def-block .def{font-size:13px;color:var(--text-muted)}
-.def-block.green{border-left-color:var(--green);background:var(--green-light)}
-.def-block.blue{border-left-color:var(--blue);background:var(--blue-light)}
-.def-block.red{border-left-color:var(--red);background:var(--red-light)}
-.styled-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
-.styled-table th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
-.styled-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
-.styled-table tr:last-child td{border-bottom:none}
-.styled-table tr:hover td{background:var(--bg)}
-.styled-table td:first-child{font-weight:600;color:var(--navy)}
-.badge{display:inline-block;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:2px 8px;border-radius:20px}
-.badge-gold{background:var(--gold-light);color:var(--gold-dark)}
-.badge-green{background:var(--green-light);color:var(--green)}
-.badge-blue{background:var(--blue-light);color:var(--blue)}
-.badge-red{background:var(--red-light);color:var(--red)}
-.badge-navy{background:var(--navy);color:#fff}
-.highlight{border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:16px;font-size:13px}
-.highlight.important{border-left:4px solid var(--red);background:var(--red-light)}
-.highlight.tip{border-left:4px solid var(--green);background:var(--green-light)}
-.highlight.info{border-left:4px solid var(--blue);background:var(--blue-light)}
-.highlight.warn{border-left:4px solid var(--gold);background:var(--gold-light)}
-.highlight .hi-title{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px}
-.highlight.important .hi-title{color:var(--red)}
-.highlight.tip .hi-title{color:var(--green)}
-.highlight.info .hi-title{color:var(--blue)}
-.highlight.warn .hi-title{color:var(--gold-dark)}
-.highlight p,.highlight li{color:var(--text-muted);line-height:1.6}
-.highlight ul{padding-left:18px;margin-top:4px}
-.highlight li{margin-bottom:3px}
-.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.quiz-header h3{font-size:18px;color:#fff}
-.quiz-progress{display:flex;align-items:center;gap:12px}
-.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
-.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
-.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
-.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
-.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
-.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
-.options{display:flex;flex-direction:column;gap:8px}
-.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
-.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
-.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
-.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
-.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
-.option-btn:disabled{cursor:default}
-.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
-.quiz-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
-.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
-.btn:active{transform:scale(0.97)}
-.btn-gold{background:var(--gold);color:var(--navy)}
-.btn-navy{background:var(--navy);color:#fff}
-.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
-.btn:hover{opacity:0.88}
-.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
-.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
-.result-score span{color:var(--gold)}
-.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
-.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
-.qr-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px}
-.qr-row:last-child{border-bottom:none}
-.qr-key{font-weight:600;color:var(--navy);min-width:220px;flex-shrink:0}
-.qr-val{color:var(--text-muted);flex:1}
-.subsection{margin-bottom:28px}
-.subsection h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.subsection h3::before{content:'';display:block;width:3px;height:16px;background:var(--gold);border-radius:2px}
-.number-fact{text-align:center;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
-.number-fact .num{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--navy)}
-.number-fact .unit{font-size:12px;color:var(--gold-dark);font-weight:600}
-.number-fact .desc{font-size:11px;color:var(--text-light);margin-top:3px}
-.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px}
-.quiz-page-info{font-size:13px;color:var(--text-light)}
-ul.check-list{list-style:none;padding:0}
-ul.check-list li{padding:4px 0 4px 22px;position:relative;font-size:14px;color:var(--text-muted)}
-ul.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
-ul.check-list li.no::before{content:'✗';color:var(--red)}
-.step-box{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
-.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.step-text{font-size:14px;color:var(--text-muted);flex:1;padding-top:4px}
-@media(max-width:600px){.content{padding:20px 16px}.header{padding:20px 16px}}
-</style>
-</head>
-<body>
-<div class="header">
-  <div class="header-badge">Permiso B – Teoría</div>
-  <h1>Chapter 2: Use of Public Roads</h1>
-  <p>Complete study guide for the Spanish Driving Theory Examination</p>
-  <div class="header-meta">
-    <div class="header-stat"><div class="val">9</div><div class="lbl">Study sections</div></div>
-    <div class="header-stat"><div class="val">50+</div><div class="lbl">Rules covered</div></div>
-    <div class="header-stat"><div class="val">50</div><div class="lbl">Quiz questions</div></div>
-    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
-  </div>
-</div>
-
-<div class="tab-bar" id="tabBar">
-  <button class="tab-btn active" data-tab="general">General Rules</button>
-  <button class="tab-btn" data-tab="roadparts">Road Parts &amp; Types</button>
-  <button class="tab-btn" data-tab="driving">Driving Rules</button>
-  <button class="tab-btn" data-tab="lanes">Special Lanes</button>
-  <button class="tab-btn" data-tab="shoulder">Shoulder &amp; Distance</button>
-  <button class="tab-btn" data-tab="pedestrians">Pedestrians &amp; Animals</button>
-  <button class="tab-btn" data-tab="speed">Speed</button>
-  <button class="tab-btn" data-tab="priority">Right of Way</button>
-  <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
-</div>
-
-<div class="content">
-
-<!-- TAB: GENERAL RULES -->
-<div class="tab-panel active" id="tab-general">
-  <div class="section-title">General Rules of Behaviour</div>
-  <p class="section-desc">All road users have specific obligations and prohibitions under Art. 9–11 RGC.</p>
-  <div class="subsection">
-    <h3>Driver Obligations</h3>
-    <div class="grid-2">
-      <div class="def-block green"><div class="term">Control at all times</div><div class="def">Adjust speed and movements to road, weather and traffic conditions.</div></div>
-      <div class="def-block green"><div class="term">Vulnerable users</div><div class="def">Exercise necessary caution when approaching children, elderly, disabled, and blind individuals.</div></div>
-      <div class="def-block green"><div class="term">Freedom of movement</div><div class="def">Maintain full freedom of movement and unobstructed field of vision. Keep suitable posture.</div></div>
-      <div class="def-block green"><div class="term">Refuelling</div><div class="def">Switch off engine, lights, radio, and ALL electromagnetic devices (including mobile phones) when refuelling.</div></div>
-    </div>
-  </div>
-  <div class="subsection">
-    <h3>Strict Prohibitions</h3>
-    <div class="highlight important"><div class="hi-title">⛔ Forbidden for all drivers</div><ul>
-      <li>Throwing/abandoning objects that could cause fires, pollution or road hazards</li>
-      <li>Driving negligently or recklessly</li>
-      <li>Using mobile phones, headphones while driving (except fully hands-free)</li>
-      <li>Using radar detectors or devices intended to evade traffic surveillance</li>
-      <li>Internet/TV/DVD while in motion (GPS cannot be operated while moving)</li>
-    </ul></div>
-  </div>
-  <div class="subsection">
-    <h3>Vehicle Owner Obligations</h3>
-    <div class="card">
-      <div class="qr-row"><span class="qr-key">Keep vehicle in perfect condition</span><span class="qr-val">Carry out all adequate examinations and inspections (ITV)</span></div>
-      <div class="qr-row"><span class="qr-key">Prevent unlicensed driving</span><span class="qr-val">Must prevent those without a valid licence from driving the vehicle</span></div>
-      <div class="qr-row"><span class="qr-key">Facilitate identification</span><span class="qr-val">Must facilitate driver's identification to authorities in event of infraction</span></div>
-      <div class="qr-row"><span class="qr-key">Register regular driver</span><span class="qr-val">Disclose regular driver's name to DGT (Registro de Vehículos) to transfer obligations</span></div>
-    </div>
-  </div>
-</div>
-
-<!-- TAB: ROAD PARTS & TYPES -->
-<div class="tab-panel" id="tab-roadparts">
-  <div class="section-title">Road Parts &amp; Road Types</div>
-  <p class="section-desc">Essential definitions for understanding lane rules and driving obligations.</p>
-  <div class="subsection">
-    <h3>Parts of the Road</h3>
-    <table class="styled-table">
-      <thead><tr><th>Term</th><th>Definition</th></tr></thead>
-      <tbody>
-        <tr><td>Road surface</td><td>Space where carriageways and hard shoulders are paved</td></tr>
-        <tr><td>Carriageway (calzada)</td><td>Space destined for vehicular traffic</td></tr>
-        <tr><td>Lane (carril)</td><td>Subdivision of carriageway for motor vehicles in single file. Motorcycles NOT included in lane count.</td></tr>
-        <tr><td>Hard shoulder (arcén)</td><td>Adjoining part of carriageway NOT intended for normal vehicular traffic</td></tr>
-        <tr><td>Central reservation</td><td>Longitudinal strip between two road surfaces — not for vehicle traffic</td></tr>
-        <tr><td>Pedestrian zone</td><td>Road section raised or delimited, reserved for pedestrians (roadside, pavement, platform)</td></tr>
-        <tr><td>Intersection (cruce)</td><td>Road junction where all driving paths are at the same level</td></tr>
-        <tr><td>Bend (curva)</td><td>Section where road changes direction. "Low visibility bend" = cannot see full width or oncoming vehicles.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection">
-    <h3>Road Types by Features</h3>
-    <div class="grid-2">
-      <div class="def-block blue"><div class="term">Motorway (Autopista)</div><div class="def">Separate carriageways per direction. No level crossings. No adjoining property access. May be free or toll. Min access speed: 60 km/h.</div></div>
-      <div class="def-block blue"><div class="term">Dual carriageway (Autovía)</div><div class="def">Separate carriageways, median strips. No grade intersections. No bordering property access.</div></div>
-      <div class="def-block"><div class="term">Conventional highway</div><div class="def">Any main road not meeting motorway/dual carriageway definition. No use limitations.</div></div>
-      <div class="def-block"><div class="term">Single carriageway road</div><div class="def">Reserved exclusively for motorcar driving. One carriageway, no adjoining property access.</div></div>
-    </div>
-    <div class="highlight important"><div class="hi-title">Cannot use motorways/dual carriageways</div><p>Cycles, mopeds, pedestrians, animals, animal-drawn vehicles, and PMVs. Exception: cyclists over 14 may use hard shoulders unless prohibited by sign.</p></div>
-  </div>
-</div>
-
-<!-- TAB: DRIVING RULES -->
-<div class="tab-panel" id="tab-driving">
-  <div class="section-title">Driving Rules — Lane Usage</div>
-  <p class="section-desc">Rules for lane selection vary by road type and location (urban vs interurban).</p>
-  <div class="highlight info"><div class="hi-title">General rule</div><p>Drive on the carriageway, not the hard shoulder (except emergencies). On bends and humps: keep close to right edge, keep side gap, leave opposing lane completely free.</p></div>
-  <div class="subsection">
-    <h3>Dual carriageways — inside or outside urban areas</h3>
-    <table class="styled-table">
-      <thead><tr><th>Situation</th><th>Rule</th></tr></thead>
-      <tbody>
-        <tr><td>2 lanes (separated or not)</td><td>Drive in the right lane</td></tr>
-        <tr><td>3 lanes (broken lines)</td><td>Right lane always. Centre only to overtake or turn left. <strong>Left lane NEVER.</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection">
-    <h3>Interurban — single carriageway, 3+ lanes same direction</h3>
-    <div class="highlight important"><div class="hi-title">Heavy vehicles rule</div><p>Lorries, minivans, special vehicles &gt;3,500 kg MAM, and combinations &gt;7 m must use the RIGHT lane only. Adjacent lane exceptionally allowed. All other lanes NEVER.</p></div>
-  </div>
-  <div class="subsection">
-    <h3>Inside urban areas</h3>
-    <table class="styled-table">
-      <thead><tr><th>Situation</th><th>Rule</th></tr></thead>
-      <tbody>
-        <tr><td>2+ lanes with longitudinal markings</td><td>Most suitable lane for destination. Only abandon to change direction, overtake, stop, or park.</td></tr>
-        <tr><td>No longitudinal markings</td><td>Right lane</td></tr>
-        <tr><td>Motorways through urban ground</td><td>Interurban rules apply</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="highlight important"><div class="hi-title">⛔ Absolutely forbidden</div><p>Driving on pavements and pedestrian zones. Exceptions by regulation only for PMVs, bicycles, and cycles.</p></div>
-</div>
-
-<!-- TAB: SPECIAL LANES -->
-<div class="tab-panel" id="tab-lanes">
-  <div class="section-title">Types of Special Lanes</div>
-  <p class="section-desc">Special lanes have specific access rules and mandatory lighting requirements.</p>
-  <table class="styled-table">
-    <thead><tr><th>Lane type</th><th>Who may use</th><th>Lights</th><th>Speed</th></tr></thead>
-    <tbody>
-      <tr><td>HOV / VAO</td><td>Passenger cars, motorcycles, mixed vehicles ≤3,500 kg MAM with required occupants. Also: V-15 badge, buses &gt;3.5t, "0 emissions" V-25.</td><td>Not mandatory</td><td>Established speed</td></tr>
-      <tr><td>Reversible</td><td>All vehicles (direction controlled by lane signals)</td><td>Mandatory (day &amp; night)</td><td>Established</td></tr>
-      <tr><td>Additional (circumstantial)</td><td>All vehicles</td><td>Mandatory</td><td>60–80 km/h</td></tr>
-      <tr><td>Contra-flow (to increase flow)</td><td>Motorcycles and cars WITHOUT trailer only</td><td>Mandatory</td><td>60–80 km/h</td></tr>
-      <tr><td>Bus/Taxi lane</td><td>Public transport (taxis when "taxi" sign visible)</td><td>—</td><td>Normal limit</td></tr>
-    </tbody>
-  </table>
-  <div class="highlight info"><div class="hi-title">Key rule</div><p>In reversible lanes, the lane on the LEFT is FORBIDDEN. Double broken marks on both sides identify a reversible lane.</p></div>
-</div>
-
-<!-- TAB: SHOULDER & DISTANCE -->
-<div class="tab-panel" id="tab-shoulder">
-  <div class="section-title">Hard Shoulder &amp; Safety Distance</div>
-  <div class="subsection">
-    <h3>Who must/may use the hard shoulder</h3>
-    <div class="grid-2">
-      <div class="def-block green"><div class="term">Must use (if available)</div><div class="def">Cycles, mopeds, animal traction vehicles, special vehicles ≤3,500 kg MAM, disabled vehicles, vehicles escorting cyclists.</div></div>
-      <div class="def-block"><div class="term">In emergency / abnormally slow</div><div class="def">Vehicles ≤3,500 kg MAM in emergency or abnormally slow (disturbing traffic) must use shoulder or right lane.</div></div>
-    </div>
-  </div>
-  <div class="subsection">
-    <h3>Safety Distance — Key Numbers</h3>
-    <div class="grid-4">
-      <div class="number-fact"><div class="num">50m</div><div class="unit">Heavy vehicles</div><div class="desc">Vehicles &gt;3,500 kg and combinations &gt;10 m must keep 50 m minimum</div></div>
-      <div class="number-fact"><div class="num">100m</div><div class="unit">Tunnel (general)</div><div class="desc">Min. 100 m or 4-second interval inside tunnels</div></div>
-      <div class="number-fact"><div class="num">150m</div><div class="unit">Tunnel (&gt;3.5t)</div><div class="desc">Vehicles &gt;3,500 kg must keep 150 m or 6 seconds in tunnels</div></div>
-      <div class="number-fact"><div class="num">60km/h</div><div class="unit">Min speed</div><div class="desc">Minimum speed on motorways and dual carriageways</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- TAB: PEDESTRIANS & ANIMALS -->
-<div class="tab-panel" id="tab-pedestrians">
-  <div class="section-title">Pedestrians &amp; Animals</div>
-  <div class="subsection">
-    <h3>Where pedestrians walk</h3>
-    <table class="styled-table">
-      <thead><tr><th>Situation</th><th>Required side</th></tr></thead>
-      <tbody>
-        <tr><td>With pedestrian zone</td><td>Pavement on right-hand side</td></tr>
-        <tr><td>Hard shoulder available</td><td>Use hard shoulder</td></tr>
-        <tr><td>No shoulder — urban road</td><td>Either side depending on safety</td></tr>
-        <tr><td>No shoulder — outside urban / crossings</td><td>Left-hand side (facing traffic). Right allowed only if safety requires.</td></tr>
-        <tr><td>Groups, pushing cycles or wheelchair</td><td>Right side</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="highlight important"><div class="hi-title">Night visibility</div><p>Interurban roads between sunset and sunrise: must carry reflective element visible at <strong>150 metres</strong>. Groups must also carry white/yellow front lights and red rear lights.</p></div>
-  <div class="subsection">
-    <h3>Animal Herding Rules</h3>
-    <div class="card">
-      <div class="qr-row"><span class="qr-key">Minimum herder age</span><span class="qr-val">18 years old</span></div>
-      <div class="qr-row"><span class="qr-key">Position on road</span><span class="qr-val">Pulled over to right kerb as much as possible (left allowed if safer)</span></div>
-      <div class="qr-row"><span class="qr-key">Poor visibility</span><span class="qr-val">Carry white/yellow front light and red rear light</span></div>
-      <div class="qr-row"><span class="qr-key">Motorways/highways</span><span class="qr-val">FORBIDDEN (includes animal traction vehicles)</span></div>
-      <div class="qr-row"><span class="qr-key">Leaving animals unattended</span><span class="qr-val">Strictly FORBIDDEN</span></div>
-    </div>
-  </div>
-</div>
-
-<!-- TAB: SPEED -->
-<div class="tab-panel" id="tab-speed">
-  <div class="section-title">Speed Regulations</div>
-  <div class="subsection">
-    <h3>Maximum &amp; Minimum Speeds — Outside Urban Areas</h3>
-    <table class="styled-table">
-      <thead><tr><th>Road type</th><th>Car/Motorcycle/Motorhome ≤3.5t</th><th>Bus / Car derived</th><th>Truck / Articulated / Car+trailer</th></tr></thead>
-      <tbody>
-        <tr><td>Motorway &amp; Dual carriageway</td><td>120 / min 60</td><td>100 / min 60</td><td>90 / min 60</td></tr>
-        <tr><td>Conventional / Multi-lane / Single carriageway</td><td>90 / min 45</td><td>90 / min 45</td><td>80 / min 40</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection">
-    <h3>Urban Area Speed Limits</h3>
-    <table class="styled-table">
-      <thead><tr><th>Road type</th><th>Max</th><th>Min</th></tr></thead>
-      <tbody>
-        <tr><td>Single road + sidewalk platform (shared space)</td><td>20 km/h</td><td>10 km/h</td></tr>
-        <tr><td>Single lane per direction</td><td>30 km/h</td><td>15 km/h</td></tr>
-        <tr><td>2+ lanes per direction &amp; crossings</td><td>50 km/h</td><td>25 km/h</td></tr>
-        <tr><td>Motorways/highways within urban area</td><td>80 km/h</td><td>60 km/h</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection">
-    <h3>Special Speed Limits</h3>
-    <table class="styled-table">
-      <thead><tr><th>Vehicle / Situation</th><th>Limit</th></tr></thead>
-      <tbody>
-        <tr><td>Mopeds, cycles, light quads, reduced mobility vehicles</td><td>45 km/h max</td></tr>
-        <tr><td>Scholars transport or dangerous goods (interurban)</td><td>Generic max − 10 km/h</td></tr>
-        <tr><td>Motorcycles/mopeds towing trailer (interurban)</td><td>Generic max − 10%</td></tr>
-        <tr><td>Unpaved roads</td><td>30 km/h max</td></tr>
-        <tr><td>Bus without seat belts on conventional road</td><td>80 km/h max</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- TAB: PRIORITY -->
-<div class="tab-panel" id="tab-priority">
-  <div class="section-title">Right of Way — Priority Rules</div>
-  <div class="highlight info"><div class="hi-title">Order of authority at junctions</div><p>Agents &gt; Light signals &gt; Vertical signs &gt; Road markings. Without signs: yield to vehicles from the RIGHT.</p></div>
-  <div class="subsection">
-    <h3>Exceptions — Priority Regardless of Direction</h3>
-    <div class="grid-2">
-      <div class="def-block green"><div class="term">1. Paved over unpaved road</div><div class="def">Vehicles on a paved road have priority over those on an unpaved road.</div></div>
-      <div class="def-block green"><div class="term">2. Already in roundabout</div><div class="def">Vehicles already circulating inside a roundabout have priority.</div></div>
-      <div class="def-block green"><div class="term">3. Motorways / dual carriageways</div><div class="def">Vehicles on these roads have priority over those wanting to join.</div></div>
-      <div class="def-block green"><div class="term">4. Public road over private path</div><div class="def">Vehicles on a public road have priority over those from a private path.</div></div>
-    </div>
-    <div class="highlight important"><div class="hi-title">Rail vehicles — always priority</div><p>Trains and trams ALWAYS have priority over all road users. Forbidden to cross a level crossing when barriers are closed, going up or down, or when traffic lights forbid it.</p></div>
-  </div>
-  <div class="subsection">
-    <h3>Road Narrows — Priority Order (1 = highest)</h3>
-    <table class="styled-table">
-      <thead><tr><th>Rank</th><th>Vehicle type</th></tr></thead>
-      <tbody>
-        <tr><td>1st</td><td>Special vehicles on special transport exceeding established masses/dimensions</td></tr>
-        <tr><td>2nd</td><td>Combination of vehicles (except item 4)</td></tr>
-        <tr><td>3rd</td><td>Animal traction vehicles</td></tr>
-        <tr><td>4th</td><td>Cars towing trailers ≤750 kg MAM and caravans</td></tr>
-        <tr><td>5th</td><td>Passenger public transportation vehicles</td></tr>
-        <tr><td>6th</td><td>Lorries, tractor trucks, and vans</td></tr>
-        <tr><td>7th</td><td>Cars, cars derived and adaptable mixed vehicles</td></tr>
-        <tr><td>8th</td><td>Special vehicles not exceeding established dimensions</td></tr>
-        <tr><td>9th</td><td>Three-wheeled vehicles, motorcycles with sidecar, three-wheeled mopeds</td></tr>
-        <tr><td>10th</td><td>Motorcycles, two-wheeled mopeds, and bicycles</td></tr>
-      </tbody>
-    </table>
-    <div class="highlight warn"><div class="hi-title">Steep slopes ≥ 7%</div><p>Ascending vehicle has priority — except if descending vehicle reaches a passing place first.</p></div>
-  </div>
-</div>
-
-<!-- TAB: QUIZ -->
-<div class="tab-panel" id="tab-quiz">
-  <div class="quiz-header">
-    <h3>Chapter 2 Quiz — 50 Questions</h3>
-    <div class="quiz-progress">
-      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
-      <div class="score-display" id="score-display">0/0</div>
-    </div>
-  </div>
-  <div id="quiz-body">
-    <div class="question-card">
-      <div class="question-num" id="q-num"></div>
-      <div class="question-text" id="q-text"></div>
-      <div class="options" id="q-options"></div>
-      <div class="explanation" id="q-exp"></div>
-    </div>
-    <div class="quiz-nav">
-      <div class="quiz-page-info" id="q-page"></div>
-      <div class="quiz-controls">
-        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
-        <button class="btn btn-outline" id="btn-restart">Restart</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Chapter 2 – Use of Public Roads | Spanish Driving Theory (Licence B)
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #0d1b2a;
+        --navy2: #1b2d42;
+        --gold: #e8a020;
+        --gold-light: #faecd6;
+        --gold-dark: #b57d10;
+        --green: #1a6e3c;
+        --green-light: #e0f2e9;
+        --red: #b52b27;
+        --red-light: #fce8e8;
+        --blue: #1a4e8a;
+        --blue-light: #e4eef9;
+        --text: #0d1b2a;
+        --text-muted: #4a5568;
+        --text-light: #718096;
+        --bg: #f7f5f0;
+        --surface: #ffffff;
+        --border: #e2ddd4;
+        --border-strong: #c9c0b4;
+        --radius: 8px;
+        --radius-lg: 12px;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: 'Syne', sans-serif;
+      }
+      .header {
+        background: var(--navy);
+        color: #fff;
+        padding: 28px 40px 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .header::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -40px;
+        width: 220px;
+        height: 220px;
+        border: 40px solid rgba(232, 160, 32, 0.12);
+        border-radius: 50%;
+      }
+      .header-badge {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--navy);
+        font-family: 'Syne', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      .header p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        font-weight: 300;
+      }
+      .header-meta {
+        display: flex;
+        gap: 24px;
+        margin-top: 16px;
+      }
+      .header-stat .val {
+        font-family: 'Syne', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold);
+      }
+      .header-stat .lbl {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .tab-bar {
+        background: var(--navy2);
+        display: flex;
+        gap: 2px;
+        padding: 0 24px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      .tab-bar::-webkit-scrollbar {
+        display: none;
+      }
+      .tab-btn {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 12px 18px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .tab-btn:hover {
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .tab-btn.active {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+      }
+      .content {
+        padding: 32px 40px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+      }
+      .section-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 6px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--gold);
+        display: inline-block;
+      }
+      .section-desc {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin-bottom: 24px;
+        margin-top: 4px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+      }
+      .card-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .card-title .icon {
+        width: 28px;
+        height: 28px;
+        background: var(--gold-light);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+      .card p {
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      @media (max-width: 700px) {
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+        }
+      }
+      .def-block {
+        border-left: 3px solid var(--gold);
+        padding: 12px 16px;
+        background: var(--gold-light);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        margin-bottom: 12px;
+      }
+      .def-block .term {
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 3px;
+      }
+      .def-block .def {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .def-block.green {
+        border-left-color: var(--green);
+        background: var(--green-light);
+      }
+      .def-block.blue {
+        border-left-color: var(--blue);
+        background: var(--blue-light);
+      }
+      .def-block.red {
+        border-left-color: var(--red);
+        background: var(--red-light);
+      }
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--border);
+        margin-bottom: 24px;
+      }
+      .styled-table th {
+        background: var(--navy);
+        color: #fff;
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        padding: 10px 14px;
+        text-align: left;
+      }
+      .styled-table td {
+        padding: 9px 14px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-muted);
+        vertical-align: top;
+      }
+      .styled-table tr:last-child td {
+        border-bottom: none;
+      }
+      .styled-table tr:hover td {
+        background: var(--bg);
+      }
+      .styled-table td:first-child {
+        font-weight: 600;
+        color: var(--navy);
+      }
+      .badge {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 20px;
+      }
+      .badge-gold {
+        background: var(--gold-light);
+        color: var(--gold-dark);
+      }
+      .badge-green {
+        background: var(--green-light);
+        color: var(--green);
+      }
+      .badge-blue {
+        background: var(--blue-light);
+        color: var(--blue);
+      }
+      .badge-red {
+        background: var(--red-light);
+        color: var(--red);
+      }
+      .badge-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .highlight {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 18px;
+        margin-bottom: 16px;
+        font-size: 13px;
+      }
+      .highlight.important {
+        border-left: 4px solid var(--red);
+        background: var(--red-light);
+      }
+      .highlight.tip {
+        border-left: 4px solid var(--green);
+        background: var(--green-light);
+      }
+      .highlight.info {
+        border-left: 4px solid var(--blue);
+        background: var(--blue-light);
+      }
+      .highlight.warn {
+        border-left: 4px solid var(--gold);
+        background: var(--gold-light);
+      }
+      .highlight .hi-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 5px;
+      }
+      .highlight.important .hi-title {
+        color: var(--red);
+      }
+      .highlight.tip .hi-title {
+        color: var(--green);
+      }
+      .highlight.info .hi-title {
+        color: var(--blue);
+      }
+      .highlight.warn .hi-title {
+        color: var(--gold-dark);
+      }
+      .highlight p,
+      .highlight li {
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .highlight ul {
+        padding-left: 18px;
+        margin-top: 4px;
+      }
+      .highlight li {
+        margin-bottom: 3px;
+      }
+      .quiz-header {
+        background: var(--navy);
+        color: #fff;
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .quiz-header h3 {
+        font-size: 18px;
+        color: #fff;
+      }
+      .quiz-progress {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .progress-bar {
+        width: 200px;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: var(--gold);
+        border-radius: 3px;
+        transition: width 0.3s;
+      }
+      .score-display {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        color: var(--gold);
+      }
+      .question-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 22px 24px;
+        margin-bottom: 16px;
+      }
+      .question-num {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--text-light);
+        margin-bottom: 8px;
+      }
+      .question-text {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .option-btn {
+        background: var(--bg);
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius);
+        padding: 10px 16px;
+        text-align: left;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        color: var(--text);
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+        line-height: 1.4;
+      }
+      .option-btn:hover:not(:disabled) {
+        background: var(--blue-light);
+        border-color: var(--blue);
+      }
+      .option-btn.correct {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+        font-weight: 500;
+      }
+      .option-btn.wrong {
+        background: var(--red-light);
+        border-color: var(--red);
+        color: var(--red);
+      }
+      .option-btn.reveal {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+      }
+      .option-btn:disabled {
+        cursor: default;
+      }
+      .explanation {
+        margin-top: 10px;
+        padding: 10px 14px;
+        background: var(--bg);
+        border-radius: var(--radius);
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        border-left: 3px solid var(--gold);
+        display: none;
+      }
+      .quiz-controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+      .btn {
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition:
+          opacity 0.15s,
+          transform 0.1s;
+        border: none;
+      }
+      .btn:active {
+        transform: scale(0.97);
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+      }
+      .btn-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .btn-outline {
+        background: transparent;
+        border: 1.5px solid var(--border-strong);
+        color: var(--text);
+      }
+      .btn:hover {
+        opacity: 0.88;
+      }
+      .quiz-result {
+        text-align: center;
+        padding: 40px 24px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        display: none;
+      }
+      .result-score {
+        font-family: 'Syne', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .result-score span {
+        color: var(--gold);
+      }
+      .result-msg {
+        font-size: 18px;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+      }
+      .result-grade {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 24px;
+        border-radius: 30px;
+        margin-bottom: 24px;
+      }
+      .qr-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 13px;
+      }
+      .qr-row:last-child {
+        border-bottom: none;
+      }
+      .qr-key {
+        font-weight: 600;
+        color: var(--navy);
+        min-width: 220px;
+        flex-shrink: 0;
+      }
+      .qr-val {
+        color: var(--text-muted);
+        flex: 1;
+      }
+      .subsection {
+        margin-bottom: 28px;
+      }
+      .subsection h3 {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .subsection h3::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 16px;
+        background: var(--gold);
+        border-radius: 2px;
+      }
+      .number-fact {
+        text-align: center;
+        padding: 14px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+      .number-fact .num {
+        font-family: 'Syne', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--navy);
+      }
+      .number-fact .unit {
+        font-size: 12px;
+        color: var(--gold-dark);
+        font-weight: 600;
+      }
+      .number-fact .desc {
+        font-size: 11px;
+        color: var(--text-light);
+        margin-top: 3px;
+      }
+      .quiz-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+      .quiz-page-info {
+        font-size: 13px;
+        color: var(--text-light);
+      }
+      ul.check-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.check-list li {
+        padding: 4px 0 4px 22px;
+        position: relative;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+      ul.check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-weight: 700;
+      }
+      ul.check-list li.no::before {
+        content: '✗';
+        color: var(--red);
+      }
+      .step-box {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+      }
+      .step-num {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: var(--gold);
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .step-text {
+        font-size: 14px;
+        color: var(--text-muted);
+        flex: 1;
+        padding-top: 4px;
+      }
+      @media (max-width: 768px) {
+        .header {
+          padding: 16px 16px 12px;
+        }
+        .header h1 {
+          font-size: 22px;
+        }
+        .header p {
+          font-size: 12px;
+        }
+        .header-meta {
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .header-stat .val {
+          font-size: 18px;
+        }
+        .header-stat .lbl {
+          font-size: 10px;
+        }
+        .tab-bar {
+          padding: 0 12px;
+        }
+        .tab-btn {
+          padding: 10px 12px;
+          font-size: 12px;
+        }
+        .content {
+          padding: 20px 16px;
+          max-width: 100%;
+        }
+        .section-title {
+          font-size: 18px;
+        }
+        .card {
+          padding: 16px 12px;
+        }
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .styled-table {
+          font-size: 12px;
+        }
+        .styled-table th {
+          padding: 8px 10px;
+          font-size: 11px;
+        }
+        .styled-table td {
+          padding: 7px 10px;
+        }
+        .quiz-header {
+          padding: 16px 12px;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .quiz-header h3 {
+          font-size: 16px;
+        }
+        .progress-bar {
+          width: 150px;
+        }
+        .question-card {
+          padding: 16px 12px;
+        }
+        .question-text {
+          font-size: 14px;
+        }
+        .option-btn {
+          padding: 12px 12px;
+          font-size: 13px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+          width: auto;
+        }
+        .quiz-controls {
+          flex-direction: column;
+        }
+        .quiz-controls .btn {
+          width: 100%;
+        }
+        .quiz-nav {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .result-score {
+          font-size: 48px;
+        }
+        .result-msg {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 480px) {
+        .header {
+          padding: 12px 12px 8px;
+        }
+        .header h1 {
+          font-size: 18px;
+          margin-bottom: 2px;
+        }
+        .header p {
+          font-size: 11px;
+        }
+        .header-badge {
+          font-size: 9px;
+          padding: 3px 8px;
+        }
+        .header-meta {
+          gap: 8px;
+        }
+        .header-stat .val {
+          font-size: 16px;
+        }
+        .tab-bar {
+          padding: 0 8px;
+          gap: 0;
+        }
+        .tab-btn {
+          padding: 10px 8px;
+          font-size: 11px;
+        }
+        .content {
+          padding: 16px 12px;
+        }
+        .section-title {
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+        .section-desc {
+          font-size: 13px;
+          margin-bottom: 16px;
+        }
+        .card {
+          padding: 12px 12px;
+          margin-bottom: 12px;
+        }
+        .card-title {
+          font-size: 13px;
+          gap: 6px;
+        }
+        .card-title .icon {
+          width: 24px;
+          height: 24px;
+          font-size: 12px;
+        }
+        .card p {
+          font-size: 13px;
+        }
+        .def-block {
+          padding: 10px 12px;
+          margin-bottom: 10px;
+        }
+        .def-block .term {
+          font-size: 13px;
+          margin-bottom: 2px;
+        }
+        .def-block .def {
+          font-size: 12px;
+        }
+        .badge {
+          font-size: 9px;
+          padding: 2px 6px;
+        }
+        .highlight {
+          padding: 12px 12px;
+          margin-bottom: 12px;
+          font-size: 12px;
+        }
+        .number-fact {
+          padding: 10px;
+        }
+        .number-fact .num {
+          font-size: 24px;
+        }
+        .highlight .hi-title {
+          font-size: 11px;
+          margin-bottom: 4px;
+        }
+        .highlight p,
+        .highlight li {
+          font-size: 12px;
+        }
+        .quiz-header {
+          padding: 12px 12px;
+        }
+        .quiz-header h3 {
+          font-size: 14px;
+        }
+        .progress-bar {
+          width: 100px;
+        }
+        .question-card {
+          padding: 12px 12px;
+        }
+        .question-num {
+          font-size: 10px;
+          margin-bottom: 6px;
+        }
+        .question-text {
+          font-size: 13px;
+          margin-bottom: 12px;
+        }
+        .option-btn {
+          padding: 11px 10px;
+          font-size: 12px;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+        }
+        .quiz-controls {
+          gap: 8px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+          min-height: 44px;
+          border-radius: 6px;
+          width: 100%;
+        }
+        .quiz-page-info {
+          font-size: 12px;
+        }
+        .result-score {
+          font-size: 42px;
+        }
+        .result-msg {
+          font-size: 14px;
+        }
+        .result-grade {
+          font-size: 13px;
+          padding: 6px 16px;
+        }
+        body {
+          font-size: 14px;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+          font-size: 100%;
+        }
+      }
+      @media (max-height: 500px) {
+        .option-btn {
+          min-height: 40px;
+        }
+        .btn {
+          min-height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-badge">Permiso B – Teoría</div>
+      <h1>Chapter 2: Use of Public Roads</h1>
+      <p>Complete study guide for the Spanish Driving Theory Examination</p>
+      <div class="header-meta">
+        <div class="header-stat">
+          <div class="val">9</div>
+          <div class="lbl">Study sections</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">50+</div>
+          <div class="lbl">Rules covered</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">50</div>
+          <div class="lbl">Quiz questions</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">B</div>
+          <div class="lbl">Licence class</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="quiz-result" id="quiz-result">
-    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">50</span></div>
-    <div class="result-msg" id="res-msg"></div>
-    <div class="result-grade" id="res-grade"></div>
-    <button class="btn btn-gold" onclick="initQuiz()">Try Again</button>
-  </div>
-</div>
 
-</div><!-- end content -->
+    <div class="tab-bar" id="tabBar">
+      <button class="tab-btn active" data-tab="general">General Rules</button>
+      <button class="tab-btn" data-tab="roadparts">
+        Road Parts &amp; Types
+      </button>
+      <button class="tab-btn" data-tab="driving">Driving Rules</button>
+      <button class="tab-btn" data-tab="lanes">Special Lanes</button>
+      <button class="tab-btn" data-tab="shoulder">
+        Shoulder &amp; Distance
+      </button>
+      <button class="tab-btn" data-tab="pedestrians">
+        Pedestrians &amp; Animals
+      </button>
+      <button class="tab-btn" data-tab="speed">Speed</button>
+      <button class="tab-btn" data-tab="priority">Right of Way</button>
+      <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
+    </div>
 
-<script>
-window.QUIZ_QUESTIONS=[
-{topic:"General Rules",q:"When refuelling, what must be switched off?",opts:["Engine only","Engine and headlamps only","Engine, headlamps, radio, and ALL electrical systems including mobile phones","Nothing – refuelling only takes a minute"],ans:2,exp:"When refuelling, you must switch off the engine and contact, headlamps, as well as all electrical systems such as radio and other electromagnetic devices including mobile phones."},
-{topic:"General Rules",q:"Which device is it PERMITTED to carry in a vehicle?",opts:["A radar speed camera inhibitor","A device that reports the position of traffic surveillance systems","A system that jams police communications","A radar detector showing camera positions"],ans:1,exp:"Radar inhibitors and detectors are forbidden. However, warning mechanisms that only report the position of traffic surveillance systems are excluded from the prohibition and are permitted."},
-{topic:"Road Parts",q:"Motorcycles are included in the lane count when counting available lanes.",opts:["True","False – motorcycles are NOT included in the lane count","Only on motorways","Only on urban roads"],ans:1,exp:"A lane is defined as a subdivision of the carriageway marked for use by motor vehicles in single file, in which motorcycles are NOT included in the lane count."},
-{topic:"Road Types",q:"Cyclists over 14 on a motorway are...",opts:["Forbidden from any part of the road","Permitted on the hard shoulder unless a sign prohibits it","Permitted on the main carriageway","Only permitted if escorted"],ans:1,exp:"Cycles, mopeds, pedestrians, animals and PMVs are prohibited from motorways. However, cyclists over 14 may ride along the hard shoulders EXCEPT if there is signage prohibiting it."},
-{topic:"Driving Rules",q:"On an interurban single carriageway with 3+ lanes, which vehicles must stay in the rightmost lane?",opts:["All vehicles at all times","Lorries, minivans, special vehicles >3,500 kg MAM, and combinations >7 m","Only vehicles over 7,500 kg","Only slow-moving vehicles"],ans:1,exp:"On interurban single carriageways with 3+ lanes: lorries, minivans, special vehicles with MAM >3,500 kg, and combinations >7 m must use the rightmost lane."},
-{topic:"Special Lanes",q:"Reversible lane: what is mandatory for ALL vehicles using it?",opts:["Maximum speed of 50 km/h","Headlights on day and night","Minimum 2 occupants","No trailers allowed"],ans:1,exp:"Drivers in reversible lanes must have headlights on, whether in daytime or at night. Additionally, use of the lane on the LEFT of a reversible lane is forbidden."},
-{topic:"Special Lanes",q:"A contra-flow lane is opened to increase traffic flow. Which vehicles may use it?",opts:["All vehicles","Motorcycles and cars without trailer exclusively","Buses and taxis only","All vehicles except those over 3,500 kg MAM"],ans:1,exp:"Contra-flow lanes opened to increase traffic flow are reserved exclusively for motorcycles and cars without trailer. For road works, all vehicles on the road work site are allowed unless prohibited."},
-{topic:"HOV Lane",q:"Which badge allows a vehicle to use HOV lanes even when travelling alone?",opts:["V-5 Slow vehicle badge","V-4 Speed limitation","V-15 disabled badge (and V-25 zero emissions)","V-19 ITV sticker"],ans:2,exp:"V-15 (disabled) badge holders and vehicles with V-25 '0 emissions' badge may use HOV lanes even with only the driver. ECO/C/B badges only when indicated on variable message panels."},
-{topic:"Shoulder",q:"Vehicles over 3,500 kg MAM and combinations over 10 m must maintain a minimum following distance of:",opts:["25 metres","50 metres","100 metres","150 metres"],ans:1,exp:"Vehicles with MAM over 3,500 kg and combinations of more than 10 metres in length must be separated by at least 50 metres from the vehicle ahead."},
-{topic:"Tunnels",q:"Inside a tunnel, a normal passenger car not intending to overtake must maintain:",opts:["50 m or 2 seconds","100 m or 4 seconds","150 m or 6 seconds","25 m or 1 second"],ans:1,exp:"When there is no intention to overtake inside tunnels and underpasses, a security distance of at least 100 metres or a minimum interval of 4 seconds must be kept."},
-{topic:"Pedestrians",q:"Outside urban areas, on which side of the road must pedestrians walk?",opts:["Right side – with traffic","Left side – facing oncoming traffic","Either side – no rule exists","The middle of the road"],ans:1,exp:"Outside urban areas and at crossings, pedestrians are required to walk on the left-hand side of the road (facing oncoming traffic), except if for safety reasons it becomes safer to walk on the right."},
-{topic:"Pedestrians",q:"Pedestrians walking on interurban roads at night must carry a reflective element visible at:",opts:["50 metres","100 metres","150 metres","200 metres"],ans:2,exp:"Pedestrians walking on interurban roads between sunset and sunrise or under poor visibility must carry a bright or reflective element visible at a distance of no less than 150 metres."},
-{topic:"Animals",q:"What is the minimum age for a person legally herding animals on a public road?",opts:["16","14","18","No minimum specified"],ans:2,exp:"Animals shall be herded by someone of at least 18 years of age. This is a fixed legal requirement for animal herding on public roads."},
-{topic:"Speed",q:"Maximum speed for a car on a motorway outside urban areas?",opts:["90 km/h","100 km/h","110 km/h","120 km/h"],ans:3,exp:"The maximum speed for a car, motorcycle, or motorhome ≤3.5t on a motorway or dual carriageway outside urban areas is 120 km/h."},
-{topic:"Speed",q:"On an urban road with a single road and sidewalk platform, what are the maximum and minimum speeds?",opts:["50 km/h max / 25 km/h min","30 km/h max / 15 km/h min","20 km/h max / 10 km/h min","40 km/h max / 20 km/h min"],ans:2,exp:"On roads with a single road and sidewalk platform (shared space), the maximum speed is 20 km/h and the minimum is 10 km/h."},
-{topic:"Speed",q:"A vehicle carrying schoolchildren on an interurban road: what speed adjustment applies?",opts:["No adjustment","Max speed reduced by 10 km/h from generic limit","Max speed reduced by 20%","Max speed capped at 80 km/h"],ans:1,exp:"Interurban vehicles transporting scholars have their generic maximum speed reduced by 10 km/h. The same 10 km/h reduction applies to vehicles carrying dangerous goods."},
-{topic:"Speed",q:"Maximum speed for mopeds on any road?",opts:["50 km/h","45 km/h","60 km/h","The same as a car on that road"],ans:1,exp:"Cycles and all vehicles considered as mopeds (two and three wheeled, light quadricycles, and reduced mobility vehicles) have a maximum speed of 45 km/h on all roads."},
-{topic:"Speed",q:"A motorcycle tows a trailer on an interurban road with 90 km/h generic limit. Its actual maximum?",opts:["90 km/h","81 km/h (−10%)","80 km/h","45 km/h"],ans:1,exp:"Motorcycles, mopeds, and cycles towing a trailer on an interurban road have their maximum speed reduced by 10%. So 90 km/h × 90% = 81 km/h."},
-{topic:"Right of Way",q:"Without signs at a junction, you approach from the left. A vehicle approaches from the right. Who has priority?",opts:["You – you arrived first","The vehicle from the RIGHT has priority","You – approaching from the left is safer","Neither – both must stop"],ans:1,exp:"Without signals or signs at a junction, the general rule is that vehicles approaching from the RIGHT have priority."},
-{topic:"Right of Way",q:"Vehicles already in a roundabout vs. those wanting to join: who has priority?",opts:["Vehicles wanting to join – they approach from outside","Vehicles already inside the roundabout – regardless of direction","Whichever vehicle is larger","They have equal priority"],ans:1,exp:"As an exception to the general right-hand rule: vehicles already circulating in a roundabout have priority over those wishing to join, regardless of the direction they are approaching from."},
-{topic:"Right of Way",q:"Rail vehicles (trains, trams) always have priority over other road users?",opts:["Only when the barrier is down","Yes – rail vehicles always have priority","Only trams in urban areas","Only if travelling above 60 km/h"],ans:1,exp:"Rail vehicles (trains and trams) always have priority over all road users. However, level crossings may have signals that convey priority to other users."},
-{topic:"Right of Way",q:"On a steep slope of 9% at a road narrow, which vehicle has priority?",opts:["The descending vehicle – harder to stop","The ascending vehicle – unless a passing place is closer to the descending vehicle","Whichever vehicle has more MAM","Neither – both stop and negotiate"],ans:1,exp:"At road narrows with very steep downhill hills (minimum gradient 7%), priority is given to vehicles coming uphill, except if the descending vehicle reaches a special passing place first."},
-{topic:"Priority Vehicles",q:"For an emergency vehicle to have full priority, what must be active simultaneously?",opts:["Blue flashing lights only","Siren only","Both blue flashing beacons AND audible special warning devices (siren can be dispensed with if not causing danger)","Hazard lights and siren"],ans:2,exp:"Priority vehicles must be in emergency response AND signal presence with both flashing beacons and audible special warning devices. The siren may be dispensed with only when not using it does not impose danger."},
-{topic:"Pedestrians",q:"A pedestrian using a skateboard on the pavement may travel at:",opts:["Any speed as they have priority","Walking speed only – and must not use the roadway except in designated areas","Up to 20 km/h","Up to the speed of nearby cyclists"],ans:1,exp:"Pedestrians using skateboards, scooters, or similar means may not use the roadway (except in specially designated areas) and may only travel at walking speed on pavements or streets signposted accordingly."},
-{topic:"Pedestrians",q:"Crossing squares and roundabout roads is:",opts:["Permitted if pedestrian lights show green","Permitted only for pedestrians on foot","Forbidden – they must be surrounded","Permitted at designated points only"],ans:2,exp:"Crossing squares and roundabout roads is forbidden. Pedestrians must go around them, not across them."},
-{topic:"Driving Rules",q:"In a roundabout, the centre island must always be kept on which side?",opts:["Driver's right","Driver's left","Behind the driver","Directly in front"],ans:1,exp:"In squares, roundabouts, and junctions, the centre element will always be kept to the driver's LEFT. This means circulation is counterclockwise."},
-{topic:"Driving Rules",q:"During congested traffic, which action is forbidden?",opts:["Driving side by side maintaining safety distance","Adapting speed to other vehicles","Overtaking using the hard shoulder","Driving faster on the right lane than left"],ans:2,exp:"During congested traffic, you must NOT overtake using the hard shoulder, and you must NOT change lanes except to turn right or left, to abandon the carriageway, or to take a certain direction."},
-{topic:"General Rules",q:"Driving on pavements or pedestrian zones is:",opts:["Allowed when no pedestrians are present","Allowed for PMVs, bicycles and cycles (as regulated)","Always completely forbidden – no exceptions","Allowed for emergency vehicles"],ans:1,exp:"Under no circumstance is driving on pavements and pedestrian zones allowed. By regulation, exceptions will be determined for personal mobility vehicles, bicycles, and cycles."},
-{topic:"Shoulder",q:"Bicycles riding on the hard shoulder in parallel (side by side): when must they form single file?",opts:["Always when on a hard shoulder","In sections of poor visibility or when riding in groups. In dual carriageways it is forbidden to invade the carriageway.","Never – bicycles may always ride side by side","Only at night"],ans:1,exp:"Bicycles may ride side by side but must pull to the extreme right and form single file in sections of poor visibility or when riding in groups. In dual carriageways, invading the carriageway is forbidden."},
-{topic:"Shoulder",q:"Overtaking on the shoulder is forbidden if it requires riding side by side for more than:",opts:["10 seconds or 100 metres","15 seconds or 200 metres","30 seconds or 300 metres","60 seconds or 500 metres"],ans:1,exp:"For those using the hard shoulder, with the exception of bicycles, overtaking is forbidden if it requires travelling more than 15 seconds or more than 200 metres side by side."},
-{topic:"Speed",q:"When considerably reducing speed (not imminent danger), what must you do?",opts:["Simply brake without warning","Apply brake lights repeatedly OR wave arm top-to-bottom in short fast movements","Sound the horn three times","Switch on hazard lights only"],ans:1,exp:"With the exception of imminent danger, drivers wishing to slow down considerably must apply the brake lights repeatedly or wave the arm from top to bottom in short and fast movements."},
-{topic:"Speed",q:"At an uncontrolled junction with poor visibility, driving above which speed is forbidden?",opts:["30 km/h","40 km/h","50 km/h","60 km/h"],ans:2,exp:"On approach to road junctions with no priority that are duly signalled and where visibility is extremely poor, driving over 50 km/h is forbidden."},
-{topic:"Priority",q:"Even having right of way, when must you NOT enter a junction?",opts:["Never – having priority means you may always proceed","When your vehicle will presumably become stationary there and obstruct the crossover","When visibility is limited","When there are pedestrians on the pavement"],ans:1,exp:"Even having priority, you must not enter a junction, pedestrian crossing, or cycle crossing if your vehicle is presumably going to be stationary there and obstruct the crossover of other vehicles."},
-{topic:"Priority",q:"When a group of cyclists is riding together, the leading cyclist enters a roundabout. What must motorists do?",opts:["Proceed – only the leading cyclist has entered","Yield to the entire group – they form a 'mobile unit'","Sound the horn to warn them","Yield only if more than 5 cyclists"],ans:1,exp:"When cyclists ride in a group they are called a 'mobile unit'. When the leading cyclist has entered a crossing or roundabout, motorists must give way to the entire group."},
-{topic:"Priority",q:"Drivers must yield to pedestrians at a signalled bus stop when:",opts:["Only if the bus has stopped","When pedestrians are boarding/alighting and are between the bus and the nearest pedestrian zone","Always when near a bus stop","Only at night"],ans:1,exp:"At a signalled bus stop with pedestrians going on and off and being between the bus and the nearest pedestrian zone or refuge, drivers must give way to those pedestrians."},
-{topic:"Abnormal speed",q:"Driving at abnormally slow speed without justification on a motorway (below 60 km/h) is:",opts:["Permitted during adverse weather","Forbidden – except for specific vehicles and circumstances","Permitted if hazard lights are on","Permitted for new drivers"],ans:1,exp:"Driving at an abnormally slow speed with no justified cause is forbidden on motorways and dual carriageways at a speed under 60 km/h. Exceptions include cycles, animal traction vehicles, and special vehicles under special transport."},
-{topic:"General Rules",q:"A driver holds the V-15 (disabled) badge. May they use HOV lanes alone?",opts:["No – HOV lanes always require multiple occupants","Yes – V-15 badge holders may use HOV lanes even with only the driver","Only on motorways","Only if the lane sign shows an accessibility symbol"],ans:1,exp:"Vehicles bearing the V-15 (handicapped/disabled) sign may use HOV (VAO) lanes even if only the driver is occupying the vehicle. This is one of the specific solo-use exceptions."},
-{topic:"Road Types",q:"Cyclists over 14 may use the hard shoulder of motorways UNLESS:",opts:["They are riding in a group","There is a sign specifically prohibiting it","The motorway has 3 or more lanes","It is night-time"],ans:1,exp:"Cyclists over 14 may ride along the hard shoulders of motorways EXCEPT if there is signage prohibiting it."},
-{topic:"Emergency vehicles",q:"A non-priority vehicle driver on urgent duty: what rules apply?",opts:["All traffic rules are suspended when on urgent duty","They may use flashing blue lights","They must signal with horn+hazard lights but ALL driving rules still apply especially at junctions","They may use contra-flow lanes freely"],ans:2,exp:"Non-priority vehicles on urgent duty must signal with horn intermittently, hazard warning lights, or a cloth (or high-beams). Critically, ALL driving rules must be respected – especially at road junctions."},
-{topic:"Speed",q:"A truck (articulated vehicle) on a conventional highway: maximum speed?",opts:["90 km/h","80 km/h","70 km/h","60 km/h"],ans:1,exp:"Trucks, tractor units, vans, articulated vehicles, and cars towing trailers have a maximum speed of 80 km/h on conventional highways, multi-lane roads, and single carriageway roads."},
-{topic:"Speed",q:"A bus on a motorway: maximum speed?",opts:["120 km/h","110 km/h","100 km/h","90 km/h"],ans:2,exp:"Buses, cars derived, and adaptable mixed vehicles have a maximum speed of 100 km/h on motorways and dual carriageways outside urban areas."},
-{topic:"Speed",q:"On an urban road with 2+ lanes per direction and crossings: max and min speeds?",opts:["30/15","40/20","50/25","80/60"],ans:2,exp:"Roads with two or more lanes per direction and crossings have a maximum of 50 km/h and minimum of 25 km/h."},
-{topic:"Road Parts",q:"The 'crossing (travesía)' is defined as:",opts:["Any pedestrian crossing","A section of highway passing through an urban area (no alternative route)","Any road that crosses another at a junction","A road entering a roundabout"],ans:1,exp:"A crossing (travesía) is a section of a highway (interurban road) that goes through an urban area, except those that may be bypassed by an alternative road."},
-{topic:"Driving Rules",q:"On a road divided into THREE carriageways, the central carriageway may be assigned to:",opts:["Emergency vehicles only","Driving in one or two directions – lateral road for one direction unless signalled otherwise","Only heavy vehicles","Public transport only"],ans:1,exp:"When the road is divided into three carriageways, the central may be assigned to driving in one or two directions and the lateral road to driving in one direction except if indicated otherwise."},
-{topic:"Priority",q:"In the road narrows priority order, where do motorcycles and bicycles rank?",opts:["1st – smallest and most maneuverable","5th","8th","10th – last"],ans:3,exp:"Motorcycles, two-wheeled mopeds, and bicycles rank 10th (last) in the priority order for road narrows. They have the least priority and must give way to all the other categories listed."},
-{topic:"Priority",q:"In a road narrow, in the absence of signs, priority is given to:",opts:["The vehicle travelling uphill","The vehicle that entered the narrow section first","The lighter vehicle","The vehicle travelling downhill"],ans:1,exp:"In road narrows, in the absence of signs, priority is given to the vehicle entering first. Only if it is unclear who entered first are the rules about manoeuvring difficulty applied."},
-{topic:"General Rules",q:"A vehicle owner wants to transfer obligations to a regular driver. What must they do?",opts:["Nothing – obligations automatically transfer","Sign a private contract with the regular driver","Disclose the regular driver's name to the DGT Registro de Vehículos","Inform the police verbally"],ans:2,exp:"The vehicle owner must disclose the regular driver's name to the Vehicles Registration with the DGT in order to be exempt from the obligations, which then transfer to the regular driver."},
-{topic:"Speed",q:"On unpaved roads the maximum speed is:",opts:["50 km/h","45 km/h","40 km/h","30 km/h"],ans:3,exp:"On unpaved roads, the maximum speed limit is 30 km/h. This is one of the specific special speed limits to memorise."},
-{topic:"Speed",q:"Dangerous goods on urban roads with 2+ lanes and intersections: max speed?",opts:["50 km/h","45 km/h","40 km/h","30 km/h"],ans:2,exp:"Dangerous goods on urban roads with two or more lanes in each direction and intersections have a maximum speed of 40 km/h."},
-{topic:"Speed",q:"Three-wheeled vehicles and heavy quadricycles: maximum speed?",opts:["45 km/h","60 km/h","70 km/h","90 km/h"],ans:2,exp:"Three-wheeled vehicles and heavy quadricycles have a maximum speed of 70 km/h."}
-];
-</script>
-<script>
-// Tab switching
-document.querySelectorAll('.tab-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
-    window.scrollTo(0,0);
-  });
-});
+    <div class="content">
+      <!-- TAB: GENERAL RULES -->
+      <div class="tab-panel active" id="tab-general">
+        <div class="section-title">General Rules of Behaviour</div>
+        <p class="section-desc">
+          All road users have specific obligations and prohibitions under Art.
+          9–11 RGC.
+        </p>
+        <div class="subsection">
+          <h3>Driver Obligations</h3>
+          <div class="grid-2">
+            <div class="def-block green">
+              <div class="term">Control at all times</div>
+              <div class="def">
+                Adjust speed and movements to road, weather and traffic
+                conditions.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">Vulnerable users</div>
+              <div class="def">
+                Exercise necessary caution when approaching children, elderly,
+                disabled, and blind individuals.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">Freedom of movement</div>
+              <div class="def">
+                Maintain full freedom of movement and unobstructed field of
+                vision. Keep suitable posture.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">Refuelling</div>
+              <div class="def">
+                Switch off engine, lights, radio, and ALL electromagnetic
+                devices (including mobile phones) when refuelling.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Strict Prohibitions</h3>
+          <div class="highlight important">
+            <div class="hi-title">⛔ Forbidden for all drivers</div>
+            <ul>
+              <li>
+                Throwing/abandoning objects that could cause fires, pollution or
+                road hazards
+              </li>
+              <li>Driving negligently or recklessly</li>
+              <li>
+                Using mobile phones, headphones while driving (except fully
+                hands-free)
+              </li>
+              <li>
+                Using radar detectors or devices intended to evade traffic
+                surveillance
+              </li>
+              <li>
+                Internet/TV/DVD while in motion (GPS cannot be operated while
+                moving)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Vehicle Owner Obligations</h3>
+          <div class="card">
+            <div class="qr-row">
+              <span class="qr-key">Keep vehicle in perfect condition</span
+              ><span class="qr-val"
+                >Carry out all adequate examinations and inspections (ITV)</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Prevent unlicensed driving</span
+              ><span class="qr-val"
+                >Must prevent those without a valid licence from driving the
+                vehicle</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Facilitate identification</span
+              ><span class="qr-val"
+                >Must facilitate driver's identification to authorities in event
+                of infraction</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Register regular driver</span
+              ><span class="qr-val"
+                >Disclose regular driver's name to DGT (Registro de Vehículos)
+                to transfer obligations</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-// Quiz engine
-let qCur=0,qScore=0,qAnswered=false;
-const questions=window.QUIZ_QUESTIONS||[];
-function initQuiz(){
-  qCur=0;qScore=0;qAnswered=false;
-  if(!questions.length)return;
-  document.getElementById('quiz-result').style.display='none';
-  document.getElementById('quiz-body').style.display='block';
-  renderQuestion();
-  updateProgress();
-}
-function renderQuestion(){
-  if(qCur>=questions.length){showResult();return;}
-  const q=questions[qCur];
-  document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;
-  document.getElementById('q-text').textContent=q.q;
-  const cont=document.getElementById('q-options');
-  cont.innerHTML='';
-  q.opts.forEach((opt,i)=>{
-    const b=document.createElement('button');
-    b.className='option-btn';
-    b.textContent=String.fromCharCode(65+i)+'. '+opt;
-    b.addEventListener('click',()=>pickAnswer(i,b,q));
-    cont.appendChild(b);
-  });
-  document.getElementById('q-exp').style.display='none';
-  document.getElementById('q-exp').textContent='';
-  qAnswered=false;
-  document.getElementById('btn-next').disabled=true;
-  updateProgress();
-}
-function pickAnswer(i,btn,q){
-  if(qAnswered)return;
-  qAnswered=true;
-  const btns=document.querySelectorAll('#q-options .option-btn');
-  btns.forEach(b=>b.disabled=true);
-  if(i===q.ans){btn.classList.add('correct');qScore++;}
-  else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}
-  const exp=document.getElementById('q-exp');
-  exp.textContent=q.exp;
-  exp.style.display='block';
-  document.getElementById('btn-next').disabled=false;
-  document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);
-}
-function updateProgress(){
-  const pct=questions.length?Math.round(qCur/questions.length*100):0;
-  document.getElementById('progress-fill').style.width=pct+'%';
-  document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;
-}
-function showResult(){
-  document.getElementById('quiz-body').style.display='none';
-  const res=document.getElementById('quiz-result');
-  res.style.display='block';
-  const pct=Math.round(qScore/questions.length*100);
-  document.getElementById('res-num').textContent=qScore;
-  document.getElementById('res-den').textContent=questions.length;
-  let msg='',cls='';
-  if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}
-  else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}
-  else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}
-  else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}
-  document.getElementById('res-msg').textContent=msg;
-  document.getElementById('res-grade').style.cssText=cls;
-  document.getElementById('res-grade').textContent=pct+'%';
-}
-document.addEventListener('DOMContentLoaded',()=>{
-  initQuiz();
-  document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});
-  document.getElementById('btn-restart').addEventListener('click',initQuiz);
-});
-</script>
-</body></html>
+      <!-- TAB: ROAD PARTS & TYPES -->
+      <div class="tab-panel" id="tab-roadparts">
+        <div class="section-title">Road Parts &amp; Road Types</div>
+        <p class="section-desc">
+          Essential definitions for understanding lane rules and driving
+          obligations.
+        </p>
+        <div class="subsection">
+          <h3>Parts of the Road</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Term</th>
+                <th>Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Road surface</td>
+                <td>Space where carriageways and hard shoulders are paved</td>
+              </tr>
+              <tr>
+                <td>Carriageway (calzada)</td>
+                <td>Space destined for vehicular traffic</td>
+              </tr>
+              <tr>
+                <td>Lane (carril)</td>
+                <td>
+                  Subdivision of carriageway for motor vehicles in single file.
+                  Motorcycles NOT included in lane count.
+                </td>
+              </tr>
+              <tr>
+                <td>Hard shoulder (arcén)</td>
+                <td>
+                  Adjoining part of carriageway NOT intended for normal
+                  vehicular traffic
+                </td>
+              </tr>
+              <tr>
+                <td>Central reservation</td>
+                <td>
+                  Longitudinal strip between two road surfaces — not for vehicle
+                  traffic
+                </td>
+              </tr>
+              <tr>
+                <td>Pedestrian zone</td>
+                <td>
+                  Road section raised or delimited, reserved for pedestrians
+                  (roadside, pavement, platform)
+                </td>
+              </tr>
+              <tr>
+                <td>Intersection (cruce)</td>
+                <td>
+                  Road junction where all driving paths are at the same level
+                </td>
+              </tr>
+              <tr>
+                <td>Bend (curva)</td>
+                <td>
+                  Section where road changes direction. "Low visibility bend" =
+                  cannot see full width or oncoming vehicles.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Road Types by Features</h3>
+          <div class="grid-2">
+            <div class="def-block blue">
+              <div class="term">Motorway (Autopista)</div>
+              <div class="def">
+                Separate carriageways per direction. No level crossings. No
+                adjoining property access. May be free or toll. Min access
+                speed: 60 km/h.
+              </div>
+            </div>
+            <div class="def-block blue">
+              <div class="term">Dual carriageway (Autovía)</div>
+              <div class="def">
+                Separate carriageways, median strips. No grade intersections. No
+                bordering property access.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">Conventional highway</div>
+              <div class="def">
+                Any main road not meeting motorway/dual carriageway definition.
+                No use limitations.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">Single carriageway road</div>
+              <div class="def">
+                Reserved exclusively for motorcar driving. One carriageway, no
+                adjoining property access.
+              </div>
+            </div>
+          </div>
+          <div class="highlight important">
+            <div class="hi-title">Cannot use motorways/dual carriageways</div>
+            <p>
+              Cycles, mopeds, pedestrians, animals, animal-drawn vehicles, and
+              PMVs. Exception: cyclists over 14 may use hard shoulders unless
+              prohibited by sign.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: DRIVING RULES -->
+      <div class="tab-panel" id="tab-driving">
+        <div class="section-title">Driving Rules — Lane Usage</div>
+        <p class="section-desc">
+          Rules for lane selection vary by road type and location (urban vs
+          interurban).
+        </p>
+        <div class="highlight info">
+          <div class="hi-title">General rule</div>
+          <p>
+            Drive on the carriageway, not the hard shoulder (except
+            emergencies). On bends and humps: keep close to right edge, keep
+            side gap, leave opposing lane completely free.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Dual carriageways — inside or outside urban areas</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Situation</th>
+                <th>Rule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2 lanes (separated or not)</td>
+                <td>Drive in the right lane</td>
+              </tr>
+              <tr>
+                <td>3 lanes (broken lines)</td>
+                <td>
+                  Right lane always. Centre only to overtake or turn left.
+                  <strong>Left lane NEVER.</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Interurban — single carriageway, 3+ lanes same direction</h3>
+          <div class="highlight important">
+            <div class="hi-title">Heavy vehicles rule</div>
+            <p>
+              Lorries, minivans, special vehicles &gt;3,500 kg MAM, and
+              combinations &gt;7 m must use the RIGHT lane only. Adjacent lane
+              exceptionally allowed. All other lanes NEVER.
+            </p>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Inside urban areas</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Situation</th>
+                <th>Rule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2+ lanes with longitudinal markings</td>
+                <td>
+                  Most suitable lane for destination. Only abandon to change
+                  direction, overtake, stop, or park.
+                </td>
+              </tr>
+              <tr>
+                <td>No longitudinal markings</td>
+                <td>Right lane</td>
+              </tr>
+              <tr>
+                <td>Motorways through urban ground</td>
+                <td>Interurban rules apply</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">⛔ Absolutely forbidden</div>
+          <p>
+            Driving on pavements and pedestrian zones. Exceptions by regulation
+            only for PMVs, bicycles, and cycles.
+          </p>
+        </div>
+      </div>
+
+      <!-- TAB: SPECIAL LANES -->
+      <div class="tab-panel" id="tab-lanes">
+        <div class="section-title">Types of Special Lanes</div>
+        <p class="section-desc">
+          Special lanes have specific access rules and mandatory lighting
+          requirements.
+        </p>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Lane type</th>
+              <th>Who may use</th>
+              <th>Lights</th>
+              <th>Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HOV / VAO</td>
+              <td>
+                Passenger cars, motorcycles, mixed vehicles ≤3,500 kg MAM with
+                required occupants. Also: V-15 badge, buses &gt;3.5t, "0
+                emissions" V-25.
+              </td>
+              <td>Not mandatory</td>
+              <td>Established speed</td>
+            </tr>
+            <tr>
+              <td>Reversible</td>
+              <td>All vehicles (direction controlled by lane signals)</td>
+              <td>Mandatory (day &amp; night)</td>
+              <td>Established</td>
+            </tr>
+            <tr>
+              <td>Additional (circumstantial)</td>
+              <td>All vehicles</td>
+              <td>Mandatory</td>
+              <td>60–80 km/h</td>
+            </tr>
+            <tr>
+              <td>Contra-flow (to increase flow)</td>
+              <td>Motorcycles and cars WITHOUT trailer only</td>
+              <td>Mandatory</td>
+              <td>60–80 km/h</td>
+            </tr>
+            <tr>
+              <td>Bus/Taxi lane</td>
+              <td>Public transport (taxis when "taxi" sign visible)</td>
+              <td>—</td>
+              <td>Normal limit</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="highlight info">
+          <div class="hi-title">Key rule</div>
+          <p>
+            In reversible lanes, the lane on the LEFT is FORBIDDEN. Double
+            broken marks on both sides identify a reversible lane.
+          </p>
+        </div>
+      </div>
+
+      <!-- TAB: SHOULDER & DISTANCE -->
+      <div class="tab-panel" id="tab-shoulder">
+        <div class="section-title">Hard Shoulder &amp; Safety Distance</div>
+        <div class="subsection">
+          <h3>Who must/may use the hard shoulder</h3>
+          <div class="grid-2">
+            <div class="def-block green">
+              <div class="term">Must use (if available)</div>
+              <div class="def">
+                Cycles, mopeds, animal traction vehicles, special vehicles
+                ≤3,500 kg MAM, disabled vehicles, vehicles escorting cyclists.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">In emergency / abnormally slow</div>
+              <div class="def">
+                Vehicles ≤3,500 kg MAM in emergency or abnormally slow
+                (disturbing traffic) must use shoulder or right lane.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Safety Distance — Key Numbers</h3>
+          <div class="grid-4">
+            <div class="number-fact">
+              <div class="num">50m</div>
+              <div class="unit">Heavy vehicles</div>
+              <div class="desc">
+                Vehicles &gt;3,500 kg and combinations &gt;10 m must keep 50 m
+                minimum
+              </div>
+            </div>
+            <div class="number-fact">
+              <div class="num">100m</div>
+              <div class="unit">Tunnel (general)</div>
+              <div class="desc">
+                Min. 100 m or 4-second interval inside tunnels
+              </div>
+            </div>
+            <div class="number-fact">
+              <div class="num">150m</div>
+              <div class="unit">Tunnel (&gt;3.5t)</div>
+              <div class="desc">
+                Vehicles &gt;3,500 kg must keep 150 m or 6 seconds in tunnels
+              </div>
+            </div>
+            <div class="number-fact">
+              <div class="num">60km/h</div>
+              <div class="unit">Min speed</div>
+              <div class="desc">
+                Minimum speed on motorways and dual carriageways
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: PEDESTRIANS & ANIMALS -->
+      <div class="tab-panel" id="tab-pedestrians">
+        <div class="section-title">Pedestrians &amp; Animals</div>
+        <div class="subsection">
+          <h3>Where pedestrians walk</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Situation</th>
+                <th>Required side</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>With pedestrian zone</td>
+                <td>Pavement on right-hand side</td>
+              </tr>
+              <tr>
+                <td>Hard shoulder available</td>
+                <td>Use hard shoulder</td>
+              </tr>
+              <tr>
+                <td>No shoulder — urban road</td>
+                <td>Either side depending on safety</td>
+              </tr>
+              <tr>
+                <td>No shoulder — outside urban / crossings</td>
+                <td>
+                  Left-hand side (facing traffic). Right allowed only if safety
+                  requires.
+                </td>
+              </tr>
+              <tr>
+                <td>Groups, pushing cycles or wheelchair</td>
+                <td>Right side</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">Night visibility</div>
+          <p>
+            Interurban roads between sunset and sunrise: must carry reflective
+            element visible at <strong>150 metres</strong>. Groups must also
+            carry white/yellow front lights and red rear lights.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Animal Herding Rules</h3>
+          <div class="card">
+            <div class="qr-row">
+              <span class="qr-key">Minimum herder age</span
+              ><span class="qr-val">18 years old</span>
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Position on road</span
+              ><span class="qr-val"
+                >Pulled over to right kerb as much as possible (left allowed if
+                safer)</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Poor visibility</span
+              ><span class="qr-val"
+                >Carry white/yellow front light and red rear light</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Motorways/highways</span
+              ><span class="qr-val"
+                >FORBIDDEN (includes animal traction vehicles)</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Leaving animals unattended</span
+              ><span class="qr-val">Strictly FORBIDDEN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: SPEED -->
+      <div class="tab-panel" id="tab-speed">
+        <div class="section-title">Speed Regulations</div>
+        <div class="subsection">
+          <h3>Maximum &amp; Minimum Speeds — Outside Urban Areas</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Road type</th>
+                <th>Car/Motorcycle/Motorhome ≤3.5t</th>
+                <th>Bus / Car derived</th>
+                <th>Truck / Articulated / Car+trailer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Motorway &amp; Dual carriageway</td>
+                <td>120 / min 60</td>
+                <td>100 / min 60</td>
+                <td>90 / min 60</td>
+              </tr>
+              <tr>
+                <td>Conventional / Multi-lane / Single carriageway</td>
+                <td>90 / min 45</td>
+                <td>90 / min 45</td>
+                <td>80 / min 40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Urban Area Speed Limits</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Road type</th>
+                <th>Max</th>
+                <th>Min</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single road + sidewalk platform (shared space)</td>
+                <td>20 km/h</td>
+                <td>10 km/h</td>
+              </tr>
+              <tr>
+                <td>Single lane per direction</td>
+                <td>30 km/h</td>
+                <td>15 km/h</td>
+              </tr>
+              <tr>
+                <td>2+ lanes per direction &amp; crossings</td>
+                <td>50 km/h</td>
+                <td>25 km/h</td>
+              </tr>
+              <tr>
+                <td>Motorways/highways within urban area</td>
+                <td>80 km/h</td>
+                <td>60 km/h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Special Speed Limits</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Vehicle / Situation</th>
+                <th>Limit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mopeds, cycles, light quads, reduced mobility vehicles</td>
+                <td>45 km/h max</td>
+              </tr>
+              <tr>
+                <td>Scholars transport or dangerous goods (interurban)</td>
+                <td>Generic max − 10 km/h</td>
+              </tr>
+              <tr>
+                <td>Motorcycles/mopeds towing trailer (interurban)</td>
+                <td>Generic max − 10%</td>
+              </tr>
+              <tr>
+                <td>Unpaved roads</td>
+                <td>30 km/h max</td>
+              </tr>
+              <tr>
+                <td>Bus without seat belts on conventional road</td>
+                <td>80 km/h max</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TAB: PRIORITY -->
+      <div class="tab-panel" id="tab-priority">
+        <div class="section-title">Right of Way — Priority Rules</div>
+        <div class="highlight info">
+          <div class="hi-title">Order of authority at junctions</div>
+          <p>
+            Agents &gt; Light signals &gt; Vertical signs &gt; Road markings.
+            Without signs: yield to vehicles from the RIGHT.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Exceptions — Priority Regardless of Direction</h3>
+          <div class="grid-2">
+            <div class="def-block green">
+              <div class="term">1. Paved over unpaved road</div>
+              <div class="def">
+                Vehicles on a paved road have priority over those on an unpaved
+                road.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">2. Already in roundabout</div>
+              <div class="def">
+                Vehicles already circulating inside a roundabout have priority.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">3. Motorways / dual carriageways</div>
+              <div class="def">
+                Vehicles on these roads have priority over those wanting to
+                join.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">4. Public road over private path</div>
+              <div class="def">
+                Vehicles on a public road have priority over those from a
+                private path.
+              </div>
+            </div>
+          </div>
+          <div class="highlight important">
+            <div class="hi-title">Rail vehicles — always priority</div>
+            <p>
+              Trains and trams ALWAYS have priority over all road users.
+              Forbidden to cross a level crossing when barriers are closed,
+              going up or down, or when traffic lights forbid it.
+            </p>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Road Narrows — Priority Order (1 = highest)</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Vehicle type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1st</td>
+                <td>
+                  Special vehicles on special transport exceeding established
+                  masses/dimensions
+                </td>
+              </tr>
+              <tr>
+                <td>2nd</td>
+                <td>Combination of vehicles (except item 4)</td>
+              </tr>
+              <tr>
+                <td>3rd</td>
+                <td>Animal traction vehicles</td>
+              </tr>
+              <tr>
+                <td>4th</td>
+                <td>Cars towing trailers ≤750 kg MAM and caravans</td>
+              </tr>
+              <tr>
+                <td>5th</td>
+                <td>Passenger public transportation vehicles</td>
+              </tr>
+              <tr>
+                <td>6th</td>
+                <td>Lorries, tractor trucks, and vans</td>
+              </tr>
+              <tr>
+                <td>7th</td>
+                <td>Cars, cars derived and adaptable mixed vehicles</td>
+              </tr>
+              <tr>
+                <td>8th</td>
+                <td>Special vehicles not exceeding established dimensions</td>
+              </tr>
+              <tr>
+                <td>9th</td>
+                <td>
+                  Three-wheeled vehicles, motorcycles with sidecar,
+                  three-wheeled mopeds
+                </td>
+              </tr>
+              <tr>
+                <td>10th</td>
+                <td>Motorcycles, two-wheeled mopeds, and bicycles</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="highlight warn">
+            <div class="hi-title">Steep slopes ≥ 7%</div>
+            <p>
+              Ascending vehicle has priority — except if descending vehicle
+              reaches a passing place first.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: QUIZ -->
+      <div class="tab-panel" id="tab-quiz">
+        <div class="quiz-header">
+          <h3>Chapter 2 Quiz — 50 Questions</h3>
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div
+                class="progress-fill"
+                id="progress-fill"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div class="score-display" id="score-display">0/0</div>
+          </div>
+        </div>
+        <div id="quiz-body">
+          <div class="question-card">
+            <div class="question-num" id="q-num"></div>
+            <div class="question-text" id="q-text"></div>
+            <div class="options" id="q-options"></div>
+            <div class="explanation" id="q-exp"></div>
+          </div>
+          <div class="quiz-nav">
+            <div class="quiz-page-info" id="q-page"></div>
+            <div class="quiz-controls">
+              <button class="btn btn-navy" id="btn-next" disabled>
+                Next →
+              </button>
+              <button class="btn btn-outline" id="btn-restart">Restart</button>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-result" id="quiz-result">
+          <div class="result-score">
+            <span id="res-num">0</span>/<span id="res-den">50</span>
+          </div>
+          <div class="result-msg" id="res-msg"></div>
+          <div class="result-grade" id="res-grade"></div>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 24px;
+            "
+          >
+            <button
+              class="btn btn-gold"
+              onclick="initQuiz()"
+              style="flex: 1; min-width: 140px"
+            >
+              Try Again
+            </button>
+            <button
+              class="btn btn-navy"
+              onclick="window.location.href = 'chapter3_manoeuvres.html'"
+              style="flex: 1; min-width: 140px"
+            >
+              Next Chapter →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+
+    <script>
+      window.QUIZ_QUESTIONS = [
+        {
+          topic: 'General Rules',
+          q: 'When refuelling, what must be switched off?',
+          opts: [
+            'Engine only',
+            'Engine and headlamps only',
+            'Engine, headlamps, radio, and ALL electrical systems including mobile phones',
+            'Nothing – refuelling only takes a minute',
+          ],
+          ans: 2,
+          exp: 'When refuelling, you must switch off the engine and contact, headlamps, as well as all electrical systems such as radio and other electromagnetic devices including mobile phones.',
+        },
+        {
+          topic: 'General Rules',
+          q: 'Which device is it PERMITTED to carry in a vehicle?',
+          opts: [
+            'A radar speed camera inhibitor',
+            'A device that reports the position of traffic surveillance systems',
+            'A system that jams police communications',
+            'A radar detector showing camera positions',
+          ],
+          ans: 1,
+          exp: 'Radar inhibitors and detectors are forbidden. However, warning mechanisms that only report the position of traffic surveillance systems are excluded from the prohibition and are permitted.',
+        },
+        {
+          topic: 'Road Parts',
+          q: 'Motorcycles are included in the lane count when counting available lanes.',
+          opts: [
+            'True',
+            'False – motorcycles are NOT included in the lane count',
+            'Only on motorways',
+            'Only on urban roads',
+          ],
+          ans: 1,
+          exp: 'A lane is defined as a subdivision of the carriageway marked for use by motor vehicles in single file, in which motorcycles are NOT included in the lane count.',
+        },
+        {
+          topic: 'Road Types',
+          q: 'Cyclists over 14 on a motorway are...',
+          opts: [
+            'Forbidden from any part of the road',
+            'Permitted on the hard shoulder unless a sign prohibits it',
+            'Permitted on the main carriageway',
+            'Only permitted if escorted',
+          ],
+          ans: 1,
+          exp: 'Cycles, mopeds, pedestrians, animals and PMVs are prohibited from motorways. However, cyclists over 14 may ride along the hard shoulders EXCEPT if there is signage prohibiting it.',
+        },
+        {
+          topic: 'Driving Rules',
+          q: 'On an interurban single carriageway with 3+ lanes, which vehicles must stay in the rightmost lane?',
+          opts: [
+            'All vehicles at all times',
+            'Lorries, minivans, special vehicles >3,500 kg MAM, and combinations >7 m',
+            'Only vehicles over 7,500 kg',
+            'Only slow-moving vehicles',
+          ],
+          ans: 1,
+          exp: 'On interurban single carriageways with 3+ lanes: lorries, minivans, special vehicles with MAM >3,500 kg, and combinations >7 m must use the rightmost lane.',
+        },
+        {
+          topic: 'Special Lanes',
+          q: 'Reversible lane: what is mandatory for ALL vehicles using it?',
+          opts: [
+            'Maximum speed of 50 km/h',
+            'Headlights on day and night',
+            'Minimum 2 occupants',
+            'No trailers allowed',
+          ],
+          ans: 1,
+          exp: 'Drivers in reversible lanes must have headlights on, whether in daytime or at night. Additionally, use of the lane on the LEFT of a reversible lane is forbidden.',
+        },
+        {
+          topic: 'Special Lanes',
+          q: 'A contra-flow lane is opened to increase traffic flow. Which vehicles may use it?',
+          opts: [
+            'All vehicles',
+            'Motorcycles and cars without trailer exclusively',
+            'Buses and taxis only',
+            'All vehicles except those over 3,500 kg MAM',
+          ],
+          ans: 1,
+          exp: 'Contra-flow lanes opened to increase traffic flow are reserved exclusively for motorcycles and cars without trailer. For road works, all vehicles on the road work site are allowed unless prohibited.',
+        },
+        {
+          topic: 'HOV Lane',
+          q: 'Which badge allows a vehicle to use HOV lanes even when travelling alone?',
+          opts: [
+            'V-5 Slow vehicle badge',
+            'V-4 Speed limitation',
+            'V-15 disabled badge (and V-25 zero emissions)',
+            'V-19 ITV sticker',
+          ],
+          ans: 2,
+          exp: "V-15 (disabled) badge holders and vehicles with V-25 '0 emissions' badge may use HOV lanes even with only the driver. ECO/C/B badges only when indicated on variable message panels.",
+        },
+        {
+          topic: 'Shoulder',
+          q: 'Vehicles over 3,500 kg MAM and combinations over 10 m must maintain a minimum following distance of:',
+          opts: ['25 metres', '50 metres', '100 metres', '150 metres'],
+          ans: 1,
+          exp: 'Vehicles with MAM over 3,500 kg and combinations of more than 10 metres in length must be separated by at least 50 metres from the vehicle ahead.',
+        },
+        {
+          topic: 'Tunnels',
+          q: 'Inside a tunnel, a normal passenger car not intending to overtake must maintain:',
+          opts: [
+            '50 m or 2 seconds',
+            '100 m or 4 seconds',
+            '150 m or 6 seconds',
+            '25 m or 1 second',
+          ],
+          ans: 1,
+          exp: 'When there is no intention to overtake inside tunnels and underpasses, a security distance of at least 100 metres or a minimum interval of 4 seconds must be kept.',
+        },
+        {
+          topic: 'Pedestrians',
+          q: 'Outside urban areas, on which side of the road must pedestrians walk?',
+          opts: [
+            'Right side – with traffic',
+            'Left side – facing oncoming traffic',
+            'Either side – no rule exists',
+            'The middle of the road',
+          ],
+          ans: 1,
+          exp: 'Outside urban areas and at crossings, pedestrians are required to walk on the left-hand side of the road (facing oncoming traffic), except if for safety reasons it becomes safer to walk on the right.',
+        },
+        {
+          topic: 'Pedestrians',
+          q: 'Pedestrians walking on interurban roads at night must carry a reflective element visible at:',
+          opts: ['50 metres', '100 metres', '150 metres', '200 metres'],
+          ans: 2,
+          exp: 'Pedestrians walking on interurban roads between sunset and sunrise or under poor visibility must carry a bright or reflective element visible at a distance of no less than 150 metres.',
+        },
+        {
+          topic: 'Animals',
+          q: 'What is the minimum age for a person legally herding animals on a public road?',
+          opts: ['16', '14', '18', 'No minimum specified'],
+          ans: 2,
+          exp: 'Animals shall be herded by someone of at least 18 years of age. This is a fixed legal requirement for animal herding on public roads.',
+        },
+        {
+          topic: 'Speed',
+          q: 'Maximum speed for a car on a motorway outside urban areas?',
+          opts: ['90 km/h', '100 km/h', '110 km/h', '120 km/h'],
+          ans: 3,
+          exp: 'The maximum speed for a car, motorcycle, or motorhome ≤3.5t on a motorway or dual carriageway outside urban areas is 120 km/h.',
+        },
+        {
+          topic: 'Speed',
+          q: 'On an urban road with a single road and sidewalk platform, what are the maximum and minimum speeds?',
+          opts: [
+            '50 km/h max / 25 km/h min',
+            '30 km/h max / 15 km/h min',
+            '20 km/h max / 10 km/h min',
+            '40 km/h max / 20 km/h min',
+          ],
+          ans: 2,
+          exp: 'On roads with a single road and sidewalk platform (shared space), the maximum speed is 20 km/h and the minimum is 10 km/h.',
+        },
+        {
+          topic: 'Speed',
+          q: 'A vehicle carrying schoolchildren on an interurban road: what speed adjustment applies?',
+          opts: [
+            'No adjustment',
+            'Max speed reduced by 10 km/h from generic limit',
+            'Max speed reduced by 20%',
+            'Max speed capped at 80 km/h',
+          ],
+          ans: 1,
+          exp: 'Interurban vehicles transporting scholars have their generic maximum speed reduced by 10 km/h. The same 10 km/h reduction applies to vehicles carrying dangerous goods.',
+        },
+        {
+          topic: 'Speed',
+          q: 'Maximum speed for mopeds on any road?',
+          opts: [
+            '50 km/h',
+            '45 km/h',
+            '60 km/h',
+            'The same as a car on that road',
+          ],
+          ans: 1,
+          exp: 'Cycles and all vehicles considered as mopeds (two and three wheeled, light quadricycles, and reduced mobility vehicles) have a maximum speed of 45 km/h on all roads.',
+        },
+        {
+          topic: 'Speed',
+          q: 'A motorcycle tows a trailer on an interurban road with 90 km/h generic limit. Its actual maximum?',
+          opts: ['90 km/h', '81 km/h (−10%)', '80 km/h', '45 km/h'],
+          ans: 1,
+          exp: 'Motorcycles, mopeds, and cycles towing a trailer on an interurban road have their maximum speed reduced by 10%. So 90 km/h × 90% = 81 km/h.',
+        },
+        {
+          topic: 'Right of Way',
+          q: 'Without signs at a junction, you approach from the left. A vehicle approaches from the right. Who has priority?',
+          opts: [
+            'You – you arrived first',
+            'The vehicle from the RIGHT has priority',
+            'You – approaching from the left is safer',
+            'Neither – both must stop',
+          ],
+          ans: 1,
+          exp: 'Without signals or signs at a junction, the general rule is that vehicles approaching from the RIGHT have priority.',
+        },
+        {
+          topic: 'Right of Way',
+          q: 'Vehicles already in a roundabout vs. those wanting to join: who has priority?',
+          opts: [
+            'Vehicles wanting to join – they approach from outside',
+            'Vehicles already inside the roundabout – regardless of direction',
+            'Whichever vehicle is larger',
+            'They have equal priority',
+          ],
+          ans: 1,
+          exp: 'As an exception to the general right-hand rule: vehicles already circulating in a roundabout have priority over those wishing to join, regardless of the direction they are approaching from.',
+        },
+        {
+          topic: 'Right of Way',
+          q: 'Rail vehicles (trains, trams) always have priority over other road users?',
+          opts: [
+            'Only when the barrier is down',
+            'Yes – rail vehicles always have priority',
+            'Only trams in urban areas',
+            'Only if travelling above 60 km/h',
+          ],
+          ans: 1,
+          exp: 'Rail vehicles (trains and trams) always have priority over all road users. However, level crossings may have signals that convey priority to other users.',
+        },
+        {
+          topic: 'Right of Way',
+          q: 'On a steep slope of 9% at a road narrow, which vehicle has priority?',
+          opts: [
+            'The descending vehicle – harder to stop',
+            'The ascending vehicle – unless a passing place is closer to the descending vehicle',
+            'Whichever vehicle has more MAM',
+            'Neither – both stop and negotiate',
+          ],
+          ans: 1,
+          exp: 'At road narrows with very steep downhill hills (minimum gradient 7%), priority is given to vehicles coming uphill, except if the descending vehicle reaches a special passing place first.',
+        },
+        {
+          topic: 'Priority Vehicles',
+          q: 'For an emergency vehicle to have full priority, what must be active simultaneously?',
+          opts: [
+            'Blue flashing lights only',
+            'Siren only',
+            'Both blue flashing beacons AND audible special warning devices (siren can be dispensed with if not causing danger)',
+            'Hazard lights and siren',
+          ],
+          ans: 2,
+          exp: 'Priority vehicles must be in emergency response AND signal presence with both flashing beacons and audible special warning devices. The siren may be dispensed with only when not using it does not impose danger.',
+        },
+        {
+          topic: 'Pedestrians',
+          q: 'A pedestrian using a skateboard on the pavement may travel at:',
+          opts: [
+            'Any speed as they have priority',
+            'Walking speed only – and must not use the roadway except in designated areas',
+            'Up to 20 km/h',
+            'Up to the speed of nearby cyclists',
+          ],
+          ans: 1,
+          exp: 'Pedestrians using skateboards, scooters, or similar means may not use the roadway (except in specially designated areas) and may only travel at walking speed on pavements or streets signposted accordingly.',
+        },
+        {
+          topic: 'Pedestrians',
+          q: 'Crossing squares and roundabout roads is:',
+          opts: [
+            'Permitted if pedestrian lights show green',
+            'Permitted only for pedestrians on foot',
+            'Forbidden – they must be surrounded',
+            'Permitted at designated points only',
+          ],
+          ans: 2,
+          exp: 'Crossing squares and roundabout roads is forbidden. Pedestrians must go around them, not across them.',
+        },
+        {
+          topic: 'Driving Rules',
+          q: 'In a roundabout, the centre island must always be kept on which side?',
+          opts: [
+            "Driver's right",
+            "Driver's left",
+            'Behind the driver',
+            'Directly in front',
+          ],
+          ans: 1,
+          exp: "In squares, roundabouts, and junctions, the centre element will always be kept to the driver's LEFT. This means circulation is counterclockwise.",
+        },
+        {
+          topic: 'Driving Rules',
+          q: 'During congested traffic, which action is forbidden?',
+          opts: [
+            'Driving side by side maintaining safety distance',
+            'Adapting speed to other vehicles',
+            'Overtaking using the hard shoulder',
+            'Driving faster on the right lane than left',
+          ],
+          ans: 2,
+          exp: 'During congested traffic, you must NOT overtake using the hard shoulder, and you must NOT change lanes except to turn right or left, to abandon the carriageway, or to take a certain direction.',
+        },
+        {
+          topic: 'General Rules',
+          q: 'Driving on pavements or pedestrian zones is:',
+          opts: [
+            'Allowed when no pedestrians are present',
+            'Allowed for PMVs, bicycles and cycles (as regulated)',
+            'Always completely forbidden – no exceptions',
+            'Allowed for emergency vehicles',
+          ],
+          ans: 1,
+          exp: 'Under no circumstance is driving on pavements and pedestrian zones allowed. By regulation, exceptions will be determined for personal mobility vehicles, bicycles, and cycles.',
+        },
+        {
+          topic: 'Shoulder',
+          q: 'Bicycles riding on the hard shoulder in parallel (side by side): when must they form single file?',
+          opts: [
+            'Always when on a hard shoulder',
+            'In sections of poor visibility or when riding in groups. In dual carriageways it is forbidden to invade the carriageway.',
+            'Never – bicycles may always ride side by side',
+            'Only at night',
+          ],
+          ans: 1,
+          exp: 'Bicycles may ride side by side but must pull to the extreme right and form single file in sections of poor visibility or when riding in groups. In dual carriageways, invading the carriageway is forbidden.',
+        },
+        {
+          topic: 'Shoulder',
+          q: 'Overtaking on the shoulder is forbidden if it requires riding side by side for more than:',
+          opts: [
+            '10 seconds or 100 metres',
+            '15 seconds or 200 metres',
+            '30 seconds or 300 metres',
+            '60 seconds or 500 metres',
+          ],
+          ans: 1,
+          exp: 'For those using the hard shoulder, with the exception of bicycles, overtaking is forbidden if it requires travelling more than 15 seconds or more than 200 metres side by side.',
+        },
+        {
+          topic: 'Speed',
+          q: 'When considerably reducing speed (not imminent danger), what must you do?',
+          opts: [
+            'Simply brake without warning',
+            'Apply brake lights repeatedly OR wave arm top-to-bottom in short fast movements',
+            'Sound the horn three times',
+            'Switch on hazard lights only',
+          ],
+          ans: 1,
+          exp: 'With the exception of imminent danger, drivers wishing to slow down considerably must apply the brake lights repeatedly or wave the arm from top to bottom in short and fast movements.',
+        },
+        {
+          topic: 'Speed',
+          q: 'At an uncontrolled junction with poor visibility, driving above which speed is forbidden?',
+          opts: ['30 km/h', '40 km/h', '50 km/h', '60 km/h'],
+          ans: 2,
+          exp: 'On approach to road junctions with no priority that are duly signalled and where visibility is extremely poor, driving over 50 km/h is forbidden.',
+        },
+        {
+          topic: 'Priority',
+          q: 'Even having right of way, when must you NOT enter a junction?',
+          opts: [
+            'Never – having priority means you may always proceed',
+            'When your vehicle will presumably become stationary there and obstruct the crossover',
+            'When visibility is limited',
+            'When there are pedestrians on the pavement',
+          ],
+          ans: 1,
+          exp: 'Even having priority, you must not enter a junction, pedestrian crossing, or cycle crossing if your vehicle is presumably going to be stationary there and obstruct the crossover of other vehicles.',
+        },
+        {
+          topic: 'Priority',
+          q: 'When a group of cyclists is riding together, the leading cyclist enters a roundabout. What must motorists do?',
+          opts: [
+            'Proceed – only the leading cyclist has entered',
+            "Yield to the entire group – they form a 'mobile unit'",
+            'Sound the horn to warn them',
+            'Yield only if more than 5 cyclists',
+          ],
+          ans: 1,
+          exp: "When cyclists ride in a group they are called a 'mobile unit'. When the leading cyclist has entered a crossing or roundabout, motorists must give way to the entire group.",
+        },
+        {
+          topic: 'Priority',
+          q: 'Drivers must yield to pedestrians at a signalled bus stop when:',
+          opts: [
+            'Only if the bus has stopped',
+            'When pedestrians are boarding/alighting and are between the bus and the nearest pedestrian zone',
+            'Always when near a bus stop',
+            'Only at night',
+          ],
+          ans: 1,
+          exp: 'At a signalled bus stop with pedestrians going on and off and being between the bus and the nearest pedestrian zone or refuge, drivers must give way to those pedestrians.',
+        },
+        {
+          topic: 'Abnormal speed',
+          q: 'Driving at abnormally slow speed without justification on a motorway (below 60 km/h) is:',
+          opts: [
+            'Permitted during adverse weather',
+            'Forbidden – except for specific vehicles and circumstances',
+            'Permitted if hazard lights are on',
+            'Permitted for new drivers',
+          ],
+          ans: 1,
+          exp: 'Driving at an abnormally slow speed with no justified cause is forbidden on motorways and dual carriageways at a speed under 60 km/h. Exceptions include cycles, animal traction vehicles, and special vehicles under special transport.',
+        },
+        {
+          topic: 'General Rules',
+          q: 'A driver holds the V-15 (disabled) badge. May they use HOV lanes alone?',
+          opts: [
+            'No – HOV lanes always require multiple occupants',
+            'Yes – V-15 badge holders may use HOV lanes even with only the driver',
+            'Only on motorways',
+            'Only if the lane sign shows an accessibility symbol',
+          ],
+          ans: 1,
+          exp: 'Vehicles bearing the V-15 (handicapped/disabled) sign may use HOV (VAO) lanes even if only the driver is occupying the vehicle. This is one of the specific solo-use exceptions.',
+        },
+        {
+          topic: 'Road Types',
+          q: 'Cyclists over 14 may use the hard shoulder of motorways UNLESS:',
+          opts: [
+            'They are riding in a group',
+            'There is a sign specifically prohibiting it',
+            'The motorway has 3 or more lanes',
+            'It is night-time',
+          ],
+          ans: 1,
+          exp: 'Cyclists over 14 may ride along the hard shoulders of motorways EXCEPT if there is signage prohibiting it.',
+        },
+        {
+          topic: 'Emergency vehicles',
+          q: 'A non-priority vehicle driver on urgent duty: what rules apply?',
+          opts: [
+            'All traffic rules are suspended when on urgent duty',
+            'They may use flashing blue lights',
+            'They must signal with horn+hazard lights but ALL driving rules still apply especially at junctions',
+            'They may use contra-flow lanes freely',
+          ],
+          ans: 2,
+          exp: 'Non-priority vehicles on urgent duty must signal with horn intermittently, hazard warning lights, or a cloth (or high-beams). Critically, ALL driving rules must be respected – especially at road junctions.',
+        },
+        {
+          topic: 'Speed',
+          q: 'A truck (articulated vehicle) on a conventional highway: maximum speed?',
+          opts: ['90 km/h', '80 km/h', '70 km/h', '60 km/h'],
+          ans: 1,
+          exp: 'Trucks, tractor units, vans, articulated vehicles, and cars towing trailers have a maximum speed of 80 km/h on conventional highways, multi-lane roads, and single carriageway roads.',
+        },
+        {
+          topic: 'Speed',
+          q: 'A bus on a motorway: maximum speed?',
+          opts: ['120 km/h', '110 km/h', '100 km/h', '90 km/h'],
+          ans: 2,
+          exp: 'Buses, cars derived, and adaptable mixed vehicles have a maximum speed of 100 km/h on motorways and dual carriageways outside urban areas.',
+        },
+        {
+          topic: 'Speed',
+          q: 'On an urban road with 2+ lanes per direction and crossings: max and min speeds?',
+          opts: ['30/15', '40/20', '50/25', '80/60'],
+          ans: 2,
+          exp: 'Roads with two or more lanes per direction and crossings have a maximum of 50 km/h and minimum of 25 km/h.',
+        },
+        {
+          topic: 'Road Parts',
+          q: "The 'crossing (travesía)' is defined as:",
+          opts: [
+            'Any pedestrian crossing',
+            'A section of highway passing through an urban area (no alternative route)',
+            'Any road that crosses another at a junction',
+            'A road entering a roundabout',
+          ],
+          ans: 1,
+          exp: 'A crossing (travesía) is a section of a highway (interurban road) that goes through an urban area, except those that may be bypassed by an alternative road.',
+        },
+        {
+          topic: 'Driving Rules',
+          q: 'On a road divided into THREE carriageways, the central carriageway may be assigned to:',
+          opts: [
+            'Emergency vehicles only',
+            'Driving in one or two directions – lateral road for one direction unless signalled otherwise',
+            'Only heavy vehicles',
+            'Public transport only',
+          ],
+          ans: 1,
+          exp: 'When the road is divided into three carriageways, the central may be assigned to driving in one or two directions and the lateral road to driving in one direction except if indicated otherwise.',
+        },
+        {
+          topic: 'Priority',
+          q: 'In the road narrows priority order, where do motorcycles and bicycles rank?',
+          opts: [
+            '1st – smallest and most maneuverable',
+            '5th',
+            '8th',
+            '10th – last',
+          ],
+          ans: 3,
+          exp: 'Motorcycles, two-wheeled mopeds, and bicycles rank 10th (last) in the priority order for road narrows. They have the least priority and must give way to all the other categories listed.',
+        },
+        {
+          topic: 'Priority',
+          q: 'In a road narrow, in the absence of signs, priority is given to:',
+          opts: [
+            'The vehicle travelling uphill',
+            'The vehicle that entered the narrow section first',
+            'The lighter vehicle',
+            'The vehicle travelling downhill',
+          ],
+          ans: 1,
+          exp: 'In road narrows, in the absence of signs, priority is given to the vehicle entering first. Only if it is unclear who entered first are the rules about manoeuvring difficulty applied.',
+        },
+        {
+          topic: 'General Rules',
+          q: 'A vehicle owner wants to transfer obligations to a regular driver. What must they do?',
+          opts: [
+            'Nothing – obligations automatically transfer',
+            'Sign a private contract with the regular driver',
+            "Disclose the regular driver's name to the DGT Registro de Vehículos",
+            'Inform the police verbally',
+          ],
+          ans: 2,
+          exp: "The vehicle owner must disclose the regular driver's name to the Vehicles Registration with the DGT in order to be exempt from the obligations, which then transfer to the regular driver.",
+        },
+        {
+          topic: 'Speed',
+          q: 'On unpaved roads the maximum speed is:',
+          opts: ['50 km/h', '45 km/h', '40 km/h', '30 km/h'],
+          ans: 3,
+          exp: 'On unpaved roads, the maximum speed limit is 30 km/h. This is one of the specific special speed limits to memorise.',
+        },
+        {
+          topic: 'Speed',
+          q: 'Dangerous goods on urban roads with 2+ lanes and intersections: max speed?',
+          opts: ['50 km/h', '45 km/h', '40 km/h', '30 km/h'],
+          ans: 2,
+          exp: 'Dangerous goods on urban roads with two or more lanes in each direction and intersections have a maximum speed of 40 km/h.',
+        },
+        {
+          topic: 'Speed',
+          q: 'Three-wheeled vehicles and heavy quadricycles: maximum speed?',
+          opts: ['45 km/h', '60 km/h', '70 km/h', '90 km/h'],
+          ans: 2,
+          exp: 'Three-wheeled vehicles and heavy quadricycles have a maximum speed of 70 km/h.',
+        },
+      ];
+    </script>
+    <script>
+      // Tab switching
+      document.querySelectorAll('.tab-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document
+            .querySelectorAll('.tab-btn')
+            .forEach((b) => b.classList.remove('active'));
+          document
+            .querySelectorAll('.tab-panel')
+            .forEach((p) => p.classList.remove('active'));
+          btn.classList.add('active');
+          document
+            .getElementById('tab-' + btn.dataset.tab)
+            .classList.add('active');
+          window.scrollTo(0, 0);
+        });
+      });
+
+      // Quiz engine
+      let qCur = 0,
+        qScore = 0,
+        qAnswered = false;
+      const questions = window.QUIZ_QUESTIONS || [];
+      function initQuiz() {
+        qCur = 0;
+        qScore = 0;
+        qAnswered = false;
+        if (!questions.length) return;
+        document.getElementById('quiz-result').style.display = 'none';
+        document.getElementById('quiz-body').style.display = 'block';
+        renderQuestion();
+        updateProgress();
+      }
+      function renderQuestion() {
+        if (qCur >= questions.length) {
+          showResult();
+          return;
+        }
+        const q = questions[qCur];
+        document.getElementById('q-num').textContent =
+          'Question ' +
+          (qCur + 1) +
+          ' of ' +
+          questions.length +
+          ' · ' +
+          q.topic;
+        document.getElementById('q-text').textContent = q.q;
+        const cont = document.getElementById('q-options');
+        cont.innerHTML = '';
+        q.opts.forEach((opt, i) => {
+          const b = document.createElement('button');
+          b.className = 'option-btn';
+          b.textContent = String.fromCharCode(65 + i) + '. ' + opt;
+          b.addEventListener('click', () => pickAnswer(i, b, q));
+          cont.appendChild(b);
+        });
+        document.getElementById('q-exp').style.display = 'none';
+        document.getElementById('q-exp').textContent = '';
+        qAnswered = false;
+        document.getElementById('btn-next').disabled = true;
+        updateProgress();
+      }
+      function pickAnswer(i, btn, q) {
+        if (qAnswered) return;
+        qAnswered = true;
+        const btns = document.querySelectorAll('#q-options .option-btn');
+        btns.forEach((b) => (b.disabled = true));
+        if (i === q.ans) {
+          btn.classList.add('correct');
+          qScore++;
+        } else {
+          btn.classList.add('wrong');
+          btns[q.ans].classList.add('reveal');
+        }
+        const exp = document.getElementById('q-exp');
+        exp.textContent = q.exp;
+        exp.style.display = 'block';
+        document.getElementById('btn-next').disabled = false;
+        document.getElementById('score-display').textContent =
+          qScore + '/' + (qCur + 1);
+      }
+      function updateProgress() {
+        const pct = questions.length
+          ? Math.round((qCur / questions.length) * 100)
+          : 0;
+        document.getElementById('progress-fill').style.width = pct + '%';
+        document.getElementById('q-page').textContent =
+          qCur + 1 + ' / ' + questions.length;
+      }
+      function showResult() {
+        document.getElementById('quiz-body').style.display = 'none';
+        const res = document.getElementById('quiz-result');
+        res.style.display = 'block';
+        const pct = Math.round((qScore / questions.length) * 100);
+        document.getElementById('res-num').textContent = qScore;
+        document.getElementById('res-den').textContent = questions.length;
+        let msg = '',
+          cls = '';
+        if (pct >= 90) {
+          msg = 'Outstanding! Exam-ready.';
+          cls = 'background:var(--green-light);color:var(--green)';
+        } else if (pct >= 75) {
+          msg = 'Very good – almost there!';
+          cls = 'background:var(--blue-light);color:var(--blue)';
+        } else if (pct >= 60) {
+          msg = 'Good progress – keep studying.';
+          cls = 'background:var(--gold-light);color:var(--gold-dark)';
+        } else {
+          msg = 'Needs more revision.';
+          cls = 'background:var(--red-light);color:var(--red)';
+        }
+        document.getElementById('res-msg').textContent = msg;
+        document.getElementById('res-grade').style.cssText = cls;
+        document.getElementById('res-grade').textContent = pct + '%';
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        initQuiz();
+        document.getElementById('btn-next').addEventListener('click', () => {
+          qCur++;
+          renderQuestion();
+        });
+        document
+          .getElementById('btn-restart')
+          .addEventListener('click', initQuiz);
+      });
+    </script>
+  </body>
+</html>

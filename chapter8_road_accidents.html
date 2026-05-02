@@ -1,552 +1,2702 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 8 – Road Accidents | Spanish Driving Theory (Licence B)</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
-h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
-.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
-.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
-.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
-.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
-.header-meta{display:flex;gap:24px;margin-top:16px}
-.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
-.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
-.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
-.tab-bar::-webkit-scrollbar{display:none}
-.tab-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 18px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
-.tab-btn:hover{color:rgba(255,255,255,0.85)}
-.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
-.content{padding:32px 40px;max-width:960px;margin:0 auto}
-.tab-panel{display:none}.tab-panel.active{display:block}
-.section-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
-.section-desc{color:var(--text-muted);font-size:14px;margin-bottom:24px;margin-top:4px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
-.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.card-title .icon{width:28px;height:28px;background:var(--gold-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
-.card p{color:var(--text-muted);font-size:14px;line-height:1.6}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
-@media(max-width:700px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
-.def-block{border-left:3px solid var(--gold);padding:12px 16px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:12px}
-.def-block .term{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.def-block .def{font-size:13px;color:var(--text-muted)}
-.def-block.green{border-left-color:var(--green);background:var(--green-light)}
-.def-block.blue{border-left-color:var(--blue);background:var(--blue-light)}
-.def-block.red{border-left-color:var(--red);background:var(--red-light)}
-.styled-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
-.styled-table th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
-.styled-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
-.styled-table tr:last-child td{border-bottom:none}
-.styled-table tr:hover td{background:var(--bg)}
-.styled-table td:first-child{font-weight:600;color:var(--navy)}
-.badge{display:inline-block;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:2px 8px;border-radius:20px}
-.badge-gold{background:var(--gold-light);color:var(--gold-dark)}
-.badge-green{background:var(--green-light);color:var(--green)}
-.badge-blue{background:var(--blue-light);color:var(--blue)}
-.badge-red{background:var(--red-light);color:var(--red)}
-.badge-navy{background:var(--navy);color:#fff}
-.highlight{border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:16px;font-size:13px}
-.highlight.important{border-left:4px solid var(--red);background:var(--red-light)}
-.highlight.tip{border-left:4px solid var(--green);background:var(--green-light)}
-.highlight.info{border-left:4px solid var(--blue);background:var(--blue-light)}
-.highlight.warn{border-left:4px solid var(--gold);background:var(--gold-light)}
-.highlight .hi-title{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px}
-.highlight.important .hi-title{color:var(--red)}
-.highlight.tip .hi-title{color:var(--green)}
-.highlight.info .hi-title{color:var(--blue)}
-.highlight.warn .hi-title{color:var(--gold-dark)}
-.highlight p,.highlight li{color:var(--text-muted);line-height:1.6}
-.highlight ul{padding-left:18px;margin-top:4px}
-.highlight li{margin-bottom:3px}
-.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.quiz-header h3{font-size:18px;color:#fff}
-.quiz-progress{display:flex;align-items:center;gap:12px}
-.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
-.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
-.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
-.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
-.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
-.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
-.options{display:flex;flex-direction:column;gap:8px}
-.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
-.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
-.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
-.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
-.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
-.option-btn:disabled{cursor:default}
-.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
-.quiz-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
-.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
-.btn:active{transform:scale(0.97)}
-.btn-gold{background:var(--gold);color:var(--navy)}
-.btn-navy{background:var(--navy);color:#fff}
-.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
-.btn:hover{opacity:0.88}
-.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
-.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
-.result-score span{color:var(--gold)}
-.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
-.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
-.qr-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px}
-.qr-row:last-child{border-bottom:none}
-.qr-key{font-weight:600;color:var(--navy);min-width:220px;flex-shrink:0}
-.qr-val{color:var(--text-muted);flex:1}
-.subsection{margin-bottom:28px}
-.subsection h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.subsection h3::before{content:'';display:block;width:3px;height:16px;background:var(--gold);border-radius:2px}
-.number-fact{text-align:center;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
-.number-fact .num{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--navy)}
-.number-fact .unit{font-size:12px;color:var(--gold-dark);font-weight:600}
-.number-fact .desc{font-size:11px;color:var(--text-light);margin-top:3px}
-.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px}
-.quiz-page-info{font-size:13px;color:var(--text-light)}
-ul.check-list{list-style:none;padding:0}
-ul.check-list li{padding:4px 0 4px 22px;position:relative;font-size:14px;color:var(--text-muted)}
-ul.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
-ul.check-list li.no::before{content:'✗';color:var(--red)}
-.step-box{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
-.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.step-text{font-size:14px;color:var(--text-muted);flex:1;padding-top:4px}
-@media(max-width:600px){.content{padding:20px 16px}.header{padding:20px 16px}}
-</style>
-</head><body>
-<div class="header">
-  <div class="header-badge">Permiso B – Teoría</div>
-  <h1>Chapter 8: Behaviour in Case of Road Accident</h1>
-  <p>Complete study guide for the Spanish Driving Theory Examination</p>
-  <div class="header-meta">
-    <div class="header-stat"><div class="val">9</div><div class="lbl">Study sections</div></div>
-    <div class="header-stat"><div class="val">PAS</div><div class="lbl">Core rule</div></div>
-    <div class="header-stat"><div class="val">100</div><div class="lbl">Quiz questions</div></div>
-    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
-  </div>
-</div>
-<div class="tab-bar">
-  <button class="tab-btn active" data-tab="pas">PAS Overview</button>
-  <button class="tab-btn" data-tab="protect">Protect</button>
-  <button class="tab-btn" data-tab="alert">Alert — 112</button>
-  <button class="tab-btn" data-tab="abc">ABC Assessment</button>
-  <button class="tab-btn" data-tab="cpr">CPR</button>
-  <button class="tab-btn" data-tab="recovery">Recovery Position</button>
-  <button class="tab-btn" data-tab="bleeding">Bleeding &amp; Shock</button>
-  <button class="tab-btn" data-tab="wounds">Wounds &amp; Burns</button>
-  <button class="tab-btn" data-tab="quiz">Quiz (100 Qs)</button>
-</div>
-<div class="content">
-
-<div class="tab-panel active" id="tab-pas">
-  <div class="section-title">PAS — The Three-Step Emergency Rule</div>
-  <div class="grid-3">
-    <div style="background:#fce8e8;border:1px solid #f5a5a5;border-radius:12px;padding:20px;text-align:center">
-      <div style="font-size:40px;font-weight:700;color:#b52b27;line-height:1">P</div>
-      <div style="font-weight:700;color:#b52b27;letter-spacing:1px;font-size:14px;margin-top:4px">PROTECT</div>
-      <div style="font-size:12px;color:#4a5568;margin-top:6px">Secure the scene</div>
-    </div>
-    <div style="background:#faecd6;border:1px solid #f0c87e;border-radius:12px;padding:20px;text-align:center">
-      <div style="font-size:40px;font-weight:700;color:#b57d10;line-height:1">A</div>
-      <div style="font-weight:700;color:#b57d10;letter-spacing:1px;font-size:14px;margin-top:4px">ALERT</div>
-      <div style="font-size:12px;color:#4a5568;margin-top:6px">Call 112</div>
-    </div>
-    <div style="background:#e0f2e9;border:1px solid #9fd0b6;border-radius:12px;padding:20px;text-align:center">
-      <div style="font-size:40px;font-weight:700;color:#1a6e3c;line-height:1">S</div>
-      <div style="font-weight:700;color:#1a6e3c;letter-spacing:1px;font-size:14px;margin-top:4px">SUCCOUR</div>
-      <div style="font-size:12px;color:#4a5568;margin-top:6px">Provide help</div>
-    </div>
-  </div>
-  <div class="highlight important" style="margin-top:16px"><div class="hi-title">Obligation under the Penal Code</div><p>Providing and getting help are OBLIGATIONS. Their disregard is considered an offence of neglect to providing help — punishable by law. A driver who leaves the scene after causing an accident in which people died may receive <strong>imprisonment from 6 months to 4 years</strong> and deprivation of the right to drive from 1 to 4 years.</p></div>
-  <div class="grid-4" style="margin-top:16px">
-    <div class="number-fact"><div class="num">60 min</div><div class="unit">Golden hour</div><div class="desc">First 60 minutes after serious injury — decisive for survival</div></div>
-    <div class="number-fact"><div class="num">112</div><div class="unit">Emergency number</div><div class="desc">Spain and throughout Europe — free of charge</div></div>
-    <div class="number-fact"><div class="num">30:2</div><div class="unit">CPR ratio</div><div class="desc">30 chest compressions then 2 rescue breaths</div></div>
-    <div class="number-fact"><div class="num">30 min</div><div class="unit">Private vehicle</div><div class="desc">After 30+ min since call + severe uncontrolled bleeding or shock</div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-protect">
-  <div class="section-title">P — Protect: Securing the Scene</div>
-  <div class="highlight important"><div class="hi-title">Protect yourself FIRST — do not become a victim</div></div>
-  <div class="subsection"><h3>Scene safety actions</h3>
-    <div class="card">
-      <div class="qr-row"><span class="qr-key">Park in a safe place before joining the scene</span><span class="qr-val">Do not put yourself in danger</span></div>
-      <div class="qr-row"><span class="qr-key">If you must walk on the road</span><span class="qr-val">Wear reflective waistcoat (chaleco) and be extra careful</span></div>
-      <div class="qr-row"><span class="qr-key">Mark the accident with</span><span class="qr-val">Emergency light AND luminous V-16 danger pre-signalling device</span></div>
-      <div class="qr-row"><span class="qr-key">Smoking or starting a fire</span><span class="qr-val">FORBIDDEN — fuel leaks create explosion/fire risk</span></div>
-      <div class="qr-row"><span class="qr-key">Vehicle on fire — extinguisher</span><span class="qr-val">Aim at the BASE of the fire — NEVER at the flames directly</span></div>
-      <div class="qr-row"><span class="qr-key">No extinguisher available</span><span class="qr-val">Use blankets, mud, or sand — NEVER water on a vehicle fire</span></div>
-    </div>
-  </div>
-  <div class="subsection"><h3>Rules for injured persons</h3>
-    <div class="grid-2">
-      <div class="def-block red"><div class="term">Do NOT do these</div><div class="def">Move injured unless absolutely necessary · Remove motorcyclist's helmet unless necessary and familiar with technique · Give food, drink, or medication · Make them walk</div></div>
-      <div class="def-block green"><div class="term">Permitted exceptions to not moving</div><div class="def">Risk of fire · Cardiac arrest requiring CPR · Need to put in recovery position. In all cases: treat as a stiff block + 3 bystanders minimum + head/neck/torso aligned.</div></div>
-    </div>
-  </div>
-  <div class="highlight warn"><div class="hi-title">Person on fire</div><p>Use a blanket to smother flames or make them roll on the ground. Fire extinguisher: do NOT aim directly at the person's body — aim at the base. NEVER use water on a vehicle fire.</p></div>
-</div>
-
-<div class="tab-panel" id="tab-alert">
-  <div class="section-title">A — Alert: Calling 112</div>
-  <div class="subsection"><h3>3 types of information to provide</h3>
-    <div class="step-box"><div class="step-num">1</div><div class="step-text"><strong>Location:</strong> Road, number, driver location sign (pk), community of reference.</div></div>
-    <div class="step-box"><div class="step-num">2</div><div class="step-text"><strong>Injured:</strong> Number of injured, their condition, distinguishing features (trapped, cliff risk, etc.).</div></div>
-    <div class="step-box"><div class="step-num">3</div><div class="step-text"><strong>Your identity:</strong> Name, identity card number, and phone number — to enable verification and follow-up.</div></div>
-  </div>
-  <div class="subsection"><h3>eCall — Automatic Emergency System</h3>
-    <div class="card">
-      <div class="qr-row"><span class="qr-key">Automatic activation</span><span class="qr-val">When vehicle's airbags are deployed</span></div>
-      <div class="qr-row"><span class="qr-key">Manual activation</span><span class="qr-val">By pressing the SOS button on equipped vehicles</span></div>
-      <div class="qr-row"><span class="qr-key">Information transmitted</span><span class="qr-val">Exact location, vehicle type, licence plate, make, model, and type of fuel</span></div>
-      <div class="qr-row"><span class="qr-key">Coverage</span><span class="qr-val">Throughout Europe — free call</span></div>
-      <div class="qr-row"><span class="qr-key">Who must have it</span><span class="qr-val">Currently, all new cars and vans must have it installed</span></div>
-    </div>
-  </div>
-  <div class="subsection"><h3>Co-operation with police</h3>
-    <ul class="check-list">
-      <li>Produce all documentation (vehicle AND personal)</li>
-      <li>Facilitate all information about the accident</li>
-      <li>Undergo detection tests for alcohol, narcotics, psychoactive drugs, stimulants, and other substances</li>
-    </ul>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-abc">
-  <div class="section-title">S — Succour: ABC Assessment</div>
-  <div class="highlight important"><div class="hi-title">First priority: unresponsive · breathing problems · massive blood loss · vomiting</div></div>
-  <div class="subsection"><h3>Immediate actions for ALL injured</h3>
-    <ul class="check-list">
-      <li>Loosen clothes around neck and waist</li>
-      <li>Make them warm — even in summer</li>
-      <li class="no">Do NOT give food, drink, or medication</li>
-      <li class="no">Do NOT make them walk</li>
-    </ul>
-  </div>
-  <div class="subsection"><h3>ABC Primary Assessment</h3>
-    <div class="step-box"><div class="step-num">A</div><div class="step-text"><strong>Airway — forehead-chin manoeuvre:</strong> Two fingers under the chin, lift slightly. Other hand on forehead, gently tilt head upward. Remove mouth objects with hooked index finger. Most common cause of obstruction: <strong>the tongue</strong>.</div></div>
-    <div class="step-box"><div class="step-num">B</div><div class="step-text"><strong>Breathing:</strong> Look (chest rise/fall) · Feel (expired air on cheek) · Listen (airflow through mouth/nose). Noisy/hard = partially obstructed. Shallow/irregular with interruptions = risk of brain damage.</div></div>
-    <div class="step-box"><div class="step-num">C</div><div class="step-text"><strong>Circulation:</strong> If still not breathing → assume cardiac arrest → perform CPR immediately. Check carotid pulse (index + middle fingers, under the jaw, one side of neck) or radial pulse (external wrist).</div></div>
-  </div>
-  <div class="card">
-    <div class="qr-row"><span class="qr-key">Normal heart rate — healthy adults</span><span class="qr-val">60 to 80 times per minute</span></div>
-    <div class="qr-row"><span class="qr-key">Normal heart rate — children</span><span class="qr-val">Approximately 100 times per minute</span></div>
-    <div class="qr-row"><span class="qr-key">Accident victims' heart rate</span><span class="qr-val">Higher than normal — caused by stress and agitation</span></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-cpr">
-  <div class="section-title">CPR — Cardiopulmonary Resuscitation</div>
-  <div class="highlight info"><div class="hi-title">For a NON-BREATHING unresponsive person. Ratio: 30 compressions : 2 rescue breaths</div></div>
-  <div class="subsection"><h3>Step 1 — Chest compressions (×30)</h3>
-    <div class="step-box"><div class="step-num">1</div><div class="step-text">Lay victim on a <strong>firm surface, face up</strong>. Kneel at chest height.</div></div>
-    <div class="step-box"><div class="step-num">2</div><div class="step-text">Place heel of one hand on the <strong>CENTRE of the chest</strong>. Other hand on top — interlock fingers.</div></div>
-    <div class="step-box"><div class="step-num">3</div><div class="step-text"><strong>Arms straight.</strong> Use body weight. Push down <strong>4 or 5 cm</strong> — do NOT bend arms. Lift hands slightly after each compression. Repeat <strong>30 times</strong>.</div></div>
-  </div>
-  <div class="subsection"><h3>Step 2 — Rescue breaths (×2)</h3>
-    <div class="step-box"><div class="step-num">1</div><div class="step-text">Keep forehead-chin lift. Pinch the nose. Seal lips around victim's mouth.</div></div>
-    <div class="step-box"><div class="step-num">2</div><div class="step-text">Exhale for about <strong>1 second</strong> — watch for chest rise. Remove mouth to let chest fall. If no chest rise: confirm forehead-chin lift is correct and mouth is not obstructed.</div></div>
-    <div class="step-box"><div class="step-num">3</div><div class="step-text">If victim does not breathe: immediately repeat 30 compressions. Continue 30:2 cycle.</div></div>
-  </div>
-  <div class="card">
-    <div class="qr-row"><span class="qr-key">CPR cadence</span><span class="qr-val">30:2 — continuous</span></div>
-    <div class="qr-row"><span class="qr-key">Stop CPR when</span><span class="qr-val">Emergency trained personnel arrives OR victim resumes breathing</span></div>
-    <div class="qr-row"><span class="qr-key">Two rescuers present</span><span class="qr-val">Alternate every 1–2 minutes to avoid fatigue</span></div>
-  </div>
-  <div class="highlight warn"><div class="hi-title">CPR for children — key differences</div><p>Start with <strong>5 ventilations</strong> (mouth-to-mouth or mouth-to-mouth-nose). Compress to approximately <strong>1/3 of chest depth</strong>. For children under 1 year old: use <strong>two fingers</strong> for compressions (not the heel of the hand).</p></div>
-</div>
-
-<div class="tab-panel" id="tab-recovery">
-  <div class="section-title">Recovery Position (PLS) &amp; Internal Bleeding</div>
-  <div class="highlight info"><div class="hi-title">For an UNCONSCIOUS person who IS BREATHING — to prevent suffocation</div><p>The side position keeps the mouth downward, allowing the tongue to fall forward and fluids (vomit, blood) to drain from the airway.</p></div>
-  <div class="subsection"><h3>When MUST the recovery position be used?</h3>
-    <ul class="check-list">
-      <li>When vomiting or bleeding from the mouth or ear</li>
-      <li>When the victim must be left alone to seek help</li>
-    </ul>
-  </div>
-  <div class="subsection"><h3>3-step technique</h3>
-    <div class="step-box"><div class="step-num">1</div><div class="step-text">Bend one arm upwards and place the other arm's hand over the shoulder of the arm bent.</div></div>
-    <div class="step-box"><div class="step-num">2</div><div class="step-text">Bend the leg on the same side and roll the body onto that side — rescuer sustains the head.</div></div>
-    <div class="step-box"><div class="step-num">3</div><div class="step-text">Keep the leg bent and lean the head on the hand or forearm.</div></div>
-  </div>
-  <div class="subsection"><h3>Externalized internal bleeding — positions</h3>
-    <table class="styled-table">
-      <thead><tr><th>Source</th><th>Position</th></tr></thead>
-      <tbody>
-        <tr><td>Bleeding from the EAR (possible skull base fracture)</td><td>Recovery position over the BLEEDING EAR. Cover with sterile gauze WITHOUT blocking.</td></tr>
-        <tr><td>Bleeding from NOSE (possible skull fracture) — unconscious</td><td>Recovery position</td></tr>
-        <tr><td>Bleeding from MOUTH — coughing blood (lung lesion)</td><td>HALF-SEATED position</td></tr>
-        <tr><td>Bleeding from MOUTH — vomiting blood (stomach)</td><td>Recovery position</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="highlight important"><div class="hi-title">⛔ NEVER BLOCK externalized internal bleeding</div><p>These bleedings are the result of an extremely serious situation (possible skull fractures). Blocking them causes dangerous internal pressure buildup.</p></div>
-</div>
-
-<div class="tab-panel" id="tab-wounds">
-  <div class="section-title">Bleeding Control, Shock, Fractures, Wounds &amp; Burns</div>
-  <div class="subsection"><h3>Controlling severe haemorrhage — 4 steps</h3>
-    <div class="step-box"><div class="step-num">1</div><div class="step-text"><strong>Direct pressure</strong> on wound with gauze or clean cloth. Do NOT remove even if saturated — add more on top.</div></div>
-    <div class="step-box"><div class="step-num">2</div><div class="step-text"><strong>Lift the limb</strong> affected — keep pressure on.</div></div>
-    <div class="step-box"><div class="step-num">3</div><div class="step-text"><strong>Arterial compression</strong> — pressure on the major artery feeding the bleeding point.</div></div>
-    <div class="step-box"><div class="step-num">4</div><div class="step-text"><strong>Tourniquet</strong> as LAST RESORT above bleeding area. NEVER remove or loosen. Record EXACT TIME applied visibly on victim's clothing.</div></div>
-  </div>
-  <div class="subsection"><h3>Shock</h3>
-    <div class="card">
-      <div class="qr-row"><span class="qr-key">Signs of shock</span><span class="qr-val">Pale skin · cold sweat · restlessness · confusion · weak and rapid pulse · rapid shallow breathing</span></div>
-      <div class="qr-row"><span class="qr-key">Anti-shock position</span><span class="qr-val">Supine (face up) · head LOWER than body · legs ELEVATED</span></div>
-      <div class="qr-row"><span class="qr-key">Give something to drink?</span><span class="qr-val">NEVER</span></div>
-      <div class="qr-row"><span class="qr-key">If nausea or vomiting occurs</span><span class="qr-val">IMMEDIATELY place in recovery position</span></div>
-    </div>
-  </div>
-  <div class="grid-2" style="margin-top:8px">
-    <div>
-      <div class="subsection"><h3>Fractures</h3>
-        <ul class="check-list">
-          <li>Cover wound and inhibit bleeding (open fractures)</li>
-          <li class="no">Do NOT reduce (put bone back in place)</li>
-          <li>Immobilise by holding the two extremities</li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Chapter 8 – Road Accidents | Spanish Driving Theory (Licence B)
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #0d1b2a;
+        --navy2: #1b2d42;
+        --gold: #e8a020;
+        --gold-light: #faecd6;
+        --gold-dark: #b57d10;
+        --green: #1a6e3c;
+        --green-light: #e0f2e9;
+        --red: #b52b27;
+        --red-light: #fce8e8;
+        --blue: #1a4e8a;
+        --blue-light: #e4eef9;
+        --text: #0d1b2a;
+        --text-muted: #4a5568;
+        --text-light: #718096;
+        --bg: #f7f5f0;
+        --surface: #ffffff;
+        --border: #e2ddd4;
+        --border-strong: #c9c0b4;
+        --radius: 8px;
+        --radius-lg: 12px;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: 'Syne', sans-serif;
+      }
+      .header {
+        background: var(--navy);
+        color: #fff;
+        padding: 28px 40px 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .header::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -40px;
+        width: 220px;
+        height: 220px;
+        border: 40px solid rgba(232, 160, 32, 0.12);
+        border-radius: 50%;
+      }
+      .header-badge {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--navy);
+        font-family: 'Syne', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      .header p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        font-weight: 300;
+      }
+      .header-meta {
+        display: flex;
+        gap: 24px;
+        margin-top: 16px;
+      }
+      .header-stat .val {
+        font-family: 'Syne', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold);
+      }
+      .header-stat .lbl {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .tab-bar {
+        background: var(--navy2);
+        display: flex;
+        gap: 2px;
+        padding: 0 24px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      .tab-bar::-webkit-scrollbar {
+        display: none;
+      }
+      .tab-btn {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 12px 18px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .tab-btn:hover {
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .tab-btn.active {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+      }
+      .content {
+        padding: 32px 40px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+      }
+      .section-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 6px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--gold);
+        display: inline-block;
+      }
+      .section-desc {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin-bottom: 24px;
+        margin-top: 4px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+      }
+      .card-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .card-title .icon {
+        width: 28px;
+        height: 28px;
+        background: var(--gold-light);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+      .card p {
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      @media (max-width: 768px) {
+        .header {
+          padding: 16px 16px 12px;
+        }
+        .header h1 {
+          font-size: 22px;
+        }
+        .header p {
+          font-size: 12px;
+        }
+        .tab-bar {
+          padding: 0 12px;
+        }
+        .tab-btn {
+          padding: 10px 12px;
+          font-size: 12px;
+        }
+        .content {
+          padding: 20px 16px;
+          max-width: 100%;
+        }
+        .sec-title {
+          font-size: 18px;
+        }
+        .card {
+          padding: 16px 12px;
+        }
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .styled-table {
+          font-size: 12px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 480px) {
+        .header {
+          padding: 12px 12px 8px;
+        }
+        .header h1 {
+          font-size: 18px;
+        }
+        .header p {
+          font-size: 11px;
+        }
+        .tab-bar {
+          padding: 0 8px;
+        }
+        .tab-btn {
+          padding: 10px 8px;
+          font-size: 11px;
+        }
+        .content {
+          padding: 16px 12px;
+        }
+        .sec-title {
+          font-size: 16px;
+        }
+        .sec-desc {
+          font-size: 13px;
+        }
+        .card {
+          padding: 12px 12px;
+        }
+        .card-title {
+          font-size: 13px;
+        }
+        .card p {
+          font-size: 13px;
+        }
+        .def {
+          padding: 10px 12px;
+        }
+        .def .term {
+          font-size: 13px;
+        }
+        .sub h3 {
+          font-size: 14px;
+        }
+        body {
+          font-size: 14px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+          min-height: 44px;
+          width: 100%;
+        }
+      }
+      .def-block {
+        border-left: 3px solid var(--gold);
+        padding: 12px 16px;
+        background: var(--gold-light);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        margin-bottom: 12px;
+      }
+      .def-block .term {
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 3px;
+      }
+      .def-block .def {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .def-block.green {
+        border-left-color: var(--green);
+        background: var(--green-light);
+      }
+      .def-block.blue {
+        border-left-color: var(--blue);
+        background: var(--blue-light);
+      }
+      .def-block.red {
+        border-left-color: var(--red);
+        background: var(--red-light);
+      }
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--border);
+        margin-bottom: 24px;
+      }
+      .styled-table th {
+        background: var(--navy);
+        color: #fff;
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        padding: 10px 14px;
+        text-align: left;
+      }
+      .styled-table td {
+        padding: 9px 14px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-muted);
+        vertical-align: top;
+      }
+      .styled-table tr:last-child td {
+        border-bottom: none;
+      }
+      .styled-table tr:hover td {
+        background: var(--bg);
+      }
+      .styled-table td:first-child {
+        font-weight: 600;
+        color: var(--navy);
+      }
+      .badge {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 20px;
+      }
+      .badge-gold {
+        background: var(--gold-light);
+        color: var(--gold-dark);
+      }
+      .badge-green {
+        background: var(--green-light);
+        color: var(--green);
+      }
+      .badge-blue {
+        background: var(--blue-light);
+        color: var(--blue);
+      }
+      .badge-red {
+        background: var(--red-light);
+        color: var(--red);
+      }
+      .badge-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .highlight {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 18px;
+        margin-bottom: 16px;
+        font-size: 13px;
+      }
+      .highlight.important {
+        border-left: 4px solid var(--red);
+        background: var(--red-light);
+      }
+      .highlight.tip {
+        border-left: 4px solid var(--green);
+        background: var(--green-light);
+      }
+      .highlight.info {
+        border-left: 4px solid var(--blue);
+        background: var(--blue-light);
+      }
+      .highlight.warn {
+        border-left: 4px solid var(--gold);
+        background: var(--gold-light);
+      }
+      .highlight .hi-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 5px;
+      }
+      .highlight.important .hi-title {
+        color: var(--red);
+      }
+      .highlight.tip .hi-title {
+        color: var(--green);
+      }
+      .highlight.info .hi-title {
+        color: var(--blue);
+      }
+      .highlight.warn .hi-title {
+        color: var(--gold-dark);
+      }
+      .highlight p,
+      .highlight li {
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .highlight ul {
+        padding-left: 18px;
+        margin-top: 4px;
+      }
+      .highlight li {
+        margin-bottom: 3px;
+      }
+      .quiz-header {
+        background: var(--navy);
+        color: #fff;
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .quiz-header h3 {
+        font-size: 18px;
+        color: #fff;
+      }
+      .quiz-progress {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .progress-bar {
+        width: 200px;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: var(--gold);
+        border-radius: 3px;
+        transition: width 0.3s;
+      }
+      .score-display {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        color: var(--gold);
+      }
+      .question-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 22px 24px;
+        margin-bottom: 16px;
+      }
+      .question-num {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--text-light);
+        margin-bottom: 8px;
+      }
+      .question-text {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .option-btn {
+        background: var(--bg);
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius);
+        padding: 10px 16px;
+        text-align: left;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        color: var(--text);
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+        line-height: 1.4;
+      }
+      .option-btn:hover:not(:disabled) {
+        background: var(--blue-light);
+        border-color: var(--blue);
+      }
+      .option-btn.correct {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+        font-weight: 500;
+      }
+      .option-btn.wrong {
+        background: var(--red-light);
+        border-color: var(--red);
+        color: var(--red);
+      }
+      .option-btn.reveal {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+      }
+      .option-btn:disabled {
+        cursor: default;
+      }
+      .explanation {
+        margin-top: 10px;
+        padding: 10px 14px;
+        background: var(--bg);
+        border-radius: var(--radius);
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        border-left: 3px solid var(--gold);
+        display: none;
+      }
+      .quiz-controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+      .btn {
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition:
+          opacity 0.15s,
+          transform 0.1s;
+        border: none;
+      }
+      .btn:active {
+        transform: scale(0.97);
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+      }
+      .btn-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .btn-outline {
+        background: transparent;
+        border: 1.5px solid var(--border-strong);
+        color: var(--text);
+      }
+      .btn:hover {
+        opacity: 0.88;
+      }
+      .quiz-result {
+        text-align: center;
+        padding: 40px 24px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        display: none;
+      }
+      .result-score {
+        font-family: 'Syne', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .result-score span {
+        color: var(--gold);
+      }
+      .result-msg {
+        font-size: 18px;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+      }
+      .result-grade {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 24px;
+        border-radius: 30px;
+        margin-bottom: 24px;
+      }
+      .qr-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 13px;
+      }
+      .qr-row:last-child {
+        border-bottom: none;
+      }
+      .qr-key {
+        font-weight: 600;
+        color: var(--navy);
+        min-width: 220px;
+        flex-shrink: 0;
+      }
+      .qr-val {
+        color: var(--text-muted);
+        flex: 1;
+      }
+      .subsection {
+        margin-bottom: 28px;
+      }
+      .subsection h3 {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .subsection h3::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 16px;
+        background: var(--gold);
+        border-radius: 2px;
+      }
+      .number-fact {
+        text-align: center;
+        padding: 14px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+      .number-fact .num {
+        font-family: 'Syne', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--navy);
+      }
+      .number-fact .unit {
+        font-size: 12px;
+        color: var(--gold-dark);
+        font-weight: 600;
+      }
+      .number-fact .desc {
+        font-size: 11px;
+        color: var(--text-light);
+        margin-top: 3px;
+      }
+      .quiz-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+      .quiz-page-info {
+        font-size: 13px;
+        color: var(--text-light);
+      }
+      ul.check-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.check-list li {
+        padding: 4px 0 4px 22px;
+        position: relative;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+      ul.check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-weight: 700;
+      }
+      ul.check-list li.no::before {
+        content: '✗';
+        color: var(--red);
+      }
+      .step-box {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+      }
+      .step-num {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: var(--gold);
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .step-text {
+        font-size: 14px;
+        color: var(--text-muted);
+        flex: 1;
+        padding-top: 4px;
+      }
+      @media (max-width: 600px) {
+        .content {
+          padding: 20px 16px;
+        }
+        .header {
+          padding: 20px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-badge">Permiso B – Teoría</div>
+      <h1>Chapter 8: Behaviour in Case of Road Accident</h1>
+      <p>Complete study guide for the Spanish Driving Theory Examination</p>
+      <div class="header-meta">
+        <div class="header-stat">
+          <div class="val">9</div>
+          <div class="lbl">Study sections</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">PAS</div>
+          <div class="lbl">Core rule</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">100</div>
+          <div class="lbl">Quiz questions</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">B</div>
+          <div class="lbl">Licence class</div>
+        </div>
       </div>
-      <div class="subsection"><h3>Serious wounds</h3>
-        <ul class="check-list">
-          <li class="no">Do NOT touch unless bleeding needs to be reduced</li>
-          <li class="no">Do NOT remove puncturing object — cover with it still embedded</li>
-          <li>Evisceration: lay down + cover organs with MOISTENED cloth</li>
-        </ul>
+    </div>
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="pas">PAS Overview</button>
+      <button class="tab-btn" data-tab="protect">Protect</button>
+      <button class="tab-btn" data-tab="alert">Alert — 112</button>
+      <button class="tab-btn" data-tab="abc">ABC Assessment</button>
+      <button class="tab-btn" data-tab="cpr">CPR</button>
+      <button class="tab-btn" data-tab="recovery">Recovery Position</button>
+      <button class="tab-btn" data-tab="bleeding">Bleeding &amp; Shock</button>
+      <button class="tab-btn" data-tab="wounds">Wounds &amp; Burns</button>
+      <button class="tab-btn" data-tab="quiz">Quiz (100 Qs)</button>
+    </div>
+    <div class="content">
+      <div class="tab-panel active" id="tab-pas">
+        <div class="section-title">PAS — The Three-Step Emergency Rule</div>
+        <div class="grid-3">
+          <div
+            style="
+              background: #fce8e8;
+              border: 1px solid #f5a5a5;
+              border-radius: 12px;
+              padding: 20px;
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                font-size: 40px;
+                font-weight: 700;
+                color: #b52b27;
+                line-height: 1;
+              "
+            >
+              P
+            </div>
+            <div
+              style="
+                font-weight: 700;
+                color: #b52b27;
+                letter-spacing: 1px;
+                font-size: 14px;
+                margin-top: 4px;
+              "
+            >
+              PROTECT
+            </div>
+            <div style="font-size: 12px; color: #4a5568; margin-top: 6px">
+              Secure the scene
+            </div>
+          </div>
+          <div
+            style="
+              background: #faecd6;
+              border: 1px solid #f0c87e;
+              border-radius: 12px;
+              padding: 20px;
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                font-size: 40px;
+                font-weight: 700;
+                color: #b57d10;
+                line-height: 1;
+              "
+            >
+              A
+            </div>
+            <div
+              style="
+                font-weight: 700;
+                color: #b57d10;
+                letter-spacing: 1px;
+                font-size: 14px;
+                margin-top: 4px;
+              "
+            >
+              ALERT
+            </div>
+            <div style="font-size: 12px; color: #4a5568; margin-top: 6px">
+              Call 112
+            </div>
+          </div>
+          <div
+            style="
+              background: #e0f2e9;
+              border: 1px solid #9fd0b6;
+              border-radius: 12px;
+              padding: 20px;
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                font-size: 40px;
+                font-weight: 700;
+                color: #1a6e3c;
+                line-height: 1;
+              "
+            >
+              S
+            </div>
+            <div
+              style="
+                font-weight: 700;
+                color: #1a6e3c;
+                letter-spacing: 1px;
+                font-size: 14px;
+                margin-top: 4px;
+              "
+            >
+              SUCCOUR
+            </div>
+            <div style="font-size: 12px; color: #4a5568; margin-top: 6px">
+              Provide help
+            </div>
+          </div>
+        </div>
+        <div class="highlight important" style="margin-top: 16px">
+          <div class="hi-title">Obligation under the Penal Code</div>
+          <p>
+            Providing and getting help are OBLIGATIONS. Their disregard is
+            considered an offence of neglect to providing help — punishable by
+            law. A driver who leaves the scene after causing an accident in
+            which people died may receive
+            <strong>imprisonment from 6 months to 4 years</strong> and
+            deprivation of the right to drive from 1 to 4 years.
+          </p>
+        </div>
+        <div class="grid-4" style="margin-top: 16px">
+          <div class="number-fact">
+            <div class="num">60 min</div>
+            <div class="unit">Golden hour</div>
+            <div class="desc">
+              First 60 minutes after serious injury — decisive for survival
+            </div>
+          </div>
+          <div class="number-fact">
+            <div class="num">112</div>
+            <div class="unit">Emergency number</div>
+            <div class="desc">Spain and throughout Europe — free of charge</div>
+          </div>
+          <div class="number-fact">
+            <div class="num">30:2</div>
+            <div class="unit">CPR ratio</div>
+            <div class="desc">30 chest compressions then 2 rescue breaths</div>
+          </div>
+          <div class="number-fact">
+            <div class="num">30 min</div>
+            <div class="unit">Private vehicle</div>
+            <div class="desc">
+              After 30+ min since call + severe uncontrolled bleeding or shock
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <div class="subsection"><h3>Burns caused by heat</h3>
-        <ul class="check-list">
-          <li class="no">Do NOT touch area or remove garment</li>
-          <li class="no">Do NOT puncture or cut blisters</li>
-          <li class="no">Do NOT apply ointment</li>
-          <li>DO apply cold water — submerge if possible</li>
-          <li>Cover with clear MOISTENED dressings + bandage</li>
-          <li>Cover multiple burns SEPARATELY — never together</li>
-          <li>Elevate burnt area if possible</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="subsection"><h3>When to use a private vehicle to transport injured</h3>
-    <div class="grid-3">
-      <div class="def-block red"><div class="term">Condition 1</div><div class="def">No means available to call for medical help.</div></div>
-      <div class="def-block red"><div class="term">Condition 2</div><div class="def">Condition deteriorates and medical help has not arrived.</div></div>
-      <div class="def-block red"><div class="term">Condition 3</div><div class="def">More than 30 minutes since calling AND bleeding severely uncontrolled OR signs of shock.</div></div>
-    </div>
-  </div>
-</div>
 
-<div class="tab-panel" id="tab-quiz">
-  <div class="quiz-header">
-    <h3>Chapter 8 Quiz — 100 Questions</h3>
-    <div class="quiz-progress">
-      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
-      <div class="score-display" id="score-display">0/0</div>
-    </div>
-  </div>
-  <div id="quiz-body">
-    <div class="question-card">
-      <div class="question-num" id="q-num"></div>
-      <div class="question-text" id="q-text"></div>
-      <div class="options" id="q-options"></div>
-      <div class="explanation" id="q-exp"></div>
-    </div>
-    <div class="quiz-nav">
-      <div class="quiz-page-info" id="q-page"></div>
-      <div class="quiz-controls">
-        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
-        <button class="btn btn-outline" id="btn-restart">Restart</button>
+      <div class="tab-panel" id="tab-protect">
+        <div class="section-title">P — Protect: Securing the Scene</div>
+        <div class="highlight important">
+          <div class="hi-title">
+            Protect yourself FIRST — do not become a victim
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Scene safety actions</h3>
+          <div class="card">
+            <div class="qr-row">
+              <span class="qr-key"
+                >Park in a safe place before joining the scene</span
+              ><span class="qr-val">Do not put yourself in danger</span>
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">If you must walk on the road</span
+              ><span class="qr-val"
+                >Wear reflective waistcoat (chaleco) and be extra careful</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Mark the accident with</span
+              ><span class="qr-val"
+                >Emergency light AND luminous V-16 danger pre-signalling
+                device</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Smoking or starting a fire</span
+              ><span class="qr-val"
+                >FORBIDDEN — fuel leaks create explosion/fire risk</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Vehicle on fire — extinguisher</span
+              ><span class="qr-val"
+                >Aim at the BASE of the fire — NEVER at the flames
+                directly</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">No extinguisher available</span
+              ><span class="qr-val"
+                >Use blankets, mud, or sand — NEVER water on a vehicle
+                fire</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Rules for injured persons</h3>
+          <div class="grid-2">
+            <div class="def-block red">
+              <div class="term">Do NOT do these</div>
+              <div class="def">
+                Move injured unless absolutely necessary · Remove motorcyclist's
+                helmet unless necessary and familiar with technique · Give food,
+                drink, or medication · Make them walk
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">Permitted exceptions to not moving</div>
+              <div class="def">
+                Risk of fire · Cardiac arrest requiring CPR · Need to put in
+                recovery position. In all cases: treat as a stiff block + 3
+                bystanders minimum + head/neck/torso aligned.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highlight warn">
+          <div class="hi-title">Person on fire</div>
+          <p>
+            Use a blanket to smother flames or make them roll on the ground.
+            Fire extinguisher: do NOT aim directly at the person's body — aim at
+            the base. NEVER use water on a vehicle fire.
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-alert">
+        <div class="section-title">A — Alert: Calling 112</div>
+        <div class="subsection">
+          <h3>3 types of information to provide</h3>
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <strong>Location:</strong> Road, number, driver location sign
+              (pk), community of reference.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <strong>Injured:</strong> Number of injured, their condition,
+              distinguishing features (trapped, cliff risk, etc.).
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <strong>Your identity:</strong> Name, identity card number, and
+              phone number — to enable verification and follow-up.
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>eCall — Automatic Emergency System</h3>
+          <div class="card">
+            <div class="qr-row">
+              <span class="qr-key">Automatic activation</span
+              ><span class="qr-val">When vehicle's airbags are deployed</span>
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Manual activation</span
+              ><span class="qr-val"
+                >By pressing the SOS button on equipped vehicles</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Information transmitted</span
+              ><span class="qr-val"
+                >Exact location, vehicle type, licence plate, make, model, and
+                type of fuel</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Coverage</span
+              ><span class="qr-val">Throughout Europe — free call</span>
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Who must have it</span
+              ><span class="qr-val"
+                >Currently, all new cars and vans must have it installed</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Co-operation with police</h3>
+          <ul class="check-list">
+            <li>Produce all documentation (vehicle AND personal)</li>
+            <li>Facilitate all information about the accident</li>
+            <li>
+              Undergo detection tests for alcohol, narcotics, psychoactive
+              drugs, stimulants, and other substances
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-abc">
+        <div class="section-title">S — Succour: ABC Assessment</div>
+        <div class="highlight important">
+          <div class="hi-title">
+            First priority: unresponsive · breathing problems · massive blood
+            loss · vomiting
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Immediate actions for ALL injured</h3>
+          <ul class="check-list">
+            <li>Loosen clothes around neck and waist</li>
+            <li>Make them warm — even in summer</li>
+            <li class="no">Do NOT give food, drink, or medication</li>
+            <li class="no">Do NOT make them walk</li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>ABC Primary Assessment</h3>
+          <div class="step-box">
+            <div class="step-num">A</div>
+            <div class="step-text">
+              <strong>Airway — forehead-chin manoeuvre:</strong> Two fingers
+              under the chin, lift slightly. Other hand on forehead, gently tilt
+              head upward. Remove mouth objects with hooked index finger. Most
+              common cause of obstruction: <strong>the tongue</strong>.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">B</div>
+            <div class="step-text">
+              <strong>Breathing:</strong> Look (chest rise/fall) · Feel (expired
+              air on cheek) · Listen (airflow through mouth/nose). Noisy/hard =
+              partially obstructed. Shallow/irregular with interruptions = risk
+              of brain damage.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">C</div>
+            <div class="step-text">
+              <strong>Circulation:</strong> If still not breathing → assume
+              cardiac arrest → perform CPR immediately. Check carotid pulse
+              (index + middle fingers, under the jaw, one side of neck) or
+              radial pulse (external wrist).
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="qr-row">
+            <span class="qr-key">Normal heart rate — healthy adults</span
+            ><span class="qr-val">60 to 80 times per minute</span>
+          </div>
+          <div class="qr-row">
+            <span class="qr-key">Normal heart rate — children</span
+            ><span class="qr-val">Approximately 100 times per minute</span>
+          </div>
+          <div class="qr-row">
+            <span class="qr-key">Accident victims' heart rate</span
+            ><span class="qr-val"
+              >Higher than normal — caused by stress and agitation</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-cpr">
+        <div class="section-title">CPR — Cardiopulmonary Resuscitation</div>
+        <div class="highlight info">
+          <div class="hi-title">
+            For a NON-BREATHING unresponsive person. Ratio: 30 compressions : 2
+            rescue breaths
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Step 1 — Chest compressions (×30)</h3>
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              Lay victim on a <strong>firm surface, face up</strong>. Kneel at
+              chest height.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              Place heel of one hand on the
+              <strong>CENTRE of the chest</strong>. Other hand on top —
+              interlock fingers.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <strong>Arms straight.</strong> Use body weight. Push down
+              <strong>4 or 5 cm</strong> — do NOT bend arms. Lift hands slightly
+              after each compression. Repeat <strong>30 times</strong>.
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Step 2 — Rescue breaths (×2)</h3>
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              Keep forehead-chin lift. Pinch the nose. Seal lips around victim's
+              mouth.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              Exhale for about <strong>1 second</strong> — watch for chest rise.
+              Remove mouth to let chest fall. If no chest rise: confirm
+              forehead-chin lift is correct and mouth is not obstructed.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              If victim does not breathe: immediately repeat 30 compressions.
+              Continue 30:2 cycle.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="qr-row">
+            <span class="qr-key">CPR cadence</span
+            ><span class="qr-val">30:2 — continuous</span>
+          </div>
+          <div class="qr-row">
+            <span class="qr-key">Stop CPR when</span
+            ><span class="qr-val"
+              >Emergency trained personnel arrives OR victim resumes
+              breathing</span
+            >
+          </div>
+          <div class="qr-row">
+            <span class="qr-key">Two rescuers present</span
+            ><span class="qr-val"
+              >Alternate every 1–2 minutes to avoid fatigue</span
+            >
+          </div>
+        </div>
+        <div class="highlight warn">
+          <div class="hi-title">CPR for children — key differences</div>
+          <p>
+            Start with <strong>5 ventilations</strong> (mouth-to-mouth or
+            mouth-to-mouth-nose). Compress to approximately
+            <strong>1/3 of chest depth</strong>. For children under 1 year old:
+            use <strong>two fingers</strong> for compressions (not the heel of
+            the hand).
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-recovery">
+        <div class="section-title">
+          Recovery Position (PLS) &amp; Internal Bleeding
+        </div>
+        <div class="highlight info">
+          <div class="hi-title">
+            For an UNCONSCIOUS person who IS BREATHING — to prevent suffocation
+          </div>
+          <p>
+            The side position keeps the mouth downward, allowing the tongue to
+            fall forward and fluids (vomit, blood) to drain from the airway.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>When MUST the recovery position be used?</h3>
+          <ul class="check-list">
+            <li>When vomiting or bleeding from the mouth or ear</li>
+            <li>When the victim must be left alone to seek help</li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>3-step technique</h3>
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              Bend one arm upwards and place the other arm's hand over the
+              shoulder of the arm bent.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              Bend the leg on the same side and roll the body onto that side —
+              rescuer sustains the head.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              Keep the leg bent and lean the head on the hand or forearm.
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Externalized internal bleeding — positions</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bleeding from the EAR (possible skull base fracture)</td>
+                <td>
+                  Recovery position over the BLEEDING EAR. Cover with sterile
+                  gauze WITHOUT blocking.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Bleeding from NOSE (possible skull fracture) — unconscious
+                </td>
+                <td>Recovery position</td>
+              </tr>
+              <tr>
+                <td>Bleeding from MOUTH — coughing blood (lung lesion)</td>
+                <td>HALF-SEATED position</td>
+              </tr>
+              <tr>
+                <td>Bleeding from MOUTH — vomiting blood (stomach)</td>
+                <td>Recovery position</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">
+            ⛔ NEVER BLOCK externalized internal bleeding
+          </div>
+          <p>
+            These bleedings are the result of an extremely serious situation
+            (possible skull fractures). Blocking them causes dangerous internal
+            pressure buildup.
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-wounds">
+        <div class="section-title">
+          Bleeding Control, Shock, Fractures, Wounds &amp; Burns
+        </div>
+        <div class="subsection">
+          <h3>Controlling severe haemorrhage — 4 steps</h3>
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <strong>Direct pressure</strong> on wound with gauze or clean
+              cloth. Do NOT remove even if saturated — add more on top.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <strong>Lift the limb</strong> affected — keep pressure on.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <strong>Arterial compression</strong> — pressure on the major
+              artery feeding the bleeding point.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-text">
+              <strong>Tourniquet</strong> as LAST RESORT above bleeding area.
+              NEVER remove or loosen. Record EXACT TIME applied visibly on
+              victim's clothing.
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Shock</h3>
+          <div class="card">
+            <div class="qr-row">
+              <span class="qr-key">Signs of shock</span
+              ><span class="qr-val"
+                >Pale skin · cold sweat · restlessness · confusion · weak and
+                rapid pulse · rapid shallow breathing</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Anti-shock position</span
+              ><span class="qr-val"
+                >Supine (face up) · head LOWER than body · legs ELEVATED</span
+              >
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">Give something to drink?</span
+              ><span class="qr-val">NEVER</span>
+            </div>
+            <div class="qr-row">
+              <span class="qr-key">If nausea or vomiting occurs</span
+              ><span class="qr-val"
+                >IMMEDIATELY place in recovery position</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top: 8px">
+          <div>
+            <div class="subsection">
+              <h3>Fractures</h3>
+              <ul class="check-list">
+                <li>Cover wound and inhibit bleeding (open fractures)</li>
+                <li class="no">Do NOT reduce (put bone back in place)</li>
+                <li>Immobilise by holding the two extremities</li>
+              </ul>
+            </div>
+            <div class="subsection">
+              <h3>Serious wounds</h3>
+              <ul class="check-list">
+                <li class="no">
+                  Do NOT touch unless bleeding needs to be reduced
+                </li>
+                <li class="no">
+                  Do NOT remove puncturing object — cover with it still embedded
+                </li>
+                <li>
+                  Evisceration: lay down + cover organs with MOISTENED cloth
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="subsection">
+              <h3>Burns caused by heat</h3>
+              <ul class="check-list">
+                <li class="no">Do NOT touch area or remove garment</li>
+                <li class="no">Do NOT puncture or cut blisters</li>
+                <li class="no">Do NOT apply ointment</li>
+                <li>DO apply cold water — submerge if possible</li>
+                <li>Cover with clear MOISTENED dressings + bandage</li>
+                <li>Cover multiple burns SEPARATELY — never together</li>
+                <li>Elevate burnt area if possible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>When to use a private vehicle to transport injured</h3>
+          <div class="grid-3">
+            <div class="def-block red">
+              <div class="term">Condition 1</div>
+              <div class="def">
+                No means available to call for medical help.
+              </div>
+            </div>
+            <div class="def-block red">
+              <div class="term">Condition 2</div>
+              <div class="def">
+                Condition deteriorates and medical help has not arrived.
+              </div>
+            </div>
+            <div class="def-block red">
+              <div class="term">Condition 3</div>
+              <div class="def">
+                More than 30 minutes since calling AND bleeding severely
+                uncontrolled OR signs of shock.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-quiz">
+        <div class="quiz-header">
+          <h3>Chapter 8 Quiz — 100 Questions</h3>
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div
+                class="progress-fill"
+                id="progress-fill"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div class="score-display" id="score-display">0/0</div>
+          </div>
+        </div>
+        <div id="quiz-body">
+          <div class="question-card">
+            <div class="question-num" id="q-num"></div>
+            <div class="question-text" id="q-text"></div>
+            <div class="options" id="q-options"></div>
+            <div class="explanation" id="q-exp"></div>
+          </div>
+          <div class="quiz-nav">
+            <div class="quiz-page-info" id="q-page"></div>
+            <div class="quiz-controls">
+              <button class="btn btn-navy" id="btn-next" disabled>
+                Next →
+              </button>
+              <button class="btn btn-outline" id="btn-restart">Restart</button>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-result" id="quiz-result">
+          <div class="result-score">
+            <span id="res-num">0</span>/<span id="res-den">100</span>
+          </div>
+          <div class="result-msg" id="res-msg"></div>
+          <div class="result-grade" id="res-grade"></div>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 24px;
+            "
+          >
+            <button
+              class="btn btn-gold"
+              onclick="initQuiz()"
+              style="flex: 1; min-width: 140px"
+            >
+              Try Again
+            </button>
+            <button
+              class="btn btn-navy"
+              onclick="window.location.href = 'index.html'"
+              style="flex: 1; min-width: 140px"
+            >
+              Back to Index →
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="quiz-result" id="quiz-result">
-    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">100</span></div>
-    <div class="result-msg" id="res-msg"></div>
-    <div class="result-grade" id="res-grade"></div>
-    <button class="btn btn-gold" onclick="initQuiz()">Try Again</button>
-  </div>
-</div>
-</div>
-<script>
-window.QUIZ_QUESTIONS=[
-{topic:"PAS Rule",q:"What does PAS stand for in road accident first aid?",opts:["Protect, Assist, Stop","Protect, Alert, Succour","Park, Alert, Save","Priority, Ambulance, Safety"],ans:1,exp:"PAS = Protect → Alert → Succour. This is the standard three-step emergency response procedure for road accidents in Spain."},
-{topic:"PAS Rule",q:"What is the correct PAS order?",opts:["Alert → Protect → Succour","Succour → Protect → Alert","Protect → Alert → Succour","Alert → Succour → Protect"],ans:2,exp:"Protect first, then Alert, then Succour. Protecting the scene prevents additional accidents and casualties."},
-{topic:"Obligation",q:"Failing to help at a road accident is considered under the Spanish Penal Code as:",opts:["A minor administrative infraction","An offence of neglect to providing help — punishable by law","Only a civil matter","A moral obligation but not a legal one"],ans:1,exp:"Providing and getting help are OBLIGATIONS. Their disregard is considered under the Spanish Penal Code as an offence of neglect to providing help — punishable by law."},
-{topic:"Obligation",q:"A driver causes an accident in which people die then leaves the scene. Possible punishment?",opts:["A fine only","Administrative licence suspension","Imprisonment 6 months to 4 years AND deprivation of driving right from 1 to 4 years — crime of abandonment","Only a points penalty"],ans:2,exp:"A driver who leaves the scene after causing an accident with fatalities may be punished for the crime of abandonment of the accident site: 6 months to 4 years imprisonment and 1 to 4 years driving ban."},
-{topic:"PAS Rule",q:"What is the 'golden hour'?",opts:["The first hour after any accident when fault must be determined","The first 60 minutes after a serious injury accident — decisive for whether the victim survives or dies","The time police must arrive after being called","Maximum time emergency services have to respond"],ans:1,exp:"The first 60 minutes after a serious injury accident are called the 'golden hour' — they are decisive for either surviving or dying."},
-{topic:"Obligation",q:"Police are already at the scene. A non-involved road user passes by. Must they stop?",opts:["Yes — all road users must stop","No — non-involved users are EXEMPT when police are at scene and their co-operation is not necessary","Yes — unless driving a heavy vehicle","Only if there are injured persons"],ans:1,exp:"Road users NOT involved are exempt from the helping obligations WHEN police are already at the scene AND their co-operation is not necessary."},
-{topic:"Protect",q:"What must you do FIRST before joining an accident scene?",opts:["Call 112 while still driving","Park in a safe place and ensure you do not put yourself in danger","Remove injured from their vehicles","Immediately check the injured"],ans:1,exp:"The first action is to park in a safe place and ensure you do not put yourself in danger before joining the scene."},
-{topic:"Protect",q:"If you must access the road at an accident scene, what must you wear?",opts:["Any high-visibility clothing","A reflective waistcoat (chaleco) and be extra careful","A hard hat","Dark clothing to avoid being seen"],ans:1,exp:"If you really have to access the road, you must wear a reflective waistcoat (chaleco) and be extra careful."},
-{topic:"Protect",q:"What device must mark an accident place?",opts:["Red warning triangles only","Hazard lights alone","Emergency light AND luminous V-16 danger pre-signalling device","White paint markings on road"],ans:2,exp:"The accident place must be marked with the emergency light AND the luminous V-16 danger pre-signalling device (amber beacon, mandatory from 1 January 2026)."},
-{topic:"Protect",q:"Why must you not smoke near an accident scene?",opts:["It is illegal in public spaces","Fuel leaks create explosion and fire risk","It may upset the injured","It could damage evidence"],ans:1,exp:"You must NOT smoke or start a fire at an accident scene because fuel leaks from damaged vehicles create a real risk of explosion and fire."},
-{topic:"Protect",q:"A vehicle at an accident is on fire. How do you use a fire extinguisher?",opts:["Water aimed at flames","Fire extinguisher aimed at the TOP of the flames","Fire extinguisher aimed at the BASE of the fire","Call the fire brigade and do nothing"],ans:2,exp:"For a vehicle fire: use a fire extinguisher aimed at the BASE of the fire (not the flames). If no extinguisher: use blankets, mud, or sand. NEVER use water on a vehicle fire."},
-{topic:"Protect",q:"No fire extinguisher is available and a vehicle is on fire. Use:",opts:["Petrol to dilute the fire","Water or any liquid available","Blankets, mud, or sand — never water","Any material including water"],ans:2,exp:"In absence of a fire extinguisher: blankets, mud, or sand. NEVER water on a vehicle fire (dangerous reactions with fuel and electrical systems)."},
-{topic:"Protect",q:"Should you normally move an injured person at an accident scene?",opts:["Yes — always move them to safety immediately","Yes — but only if they ask","No — as a general rule do NOT move them except when absolutely necessary","Only if they are unconscious"],ans:2,exp:"As a general rule, injured people should NOT be moved except when absolutely necessary (risk of fire, cardiac arrest requiring CPR, need to place in recovery position)."},
-{topic:"Protect",q:"Under what circumstances is moving an injured person permitted?",opts:["When they are uncomfortable","When police authorise it","When absolutely necessary: risk of fire, cardiac arrest for CPR, or need for recovery position","When they are blocking traffic"],ans:2,exp:"Moving an injured person is only permitted when absolutely necessary: risk of fire; cardiac arrest requiring CPR; or need to put in recovery position."},
-{topic:"Protect",q:"When moving an injured person is unavoidable, what technique is required?",opts:["One person can drag by the legs","Move as a STIFF BLOCK with at least 3 bystanders — head/neck/torso aligned","Lift by the arms only","Roll sideways then drag"],ans:1,exp:"If moving is unavoidable: treat as a stiff block, use at least 3 bystanders, keep head/neck/torso well aligned at all times."},
-{topic:"Protect",q:"Should you remove a motorcyclist's helmet at an accident scene?",opts:["Yes — always remove it immediately","Yes — carefully if they are conscious","No — do NOT remove unless absolutely necessary AND only if familiar with the technique","Yes — if emergency services are more than 30 min away"],ans:2,exp:"Do NOT remove a motorcyclist's helmet unless absolutely necessary AND only if you are familiar with the correct technique. Incorrect removal can cause or worsen spinal injuries."},
-{topic:"Protect",q:"Should you give an injured person medication while waiting for help?",opts:["Yes — pain medication helps keep them calm","Yes — if they request it","No — do NOT attempt to give anything to eat, drink, or any medication","Only if they are conscious"],ans:2,exp:"You must NOT give injured persons anything to eat, drink, or any medication. This can complicate surgery, interact with emergency medication, or cause choking."},
-{topic:"Protect",q:"A person's clothing is on fire. How should you extinguish it?",opts:["Water poured over them","A fire extinguisher aimed directly at their body","A blanket to smother flames, or make them roll on the ground. Do NOT aim extinguisher directly at person.","Any dry material"],ans:2,exp:"To extinguish a person on fire: use a blanket to smother or make them roll on the ground. Fire extinguisher must NOT be aimed directly at the person — aim at the base of flames."},
-{topic:"Alert",q:"What is the European emergency number?",opts:["999","911","112","119"],ans:2,exp:"112 is the emergency number for Spain and throughout Europe — free of charge with European coverage."},
-{topic:"Alert",q:"When calling 112 about an accident, what 3 types of information must be provided?",opts:["Your name, the other driver's plate, and vehicle make","Location; number and condition of injured; your name, ID and phone number","Only the location — emergency services determine the rest","Insurance details of all vehicles"],ans:1,exp:"Provide: (1) location (road, number, location sign, community); (2) number of injured and condition, including distinguishing features; (3) your name, identity card number, and phone number."},
-{topic:"Alert",q:"What does the eCall system do when airbags deploy?",opts:["Sends an automatic speed warning","Automatically establishes voice communication with 112 and transmits exact location, vehicle type, plate, make, model and fuel type","Activates vehicle's hazard lights","Contacts the insurance company"],ans:1,exp:"eCall activates automatically when airbags deploy — establishes voice communication with 112 and sends location, vehicle type, licence plate, make, model and fuel type."},
-{topic:"Alert",q:"Can the eCall system be activated manually?",opts:["No — only when airbags deploy","Yes — by pressing the SOS button on equipped vehicles","Only by trained mechanics","Only if automatic activation has failed"],ans:1,exp:"Yes. eCall can be activated manually by pressing the SOS button. Automatic activation occurs when airbags deploy."},
-{topic:"Alert",q:"Must you undergo alcohol or drug tests when police request them?",opts:["Refuse — right to wait for a lawyer","Only if you believe you are over the limit","Yes — you MUST undergo detection tests for alcohol, narcotics, psychoactive drugs, stimulants and other substances","Only if you caused the accident"],ans:2,exp:"You must co-operate with police by undergoing detection tests for alcohol, narcotics, psychoactive drugs, stimulants and other substances. Refusal is itself a 6-point loss offence."},
-{topic:"First Aid",q:"Which injured persons should be attended to FIRST?",opts:["The oldest person first","Those with visible injuries — broken bones or cuts","Those who are unresponsive, have breathing problems, massive blood loss, or vomiting","Those making the most noise"],ans:2,exp:"Priority: those who are unresponsive; with breathing problems; with massive blood loss; or vomiting. Silent victims often need the most urgent attention."},
-{topic:"ABC",q:"What does the ABC rule stand for?",opts:["Accident, Breathing, Call","Airway, Breathing, Circulation","Alert, Bandage, Compressions","Assess, Bleed, Calm"],ans:1,exp:"ABC = Airway (clear the airway) · Breathing (check and support breathing) · Circulation (check for circulation and serious blood loss)."},
-{topic:"ABC",q:"How do you perform the Airway step (A) of ABC?",opts:["Check blood pressure at the wrist","Forehead-chin manoeuvre: two fingers under chin lifting it, other hand on forehead tilting head upward. Remove mouth objects with hooked index finger.","Wrap the neck to support it","Apply pressure to the throat"],ans:1,exp:"The forehead-chin manoeuvre: two fingers under the chin, lift slightly; other hand on forehead, tilt head upward. Remove objects from mouth with index finger bent into a hook shape."},
-{topic:"ABC",q:"What is the most common cause of airway obstruction in an unconscious person?",opts:["Vomit","Blood","The tongue falling back and blocking the airway","A swallowed foreign object"],ans:2,exp:"The most common cause of airway obstruction is the tongue falling back and blocking the airway. The forehead-chin manoeuvre lifts the chin and tilts the head, moving the tongue forward."},
-{topic:"ABC",q:"How do you check breathing (the B step)?",opts:["Touch chest and count beats","Look (chest rise/fall) · Feel (expired air on cheek) · Listen (airflow through mouth/nose)","Press abdomen gently","Check if they respond to their name"],ans:1,exp:"Check breathing: Look at chest rise and fall; Feel for expired air on cheek; Listen to airflow in and out through mouth or nose."},
-{topic:"ABC",q:"If not breathing after ABC assessment, what do you assume and do?",opts:["Assume shock — apply anti-shock position","Assume unconscious — place in recovery position","Assume cardiac arrest — perform CPR immediately","Wait for confirmation from emergency services"],ans:2,exp:"If the injured person is not breathing after ABC, assume cardiac arrest and begin CPR IMMEDIATELY. Do not wait."},
-{topic:"CPR",q:"What is the correct adult CPR ratio?",opts:["10:1","15:2","30:2","5:1"],ans:2,exp:"Correct adult CPR ratio is 30:2 — 30 chest compressions followed by 2 rescue breaths. Repeated continuously."},
-{topic:"CPR",q:"How deep must adult CPR chest compressions be?",opts:["1–2 cm","2–3 cm","4 or 5 cm","7–8 cm"],ans:2,exp:"Chest compressions must push the chest down 4 or 5 centimetres. Arms straight, using body weight — not just arm strength."},
-{topic:"CPR",q:"Where exactly do you place your hands for CPR?",opts:["On the lower abdomen","Heel of one hand on CENTRE of chest — other hand on top with interlocked fingers","On the upper chest near the collarbone","On both sides of the chest simultaneously"],ans:1,exp:"Place the heel of one hand on the CENTRE of the victim's chest and the other hand on top, fingers interlocked."},
-{topic:"CPR",q:"How long should each rescue breath last?",opts:["3–4 seconds","About 1 second","As long as possible","Half a second"],ans:1,exp:"Each rescue breath should last about 1 second while watching for the chest to rise."},
-{topic:"CPR",q:"When should you STOP performing CPR?",opts:["After 5 minutes if no improvement","After 10 complete cycles","When emergency trained personnel arrive OR victim resumes breathing","After exactly 30 minutes"],ans:2,exp:"Continue CPR until emergency trained personnel arrive OR the victim resumes breathing."},
-{topic:"CPR",q:"Two rescuers are performing CPR together. When should they swap?",opts:["Every 10 minutes","Every 5 compressions","Every 1–2 minutes to avoid fatigue","Only when one is completely exhausted"],ans:2,exp:"When accompanied by another bystander, alternate every 1–2 minutes to avoid fatigue. Fatigued rescuers cannot maintain adequate compression depth."},
-{topic:"CPR",q:"CPR for a child under 1 year — key differences?",opts:["Ratio changes to 15:2","Use 2 fingers for compressions + approximately 1/3 chest depth + start with 5 ventilations (mouth-to-mouth-nose)","No CPR on children under 1 year","Use full heel of hand but lighter pressure"],ans:1,exp:"For children under 1 year: use 2 fingers for compressions, press to approximately 1/3 of chest depth. Start with 5 ventilations (mouth-to-mouth or mouth-to-mouth-nose)."},
-{topic:"CPR",q:"If your rescue breath does not cause the chest to rise, what should you check?",opts:["The victim is dead — stop CPR","The forehead-chin lift may not be correctly performed, or the mouth is obstructed — check both","You are breathing too hard","Repeat compressions first"],ans:1,exp:"If no chest rise: confirm the forehead-chin lift manoeuvre is correctly performed and that the victim's mouth is not obstructed."},
-{topic:"Recovery",q:"When is the recovery position used?",opts:["For all injured at accident scenes","For a non-breathing victim","For an UNCONSCIOUS person who IS BREATHING — to prevent suffocation","For a victim with major blood loss"],ans:2,exp:"The recovery position is for an unconscious person who IS breathing. It prevents suffocation by keeping mouth downward and allowing fluid drainage."},
-{topic:"Recovery",q:"Why is the person placed on their side in the recovery position?",opts:["To make CPR easier","To keep mouth downward — prevents tongue from falling back and allows fluid drainage from airway","To apply bandages more easily","To reduce circulation to injured limbs"],ans:1,exp:"The side position keeps the mouth downward to prevent the tongue from falling back, and allows fluids (vomit, blood) to drain from the airway — preventing suffocation."},
-{topic:"Recovery",q:"When MUST the recovery position be used?",opts:["Any time they lose consciousness","When they are in shock","When vomiting or bleeding from mouth or ear, OR when victim must be left alone to seek help","When they have a fracture"],ans:2,exp:"MUST use recovery position: (1) victim is vomiting or bleeding from mouth or ear; (2) victim must be left alone for someone to seek help."},
-{topic:"Recovery",q:"A victim is bleeding from the RIGHT ear. How do you position them?",opts:["Face up — to stop drainage","On the side OPPOSITE the bleeding ear","On the side OF the bleeding ear — over the right ear — cover with sterile gauze WITHOUT blocking","On their front"],ans:2,exp:"Bleeding from the ear (possible skull base fracture): recovery position over the BLEEDING ear, to allow drainage. Cover with sterile gauze WITHOUT blocking. NEVER block externalized bleeding."},
-{topic:"Recovery",q:"A victim is coughing up blood from the lungs. What position?",opts:["Recovery position — on their side","Anti-shock position — legs elevated","Half-SEATED position","Lying face down"],ans:2,exp:"Coughing blood = lung lesion → HALF-SEATED position. Vomiting blood = stomach → recovery position."},
-{topic:"Recovery",q:"A victim is vomiting blood. What position?",opts:["Half-seated","Anti-shock — legs elevated","Recovery position — on their side","Standing if possible"],ans:2,exp:"Vomiting blood = stomach lesion → RECOVERY POSITION on their side. Coughing blood = lung lesion → half-seated."},
-{topic:"Recovery",q:"The critical rule for externalized internal bleeding?",opts:["Apply pressure to stop immediately","Pack the opening with gauze","NEVER BLOCK — blocking increases internal pressure dangerously","Apply tourniquet above the bleeding site"],ans:2,exp:"NEVER BLOCK externalized internal bleeding (ear, nose, mouth). These are extremely serious situations (possible skull fractures). Blocking causes dangerous internal pressure buildup."},
-{topic:"Recovery",q:"What is the FIRST step in performing the recovery position?",opts:["Roll the person directly onto their side immediately","Bend one arm upwards and place the other arm's hand over the shoulder of the arm bent","Lift both legs to elevate them","Remove helmet and loosen clothing first"],ans:1,exp:"Step 1: Bend one arm upwards and place the other arm's hand over the shoulder of the arm bent. Step 2: Bend the leg same side and roll. Step 3: Keep leg bent, lean head on hand/forearm."},
-{topic:"Bleeding",q:"What is the FIRST step to control a severe external haemorrhage?",opts:["Lift the limb above heart level","Apply tourniquet immediately","Apply DIRECT PRESSURE on the wound with gauze or clean cloth","Apply arterial compression"],ans:2,exp:"Step 1: Apply DIRECT PRESSURE on the wound with a gauze or clean cloth. Maintain continuously. Do NOT remove even if saturated — add more on top."},
-{topic:"Bleeding",q:"Direct pressure cannot stop the bleeding. What is the next step?",opts:["Apply tourniquet immediately","Remove the cloth and apply fresh one","LIFT THE LIMB affected while keeping the pressure on","Call 112 again"],ans:2,exp:"Step 2: if direct pressure alone cannot stop bleeding, LIFT THE LIMB affected while maintaining pressure."},
-{topic:"Bleeding",q:"Lifting the limb still hasn't stopped the bleeding. What is step 3?",opts:["Apply a cold pack","Apply pressure to the major artery feeding the bleeding point (arterial compression)","Apply tourniquet immediately","Remove existing dressing and pack the wound"],ans:1,exp:"Step 3: apply pressure to the MAJOR ARTERY that feeds the bleeding point — arterial compression."},
-{topic:"Bleeding",q:"A tourniquet has been applied. What must you NEVER do?",opts:["Record the time it was applied","Call emergency services","NEVER REMOVE OR LOOSEN IT — serious complications may arise","Keep the area visible"],ans:2,exp:"Once applied: NEVER take off or loosen the tourniquet (serious complications may arise). Do NOT cover the area with clothes. WRITE THE EXACT TIME it was applied visibly on the victim's clothing."},
-{topic:"Bleeding",q:"Original gauze becomes saturated with blood. Should you remove it and replace it?",opts:["Yes — a clean dry gauze is more effective","Yes — bacteria can grow on soaked gauze","No — do NOT remove it. Apply additional gauze on top. Removing it disrupts clot formation.","Only if more than 10 minutes have passed"],ans:2,exp:"Do NOT remove the original gauze even when saturated. Removing it can disrupt clot formation. Apply additional material on top while maintaining pressure."},
-{topic:"Shock",q:"What causes a state of shock after an accident?",opts:["Fear and emotional distress only","A bang to the head","Loss of a significant amount of blood — inadequate organ perfusion","Dehydration"],ans:2,exp:"A state of shock occurs when a person loses a significant amount of blood — the body cannot maintain adequate circulation to organs."},
-{topic:"Shock",q:"Signs of shock in a victim?",opts:["Red face, sweating, and strong slow pulse","Pale skin, cold sweat, restlessness, confusion, weak and rapid pulse, rapid shallow breathing","Bright red skin, high temperature, slow breathing","Normal alertness — shock only shows after 30 min"],ans:1,exp:"Signs of shock: pale skin, cold sweat, restlessness, confusion, weak and rapid pulse, rapid and shallow breathing."},
-{topic:"Shock",q:"What is the anti-shock position?",opts:["Seated upright with legs hanging","Face down, head turned to side","Supine (face up) with HEAD LOWER than body and LEGS ELEVATED","Standing against a wall"],ans:2,exp:"Anti-shock position: supine (face up), head LOWER than the rest of the body, legs ELEVATED. This directs blood from legs toward vital organs."},
-{topic:"Shock",q:"A shock victim shows signs of nausea and vomiting. What must you do?",opts:["Give anti-nausea medication","Keep them in the anti-shock position — legs elevated","Immediately place in RECOVERY POSITION to prevent aspiration","Stand them upright"],ans:2,exp:"If a victim in shock shows signs of nausea, vomiting, or unconsciousness, IMMEDIATELY place them in the recovery position. Vomiting while flat on the back can cause fatal aspiration."},
-{topic:"Fractures",q:"Should you attempt to 'reduce' a fracture (put bone back in place)?",opts:["Yes — immediate reduction prevents further injury","Yes — with basic first aid training","No — do NOT attempt to reduce the fracture under any circumstances","Only for limb fractures"],ans:2,exp:"Do NOT reduce the fracture — do not attempt to put the bone back. This can damage tissue, nerves and blood vessels. Immobilise the area and wait for emergency personnel."},
-{topic:"Fractures",q:"How is a fractured limb immobilised?",opts:["Tightly bind to adjacent limb","Hold the TWO EXTREMITIES of the fractured area to prevent movement","Place padding around fracture site only","Keep them standing to use gravity"],ans:1,exp:"Immobilise the fractured area by holding the TWO EXTREMITIES of the fractured area — above and below the fracture. This prevents movement that could cause additional injury."},
-{topic:"Wounds",q:"There is a knife embedded in a victim's wound. Should you remove it?",opts:["Yes — to allow the wound to be cleaned","Yes — only if shallow","No — do NOT remove puncturing objects. Cover the wound with the object still embedded.","Only if it is causing extreme pain"],ans:2,exp:"Do NOT remove a puncturing object. Removing it dramatically increases bleeding. Cover the wound WITH the object still embedded."},
-{topic:"Wounds",q:"A victim's internal organs are exposed through a wound (evisceration). What must you do?",opts:["Attempt to push the organs back inside","Cover with a dry sterile cloth","Lay the injured down and cover exposed organs with a MOISTENED piece of cloth — do NOT push back","Apply tight bandage to compress the area"],ans:2,exp:"Evisceration: lay the injured down and cover exposed organs with a MOISTENED piece of cloth. Do NOT push organs back. Keep moist to prevent drying."},
-{topic:"Burns",q:"Correct first treatment for heat burns?",opts:["Apply ointment or butter","A dry sterile bandage without cleaning","Cold WATER — submerge the burnt area if possible","Ice directly on the burnt area"],ans:2,exp:"The correct first treatment for heat burns is cold WATER — submerge if possible. Never apply ointment, butter, or ice."},
-{topic:"Burns",q:"Should you remove a burned person's clothing stuck to the burn?",opts:["Yes — clothing traps heat","Yes — but only synthetic material","No — do NOT touch the area or remove burned garments","Only if still smouldering"],ans:2,exp:"Do NOT touch the burnt area or remove burned garments. Burned clothing stuck to skin should only be removed by medical professionals."},
-{topic:"Burns",q:"A victim has burns on both arms. How should they be dressed?",opts:["One large bandage over both arms together","Each burn SEPARATELY with clear moistened dressings wrapped with a bandage — never together","Apply ointment and let air dry","Wrap both tightly with dry bandages"],ans:1,exp:"Each burnt area must be covered SEPARATELY — never together. Use clear moistened dressings and wrap with a bandage."},
-{topic:"Burns",q:"Should blisters on a burn be punctured?",opts:["Yes — releasing fluid heals faster","Yes — only large blisters over 1 cm","No — do NOT puncture or cut blisters","Only under medical supervision"],ans:2,exp:"Do NOT puncture or cut blisters. Blisters form a sterile protective layer. Puncturing exposes raw tissue to infection and delays healing."},
-{topic:"Transport",q:"The preferred method of transporting injured to hospital?",opts:["Any available vehicle","Private car driven quickly","AMBULANCE — private vehicle only in extreme circumstances","Police vehicle"],ans:2,exp:"Transport of wounded must be carried out by an ambulance. Private vehicle only in extreme circumstances: no means to call help; condition deteriorates without help; 30+ minutes since calling with severe uncontrolled bleeding or shock."},
-{topic:"Transport",q:"When may a private vehicle be used to transport injured?",opts:["Whenever faster than ambulance","When injured is stable","When no means to call help; OR condition deteriorates and help hasn't arrived; OR 30+ minutes since calling AND severe uncontrolled bleeding or shock","Whenever driver deems it faster"],ans:2,exp:"Private vehicle only when: (1) no means to call medical help; (2) condition deteriorates and help doesn't arrive; or (3) more than 30 minutes since calling AND severe uncontrolled haemorrhage OR shock."},
-{topic:"Transport",q:"When transporting injured by private vehicle, at what speed should you drive?",opts:["As fast as possible","Moderate speed, driving smoothly — provide company to keep victim calm","Speed limit — no faster, no slower","Emergency speed is permitted"],ans:1,exp:"Travel at moderate speed, drive smoothly, provide company to keep the victim calm. Erratic driving can worsen injuries, especially spinal ones."},
-{topic:"Transport",q:"Moving an injured person is unavoidable. Minimum bystanders required?",opts:["1","2","3","5"],ans:2,exp:"If moving an injured person is unavoidable: move as a stiff block using the help of AT LEAST 3 BYSTANDERS."},
-{topic:"Alert",q:"What is a Hospital Traffic Accident Unit (UAT)?",opts:["A police unit investigating accidents","A unit managing traffic during investigations","A hospital service providing care to road accident victims (physical and emotional) and managing insurance procedures","The emergency ambulance dispatch centre"],ans:2,exp:"The Hospital Traffic Accident Unit provides care to victims with physical or emotional injuries from road accidents and manages administrative procedures with the insurance company."},
-{topic:"ABC",q:"Normal heart rate for healthy adults?",opts:["40–60 beats per minute","60–80 beats per minute","80–120 beats per minute","100–140 beats per minute"],ans:1,exp:"Normal heart rate for healthy adults is 60 to 80 beats per minute. Children: approximately 100 per minute. Accident victims have higher rates due to stress and agitation."},
-{topic:"ABC",q:"Where is the carotid pulse checked?",opts:["Inside of the elbow","Side of the neck, under the jaw — using index and middle fingers","On the forehead with two fingers","On the ankle"],ans:1,exp:"The carotid pulse: gently press one side of the neck with the index and middle fingers, under the jaw. The radial pulse is at the external part of the wrist."},
-{topic:"Protect",q:"A bucket of water is available — can it be used on a vehicle fire?",opts:["Yes — water is always effective on fires","Yes — but only on the tyres, not the engine","No — NEVER use water on a vehicle fire. Water on burning fuel is dangerous.","Yes — only if mixed with sand first"],ans:2,exp:"NEVER use water on a vehicle fire. Water on burning fuel can cause explosive reactions. For vehicle fires: fire extinguisher aimed at base, or blankets, mud, or sand."},
-{topic:"Obligation",q:"What actions must road users involved in or witnessing an accident take?",opts:["Call 112 only and wait","Help or call for help, mitigate hazards, restore traffic safety, co-operate with police","Only stop if directly involved","Move injured to safety first"],ans:1,exp:"Road users involved in, witnessing, or becoming aware of an accident must take all necessary actions to: help or call for help, mitigate hazards, restore traffic safety, and co-operate with police."},
-{topic:"Shock",q:"Can you give a shock victim water to drink?",opts:["Yes — warm drinks help maintain blood pressure","Yes — small sips only","No — do NOT give anything to drink to a victim in shock","Only if conscious and requesting water"],ans:2,exp:"Do NOT give anything to drink to a victim in shock. Doing so can complicate anaesthesia, may cause vomiting and aspiration, and does not address the underlying cause."},
-{topic:"Bleeding",q:"The tourniquet is applied. What must you record on the victim's clothing?",opts:["Your name and phone number","The victim's blood type","The EXACT TIME the tourniquet was applied — in a clearly visible place","The victim's name and date of birth"],ans:2,exp:"Once a tourniquet is applied: write down the EXACT TIME it was applied somewhere VISIBLE on the victim's clothing. Medical staff need this information urgently."},
-{topic:"Protect",q:"When must you NOT move an injured person?",opts:["When they are in visible pain","As a GENERAL RULE — do not move them unless risk of fire, need CPR, or need recovery position","When they are unconscious","When their limbs are broken"],ans:1,exp:"As a general rule, injured people should NOT be moved except when absolutely necessary: risk of fire, cardiac arrest requiring CPR, or need to place in recovery position."},
-{topic:"Alert",q:"What information does eCall transmit to the emergency centre?",opts:["Driver's name and insurance details only","Exact location, type of vehicle, licence plate, make, model, and type of fuel","Only GPS coordinates","Vehicle speed at the moment of impact"],ans:1,exp:"eCall sends: exact location, type of vehicle, licence plate, make, model, and type of fuel."},
-{topic:"CPR",q:"If a rescue breath does NOT cause the chest to rise — what must you check?",opts:["Victim is dead — stop CPR","The forehead-chin lift may be incorrect OR mouth is obstructed — check both","You are breathing too hard","Repeat compressions first"],ans:1,exp:"If no chest movement: confirm the forehead-chin lift manoeuvre is correctly performed and that the victim's mouth is not obstructed. If correct, attempt a second breath."},
-{topic:"Wounds",q:"Should you touch a wound that is not bleeding?",opts:["Yes — to assess the depth","Yes — to clean with antiseptic","No — do NOT touch the wound unless it is bleeding and needs to be reduced","Only if wearing sterile gloves"],ans:2,exp:"Do NOT touch the wound unless it is bleeding and needs to be controlled. Unnecessary touching can introduce infection and disturb natural clotting."},
-{topic:"Burns",q:"What to watch for specifically when the face is burned?",opts:["Eye damage only","Risk of swelling — elevate the head","Risk of the victim entering SHOCK or developing RESPIRATORY PROBLEMS","Risk of dehydration only"],ans:2,exp:"When the burnt area is the face: watch carefully as the victim may enter shock or develop respiratory problems. The airway may be compromised."},
-{topic:"First Aid",q:"A first-aid kit is compulsory in a private car in Spain?",opts:["Yes — legally required and subject to fine","Yes — mandatory since 2015","No — NOT compulsory by law, although always advisable to carry one","Only on interurban roads"],ans:2,exp:"A first-aid kit is NOT compulsory by law for private cars in Spain. However, it is always advisable to carry one."},
-{topic:"ABC",q:"What is the first thing to try when approaching an injured person before using ABC?",opts:["Immediately begin CPR","Ask simple questions out loud or gently pinch the hand — if still unresponsive, proceed with ABC","Check their pulse first","Move them to a flat surface"],ans:1,exp:"Ask simple questions out loud or gently pinch their hand. If still unresponsive, proceed with the ABC rule."},
-{topic:"Protect",q:"Why must the neck be protected when moving an unconscious injured person?",opts:["To prevent pain","To protect against sudden movements that could cause or worsen spinal cord damage","To make mouth-to-mouth easier to perform","It is not necessary to protect the neck"],ans:1,exp:"The neck must be protected from sudden movements — especially if the person is unconscious, as moving incorrectly can cause or worsen spinal cord damage."},
-{topic:"Shock",q:"In the anti-shock position, where should the head be relative to the body?",opts:["Higher than the body (elevated)","Level with the body","LOWER than the rest of the body (legs elevated)","Turned to the side at body level"],ans:2,exp:"Anti-shock position: supine with the head LOWER than the rest of the body and the LEGS ELEVATED. This uses gravity to direct blood toward the brain and vital organs."},
-{topic:"Transport",q:"A companion is present when transporting injured by private vehicle. What is their role?",opts:["Navigate the fastest route","Assist the injured and keep them calm during the journey","Operate the vehicle's hazard lights","Prepare first-aid kit for arrival"],ans:1,exp:"When transporting by private vehicle, a companion must assist the injured and keep them calm. The driver focuses on driving moderately and smoothly."},
-{topic:"Alert",q:"At an accident scene with only material damage — one party cannot be present. What must the responsible party do?",opts:["Leave a note on the windshield","Call their insurance company only","Take all necessary measures to provide the other party with their name and address","Wait until police arrive"],ans:2,exp:"In the event of material damage alone, if one party is unable to be present, the responsible party must take all necessary measures to provide the other party with their name and address."},
-{topic:"Protect",q:"What protective equipment must you put on BEFORE exiting the vehicle during a breakdown on an interurban road?",opts:["Hard hat","Safety harness","Reflective waistcoat (chaleco) — must be worn inside the cabin before exiting","High-visibility arm band"],ans:2,exp:"The reflective waistcoat must be worn BEFORE exiting the vehicle on any interurban road. It must be kept inside the cabin (not the boot) for precisely this reason."},
-{topic:"Bleeding",q:"The tourniquet is applied. May it be loosened after 30 minutes?",opts:["Yes — loosen after 30 minutes to prevent tissue damage","Yes — loosen briefly every 15 minutes","No — NEVER take off or loosen the tourniquet after it is applied — serious complications may arise","Only medical staff may loosen it"],ans:2,exp:"Once a tourniquet is applied: NEVER take it off or loosen it. Serious complications — including life-threatening blood loss — may arise if it is loosened."}
-];
-</script>
-<script>
-// Tab switching
-document.querySelectorAll('.tab-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
-    window.scrollTo(0,0);
-  });
-});
+    <script>
+      window.QUIZ_QUESTIONS = [
+        {
+          topic: 'PAS Rule',
+          q: 'What does PAS stand for in road accident first aid?',
+          opts: [
+            'Protect, Assist, Stop',
+            'Protect, Alert, Succour',
+            'Park, Alert, Save',
+            'Priority, Ambulance, Safety',
+          ],
+          ans: 1,
+          exp: 'PAS = Protect → Alert → Succour. This is the standard three-step emergency response procedure for road accidents in Spain.',
+        },
+        {
+          topic: 'PAS Rule',
+          q: 'What is the correct PAS order?',
+          opts: [
+            'Alert → Protect → Succour',
+            'Succour → Protect → Alert',
+            'Protect → Alert → Succour',
+            'Alert → Succour → Protect',
+          ],
+          ans: 2,
+          exp: 'Protect first, then Alert, then Succour. Protecting the scene prevents additional accidents and casualties.',
+        },
+        {
+          topic: 'Obligation',
+          q: 'Failing to help at a road accident is considered under the Spanish Penal Code as:',
+          opts: [
+            'A minor administrative infraction',
+            'An offence of neglect to providing help — punishable by law',
+            'Only a civil matter',
+            'A moral obligation but not a legal one',
+          ],
+          ans: 1,
+          exp: 'Providing and getting help are OBLIGATIONS. Their disregard is considered under the Spanish Penal Code as an offence of neglect to providing help — punishable by law.',
+        },
+        {
+          topic: 'Obligation',
+          q: 'A driver causes an accident in which people die then leaves the scene. Possible punishment?',
+          opts: [
+            'A fine only',
+            'Administrative licence suspension',
+            'Imprisonment 6 months to 4 years AND deprivation of driving right from 1 to 4 years — crime of abandonment',
+            'Only a points penalty',
+          ],
+          ans: 2,
+          exp: 'A driver who leaves the scene after causing an accident with fatalities may be punished for the crime of abandonment of the accident site: 6 months to 4 years imprisonment and 1 to 4 years driving ban.',
+        },
+        {
+          topic: 'PAS Rule',
+          q: "What is the 'golden hour'?",
+          opts: [
+            'The first hour after any accident when fault must be determined',
+            'The first 60 minutes after a serious injury accident — decisive for whether the victim survives or dies',
+            'The time police must arrive after being called',
+            'Maximum time emergency services have to respond',
+          ],
+          ans: 1,
+          exp: "The first 60 minutes after a serious injury accident are called the 'golden hour' — they are decisive for either surviving or dying.",
+        },
+        {
+          topic: 'Obligation',
+          q: 'Police are already at the scene. A non-involved road user passes by. Must they stop?',
+          opts: [
+            'Yes — all road users must stop',
+            'No — non-involved users are EXEMPT when police are at scene and their co-operation is not necessary',
+            'Yes — unless driving a heavy vehicle',
+            'Only if there are injured persons',
+          ],
+          ans: 1,
+          exp: 'Road users NOT involved are exempt from the helping obligations WHEN police are already at the scene AND their co-operation is not necessary.',
+        },
+        {
+          topic: 'Protect',
+          q: 'What must you do FIRST before joining an accident scene?',
+          opts: [
+            'Call 112 while still driving',
+            'Park in a safe place and ensure you do not put yourself in danger',
+            'Remove injured from their vehicles',
+            'Immediately check the injured',
+          ],
+          ans: 1,
+          exp: 'The first action is to park in a safe place and ensure you do not put yourself in danger before joining the scene.',
+        },
+        {
+          topic: 'Protect',
+          q: 'If you must access the road at an accident scene, what must you wear?',
+          opts: [
+            'Any high-visibility clothing',
+            'A reflective waistcoat (chaleco) and be extra careful',
+            'A hard hat',
+            'Dark clothing to avoid being seen',
+          ],
+          ans: 1,
+          exp: 'If you really have to access the road, you must wear a reflective waistcoat (chaleco) and be extra careful.',
+        },
+        {
+          topic: 'Protect',
+          q: 'What device must mark an accident place?',
+          opts: [
+            'Red warning triangles only',
+            'Hazard lights alone',
+            'Emergency light AND luminous V-16 danger pre-signalling device',
+            'White paint markings on road',
+          ],
+          ans: 2,
+          exp: 'The accident place must be marked with the emergency light AND the luminous V-16 danger pre-signalling device (amber beacon, mandatory from 1 January 2026).',
+        },
+        {
+          topic: 'Protect',
+          q: 'Why must you not smoke near an accident scene?',
+          opts: [
+            'It is illegal in public spaces',
+            'Fuel leaks create explosion and fire risk',
+            'It may upset the injured',
+            'It could damage evidence',
+          ],
+          ans: 1,
+          exp: 'You must NOT smoke or start a fire at an accident scene because fuel leaks from damaged vehicles create a real risk of explosion and fire.',
+        },
+        {
+          topic: 'Protect',
+          q: 'A vehicle at an accident is on fire. How do you use a fire extinguisher?',
+          opts: [
+            'Water aimed at flames',
+            'Fire extinguisher aimed at the TOP of the flames',
+            'Fire extinguisher aimed at the BASE of the fire',
+            'Call the fire brigade and do nothing',
+          ],
+          ans: 2,
+          exp: 'For a vehicle fire: use a fire extinguisher aimed at the BASE of the fire (not the flames). If no extinguisher: use blankets, mud, or sand. NEVER use water on a vehicle fire.',
+        },
+        {
+          topic: 'Protect',
+          q: 'No fire extinguisher is available and a vehicle is on fire. Use:',
+          opts: [
+            'Petrol to dilute the fire',
+            'Water or any liquid available',
+            'Blankets, mud, or sand — never water',
+            'Any material including water',
+          ],
+          ans: 2,
+          exp: 'In absence of a fire extinguisher: blankets, mud, or sand. NEVER water on a vehicle fire (dangerous reactions with fuel and electrical systems).',
+        },
+        {
+          topic: 'Protect',
+          q: 'Should you normally move an injured person at an accident scene?',
+          opts: [
+            'Yes — always move them to safety immediately',
+            'Yes — but only if they ask',
+            'No — as a general rule do NOT move them except when absolutely necessary',
+            'Only if they are unconscious',
+          ],
+          ans: 2,
+          exp: 'As a general rule, injured people should NOT be moved except when absolutely necessary (risk of fire, cardiac arrest requiring CPR, need to place in recovery position).',
+        },
+        {
+          topic: 'Protect',
+          q: 'Under what circumstances is moving an injured person permitted?',
+          opts: [
+            'When they are uncomfortable',
+            'When police authorise it',
+            'When absolutely necessary: risk of fire, cardiac arrest for CPR, or need for recovery position',
+            'When they are blocking traffic',
+          ],
+          ans: 2,
+          exp: 'Moving an injured person is only permitted when absolutely necessary: risk of fire; cardiac arrest requiring CPR; or need to put in recovery position.',
+        },
+        {
+          topic: 'Protect',
+          q: 'When moving an injured person is unavoidable, what technique is required?',
+          opts: [
+            'One person can drag by the legs',
+            'Move as a STIFF BLOCK with at least 3 bystanders — head/neck/torso aligned',
+            'Lift by the arms only',
+            'Roll sideways then drag',
+          ],
+          ans: 1,
+          exp: 'If moving is unavoidable: treat as a stiff block, use at least 3 bystanders, keep head/neck/torso well aligned at all times.',
+        },
+        {
+          topic: 'Protect',
+          q: "Should you remove a motorcyclist's helmet at an accident scene?",
+          opts: [
+            'Yes — always remove it immediately',
+            'Yes — carefully if they are conscious',
+            'No — do NOT remove unless absolutely necessary AND only if familiar with the technique',
+            'Yes — if emergency services are more than 30 min away',
+          ],
+          ans: 2,
+          exp: "Do NOT remove a motorcyclist's helmet unless absolutely necessary AND only if you are familiar with the correct technique. Incorrect removal can cause or worsen spinal injuries.",
+        },
+        {
+          topic: 'Protect',
+          q: 'Should you give an injured person medication while waiting for help?',
+          opts: [
+            'Yes — pain medication helps keep them calm',
+            'Yes — if they request it',
+            'No — do NOT attempt to give anything to eat, drink, or any medication',
+            'Only if they are conscious',
+          ],
+          ans: 2,
+          exp: 'You must NOT give injured persons anything to eat, drink, or any medication. This can complicate surgery, interact with emergency medication, or cause choking.',
+        },
+        {
+          topic: 'Protect',
+          q: "A person's clothing is on fire. How should you extinguish it?",
+          opts: [
+            'Water poured over them',
+            'A fire extinguisher aimed directly at their body',
+            'A blanket to smother flames, or make them roll on the ground. Do NOT aim extinguisher directly at person.',
+            'Any dry material',
+          ],
+          ans: 2,
+          exp: 'To extinguish a person on fire: use a blanket to smother or make them roll on the ground. Fire extinguisher must NOT be aimed directly at the person — aim at the base of flames.',
+        },
+        {
+          topic: 'Alert',
+          q: 'What is the European emergency number?',
+          opts: ['999', '911', '112', '119'],
+          ans: 2,
+          exp: '112 is the emergency number for Spain and throughout Europe — free of charge with European coverage.',
+        },
+        {
+          topic: 'Alert',
+          q: 'When calling 112 about an accident, what 3 types of information must be provided?',
+          opts: [
+            "Your name, the other driver's plate, and vehicle make",
+            'Location; number and condition of injured; your name, ID and phone number',
+            'Only the location — emergency services determine the rest',
+            'Insurance details of all vehicles',
+          ],
+          ans: 1,
+          exp: 'Provide: (1) location (road, number, location sign, community); (2) number of injured and condition, including distinguishing features; (3) your name, identity card number, and phone number.',
+        },
+        {
+          topic: 'Alert',
+          q: 'What does the eCall system do when airbags deploy?',
+          opts: [
+            'Sends an automatic speed warning',
+            'Automatically establishes voice communication with 112 and transmits exact location, vehicle type, plate, make, model and fuel type',
+            "Activates vehicle's hazard lights",
+            'Contacts the insurance company',
+          ],
+          ans: 1,
+          exp: 'eCall activates automatically when airbags deploy — establishes voice communication with 112 and sends location, vehicle type, licence plate, make, model and fuel type.',
+        },
+        {
+          topic: 'Alert',
+          q: 'Can the eCall system be activated manually?',
+          opts: [
+            'No — only when airbags deploy',
+            'Yes — by pressing the SOS button on equipped vehicles',
+            'Only by trained mechanics',
+            'Only if automatic activation has failed',
+          ],
+          ans: 1,
+          exp: 'Yes. eCall can be activated manually by pressing the SOS button. Automatic activation occurs when airbags deploy.',
+        },
+        {
+          topic: 'Alert',
+          q: 'Must you undergo alcohol or drug tests when police request them?',
+          opts: [
+            'Refuse — right to wait for a lawyer',
+            'Only if you believe you are over the limit',
+            'Yes — you MUST undergo detection tests for alcohol, narcotics, psychoactive drugs, stimulants and other substances',
+            'Only if you caused the accident',
+          ],
+          ans: 2,
+          exp: 'You must co-operate with police by undergoing detection tests for alcohol, narcotics, psychoactive drugs, stimulants and other substances. Refusal is itself a 6-point loss offence.',
+        },
+        {
+          topic: 'First Aid',
+          q: 'Which injured persons should be attended to FIRST?',
+          opts: [
+            'The oldest person first',
+            'Those with visible injuries — broken bones or cuts',
+            'Those who are unresponsive, have breathing problems, massive blood loss, or vomiting',
+            'Those making the most noise',
+          ],
+          ans: 2,
+          exp: 'Priority: those who are unresponsive; with breathing problems; with massive blood loss; or vomiting. Silent victims often need the most urgent attention.',
+        },
+        {
+          topic: 'ABC',
+          q: 'What does the ABC rule stand for?',
+          opts: [
+            'Accident, Breathing, Call',
+            'Airway, Breathing, Circulation',
+            'Alert, Bandage, Compressions',
+            'Assess, Bleed, Calm',
+          ],
+          ans: 1,
+          exp: 'ABC = Airway (clear the airway) · Breathing (check and support breathing) · Circulation (check for circulation and serious blood loss).',
+        },
+        {
+          topic: 'ABC',
+          q: 'How do you perform the Airway step (A) of ABC?',
+          opts: [
+            'Check blood pressure at the wrist',
+            'Forehead-chin manoeuvre: two fingers under chin lifting it, other hand on forehead tilting head upward. Remove mouth objects with hooked index finger.',
+            'Wrap the neck to support it',
+            'Apply pressure to the throat',
+          ],
+          ans: 1,
+          exp: 'The forehead-chin manoeuvre: two fingers under the chin, lift slightly; other hand on forehead, tilt head upward. Remove objects from mouth with index finger bent into a hook shape.',
+        },
+        {
+          topic: 'ABC',
+          q: 'What is the most common cause of airway obstruction in an unconscious person?',
+          opts: [
+            'Vomit',
+            'Blood',
+            'The tongue falling back and blocking the airway',
+            'A swallowed foreign object',
+          ],
+          ans: 2,
+          exp: 'The most common cause of airway obstruction is the tongue falling back and blocking the airway. The forehead-chin manoeuvre lifts the chin and tilts the head, moving the tongue forward.',
+        },
+        {
+          topic: 'ABC',
+          q: 'How do you check breathing (the B step)?',
+          opts: [
+            'Touch chest and count beats',
+            'Look (chest rise/fall) · Feel (expired air on cheek) · Listen (airflow through mouth/nose)',
+            'Press abdomen gently',
+            'Check if they respond to their name',
+          ],
+          ans: 1,
+          exp: 'Check breathing: Look at chest rise and fall; Feel for expired air on cheek; Listen to airflow in and out through mouth or nose.',
+        },
+        {
+          topic: 'ABC',
+          q: 'If not breathing after ABC assessment, what do you assume and do?',
+          opts: [
+            'Assume shock — apply anti-shock position',
+            'Assume unconscious — place in recovery position',
+            'Assume cardiac arrest — perform CPR immediately',
+            'Wait for confirmation from emergency services',
+          ],
+          ans: 2,
+          exp: 'If the injured person is not breathing after ABC, assume cardiac arrest and begin CPR IMMEDIATELY. Do not wait.',
+        },
+        {
+          topic: 'CPR',
+          q: 'What is the correct adult CPR ratio?',
+          opts: ['10:1', '15:2', '30:2', '5:1'],
+          ans: 2,
+          exp: 'Correct adult CPR ratio is 30:2 — 30 chest compressions followed by 2 rescue breaths. Repeated continuously.',
+        },
+        {
+          topic: 'CPR',
+          q: 'How deep must adult CPR chest compressions be?',
+          opts: ['1–2 cm', '2–3 cm', '4 or 5 cm', '7–8 cm'],
+          ans: 2,
+          exp: 'Chest compressions must push the chest down 4 or 5 centimetres. Arms straight, using body weight — not just arm strength.',
+        },
+        {
+          topic: 'CPR',
+          q: 'Where exactly do you place your hands for CPR?',
+          opts: [
+            'On the lower abdomen',
+            'Heel of one hand on CENTRE of chest — other hand on top with interlocked fingers',
+            'On the upper chest near the collarbone',
+            'On both sides of the chest simultaneously',
+          ],
+          ans: 1,
+          exp: "Place the heel of one hand on the CENTRE of the victim's chest and the other hand on top, fingers interlocked.",
+        },
+        {
+          topic: 'CPR',
+          q: 'How long should each rescue breath last?',
+          opts: [
+            '3–4 seconds',
+            'About 1 second',
+            'As long as possible',
+            'Half a second',
+          ],
+          ans: 1,
+          exp: 'Each rescue breath should last about 1 second while watching for the chest to rise.',
+        },
+        {
+          topic: 'CPR',
+          q: 'When should you STOP performing CPR?',
+          opts: [
+            'After 5 minutes if no improvement',
+            'After 10 complete cycles',
+            'When emergency trained personnel arrive OR victim resumes breathing',
+            'After exactly 30 minutes',
+          ],
+          ans: 2,
+          exp: 'Continue CPR until emergency trained personnel arrive OR the victim resumes breathing.',
+        },
+        {
+          topic: 'CPR',
+          q: 'Two rescuers are performing CPR together. When should they swap?',
+          opts: [
+            'Every 10 minutes',
+            'Every 5 compressions',
+            'Every 1–2 minutes to avoid fatigue',
+            'Only when one is completely exhausted',
+          ],
+          ans: 2,
+          exp: 'When accompanied by another bystander, alternate every 1–2 minutes to avoid fatigue. Fatigued rescuers cannot maintain adequate compression depth.',
+        },
+        {
+          topic: 'CPR',
+          q: 'CPR for a child under 1 year — key differences?',
+          opts: [
+            'Ratio changes to 15:2',
+            'Use 2 fingers for compressions + approximately 1/3 chest depth + start with 5 ventilations (mouth-to-mouth-nose)',
+            'No CPR on children under 1 year',
+            'Use full heel of hand but lighter pressure',
+          ],
+          ans: 1,
+          exp: 'For children under 1 year: use 2 fingers for compressions, press to approximately 1/3 of chest depth. Start with 5 ventilations (mouth-to-mouth or mouth-to-mouth-nose).',
+        },
+        {
+          topic: 'CPR',
+          q: 'If your rescue breath does not cause the chest to rise, what should you check?',
+          opts: [
+            'The victim is dead — stop CPR',
+            'The forehead-chin lift may not be correctly performed, or the mouth is obstructed — check both',
+            'You are breathing too hard',
+            'Repeat compressions first',
+          ],
+          ans: 1,
+          exp: "If no chest rise: confirm the forehead-chin lift manoeuvre is correctly performed and that the victim's mouth is not obstructed.",
+        },
+        {
+          topic: 'Recovery',
+          q: 'When is the recovery position used?',
+          opts: [
+            'For all injured at accident scenes',
+            'For a non-breathing victim',
+            'For an UNCONSCIOUS person who IS BREATHING — to prevent suffocation',
+            'For a victim with major blood loss',
+          ],
+          ans: 2,
+          exp: 'The recovery position is for an unconscious person who IS breathing. It prevents suffocation by keeping mouth downward and allowing fluid drainage.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'Why is the person placed on their side in the recovery position?',
+          opts: [
+            'To make CPR easier',
+            'To keep mouth downward — prevents tongue from falling back and allows fluid drainage from airway',
+            'To apply bandages more easily',
+            'To reduce circulation to injured limbs',
+          ],
+          ans: 1,
+          exp: 'The side position keeps the mouth downward to prevent the tongue from falling back, and allows fluids (vomit, blood) to drain from the airway — preventing suffocation.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'When MUST the recovery position be used?',
+          opts: [
+            'Any time they lose consciousness',
+            'When they are in shock',
+            'When vomiting or bleeding from mouth or ear, OR when victim must be left alone to seek help',
+            'When they have a fracture',
+          ],
+          ans: 2,
+          exp: 'MUST use recovery position: (1) victim is vomiting or bleeding from mouth or ear; (2) victim must be left alone for someone to seek help.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'A victim is bleeding from the RIGHT ear. How do you position them?',
+          opts: [
+            'Face up — to stop drainage',
+            'On the side OPPOSITE the bleeding ear',
+            'On the side OF the bleeding ear — over the right ear — cover with sterile gauze WITHOUT blocking',
+            'On their front',
+          ],
+          ans: 2,
+          exp: 'Bleeding from the ear (possible skull base fracture): recovery position over the BLEEDING ear, to allow drainage. Cover with sterile gauze WITHOUT blocking. NEVER block externalized bleeding.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'A victim is coughing up blood from the lungs. What position?',
+          opts: [
+            'Recovery position — on their side',
+            'Anti-shock position — legs elevated',
+            'Half-SEATED position',
+            'Lying face down',
+          ],
+          ans: 2,
+          exp: 'Coughing blood = lung lesion → HALF-SEATED position. Vomiting blood = stomach → recovery position.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'A victim is vomiting blood. What position?',
+          opts: [
+            'Half-seated',
+            'Anti-shock — legs elevated',
+            'Recovery position — on their side',
+            'Standing if possible',
+          ],
+          ans: 2,
+          exp: 'Vomiting blood = stomach lesion → RECOVERY POSITION on their side. Coughing blood = lung lesion → half-seated.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'The critical rule for externalized internal bleeding?',
+          opts: [
+            'Apply pressure to stop immediately',
+            'Pack the opening with gauze',
+            'NEVER BLOCK — blocking increases internal pressure dangerously',
+            'Apply tourniquet above the bleeding site',
+          ],
+          ans: 2,
+          exp: 'NEVER BLOCK externalized internal bleeding (ear, nose, mouth). These are extremely serious situations (possible skull fractures). Blocking causes dangerous internal pressure buildup.',
+        },
+        {
+          topic: 'Recovery',
+          q: 'What is the FIRST step in performing the recovery position?',
+          opts: [
+            'Roll the person directly onto their side immediately',
+            "Bend one arm upwards and place the other arm's hand over the shoulder of the arm bent",
+            'Lift both legs to elevate them',
+            'Remove helmet and loosen clothing first',
+          ],
+          ans: 1,
+          exp: "Step 1: Bend one arm upwards and place the other arm's hand over the shoulder of the arm bent. Step 2: Bend the leg same side and roll. Step 3: Keep leg bent, lean head on hand/forearm.",
+        },
+        {
+          topic: 'Bleeding',
+          q: 'What is the FIRST step to control a severe external haemorrhage?',
+          opts: [
+            'Lift the limb above heart level',
+            'Apply tourniquet immediately',
+            'Apply DIRECT PRESSURE on the wound with gauze or clean cloth',
+            'Apply arterial compression',
+          ],
+          ans: 2,
+          exp: 'Step 1: Apply DIRECT PRESSURE on the wound with a gauze or clean cloth. Maintain continuously. Do NOT remove even if saturated — add more on top.',
+        },
+        {
+          topic: 'Bleeding',
+          q: 'Direct pressure cannot stop the bleeding. What is the next step?',
+          opts: [
+            'Apply tourniquet immediately',
+            'Remove the cloth and apply fresh one',
+            'LIFT THE LIMB affected while keeping the pressure on',
+            'Call 112 again',
+          ],
+          ans: 2,
+          exp: 'Step 2: if direct pressure alone cannot stop bleeding, LIFT THE LIMB affected while maintaining pressure.',
+        },
+        {
+          topic: 'Bleeding',
+          q: "Lifting the limb still hasn't stopped the bleeding. What is step 3?",
+          opts: [
+            'Apply a cold pack',
+            'Apply pressure to the major artery feeding the bleeding point (arterial compression)',
+            'Apply tourniquet immediately',
+            'Remove existing dressing and pack the wound',
+          ],
+          ans: 1,
+          exp: 'Step 3: apply pressure to the MAJOR ARTERY that feeds the bleeding point — arterial compression.',
+        },
+        {
+          topic: 'Bleeding',
+          q: 'A tourniquet has been applied. What must you NEVER do?',
+          opts: [
+            'Record the time it was applied',
+            'Call emergency services',
+            'NEVER REMOVE OR LOOSEN IT — serious complications may arise',
+            'Keep the area visible',
+          ],
+          ans: 2,
+          exp: "Once applied: NEVER take off or loosen the tourniquet (serious complications may arise). Do NOT cover the area with clothes. WRITE THE EXACT TIME it was applied visibly on the victim's clothing.",
+        },
+        {
+          topic: 'Bleeding',
+          q: 'Original gauze becomes saturated with blood. Should you remove it and replace it?',
+          opts: [
+            'Yes — a clean dry gauze is more effective',
+            'Yes — bacteria can grow on soaked gauze',
+            'No — do NOT remove it. Apply additional gauze on top. Removing it disrupts clot formation.',
+            'Only if more than 10 minutes have passed',
+          ],
+          ans: 2,
+          exp: 'Do NOT remove the original gauze even when saturated. Removing it can disrupt clot formation. Apply additional material on top while maintaining pressure.',
+        },
+        {
+          topic: 'Shock',
+          q: 'What causes a state of shock after an accident?',
+          opts: [
+            'Fear and emotional distress only',
+            'A bang to the head',
+            'Loss of a significant amount of blood — inadequate organ perfusion',
+            'Dehydration',
+          ],
+          ans: 2,
+          exp: 'A state of shock occurs when a person loses a significant amount of blood — the body cannot maintain adequate circulation to organs.',
+        },
+        {
+          topic: 'Shock',
+          q: 'Signs of shock in a victim?',
+          opts: [
+            'Red face, sweating, and strong slow pulse',
+            'Pale skin, cold sweat, restlessness, confusion, weak and rapid pulse, rapid shallow breathing',
+            'Bright red skin, high temperature, slow breathing',
+            'Normal alertness — shock only shows after 30 min',
+          ],
+          ans: 1,
+          exp: 'Signs of shock: pale skin, cold sweat, restlessness, confusion, weak and rapid pulse, rapid and shallow breathing.',
+        },
+        {
+          topic: 'Shock',
+          q: 'What is the anti-shock position?',
+          opts: [
+            'Seated upright with legs hanging',
+            'Face down, head turned to side',
+            'Supine (face up) with HEAD LOWER than body and LEGS ELEVATED',
+            'Standing against a wall',
+          ],
+          ans: 2,
+          exp: 'Anti-shock position: supine (face up), head LOWER than the rest of the body, legs ELEVATED. This directs blood from legs toward vital organs.',
+        },
+        {
+          topic: 'Shock',
+          q: 'A shock victim shows signs of nausea and vomiting. What must you do?',
+          opts: [
+            'Give anti-nausea medication',
+            'Keep them in the anti-shock position — legs elevated',
+            'Immediately place in RECOVERY POSITION to prevent aspiration',
+            'Stand them upright',
+          ],
+          ans: 2,
+          exp: 'If a victim in shock shows signs of nausea, vomiting, or unconsciousness, IMMEDIATELY place them in the recovery position. Vomiting while flat on the back can cause fatal aspiration.',
+        },
+        {
+          topic: 'Fractures',
+          q: "Should you attempt to 'reduce' a fracture (put bone back in place)?",
+          opts: [
+            'Yes — immediate reduction prevents further injury',
+            'Yes — with basic first aid training',
+            'No — do NOT attempt to reduce the fracture under any circumstances',
+            'Only for limb fractures',
+          ],
+          ans: 2,
+          exp: 'Do NOT reduce the fracture — do not attempt to put the bone back. This can damage tissue, nerves and blood vessels. Immobilise the area and wait for emergency personnel.',
+        },
+        {
+          topic: 'Fractures',
+          q: 'How is a fractured limb immobilised?',
+          opts: [
+            'Tightly bind to adjacent limb',
+            'Hold the TWO EXTREMITIES of the fractured area to prevent movement',
+            'Place padding around fracture site only',
+            'Keep them standing to use gravity',
+          ],
+          ans: 1,
+          exp: 'Immobilise the fractured area by holding the TWO EXTREMITIES of the fractured area — above and below the fracture. This prevents movement that could cause additional injury.',
+        },
+        {
+          topic: 'Wounds',
+          q: "There is a knife embedded in a victim's wound. Should you remove it?",
+          opts: [
+            'Yes — to allow the wound to be cleaned',
+            'Yes — only if shallow',
+            'No — do NOT remove puncturing objects. Cover the wound with the object still embedded.',
+            'Only if it is causing extreme pain',
+          ],
+          ans: 2,
+          exp: 'Do NOT remove a puncturing object. Removing it dramatically increases bleeding. Cover the wound WITH the object still embedded.',
+        },
+        {
+          topic: 'Wounds',
+          q: "A victim's internal organs are exposed through a wound (evisceration). What must you do?",
+          opts: [
+            'Attempt to push the organs back inside',
+            'Cover with a dry sterile cloth',
+            'Lay the injured down and cover exposed organs with a MOISTENED piece of cloth — do NOT push back',
+            'Apply tight bandage to compress the area',
+          ],
+          ans: 2,
+          exp: 'Evisceration: lay the injured down and cover exposed organs with a MOISTENED piece of cloth. Do NOT push organs back. Keep moist to prevent drying.',
+        },
+        {
+          topic: 'Burns',
+          q: 'Correct first treatment for heat burns?',
+          opts: [
+            'Apply ointment or butter',
+            'A dry sterile bandage without cleaning',
+            'Cold WATER — submerge the burnt area if possible',
+            'Ice directly on the burnt area',
+          ],
+          ans: 2,
+          exp: 'The correct first treatment for heat burns is cold WATER — submerge if possible. Never apply ointment, butter, or ice.',
+        },
+        {
+          topic: 'Burns',
+          q: "Should you remove a burned person's clothing stuck to the burn?",
+          opts: [
+            'Yes — clothing traps heat',
+            'Yes — but only synthetic material',
+            'No — do NOT touch the area or remove burned garments',
+            'Only if still smouldering',
+          ],
+          ans: 2,
+          exp: 'Do NOT touch the burnt area or remove burned garments. Burned clothing stuck to skin should only be removed by medical professionals.',
+        },
+        {
+          topic: 'Burns',
+          q: 'A victim has burns on both arms. How should they be dressed?',
+          opts: [
+            'One large bandage over both arms together',
+            'Each burn SEPARATELY with clear moistened dressings wrapped with a bandage — never together',
+            'Apply ointment and let air dry',
+            'Wrap both tightly with dry bandages',
+          ],
+          ans: 1,
+          exp: 'Each burnt area must be covered SEPARATELY — never together. Use clear moistened dressings and wrap with a bandage.',
+        },
+        {
+          topic: 'Burns',
+          q: 'Should blisters on a burn be punctured?',
+          opts: [
+            'Yes — releasing fluid heals faster',
+            'Yes — only large blisters over 1 cm',
+            'No — do NOT puncture or cut blisters',
+            'Only under medical supervision',
+          ],
+          ans: 2,
+          exp: 'Do NOT puncture or cut blisters. Blisters form a sterile protective layer. Puncturing exposes raw tissue to infection and delays healing.',
+        },
+        {
+          topic: 'Transport',
+          q: 'The preferred method of transporting injured to hospital?',
+          opts: [
+            'Any available vehicle',
+            'Private car driven quickly',
+            'AMBULANCE — private vehicle only in extreme circumstances',
+            'Police vehicle',
+          ],
+          ans: 2,
+          exp: 'Transport of wounded must be carried out by an ambulance. Private vehicle only in extreme circumstances: no means to call help; condition deteriorates without help; 30+ minutes since calling with severe uncontrolled bleeding or shock.',
+        },
+        {
+          topic: 'Transport',
+          q: 'When may a private vehicle be used to transport injured?',
+          opts: [
+            'Whenever faster than ambulance',
+            'When injured is stable',
+            "When no means to call help; OR condition deteriorates and help hasn't arrived; OR 30+ minutes since calling AND severe uncontrolled bleeding or shock",
+            'Whenever driver deems it faster',
+          ],
+          ans: 2,
+          exp: "Private vehicle only when: (1) no means to call medical help; (2) condition deteriorates and help doesn't arrive; or (3) more than 30 minutes since calling AND severe uncontrolled haemorrhage OR shock.",
+        },
+        {
+          topic: 'Transport',
+          q: 'When transporting injured by private vehicle, at what speed should you drive?',
+          opts: [
+            'As fast as possible',
+            'Moderate speed, driving smoothly — provide company to keep victim calm',
+            'Speed limit — no faster, no slower',
+            'Emergency speed is permitted',
+          ],
+          ans: 1,
+          exp: 'Travel at moderate speed, drive smoothly, provide company to keep the victim calm. Erratic driving can worsen injuries, especially spinal ones.',
+        },
+        {
+          topic: 'Transport',
+          q: 'Moving an injured person is unavoidable. Minimum bystanders required?',
+          opts: ['1', '2', '3', '5'],
+          ans: 2,
+          exp: 'If moving an injured person is unavoidable: move as a stiff block using the help of AT LEAST 3 BYSTANDERS.',
+        },
+        {
+          topic: 'Alert',
+          q: 'What is a Hospital Traffic Accident Unit (UAT)?',
+          opts: [
+            'A police unit investigating accidents',
+            'A unit managing traffic during investigations',
+            'A hospital service providing care to road accident victims (physical and emotional) and managing insurance procedures',
+            'The emergency ambulance dispatch centre',
+          ],
+          ans: 2,
+          exp: 'The Hospital Traffic Accident Unit provides care to victims with physical or emotional injuries from road accidents and manages administrative procedures with the insurance company.',
+        },
+        {
+          topic: 'ABC',
+          q: 'Normal heart rate for healthy adults?',
+          opts: [
+            '40–60 beats per minute',
+            '60–80 beats per minute',
+            '80–120 beats per minute',
+            '100–140 beats per minute',
+          ],
+          ans: 1,
+          exp: 'Normal heart rate for healthy adults is 60 to 80 beats per minute. Children: approximately 100 per minute. Accident victims have higher rates due to stress and agitation.',
+        },
+        {
+          topic: 'ABC',
+          q: 'Where is the carotid pulse checked?',
+          opts: [
+            'Inside of the elbow',
+            'Side of the neck, under the jaw — using index and middle fingers',
+            'On the forehead with two fingers',
+            'On the ankle',
+          ],
+          ans: 1,
+          exp: 'The carotid pulse: gently press one side of the neck with the index and middle fingers, under the jaw. The radial pulse is at the external part of the wrist.',
+        },
+        {
+          topic: 'Protect',
+          q: 'A bucket of water is available — can it be used on a vehicle fire?',
+          opts: [
+            'Yes — water is always effective on fires',
+            'Yes — but only on the tyres, not the engine',
+            'No — NEVER use water on a vehicle fire. Water on burning fuel is dangerous.',
+            'Yes — only if mixed with sand first',
+          ],
+          ans: 2,
+          exp: 'NEVER use water on a vehicle fire. Water on burning fuel can cause explosive reactions. For vehicle fires: fire extinguisher aimed at base, or blankets, mud, or sand.',
+        },
+        {
+          topic: 'Obligation',
+          q: 'What actions must road users involved in or witnessing an accident take?',
+          opts: [
+            'Call 112 only and wait',
+            'Help or call for help, mitigate hazards, restore traffic safety, co-operate with police',
+            'Only stop if directly involved',
+            'Move injured to safety first',
+          ],
+          ans: 1,
+          exp: 'Road users involved in, witnessing, or becoming aware of an accident must take all necessary actions to: help or call for help, mitigate hazards, restore traffic safety, and co-operate with police.',
+        },
+        {
+          topic: 'Shock',
+          q: 'Can you give a shock victim water to drink?',
+          opts: [
+            'Yes — warm drinks help maintain blood pressure',
+            'Yes — small sips only',
+            'No — do NOT give anything to drink to a victim in shock',
+            'Only if conscious and requesting water',
+          ],
+          ans: 2,
+          exp: 'Do NOT give anything to drink to a victim in shock. Doing so can complicate anaesthesia, may cause vomiting and aspiration, and does not address the underlying cause.',
+        },
+        {
+          topic: 'Bleeding',
+          q: "The tourniquet is applied. What must you record on the victim's clothing?",
+          opts: [
+            'Your name and phone number',
+            "The victim's blood type",
+            'The EXACT TIME the tourniquet was applied — in a clearly visible place',
+            "The victim's name and date of birth",
+          ],
+          ans: 2,
+          exp: "Once a tourniquet is applied: write down the EXACT TIME it was applied somewhere VISIBLE on the victim's clothing. Medical staff need this information urgently.",
+        },
+        {
+          topic: 'Protect',
+          q: 'When must you NOT move an injured person?',
+          opts: [
+            'When they are in visible pain',
+            'As a GENERAL RULE — do not move them unless risk of fire, need CPR, or need recovery position',
+            'When they are unconscious',
+            'When their limbs are broken',
+          ],
+          ans: 1,
+          exp: 'As a general rule, injured people should NOT be moved except when absolutely necessary: risk of fire, cardiac arrest requiring CPR, or need to place in recovery position.',
+        },
+        {
+          topic: 'Alert',
+          q: 'What information does eCall transmit to the emergency centre?',
+          opts: [
+            "Driver's name and insurance details only",
+            'Exact location, type of vehicle, licence plate, make, model, and type of fuel',
+            'Only GPS coordinates',
+            'Vehicle speed at the moment of impact',
+          ],
+          ans: 1,
+          exp: 'eCall sends: exact location, type of vehicle, licence plate, make, model, and type of fuel.',
+        },
+        {
+          topic: 'CPR',
+          q: 'If a rescue breath does NOT cause the chest to rise — what must you check?',
+          opts: [
+            'Victim is dead — stop CPR',
+            'The forehead-chin lift may be incorrect OR mouth is obstructed — check both',
+            'You are breathing too hard',
+            'Repeat compressions first',
+          ],
+          ans: 1,
+          exp: "If no chest movement: confirm the forehead-chin lift manoeuvre is correctly performed and that the victim's mouth is not obstructed. If correct, attempt a second breath.",
+        },
+        {
+          topic: 'Wounds',
+          q: 'Should you touch a wound that is not bleeding?',
+          opts: [
+            'Yes — to assess the depth',
+            'Yes — to clean with antiseptic',
+            'No — do NOT touch the wound unless it is bleeding and needs to be reduced',
+            'Only if wearing sterile gloves',
+          ],
+          ans: 2,
+          exp: 'Do NOT touch the wound unless it is bleeding and needs to be controlled. Unnecessary touching can introduce infection and disturb natural clotting.',
+        },
+        {
+          topic: 'Burns',
+          q: 'What to watch for specifically when the face is burned?',
+          opts: [
+            'Eye damage only',
+            'Risk of swelling — elevate the head',
+            'Risk of the victim entering SHOCK or developing RESPIRATORY PROBLEMS',
+            'Risk of dehydration only',
+          ],
+          ans: 2,
+          exp: 'When the burnt area is the face: watch carefully as the victim may enter shock or develop respiratory problems. The airway may be compromised.',
+        },
+        {
+          topic: 'First Aid',
+          q: 'A first-aid kit is compulsory in a private car in Spain?',
+          opts: [
+            'Yes — legally required and subject to fine',
+            'Yes — mandatory since 2015',
+            'No — NOT compulsory by law, although always advisable to carry one',
+            'Only on interurban roads',
+          ],
+          ans: 2,
+          exp: 'A first-aid kit is NOT compulsory by law for private cars in Spain. However, it is always advisable to carry one.',
+        },
+        {
+          topic: 'ABC',
+          q: 'What is the first thing to try when approaching an injured person before using ABC?',
+          opts: [
+            'Immediately begin CPR',
+            'Ask simple questions out loud or gently pinch the hand — if still unresponsive, proceed with ABC',
+            'Check their pulse first',
+            'Move them to a flat surface',
+          ],
+          ans: 1,
+          exp: 'Ask simple questions out loud or gently pinch their hand. If still unresponsive, proceed with the ABC rule.',
+        },
+        {
+          topic: 'Protect',
+          q: 'Why must the neck be protected when moving an unconscious injured person?',
+          opts: [
+            'To prevent pain',
+            'To protect against sudden movements that could cause or worsen spinal cord damage',
+            'To make mouth-to-mouth easier to perform',
+            'It is not necessary to protect the neck',
+          ],
+          ans: 1,
+          exp: 'The neck must be protected from sudden movements — especially if the person is unconscious, as moving incorrectly can cause or worsen spinal cord damage.',
+        },
+        {
+          topic: 'Shock',
+          q: 'In the anti-shock position, where should the head be relative to the body?',
+          opts: [
+            'Higher than the body (elevated)',
+            'Level with the body',
+            'LOWER than the rest of the body (legs elevated)',
+            'Turned to the side at body level',
+          ],
+          ans: 2,
+          exp: 'Anti-shock position: supine with the head LOWER than the rest of the body and the LEGS ELEVATED. This uses gravity to direct blood toward the brain and vital organs.',
+        },
+        {
+          topic: 'Transport',
+          q: 'A companion is present when transporting injured by private vehicle. What is their role?',
+          opts: [
+            'Navigate the fastest route',
+            'Assist the injured and keep them calm during the journey',
+            "Operate the vehicle's hazard lights",
+            'Prepare first-aid kit for arrival',
+          ],
+          ans: 1,
+          exp: 'When transporting by private vehicle, a companion must assist the injured and keep them calm. The driver focuses on driving moderately and smoothly.',
+        },
+        {
+          topic: 'Alert',
+          q: 'At an accident scene with only material damage — one party cannot be present. What must the responsible party do?',
+          opts: [
+            'Leave a note on the windshield',
+            'Call their insurance company only',
+            'Take all necessary measures to provide the other party with their name and address',
+            'Wait until police arrive',
+          ],
+          ans: 2,
+          exp: 'In the event of material damage alone, if one party is unable to be present, the responsible party must take all necessary measures to provide the other party with their name and address.',
+        },
+        {
+          topic: 'Protect',
+          q: 'What protective equipment must you put on BEFORE exiting the vehicle during a breakdown on an interurban road?',
+          opts: [
+            'Hard hat',
+            'Safety harness',
+            'Reflective waistcoat (chaleco) — must be worn inside the cabin before exiting',
+            'High-visibility arm band',
+          ],
+          ans: 2,
+          exp: 'The reflective waistcoat must be worn BEFORE exiting the vehicle on any interurban road. It must be kept inside the cabin (not the boot) for precisely this reason.',
+        },
+        {
+          topic: 'Bleeding',
+          q: 'The tourniquet is applied. May it be loosened after 30 minutes?',
+          opts: [
+            'Yes — loosen after 30 minutes to prevent tissue damage',
+            'Yes — loosen briefly every 15 minutes',
+            'No — NEVER take off or loosen the tourniquet after it is applied — serious complications may arise',
+            'Only medical staff may loosen it',
+          ],
+          ans: 2,
+          exp: 'Once a tourniquet is applied: NEVER take it off or loosen it. Serious complications — including life-threatening blood loss — may arise if it is loosened.',
+        },
+      ];
+    </script>
+    <script>
+      // Tab switching
+      document.querySelectorAll('.tab-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document
+            .querySelectorAll('.tab-btn')
+            .forEach((b) => b.classList.remove('active'));
+          document
+            .querySelectorAll('.tab-panel')
+            .forEach((p) => p.classList.remove('active'));
+          btn.classList.add('active');
+          document
+            .getElementById('tab-' + btn.dataset.tab)
+            .classList.add('active');
+          window.scrollTo(0, 0);
+        });
+      });
 
-// Quiz engine
-let qCur=0,qScore=0,qAnswered=false;
-const questions=window.QUIZ_QUESTIONS||[];
-function initQuiz(){
-  qCur=0;qScore=0;qAnswered=false;
-  if(!questions.length)return;
-  document.getElementById('quiz-result').style.display='none';
-  document.getElementById('quiz-body').style.display='block';
-  renderQuestion();
-  updateProgress();
-}
-function renderQuestion(){
-  if(qCur>=questions.length){showResult();return;}
-  const q=questions[qCur];
-  document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;
-  document.getElementById('q-text').textContent=q.q;
-  const cont=document.getElementById('q-options');
-  cont.innerHTML='';
-  q.opts.forEach((opt,i)=>{
-    const b=document.createElement('button');
-    b.className='option-btn';
-    b.textContent=String.fromCharCode(65+i)+'. '+opt;
-    b.addEventListener('click',()=>pickAnswer(i,b,q));
-    cont.appendChild(b);
-  });
-  document.getElementById('q-exp').style.display='none';
-  document.getElementById('q-exp').textContent='';
-  qAnswered=false;
-  document.getElementById('btn-next').disabled=true;
-  updateProgress();
-}
-function pickAnswer(i,btn,q){
-  if(qAnswered)return;
-  qAnswered=true;
-  const btns=document.querySelectorAll('#q-options .option-btn');
-  btns.forEach(b=>b.disabled=true);
-  if(i===q.ans){btn.classList.add('correct');qScore++;}
-  else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}
-  const exp=document.getElementById('q-exp');
-  exp.textContent=q.exp;
-  exp.style.display='block';
-  document.getElementById('btn-next').disabled=false;
-  document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);
-}
-function updateProgress(){
-  const pct=questions.length?Math.round(qCur/questions.length*100):0;
-  document.getElementById('progress-fill').style.width=pct+'%';
-  document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;
-}
-function showResult(){
-  document.getElementById('quiz-body').style.display='none';
-  const res=document.getElementById('quiz-result');
-  res.style.display='block';
-  const pct=Math.round(qScore/questions.length*100);
-  document.getElementById('res-num').textContent=qScore;
-  document.getElementById('res-den').textContent=questions.length;
-  let msg='',cls='';
-  if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}
-  else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}
-  else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}
-  else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}
-  document.getElementById('res-msg').textContent=msg;
-  document.getElementById('res-grade').style.cssText=cls;
-  document.getElementById('res-grade').textContent=pct+'%';
-}
-document.addEventListener('DOMContentLoaded',()=>{
-  initQuiz();
-  document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});
-  document.getElementById('btn-restart').addEventListener('click',initQuiz);
-});
-</script>
-</body></html>
+      // Quiz engine
+      let qCur = 0,
+        qScore = 0,
+        qAnswered = false;
+      const questions = window.QUIZ_QUESTIONS || [];
+      function initQuiz() {
+        qCur = 0;
+        qScore = 0;
+        qAnswered = false;
+        if (!questions.length) return;
+        document.getElementById('quiz-result').style.display = 'none';
+        document.getElementById('quiz-body').style.display = 'block';
+        renderQuestion();
+        updateProgress();
+      }
+      function renderQuestion() {
+        if (qCur >= questions.length) {
+          showResult();
+          return;
+        }
+        const q = questions[qCur];
+        document.getElementById('q-num').textContent =
+          'Question ' +
+          (qCur + 1) +
+          ' of ' +
+          questions.length +
+          ' · ' +
+          q.topic;
+        document.getElementById('q-text').textContent = q.q;
+        const cont = document.getElementById('q-options');
+        cont.innerHTML = '';
+        q.opts.forEach((opt, i) => {
+          const b = document.createElement('button');
+          b.className = 'option-btn';
+          b.textContent = String.fromCharCode(65 + i) + '. ' + opt;
+          b.addEventListener('click', () => pickAnswer(i, b, q));
+          cont.appendChild(b);
+        });
+        document.getElementById('q-exp').style.display = 'none';
+        document.getElementById('q-exp').textContent = '';
+        qAnswered = false;
+        document.getElementById('btn-next').disabled = true;
+        updateProgress();
+      }
+      function pickAnswer(i, btn, q) {
+        if (qAnswered) return;
+        qAnswered = true;
+        const btns = document.querySelectorAll('#q-options .option-btn');
+        btns.forEach((b) => (b.disabled = true));
+        if (i === q.ans) {
+          btn.classList.add('correct');
+          qScore++;
+        } else {
+          btn.classList.add('wrong');
+          btns[q.ans].classList.add('reveal');
+        }
+        const exp = document.getElementById('q-exp');
+        exp.textContent = q.exp;
+        exp.style.display = 'block';
+        document.getElementById('btn-next').disabled = false;
+        document.getElementById('score-display').textContent =
+          qScore + '/' + (qCur + 1);
+      }
+      function updateProgress() {
+        const pct = questions.length
+          ? Math.round((qCur / questions.length) * 100)
+          : 0;
+        document.getElementById('progress-fill').style.width = pct + '%';
+        document.getElementById('q-page').textContent =
+          qCur + 1 + ' / ' + questions.length;
+      }
+      function showResult() {
+        document.getElementById('quiz-body').style.display = 'none';
+        const res = document.getElementById('quiz-result');
+        res.style.display = 'block';
+        const pct = Math.round((qScore / questions.length) * 100);
+        document.getElementById('res-num').textContent = qScore;
+        document.getElementById('res-den').textContent = questions.length;
+        let msg = '',
+          cls = '';
+        if (pct >= 90) {
+          msg = 'Outstanding! Exam-ready.';
+          cls = 'background:var(--green-light);color:var(--green)';
+        } else if (pct >= 75) {
+          msg = 'Very good – almost there!';
+          cls = 'background:var(--blue-light);color:var(--blue)';
+        } else if (pct >= 60) {
+          msg = 'Good progress – keep studying.';
+          cls = 'background:var(--gold-light);color:var(--gold-dark)';
+        } else {
+          msg = 'Needs more revision.';
+          cls = 'background:var(--red-light);color:var(--red)';
+        }
+        document.getElementById('res-msg').textContent = msg;
+        document.getElementById('res-grade').style.cssText = cls;
+        document.getElementById('res-grade').textContent = pct + '%';
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        initQuiz();
+        document.getElementById('btn-next').addEventListener('click', () => {
+          qCur++;
+          renderQuestion();
+        });
+        document
+          .getElementById('btn-restart')
+          .addEventListener('click', initQuiz);
+      });
+    </script>
+  </body>
+</html>

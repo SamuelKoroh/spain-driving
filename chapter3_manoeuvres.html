@@ -1,520 +1,2162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 3 – Manoeuvres | Spanish Driving Theory (Licence B)</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
-h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
-.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
-.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
-.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
-.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
-.header-meta{display:flex;gap:24px;margin-top:16px}
-.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
-.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
-.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
-.tab-bar::-webkit-scrollbar{display:none}
-.tab-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 18px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
-.tab-btn:hover{color:rgba(255,255,255,0.85)}
-.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
-.content{padding:32px 40px;max-width:960px;margin:0 auto}
-.tab-panel{display:none}.tab-panel.active{display:block}
-.section-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
-.section-desc{color:var(--text-muted);font-size:14px;margin-bottom:24px;margin-top:4px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
-.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.card-title .icon{width:28px;height:28px;background:var(--gold-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
-.card p{color:var(--text-muted);font-size:14px;line-height:1.6}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
-@media(max-width:700px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
-.def-block{border-left:3px solid var(--gold);padding:12px 16px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:12px}
-.def-block .term{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.def-block .def{font-size:13px;color:var(--text-muted)}
-.def-block.green{border-left-color:var(--green);background:var(--green-light)}
-.def-block.blue{border-left-color:var(--blue);background:var(--blue-light)}
-.def-block.red{border-left-color:var(--red);background:var(--red-light)}
-.styled-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
-.styled-table th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
-.styled-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
-.styled-table tr:last-child td{border-bottom:none}
-.styled-table tr:hover td{background:var(--bg)}
-.styled-table td:first-child{font-weight:600;color:var(--navy)}
-.badge{display:inline-block;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:2px 8px;border-radius:20px}
-.badge-gold{background:var(--gold-light);color:var(--gold-dark)}
-.badge-green{background:var(--green-light);color:var(--green)}
-.badge-blue{background:var(--blue-light);color:var(--blue)}
-.badge-red{background:var(--red-light);color:var(--red)}
-.badge-navy{background:var(--navy);color:#fff}
-.highlight{border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:16px;font-size:13px}
-.highlight.important{border-left:4px solid var(--red);background:var(--red-light)}
-.highlight.tip{border-left:4px solid var(--green);background:var(--green-light)}
-.highlight.info{border-left:4px solid var(--blue);background:var(--blue-light)}
-.highlight.warn{border-left:4px solid var(--gold);background:var(--gold-light)}
-.highlight .hi-title{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px}
-.highlight.important .hi-title{color:var(--red)}
-.highlight.tip .hi-title{color:var(--green)}
-.highlight.info .hi-title{color:var(--blue)}
-.highlight.warn .hi-title{color:var(--gold-dark)}
-.highlight p,.highlight li{color:var(--text-muted);line-height:1.6}
-.highlight ul{padding-left:18px;margin-top:4px}
-.highlight li{margin-bottom:3px}
-.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.quiz-header h3{font-size:18px;color:#fff}
-.quiz-progress{display:flex;align-items:center;gap:12px}
-.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
-.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
-.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
-.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
-.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
-.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
-.options{display:flex;flex-direction:column;gap:8px}
-.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
-.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
-.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
-.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
-.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
-.option-btn:disabled{cursor:default}
-.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
-.quiz-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
-.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
-.btn:active{transform:scale(0.97)}
-.btn-gold{background:var(--gold);color:var(--navy)}
-.btn-navy{background:var(--navy);color:#fff}
-.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
-.btn:hover{opacity:0.88}
-.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
-.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
-.result-score span{color:var(--gold)}
-.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
-.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
-.qr-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px}
-.qr-row:last-child{border-bottom:none}
-.qr-key{font-weight:600;color:var(--navy);min-width:220px;flex-shrink:0}
-.qr-val{color:var(--text-muted);flex:1}
-.subsection{margin-bottom:28px}
-.subsection h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.subsection h3::before{content:'';display:block;width:3px;height:16px;background:var(--gold);border-radius:2px}
-.number-fact{text-align:center;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
-.number-fact .num{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--navy)}
-.number-fact .unit{font-size:12px;color:var(--gold-dark);font-weight:600}
-.number-fact .desc{font-size:11px;color:var(--text-light);margin-top:3px}
-.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px}
-.quiz-page-info{font-size:13px;color:var(--text-light)}
-ul.check-list{list-style:none;padding:0}
-ul.check-list li{padding:4px 0 4px 22px;position:relative;font-size:14px;color:var(--text-muted)}
-ul.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
-ul.check-list li.no::before{content:'✗';color:var(--red)}
-.step-box{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
-.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.step-text{font-size:14px;color:var(--text-muted);flex:1;padding-top:4px}
-@media(max-width:600px){.content{padding:20px 16px}.header{padding:20px 16px}}
-</style>
-</head><body>
-<div class="header">
-  <div class="header-badge">Permiso B – Teoría</div>
-  <h1>Chapter 3: Manoeuvres</h1>
-  <p>Complete study guide for the Spanish Driving Theory Examination</p>
-  <div class="header-meta">
-    <div class="header-stat"><div class="val">10</div><div class="lbl">Study sections</div></div>
-    <div class="header-stat"><div class="val">OSM</div><div class="lbl">Core rule</div></div>
-    <div class="header-stat"><div class="val">50</div><div class="lbl">Quiz questions</div></div>
-    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
-  </div>
-</div>
-<div class="tab-bar">
-  <button class="tab-btn active" data-tab="osm">OSM Rule</button>
-  <button class="tab-btn" data-tab="joining">Joining Traffic</button>
-  <button class="tab-btn" data-tab="lane">Lane Change</button>
-  <button class="tab-btn" data-tab="overtaking">Overtaking</button>
-  <button class="tab-btn" data-tab="forbidden">Forbidden Overtaking</button>
-  <button class="tab-btn" data-tab="direction">Changing Direction</button>
-  <button class="tab-btn" data-tab="uturn">U-Turn</button>
-  <button class="tab-btn" data-tab="reversing">Reversing</button>
-  <button class="tab-btn" data-tab="stoppark">Stop &amp; Park</button>
-  <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
-</div>
-<div class="content">
-
-<div class="tab-panel active" id="tab-osm">
-  <div class="section-title">The OSM Safety Routine</div>
-  <p class="section-desc">Every manoeuvre — without exception — must follow Observar → Señalizar → Maniobrar.</p>
-  <div class="highlight important"><div class="hi-title">⚠️ Signalling NEVER confers right of way (Art. 109 RGC)</div><p>The indicator only informs other road users of your intention. Penalty for not signalling: 200 € (grave infraction).</p></div>
-  <div class="subsection"><h3>Step 1 — Observe (Obligatory mirror sequence)</h3>
-    <div class="grid-3">
-      <div class="def-block blue"><div class="term">1. Interior mirror</div><div class="def">Check what is behind you in the centre mirror first.</div></div>
-      <div class="def-block blue"><div class="term">2. Exterior mirror</div><div class="def">Mirror on the side of the manoeuvre.</div></div>
-      <div class="def-block blue"><div class="term">3. Blind spot</div><div class="def">Visible head-turn of ~45°. A mere eye movement is not enough. Motorcycles and cyclists hide here.</div></div>
-    </div>
-  </div>
-  <div class="subsection"><h3>Arm Signals</h3>
-    <table class="styled-table">
-      <thead><tr><th>Manoeuvre</th><th>Arm position</th></tr></thead>
-      <tbody>
-        <tr><td>Turn LEFT / move to left lane</td><td>Arm extended horizontally, palm FACING DOWN</td></tr>
-        <tr><td>Turn RIGHT / move to right lane</td><td>Arm bent at elbow, palm FACING FORWARD</td></tr>
-        <tr><td>Reversing</td><td>Arm extended horizontally, palm FACING BACK</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection"><h3>Key Numbers</h3>
-    <div class="grid-4">
-      <div class="number-fact"><div class="num">1.5m</div><div class="desc">Lateral clearance overtaking vulnerable users</div></div>
-      <div class="number-fact"><div class="num">15m</div><div class="desc">Max reversing distance (complementary manoeuvre)</div></div>
-      <div class="number-fact"><div class="num">2 min</div><div class="desc">Parada → Estacionamiento threshold</div></div>
-      <div class="number-fact"><div class="num">3m</div><div class="desc">Min free space required when parking</div></div>
-    </div>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-joining">
-  <div class="section-title">Joining Traffic — Incorporación (Art. 72–73 RGC)</div>
-  <p class="section-desc">Applies when moving off from outside the traffic flow. Resuming after a red light is NOT classed as joining traffic.</p>
-  <div class="highlight warn"><div class="hi-title">You must ALWAYS yield to all existing traffic</div><p>From private roads, garages, petrol stations, rest areas: drive at speed allowing immediate stop; give way to ALL users from both directions.</p></div>
-  <div class="subsection"><h3>Acceleration lane — 3-step rule</h3>
-    <div class="step-box"><div class="step-num">1</div><div class="step-text">Verify at the START of the lane that you pose no danger. Be prepared to STOP if necessary.</div></div>
-    <div class="step-box"><div class="step-num">2</div><div class="step-text">Give way to all vehicles in the lane you wish to join.</div></div>
-    <div class="step-box"><div class="step-num">3</div><div class="step-text">Accelerate to reach suitable speed at the END of the lane.</div></div>
-  </div>
-  <div class="subsection"><h3>Bus Rule — Art. 73.2 RGC</h3>
-    <div class="highlight info"><div class="hi-title">Urban area bus leaving a signalled stop</div><p>Other drivers must: pull over laterally if possible; slow down smoothly; or STOP if necessary. Conditions: regular-service bus + signalled stop + indicator on + inside built-up area. The bus must still signal and ensure safety — courtesy is "in the measure of the possible".</p></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-lane">
-  <div class="section-title">Changing Lane — Art. 74 RGC</div>
-  <div class="highlight important"><div class="hi-title">Priority rule — Art. 74.2</div><p>Vehicles already in the destination lane ALWAYS have priority. This is the cornerstone exam answer.</p></div>
-  <div class="card">
-    <div class="qr-row"><span class="qr-key">Crossing a continuous line</span><span class="qr-val">FORBIDDEN — may not be crossed, trodden on, or driven to the left of</span></div>
-    <div class="qr-row"><span class="qr-key">Continuous + broken line parallel</span><span class="qr-val">ONLY the side with the BROKEN line may cross</span></div>
-    <div class="qr-row"><span class="qr-key">Exceptions to continuous line</span><span class="qr-val">Overtaking cyclists/mopeds/pedestrians/animals; avoiding stationary obstacle; accessing private property; complying with agent's order</span></div>
-    <div class="qr-row"><span class="qr-key">3+ lanes same direction (interurban) — trucks &gt;3,500 kg &amp; combos &gt;7 m</span><span class="qr-val">Rightmost lane only; adjacent lane exceptionally; all other lanes NEVER</span></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-overtaking">
-  <div class="section-title">Overtaking — Adelantamiento (Arts. 82–89 RGC)</div>
-  <div class="highlight important"><div class="hi-title">⚠️ 2022 Change: +20 km/h margin ABOLISHED</div><p>Since March 2022 (Ley 18/2021), you can NEVER exceed the speed limit to overtake — under any circumstances.</p></div>
-  <div class="subsection"><h3>General rules</h3>
-    <table class="styled-table">
-      <thead><tr><th>Rule</th><th>Detail</th></tr></thead>
-      <tbody>
-        <tr><td>Which side to overtake</td><td>LEFT — always, as general rule</td></tr>
-        <tr><td>Speed required</td><td>Noticeably superior to overtaken vehicle (but never exceeding speed limit)</td></tr>
-        <tr><td>1.5 metre rule</td><td>When overtaking pedestrians, animals, two-wheeled vehicles, immobilised vehicles: min 1.5 m lateral clearance + partial or complete lane change. Complete lane change mandatory on multi-lane roads.</td></tr>
-        <tr><td>If a problem develops</td><td>Slow down immediately and return behind original vehicle using right indicator</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection"><h3>Overtaking on the RIGHT — permitted exceptions</h3>
-    <ul class="check-list">
-      <li>Vehicle ahead signals left turn or stop on the LEFT side</li>
-      <li>Urban roads with 2+ lanes same direction (bordered by markings)</li>
-      <li>Trams running at the centre of a two-way road</li>
-      <li>Three-lane two-way road: centre lane only (when free of oncoming traffic)</li>
-    </ul>
-  </div>
-  <div class="subsection"><h3>Overtaken vehicle obligations (Art. 86)</h3>
-    <ul class="check-list">
-      <li>Stick to the right kerb — without invading the shoulder</li>
-      <li>Must NOT increase speed</li>
-      <li>Slow down if danger arises mid-overtake</li>
-      <li class="no">Forbidden: increase speed or perform manoeuvres making overtaking dangerous</li>
-    </ul>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-forbidden">
-  <div class="section-title">Where Overtaking is Forbidden — Art. 87 RGC</div>
-  <div class="grid-2">
-    <div>
-      <div class="def-block red"><div class="term">R-305 sign</div><div class="def">Forbids overtaking all motor vehicles (not two-wheeled motorbikes) without invading opposite lane. 200 € + 4 puntos.</div></div>
-      <div class="def-block red"><div class="term">Continuous centre line</div><div class="def">Cannot be crossed, trodden on or driven to the left of. R-305 prevails over a broken line.</div></div>
-    </div>
-    <div>
-      <div class="highlight important"><div class="hi-title">Also forbidden without signs</div><ul>
-        <li>Bends and crests with reduced visibility</li>
-        <li>Level crossings and their proximity</li>
-        <li>Pedestrian crossings (unless slow enough to stop)</li>
-        <li>Cycle lane junctions</li>
-        <li>Tunnels with ONE lane per direction</li>
-        <li>Junctions (exceptions: roundabouts, priority junctions, two-wheelers)</li>
-      </ul></div>
-    </div>
-  </div>
-  <div class="highlight tip"><div class="hi-title">✓ Special case — Art. 88–89</div><p>Even with R-305 or continuous line, the opposite lane MAY be invaded to pass slow/fragile users (cyclists, mopeds, pedestrians, animals, agricultural machinery) or stationary obstacles — if: no oncoming traffic; appropriate signalling; no danger to oncoming cyclists; 1.5 m clearance maintained.</p></div>
-</div>
-
-<div class="tab-panel" id="tab-direction">
-  <div class="section-title">Changing Direction — Giro (Arts. 74–77 RGC)</div>
-  <div class="subsection"><h3>Turning LEFT — position before turning</h3>
-    <table class="styled-table">
-      <thead><tr><th>Road type</th><th>Position before turning left</th></tr></thead>
-      <tbody>
-        <tr><td>One-way street</td><td>Close to the LEFT edge</td></tr>
-        <tr><td>Two-way road (2 lanes)</td><td>Close to the CENTRE LINE</td></tr>
-        <tr><td>Two-way road with 3 lanes (broken lines)</td><td>CENTRAL lane</td></tr>
-        <tr><td>One-way road with 3 lanes</td><td>LEFTMOST lane</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="highlight warn"><div class="hi-title">Cycles &amp; mopeds turning left on interurban two-way roads</div><p>Must position on the RIGHT SHOULDER and perform a two-stage turn from there. This rule does NOT apply on urban roads.</p></div>
-  <div class="subsection"><h3>Exit ramps — deceleration lane (Art. 77)</h3>
-    <ul class="check-list">
-      <li>Signal well in advance and move to rightmost lane</li>
-      <li>Enter the deceleration lane as early as possible</li>
-      <li>Speed reduction must happen INSIDE the deceleration lane — NEVER on the main carriageway</li>
-    </ul>
-  </div>
-  <div class="subsection"><h3>When changing direction is FORBIDDEN</h3>
-    <ul class="check-list">
-      <li class="no">R-302 (no right turn) or R-303 (no left turn — also forbids U-turn) sign displayed</li>
-      <li class="no">Continuous longitudinal lines would have to be crossed</li>
-      <li class="no">Visibility insufficient for a left turn</li>
-      <li class="no">Without signalling in advance</li>
-    </ul>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-uturn">
-  <div class="section-title">U-Turn — Cambio de Sentido (Arts. 78–79 RGC)</div>
-  <div class="highlight info"><div class="hi-title">Definition</div><p>180° inversion of direction, completed in a SINGLE forward manoeuvre. Using reverse gear to complete it is NOT permitted.</p></div>
-  <div class="subsection"><h3>Where U-turns are FORBIDDEN (Art. 79)</h3>
-    <div class="grid-2">
-      <ul class="check-list">
-        <li class="no">R-304 (no U-turn) or R-303 (no left turn) sign</li>
-        <li class="no">Road markings forbid crossing</li>
-        <li class="no">Bends, crests with reduced visibility</li>
-        <li class="no">Level crossings</li>
-        <li class="no">Tunnels and underpasses (pasos inferiores)</li>
-      </ul>
-      <ul class="check-list">
-        <li class="no">Pedestrian crossings</li>
-        <li class="no">Junctions and their vicinity (except roundabouts)</li>
-        <li class="no">Autopistas and autovías (except at designated openings)</li>
-        <li class="no">All stretches where overtaking is forbidden</li>
-      </ul>
-    </div>
-  </div>
-  <div class="highlight tip"><div class="hi-title">⚠️ KEY TRAP — paso superior vs paso inferior</div><p>A flyover (paso superior) is NOT in the forbidden list — U-turns there are ALLOWED if safety conditions are met. Only an underpass (paso inferior) and tunnels are forbidden. Do NOT confuse them!</p></div>
-</div>
-
-<div class="tab-panel" id="tab-reversing">
-  <div class="section-title">Reversing — Marcha Atrás (Arts. 80–81 RGC)</div>
-  <div class="highlight important"><div class="hi-title">General rule: FORBIDDEN on all roads</div><p>Driving in reverse gear is forbidden on all roads as a normal mode of circulation. Only permitted in two specific situations.</p></div>
-  <div class="grid-2">
-    <div class="def-block green"><div class="term">Complementary manoeuvre</div><div class="def">As part of parking, joining traffic, or leaving a space. Maximum distance: 15 metres. Cannot invade an intersection.</div></div>
-    <div class="def-block"><div class="term">Dead-end / impossible forward movement</div><div class="def">Roads where turning is impossible. 15 m limit does NOT apply. May invade a junction if strictly necessary.</div></div>
-  </div>
-  <div class="highlight important"><div class="hi-title">⛔ Absolute prohibitions</div><p>Reversing on autopistas and autovías: absolutely FORBIDDEN even if you missed your exit. Continue to the next exit. Penalty: up to 500 € + 6 puntos (muy grave).</p></div>
-  <div class="subsection"><h3>Reversing signal when reverse light fails</h3>
-    <div class="def-block blue"><div class="term">Arm signal</div><div class="def">Arm extended horizontally with the palm FACING BACK.</div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="tab-stoppark">
-  <div class="section-title">Stopping &amp; Parking — Arts. 90–94 RGC</div>
-  <div class="subsection"><h3>Where to stop and park</h3>
-    <table class="styled-table">
-      <thead><tr><th>Situation</th><th>Permitted side</th><th>Where</th></tr></thead>
-      <tbody>
-        <tr><td>Urban one-way street</td><td>BOTH sides</td><td>On carriageway/shoulder, leaving ≥3 m free</td></tr>
-        <tr><td>Urban two-way street</td><td>RIGHT only</td><td>On carriageway/shoulder, leaving ≥3 m free</td></tr>
-        <tr><td>Interurban</td><td>RIGHT only</td><td>OFF the carriageway and hard shoulder</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="subsection"><h3>Yellow Line Code</h3>
-    <div class="grid-3">
-      <div class="def-block red"><div class="term">Solid yellow line on kerb</div><div class="def">Both stopping AND parking forbidden at all times.</div></div>
-      <div class="def-block"><div class="term">Broken yellow line on kerb</div><div class="def">Parking forbidden only — parada (≤2 min, driver present) is still permitted.</div></div>
-      <div class="def-block green"><div class="term">Yellow zig-zag</div><div class="def">Reserved zone (bus stop, loading). Parking forbidden; parada permitted.</div></div>
-    </div>
-  </div>
-  <div class="subsection"><h3>Wheel direction when parked on a slope</h3>
-    <table class="styled-table">
-      <thead><tr><th>Situation</th><th>Wheel direction</th></tr></thead>
-      <tbody>
-        <tr><td>Facing UPHILL — with kerb</td><td>Turn wheels AWAY from the kerb</td></tr>
-        <tr><td>Facing DOWNHILL — with kerb</td><td>Turn wheels TOWARD the kerb</td></tr>
-        <tr><td>No kerb either direction</td><td>Turn wheels toward the road EDGE/VERGE</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="highlight important"><div class="hi-title">Both stopping AND parking forbidden — Art. 94.1</div><p>Tunnels and underpasses · Level crossings · Pedestrian crossings · Cycle lanes · Bus lanes · Junctions (if visibility impaired) · Motorways (except service areas) · Tramway rails · Where distance to opposite kerb &lt;3 m · Bends and humps with reduced visibility</p></div>
-</div>
-
-<div class="tab-panel" id="tab-quiz">
-  <div class="quiz-header">
-    <h3>Chapter 3 Quiz — 50 Questions</h3>
-    <div class="quiz-progress">
-      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
-      <div class="score-display" id="score-display">0/0</div>
-    </div>
-  </div>
-  <div id="quiz-body">
-    <div class="question-card">
-      <div class="question-num" id="q-num"></div>
-      <div class="question-text" id="q-text"></div>
-      <div class="options" id="q-options"></div>
-      <div class="explanation" id="q-exp"></div>
-    </div>
-    <div class="quiz-nav">
-      <div class="quiz-page-info" id="q-page"></div>
-      <div class="quiz-controls">
-        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
-        <button class="btn btn-outline" id="btn-restart">Restart</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 3 – Manoeuvres | Spanish Driving Theory (Licence B)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #0d1b2a;
+        --navy2: #1b2d42;
+        --gold: #e8a020;
+        --gold-light: #faecd6;
+        --gold-dark: #b57d10;
+        --green: #1a6e3c;
+        --green-light: #e0f2e9;
+        --red: #b52b27;
+        --red-light: #fce8e8;
+        --blue: #1a4e8a;
+        --blue-light: #e4eef9;
+        --text: #0d1b2a;
+        --text-muted: #4a5568;
+        --text-light: #718096;
+        --bg: #f7f5f0;
+        --surface: #ffffff;
+        --border: #e2ddd4;
+        --border-strong: #c9c0b4;
+        --radius: 8px;
+        --radius-lg: 12px;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: 'Syne', sans-serif;
+      }
+      .header {
+        background: var(--navy);
+        color: #fff;
+        padding: 28px 40px 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .header::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -40px;
+        width: 220px;
+        height: 220px;
+        border: 40px solid rgba(232, 160, 32, 0.12);
+        border-radius: 50%;
+      }
+      .header-badge {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--navy);
+        font-family: 'Syne', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      .header p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.65);
+        font-weight: 300;
+      }
+      .header-meta {
+        display: flex;
+        gap: 24px;
+        margin-top: 16px;
+      }
+      .header-stat .val {
+        font-family: 'Syne', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--gold);
+      }
+      .header-stat .lbl {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .tab-bar {
+        background: var(--navy2);
+        display: flex;
+        gap: 2px;
+        padding: 0 24px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+      .tab-bar::-webkit-scrollbar {
+        display: none;
+      }
+      .tab-btn {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 12px 18px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .tab-btn:hover {
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .tab-btn.active {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+      }
+      .content {
+        padding: 32px 40px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+      }
+      .section-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 6px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--gold);
+        display: inline-block;
+      }
+      .section-desc {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin-bottom: 24px;
+        margin-top: 4px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 16px;
+      }
+      .card-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .card-title .icon {
+        width: 28px;
+        height: 28px;
+        background: var(--gold-light);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+      .card p {
+        color: var(--text-muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+      @media (max-width: 768px) {
+        .header {
+          padding: 16px 16px 12px;
+        }
+        .header h1 {
+          font-size: 22px;
+        }
+        .header p {
+          font-size: 12px;
+        }
+        .tab-bar {
+          padding: 0 12px;
+        }
+        .tab-btn {
+          padding: 10px 12px;
+          font-size: 12px;
+        }
+        .content {
+          padding: 20px 16px;
+          max-width: 100%;
+        }
+        .sec-title {
+          font-size: 18px;
+        }
+        .card {
+          padding: 16px 12px;
+        }
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .styled-table {
+          font-size: 12px;
+        }
+        .styled-table th {
+          padding: 8px 10px;
+          font-size: 11px;
+        }
+        .styled-table td {
+          padding: 7px 10px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 480px) {
+        .header {
+          padding: 12px 12px 8px;
+        }
+        .header h1 {
+          font-size: 18px;
+        }
+        .header p {
+          font-size: 11px;
+        }
+        .header-badge {
+          font-size: 9px;
+        }
+        .tab-bar {
+          padding: 0 8px;
+        }
+        .tab-btn {
+          padding: 10px 8px;
+          font-size: 11px;
+        }
+        .content {
+          padding: 16px 12px;
+        }
+        .sec-title {
+          font-size: 16px;
+        }
+        .sec-desc {
+          font-size: 13px;
+        }
+        .card {
+          padding: 12px 12px;
+        }
+        .card-title {
+          font-size: 13px;
+        }
+        .card p {
+          font-size: 13px;
+        }
+        .def {
+          padding: 10px 12px;
+        }
+        .def .term {
+          font-size: 13px;
+        }
+        .def .body {
+          font-size: 12px;
+        }
+        .sub h3 {
+          font-size: 14px;
+        }
+        .badge {
+          font-size: 9px;
+        }
+        body {
+          font-size: 14px;
+        }
+        .btn {
+          padding: 12px 16px;
+          font-size: 12px;
+          min-height: 44px;
+          width: 100%;
+        }
+      }
+      .def-block {
+        border-left: 3px solid var(--gold);
+        padding: 12px 16px;
+        background: var(--gold-light);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        margin-bottom: 12px;
+      }
+      .def-block .term {
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 3px;
+      }
+      .def-block .def {
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .def-block.green {
+        border-left-color: var(--green);
+        background: var(--green-light);
+      }
+      .def-block.blue {
+        border-left-color: var(--blue);
+        background: var(--blue-light);
+      }
+      .def-block.red {
+        border-left-color: var(--red);
+        background: var(--red-light);
+      }
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--border);
+        margin-bottom: 24px;
+      }
+      .styled-table th {
+        background: var(--navy);
+        color: #fff;
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        padding: 10px 14px;
+        text-align: left;
+      }
+      .styled-table td {
+        padding: 9px 14px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-muted);
+        vertical-align: top;
+      }
+      .styled-table tr:last-child td {
+        border-bottom: none;
+      }
+      .styled-table tr:hover td {
+        background: var(--bg);
+      }
+      .styled-table td:first-child {
+        font-weight: 600;
+        color: var(--navy);
+      }
+      .badge {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 20px;
+      }
+      .badge-gold {
+        background: var(--gold-light);
+        color: var(--gold-dark);
+      }
+      .badge-green {
+        background: var(--green-light);
+        color: var(--green);
+      }
+      .badge-blue {
+        background: var(--blue-light);
+        color: var(--blue);
+      }
+      .badge-red {
+        background: var(--red-light);
+        color: var(--red);
+      }
+      .badge-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .highlight {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 18px;
+        margin-bottom: 16px;
+        font-size: 13px;
+      }
+      .highlight.important {
+        border-left: 4px solid var(--red);
+        background: var(--red-light);
+      }
+      .highlight.tip {
+        border-left: 4px solid var(--green);
+        background: var(--green-light);
+      }
+      .highlight.info {
+        border-left: 4px solid var(--blue);
+        background: var(--blue-light);
+      }
+      .highlight.warn {
+        border-left: 4px solid var(--gold);
+        background: var(--gold-light);
+      }
+      .highlight .hi-title {
+        font-family: 'Syne', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 5px;
+      }
+      .highlight.important .hi-title {
+        color: var(--red);
+      }
+      .highlight.tip .hi-title {
+        color: var(--green);
+      }
+      .highlight.info .hi-title {
+        color: var(--blue);
+      }
+      .highlight.warn .hi-title {
+        color: var(--gold-dark);
+      }
+      .highlight p,
+      .highlight li {
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .highlight ul {
+        padding-left: 18px;
+        margin-top: 4px;
+      }
+      .highlight li {
+        margin-bottom: 3px;
+      }
+      .quiz-header {
+        background: var(--navy);
+        color: #fff;
+        border-radius: var(--radius-lg);
+        padding: 20px 24px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .quiz-header h3 {
+        font-size: 18px;
+        color: #fff;
+      }
+      .quiz-progress {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .progress-bar {
+        width: 200px;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+      .progress-fill {
+        height: 100%;
+        background: var(--gold);
+        border-radius: 3px;
+        transition: width 0.3s;
+      }
+      .score-display {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        color: var(--gold);
+      }
+      .question-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 22px 24px;
+        margin-bottom: 16px;
+      }
+      .question-num {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--text-light);
+        margin-bottom: 8px;
+      }
+      .question-text {
+        font-family: 'Syne', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .option-btn {
+        background: var(--bg);
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius);
+        padding: 10px 16px;
+        text-align: left;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        color: var(--text);
+        cursor: pointer;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+        line-height: 1.4;
+      }
+      .option-btn:hover:not(:disabled) {
+        background: var(--blue-light);
+        border-color: var(--blue);
+      }
+      .option-btn.correct {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+        font-weight: 500;
+      }
+      .option-btn.wrong {
+        background: var(--red-light);
+        border-color: var(--red);
+        color: var(--red);
+      }
+      .option-btn.reveal {
+        background: var(--green-light);
+        border-color: var(--green);
+        color: var(--green);
+      }
+      .option-btn:disabled {
+        cursor: default;
+      }
+      .explanation {
+        margin-top: 10px;
+        padding: 10px 14px;
+        background: var(--bg);
+        border-radius: var(--radius);
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        border-left: 3px solid var(--gold);
+        display: none;
+      }
+      .quiz-controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+      .btn {
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition:
+          opacity 0.15s,
+          transform 0.1s;
+        border: none;
+      }
+      .btn:active {
+        transform: scale(0.97);
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+      }
+      .btn-navy {
+        background: var(--navy);
+        color: #fff;
+      }
+      .btn-outline {
+        background: transparent;
+        border: 1.5px solid var(--border-strong);
+        color: var(--text);
+      }
+      .btn:hover {
+        opacity: 0.88;
+      }
+      .quiz-result {
+        text-align: center;
+        padding: 40px 24px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        display: none;
+      }
+      .result-score {
+        font-family: 'Syne', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .result-score span {
+        color: var(--gold);
+      }
+      .result-msg {
+        font-size: 18px;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+      }
+      .result-grade {
+        display: inline-block;
+        font-family: 'Syne', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 24px;
+        border-radius: 30px;
+        margin-bottom: 24px;
+      }
+      .qr-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 13px;
+      }
+      .qr-row:last-child {
+        border-bottom: none;
+      }
+      .qr-key {
+        font-weight: 600;
+        color: var(--navy);
+        min-width: 220px;
+        flex-shrink: 0;
+      }
+      .qr-val {
+        color: var(--text-muted);
+        flex: 1;
+      }
+      .subsection {
+        margin-bottom: 28px;
+      }
+      .subsection h3 {
+        font-family: 'Syne', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .subsection h3::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 16px;
+        background: var(--gold);
+        border-radius: 2px;
+      }
+      .number-fact {
+        text-align: center;
+        padding: 14px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+      .number-fact .num {
+        font-family: 'Syne', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--navy);
+      }
+      .number-fact .unit {
+        font-size: 12px;
+        color: var(--gold-dark);
+        font-weight: 600;
+      }
+      .number-fact .desc {
+        font-size: 11px;
+        color: var(--text-light);
+        margin-top: 3px;
+      }
+      .quiz-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+      .quiz-page-info {
+        font-size: 13px;
+        color: var(--text-light);
+      }
+      ul.check-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.check-list li {
+        padding: 4px 0 4px 22px;
+        position: relative;
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+      ul.check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-weight: 700;
+      }
+      ul.check-list li.no::before {
+        content: '✗';
+        color: var(--red);
+      }
+      .step-box {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+      }
+      .step-num {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: var(--gold);
+        font-family: 'Syne', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .step-text {
+        font-size: 14px;
+        color: var(--text-muted);
+        flex: 1;
+        padding-top: 4px;
+      }
+      @media (max-width: 600px) {
+        .content {
+          padding: 20px 16px;
+        }
+        .header {
+          padding: 20px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-badge">Permiso B – Teoría</div>
+      <h1>Chapter 3: Manoeuvres</h1>
+      <p>Complete study guide for the Spanish Driving Theory Examination</p>
+      <div class="header-meta">
+        <div class="header-stat">
+          <div class="val">10</div>
+          <div class="lbl">Study sections</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">OSM</div>
+          <div class="lbl">Core rule</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">50</div>
+          <div class="lbl">Quiz questions</div>
+        </div>
+        <div class="header-stat">
+          <div class="val">B</div>
+          <div class="lbl">Licence class</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="quiz-result" id="quiz-result">
-    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">50</span></div>
-    <div class="result-msg" id="res-msg"></div>
-    <div class="result-grade" id="res-grade"></div>
-    <button class="btn btn-gold" onclick="initQuiz()">Try Again</button>
-  </div>
-</div>
-</div>
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="osm">OSM Rule</button>
+      <button class="tab-btn" data-tab="joining">Joining Traffic</button>
+      <button class="tab-btn" data-tab="lane">Lane Change</button>
+      <button class="tab-btn" data-tab="overtaking">Overtaking</button>
+      <button class="tab-btn" data-tab="forbidden">Forbidden Overtaking</button>
+      <button class="tab-btn" data-tab="direction">Changing Direction</button>
+      <button class="tab-btn" data-tab="uturn">U-Turn</button>
+      <button class="tab-btn" data-tab="reversing">Reversing</button>
+      <button class="tab-btn" data-tab="stoppark">Stop &amp; Park</button>
+      <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
+    </div>
+    <div class="content">
+      <div class="tab-panel active" id="tab-osm">
+        <div class="section-title">The OSM Safety Routine</div>
+        <p class="section-desc">
+          Every manoeuvre — without exception — must follow Observar → Señalizar
+          → Maniobrar.
+        </p>
+        <div class="highlight important">
+          <div class="hi-title">
+            ⚠️ Signalling NEVER confers right of way (Art. 109 RGC)
+          </div>
+          <p>
+            The indicator only informs other road users of your intention.
+            Penalty for not signalling: 200 € (grave infraction).
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Step 1 — Observe (Obligatory mirror sequence)</h3>
+          <div class="grid-3">
+            <div class="def-block blue">
+              <div class="term">1. Interior mirror</div>
+              <div class="def">
+                Check what is behind you in the centre mirror first.
+              </div>
+            </div>
+            <div class="def-block blue">
+              <div class="term">2. Exterior mirror</div>
+              <div class="def">Mirror on the side of the manoeuvre.</div>
+            </div>
+            <div class="def-block blue">
+              <div class="term">3. Blind spot</div>
+              <div class="def">
+                Visible head-turn of ~45°. A mere eye movement is not enough.
+                Motorcycles and cyclists hide here.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Arm Signals</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Manoeuvre</th>
+                <th>Arm position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Turn LEFT / move to left lane</td>
+                <td>Arm extended horizontally, palm FACING DOWN</td>
+              </tr>
+              <tr>
+                <td>Turn RIGHT / move to right lane</td>
+                <td>Arm bent at elbow, palm FACING FORWARD</td>
+              </tr>
+              <tr>
+                <td>Reversing</td>
+                <td>Arm extended horizontally, palm FACING BACK</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Key Numbers</h3>
+          <div class="grid-4">
+            <div class="number-fact">
+              <div class="num">1.5m</div>
+              <div class="desc">
+                Lateral clearance overtaking vulnerable users
+              </div>
+            </div>
+            <div class="number-fact">
+              <div class="num">15m</div>
+              <div class="desc">
+                Max reversing distance (complementary manoeuvre)
+              </div>
+            </div>
+            <div class="number-fact">
+              <div class="num">2 min</div>
+              <div class="desc">Parada → Estacionamiento threshold</div>
+            </div>
+            <div class="number-fact">
+              <div class="num">3m</div>
+              <div class="desc">Min free space required when parking</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<script>
-window.QUIZ_QUESTIONS=[
-{topic:"OSM Rule",q:"What is the correct OSM safety routine order?",opts:["Signal → Observe → Manoeuvre","Observe → Manoeuvre → Signal","Observe → Signal → Manoeuvre","Manoeuvre → Observe → Signal"],ans:2,exp:"The correct sequence is always Observe → Signal → Manoeuvre. Skipping any step is a fault."},
-{topic:"OSM Rule",q:"The mandatory mirror-check sequence before a lane change to the left is:",opts:["Left exterior mirror only","Interior → left exterior → visible head-turn to blind spot","Left exterior → interior → blind spot","Blind spot → interior → left exterior"],ans:1,exp:"The mandatory sequence: interior mirror first, then exterior mirror on the side of the manoeuvre, then a visible head-turn (~45°) to check the blind spot."},
-{topic:"OSM Rule",q:"Does signalling a manoeuvre give you the right of way?",opts:["Yes – others must yield when you indicate","Yes – on motorways only","No – signalling NEVER confers priority","Only if you signal for more than 3 seconds"],ans:2,exp:"Signalling a manoeuvre NEVER confers right of way (Art. 109 RGC). The indicator only informs other road users of your intention."},
-{topic:"OSM Rule",q:"Arm signal for turning RIGHT:",opts:["Arm horizontal, palm facing down","Arm bent at elbow, palm facing forward","Arm horizontal, palm facing back","Arm raised vertically"],ans:1,exp:"Right turn / move to right lane: arm BENT at the elbow with the palm facing forward."},
-{topic:"Joining Traffic",q:"Resuming motion after a red light – is this classified as joining traffic?",opts:["Yes – OSM rules apply every time you move off","No – resuming motion after a traffic stop is NOT joining traffic","Only if stationary for more than 2 minutes","Only on dual carriageways"],ans:1,exp:"Resuming motion after a stop caused by a traffic signal is NOT classified as joining traffic. Incorporation rules only apply when moving off from outside the traffic flow."},
-{topic:"Joining Traffic",q:"Is it ever permitted to stop inside an acceleration lane?",opts:["No – stopping is always forbidden","Yes – if no safe gap is available in the main carriageway","Only for motorcycles","Only in emergencies"],ans:1,exp:"Stopping at the START of an acceleration lane is permitted when no safe gap exists in the main carriageway. The common belief that stopping is always forbidden is incorrect."},
-{topic:"Joining Traffic",q:"The bus rule (Art. 73.2 RGC) applies when:",opts:["Any bus stops anywhere","A regular-service bus leaving a signalled stop signals its intention to join in poblado (built-up area)","Any vehicle signals to join traffic","A school bus is loading children"],ans:1,exp:"Art. 73.2: inside built-up areas, when a regular-service bus at a signalled stop indicates its intention to join traffic, other drivers must facilitate this."},
-{topic:"Lane Change",q:"When changing lane, which vehicles have priority?",opts:["The vehicle changing lane (they signalled)","Vehicles already in the destination lane","The faster vehicle","Whichever began the manoeuvre first"],ans:1,exp:"Art. 74.2: when changing lane, the driver must always give way to vehicles already in the destination lane."},
-{topic:"Lane Change",q:"Two parallel lines – one continuous, one broken – run along the centre. A driver is on the broken-line side. May they cross?",opts:["No – both lines must be treated as continuous","Yes – the side with the broken line may cross","Only to overtake cyclists","Only with left indicator"],ans:1,exp:"Where a continuous and a broken line lie parallel, ONLY the side with the broken line may cross."},
-{topic:"Overtaking",q:"Can you exceed the speed limit to overtake?",opts:["Yes – up to 20 km/h extra on conventional roads","Yes – motorcycles may exceed by 20 km/h","No – since March 2022 the +20 km/h margin was abolished","Yes – if the overtake takes less than 30 seconds"],ans:2,exp:"The +20 km/h overtaking margin was derogated by Ley 18/2021 (in force March 2022). You may NEVER exceed the speed limit to overtake."},
-{topic:"Overtaking",q:"Minimum lateral clearance when overtaking a cyclist?",opts:["0.5 m","1 m","1.5 m – with partial or complete lane change","As much as the road allows"],ans:2,exp:"Art. 85.4 + Ley 6/2015: when overtaking cyclists, two-wheeled vehicles, pedestrians, animals, the lateral separation must be at least 1.5 m, with partial or complete lane change. Complete lane change mandatory on multi-lane roads."},
-{topic:"Overtaking",q:"The vehicle you are about to overtake signals its intention to change lane. What must you do?",opts:["Overtake quickly before they change","Give way – they have priority","Sound the horn and proceed","Depends on which direction they signal"],ans:1,exp:"The driver must verify that the vehicle ahead has NOT signalled a lane change before beginning to overtake. If the vehicle ahead has signalled, they have priority."},
-{topic:"Overtaking",q:"On a two-way three-lane road with broken lines, overtaking must be carried out in:",opts:["The rightmost lane","The leftmost lane","The CENTRAL lane – only when free of oncoming traffic","Any lane, as the lines are broken"],ans:2,exp:"On a two-way three-lane road separated by broken lines, overtaking must be carried out in the CENTRAL lane, only when it is free of vehicles travelling in the opposite direction."},
-{topic:"Overtaking",q:"If a problem develops mid-overtake, what must you do?",opts:["Accelerate to complete the overtake quickly","Slow down and return to the right lane using the right indicator","Sound the horn and maintain speed","Flash headlights and continue"],ans:1,exp:"Art. 85.2: if a problem develops, slow down immediately and pull back to the right-hand lane behind the original vehicle, using the right indicator."},
-{topic:"Overtaking",q:"The overtaken vehicle must NOT increase speed. What else must it do?",opts:["Move to the right kerb and maintain speed (slow down if danger arises)","Move to the left to give more room","Flash hazard lights as a courtesy signal","Brake hard to let the overtaking driver back in faster"],ans:0,exp:"Art. 86: the overtaken vehicle must stick to the right kerb (without invading the shoulder), must NOT increase speed, and must slow down if danger arises mid-overtake."},
-{topic:"Forbidden Overtaking",q:"R-305 is displayed and there is also a broken centre line. May you overtake?",opts:["Yes – the broken line permits crossing","No – R-305 prevails over the broken line","Only motorcycles may overtake","Only if no oncoming traffic is visible"],ans:1,exp:"When R-305 and a broken line are both present, R-305 prevails. The broken line alone would permit crossing, but the sign overrides it."},
-{topic:"Forbidden Overtaking",q:"Overtaking in tunnels is forbidden when there is:",opts:["Any tunnel regardless of lanes","A single lane per direction only. Two or more lanes per direction: overtaking is PERMITTED.","Only in tunnels over 500 m long","Only at night"],ans:1,exp:"The overtaking prohibition in tunnels only applies when there is a SINGLE lane per direction. In tunnels with two or more lanes per direction, overtaking is permitted."},
-{topic:"Forbidden Overtaking",q:"Special case: even with a continuous line, the opposite lane MAY be invaded to pass:",opts:["Any slow-moving vehicle","Slow/fragile users (cyclists, mopeds, pedestrians, animals, agricultural machinery) or stationary obstacles – if all safety conditions are met","Only cyclists – no other exception exists","Only if the speed limit is below 50 km/h"],ans:1,exp:"Arts. 88–89: even where overtaking is forbidden, the opposite lane may be invaded to pass slow/fragile users or stationary obstacles (breakdown/accident), provided safety conditions are met."},
-{topic:"Direction",q:"To turn RIGHT: vehicle position before turning?",opts:["In the centre of the carriageway","As close as possible to the LEFT edge","As close as possible to the RIGHT kerb","Any lane, provided you signal"],ans:2,exp:"Art. 75: to turn right, the driver must position the vehicle as close as possible to the RIGHT kerb before executing the turn."},
-{topic:"Direction",q:"On a two-way road with 3 lanes (broken lines): which lane to turn left?",opts:["Rightmost lane","Leftmost lane","CENTRAL lane","Any lane, since lines are broken"],ans:2,exp:"On a two-way three-lane road (broken lines), the central lane is the designated lane for turning left (or overtaking). The leftmost lane is for oncoming traffic."},
-{topic:"Direction",q:"R-303 sign prohibits:",opts:["Left turns only","U-turns only","Both left turns AND U-turns","Left turns, U-turns, and changing to the left lane"],ans:2,exp:"R-303 prohibits BOTH left turns AND U-turns. R-304 prohibits U-turns only. R-302 prohibits right turns."},
-{topic:"Direction",q:"Cycles and mopeds turning left on interurban two-way roads without a left-turn lane must:",opts:["Turn left from the centre of the carriageway","Position on the RIGHT SHOULDER and perform a two-stage turn","Position in the centre lane and wait","They cannot turn left – must find alternative route"],ans:1,exp:"Art. 76.2: on interurban two-way roads, cycles and mopeds wanting to turn left – where no specific left-turn lane exists – must position on the RIGHT shoulder and perform a two-stage manoeuvre."},
-{topic:"Direction",q:"Where must speed reduction happen when using an exit ramp?",opts:["On the main carriageway before the exit","At the start of the deceleration lane","In the middle of the deceleration lane","Anywhere along the exit ramp"],ans:1,exp:"Art. 77: enter the deceleration lane as early as possible and perform the speed reduction INSIDE the deceleration lane – NEVER on the main carriageway."},
-{topic:"U-Turn",q:"A U-turn must be completed in:",opts:["Any sequence including reverse gear","A single FORWARD manoeuvre. Using reverse gear to complete it is not permitted.","Two stages using reverse gear","Three-point turn technique"],ans:1,exp:"A U-turn (cambio de sentido) is defined as a 180° rotation reversing the direction of travel, which must be completed in a single forward manoeuvre."},
-{topic:"U-Turn",q:"Is a U-turn permitted on a flyover (paso superior)?",opts:["No – flyovers are listed as forbidden locations","Yes – a flyover is NOT in the Art. 79 forbidden list – allowed if safety conditions are met","Only if the flyover has 2 lanes per direction","Only emergency vehicles may perform U-turns on flyovers"],ans:1,exp:"Art. 79 forbids U-turns in underpasses (pasos inferiores) and tunnels – but a flyover (paso superior) is NOT in the forbidden list. A U-turn on a flyover IS permitted if safety conditions are met."},
-{topic:"U-Turn",q:"R-304 prohibits:",opts:["Left turns only","Both left turns and U-turns","U-turns only","Right turns and U-turns"],ans:2,exp:"R-304 prohibits U-TURNS ONLY. R-303 prohibits both left turns AND U-turns."},
-{topic:"U-Turn",q:"U-turns on motorways and dual carriageways are:",opts:["Permitted anywhere if visibility allows","Forbidden – except at designated median openings. Crossing the central reservation open area is strictly forbidden.","Permitted in service areas when the road is clear","Always absolutely forbidden – no exceptions"],ans:1,exp:"Art. 79: U-turns on autopistas and autovías are forbidden EXCEPT at designated purpose-built openings in the median (lugares habilitados)."},
-{topic:"Reversing",q:"As a complementary manoeuvre, the maximum permitted reversing distance is:",opts:["5 metres","10 metres","15 metres","25 metres"],ans:2,exp:"Art. 81: when reversing as a complementary manoeuvre, the maximum permitted distance is 15 metres. The vehicle cannot invade an intersection."},
-{topic:"Reversing",q:"A driver misses their motorway exit. May they reverse on the hard shoulder?",opts:["Yes – reversing on the shoulder is safer","Yes – if less than 15 m","No – reversing on motorways is absolutely forbidden. Continue to the next exit.","Only if no other vehicles are visible"],ans:2,exp:"Reversing on autopistas and autovías is absolutely forbidden – even on the hard shoulder. Continue to the next exit. Penalty: up to 500 € + 6 puntos."},
-{topic:"Stop & Park",q:"On a two-way urban street, on which side may you stop or park?",opts:["Either side","RIGHT side only","Left side only","The side nearest the destination"],ans:1,exp:"On two-way urban streets, stopping and parking is only permitted on the RIGHT. On one-way urban streets, both sides are permitted."},
-{topic:"Stop & Park",q:"A SOLID yellow line on the kerb prohibits:",opts:["Parking only – parada ≤2 min is permitted","Both stopping AND parking at all times","Parking only on weekdays","Only overnight parking"],ans:1,exp:"A yellow SOLID line on the kerb prohibits BOTH stopping and parking at all times. A yellow BROKEN/DASHED line prohibits parking only – parada (≤2 minutes, driver present) is still permitted."},
-{topic:"Stop & Park",q:"Minimum free space required between a parked vehicle and the opposite kerb:",opts:["1 metre","2 metres","3 metres","5 metres"],ans:2,exp:"Art. 94: stopping or parking is forbidden when the distance to the opposite kerb or a continuous line is less than 3 metres, or when other vehicles cannot pass safely."},
-{topic:"Stop & Park",q:"Parking facing uphill next to a kerb: wheels must be turned:",opts:["Toward the kerb","Away from the kerb (rear of tyre jams kerb if car rolls back)","Straight ahead","Toward the centre of the road"],ans:1,exp:"Facing uphill with a kerb: turn wheels AWAY from the kerb. If the vehicle rolls backwards, the rear of the tyre will jam against the kerb."},
-{topic:"Stop & Park",q:"Before leaving a parked vehicle on an uphill slope, a manual gearbox car should be left in:",opts:["Neutral","1st gear (to resist forward roll)","Reverse gear","Any gear – only the handbrake matters"],ans:1,exp:"Art. 92.3: when parking on an uphill slope, leave in 1ST GEAR. On a downhill slope, leave in REVERSE gear. Automatic cars must always be in P."},
-{topic:"Stop & Park",q:"Double parking (doble fila) as estacionamiento is:",opts:["Permitted only for loading/unloading if driver stays","NEVER permitted as estacionamiento. Parada allowed only if no space and traffic not obstructed.","Permitted on urban one-way streets","Permitted in loading zones during off-hours"],ans:1,exp:"Double parking is NEVER permitted as estacionamiento. As a PARADA (≤2 min, driver present) it is allowed ONLY if no nearby space is available AND traffic is not obstructed."},
-{topic:"Stop & Park",q:"Stopping and parking are both forbidden inside road tunnels.",opts:["True – except in emergency lay-bys","False – stopping for under 2 minutes is permitted","True – with no exceptions at all","False – parking is only forbidden in tunnels over 500 m"],ans:0,exp:"Both stopping and parking as normal manoeuvres are forbidden in tunnels, underpasses, and road sections with the S-5 tunnel sign. An emergency stop due to breakdown is governed by Art. 130 emergency procedures."},
-{topic:"Stop & Park",q:"Which statement about heavy vehicles (>3,500 kg) parked on a slope is correct?",opts:["Handbrake alone is sufficient","Must use wheel chocks (calzos). Stones or improvised objects are expressly FORBIDDEN.","Must use wheel chocks or stones of adequate size","Chocks are optional if the gradient is less than 10%"],ans:1,exp:"Art. 91: heavy vehicles parked on slopes must use purpose-built wheel chocks. STONES OR OTHER IMPROVISED OBJECTS are expressly forbidden as substitutes. Chocks must be removed before moving off."},
-{topic:"OSM Rule",q:"Using headlight flashes instead of the horn: permitted in which situations?",opts:["Only outside urban areas","Only inside urban areas","Both inside and outside urban areas – to signal overtaking intention","Only on motorways"],ans:2,exp:"Flashing headlights can replace the horn both inside and outside urban areas – particularly to signal overtaking intention."},
-{topic:"Overtaking",q:"Overtaking on the right is permitted in urban roads with how many lanes same direction?",opts:["Not permitted in urban areas","When there are at least 2 lanes same direction, bordered by markings","Only on one-way streets","Only when the left lane is blocked"],ans:1,exp:"Art. 82.2/82.3: overtaking on the right is permitted inside built-up areas on roads with at least two lanes reserved for the same direction, bordered by longitudinal road markings."},
-{topic:"Forbidden Overtaking",q:"At a pedestrian crossing, overtaking is:",opts:["Always completely forbidden","Permitted if no pedestrians are visible","Permitted only if at a speed allowing complete stop if a pedestrian appeared","Forbidden only for heavy vehicles"],ans:2,exp:"At pedestrian crossings, overtaking is forbidden UNLESS you are travelling at a speed that would allow you to stop completely if a pedestrian appeared."},
-{topic:"U-Turn",q:"Waiting to perform a U-turn is blocking following traffic. What must you do?",opts:["Continue waiting until a safe gap appears","Exit the carriageway to the right temporarily until you can perform the manoeuvre","Sound the horn and wait","Apply hazard lights and wait"],ans:1,exp:"Art. 78: if waiting to perform the U-turn is blocking following traffic, the driver must exit the carriageway to the right and wait there until they can complete the manoeuvre without obstructing others."},
-{topic:"Lane Change",q:"Is crossing a continuous line ever permitted?",opts:["No – a continuous line can never be crossed","Yes – to overtake cyclists, mopeds, pedestrians, animals; to avoid stationary obstacle; access private property; comply with agent's order","Only to access private property","Only on roads under 60 km/h limit"],ans:1,exp:"Although the general rule forbids crossing a continuous line, Arts. 87–88 RGC permit it to pass slow/vulnerable users or bypass stationary obstacles, provided all safety conditions are met."},
-{topic:"Direction",q:"When turning left at an intersection, the centre of the junction must be kept on:",opts:["The driver's right","The driver's LEFT (go around the right side of the junction)","Directly in front","Behind the driver"],ans:1,exp:"Art. 75: when turning left at an intersection, the centre of the junction must be kept to the driver's LEFT."},
-{topic:"Reversing",q:"When reversing as a complementary manoeuvre: may you invade an intersection?",opts:["Yes – always permitted","No – the vehicle CANNOT invade an intersection (cruce de vías)","Only if the intersection is clear","Only if reversing less than 5 m"],ans:1,exp:"Art. 81: when reversing as a complementary manoeuvre, the vehicle cannot invade an intersection. Only when forward movement is completely impossible may a junction be invaded."},
-{topic:"Stop & Park",q:"A bus stop that is properly signposted and marked is:",opts:["A parking-only prohibition","Both stopping AND parking are forbidden at all times","A loading/unloading zone","Only prohibited during service hours"],ans:1,exp:"Art. 94.1: public transport stops that are properly signposted and marked are in the list of places where BOTH stopping and parking are forbidden at all times."},
-{topic:"Stop & Park",q:"Parking on a cycle lane is:",opts:["A minor infraction (leve) – 80 €","A serious infraction (grave) – 200 €","A very serious infraction (muy grave) – 500 €","Not an infraction unless cyclists are present"],ans:1,exp:"Parking or stopping on a cycle lane, cycle path or cycle crossing is a GRAVE (serious) infraction – 200 €."},
-{topic:"Joining Traffic",q:"Which law reference covers the bus joining traffic rule?",opts:["Art. 74.2 RGC","Art. 73.2 RGC","Art. 75.1 RGC","Art. 82.1 RGC"],ans:1,exp:"The bus incorporation rule is Art. 73.2 RGC. A very common exam trap says Art. 74.2 – this is wrong. Art. 73.2 is the correct reference."}
-];
-</script>
-<script>
-// Tab switching
-document.querySelectorAll('.tab-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
-    window.scrollTo(0,0);
-  });
-});
+      <div class="tab-panel" id="tab-joining">
+        <div class="section-title">
+          Joining Traffic — Incorporación (Art. 72–73 RGC)
+        </div>
+        <p class="section-desc">
+          Applies when moving off from outside the traffic flow. Resuming after
+          a red light is NOT classed as joining traffic.
+        </p>
+        <div class="highlight warn">
+          <div class="hi-title">
+            You must ALWAYS yield to all existing traffic
+          </div>
+          <p>
+            From private roads, garages, petrol stations, rest areas: drive at
+            speed allowing immediate stop; give way to ALL users from both
+            directions.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Acceleration lane — 3-step rule</h3>
+          <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              Verify at the START of the lane that you pose no danger. Be
+              prepared to STOP if necessary.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              Give way to all vehicles in the lane you wish to join.
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              Accelerate to reach suitable speed at the END of the lane.
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Bus Rule — Art. 73.2 RGC</h3>
+          <div class="highlight info">
+            <div class="hi-title">Urban area bus leaving a signalled stop</div>
+            <p>
+              Other drivers must: pull over laterally if possible; slow down
+              smoothly; or STOP if necessary. Conditions: regular-service bus +
+              signalled stop + indicator on + inside built-up area. The bus must
+              still signal and ensure safety — courtesy is "in the measure of
+              the possible".
+            </p>
+          </div>
+        </div>
+      </div>
 
-// Quiz engine
-let qCur=0,qScore=0,qAnswered=false;
-const questions=window.QUIZ_QUESTIONS||[];
-function initQuiz(){
-  qCur=0;qScore=0;qAnswered=false;
-  if(!questions.length)return;
-  document.getElementById('quiz-result').style.display='none';
-  document.getElementById('quiz-body').style.display='block';
-  renderQuestion();
-  updateProgress();
-}
-function renderQuestion(){
-  if(qCur>=questions.length){showResult();return;}
-  const q=questions[qCur];
-  document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;
-  document.getElementById('q-text').textContent=q.q;
-  const cont=document.getElementById('q-options');
-  cont.innerHTML='';
-  q.opts.forEach((opt,i)=>{
-    const b=document.createElement('button');
-    b.className='option-btn';
-    b.textContent=String.fromCharCode(65+i)+'. '+opt;
-    b.addEventListener('click',()=>pickAnswer(i,b,q));
-    cont.appendChild(b);
-  });
-  document.getElementById('q-exp').style.display='none';
-  document.getElementById('q-exp').textContent='';
-  qAnswered=false;
-  document.getElementById('btn-next').disabled=true;
-  updateProgress();
-}
-function pickAnswer(i,btn,q){
-  if(qAnswered)return;
-  qAnswered=true;
-  const btns=document.querySelectorAll('#q-options .option-btn');
-  btns.forEach(b=>b.disabled=true);
-  if(i===q.ans){btn.classList.add('correct');qScore++;}
-  else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}
-  const exp=document.getElementById('q-exp');
-  exp.textContent=q.exp;
-  exp.style.display='block';
-  document.getElementById('btn-next').disabled=false;
-  document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);
-}
-function updateProgress(){
-  const pct=questions.length?Math.round(qCur/questions.length*100):0;
-  document.getElementById('progress-fill').style.width=pct+'%';
-  document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;
-}
-function showResult(){
-  document.getElementById('quiz-body').style.display='none';
-  const res=document.getElementById('quiz-result');
-  res.style.display='block';
-  const pct=Math.round(qScore/questions.length*100);
-  document.getElementById('res-num').textContent=qScore;
-  document.getElementById('res-den').textContent=questions.length;
-  let msg='',cls='';
-  if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}
-  else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}
-  else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}
-  else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}
-  document.getElementById('res-msg').textContent=msg;
-  document.getElementById('res-grade').style.cssText=cls;
-  document.getElementById('res-grade').textContent=pct+'%';
-}
-document.addEventListener('DOMContentLoaded',()=>{
-  initQuiz();
-  document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});
-  document.getElementById('btn-restart').addEventListener('click',initQuiz);
-});
-</script>
-</body></html>
+      <div class="tab-panel" id="tab-lane">
+        <div class="section-title">Changing Lane — Art. 74 RGC</div>
+        <div class="highlight important">
+          <div class="hi-title">Priority rule — Art. 74.2</div>
+          <p>
+            Vehicles already in the destination lane ALWAYS have priority. This
+            is the cornerstone exam answer.
+          </p>
+        </div>
+        <div class="card">
+          <div class="qr-row">
+            <span class="qr-key">Crossing a continuous line</span
+            ><span class="qr-val"
+              >FORBIDDEN — may not be crossed, trodden on, or driven to the left
+              of</span
+            >
+          </div>
+          <div class="qr-row">
+            <span class="qr-key">Continuous + broken line parallel</span
+            ><span class="qr-val"
+              >ONLY the side with the BROKEN line may cross</span
+            >
+          </div>
+          <div class="qr-row">
+            <span class="qr-key">Exceptions to continuous line</span
+            ><span class="qr-val"
+              >Overtaking cyclists/mopeds/pedestrians/animals; avoiding
+              stationary obstacle; accessing private property; complying with
+              agent's order</span
+            >
+          </div>
+          <div class="qr-row">
+            <span class="qr-key"
+              >3+ lanes same direction (interurban) — trucks &gt;3,500 kg &amp;
+              combos &gt;7 m</span
+            ><span class="qr-val"
+              >Rightmost lane only; adjacent lane exceptionally; all other lanes
+              NEVER</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-overtaking">
+        <div class="section-title">
+          Overtaking — Adelantamiento (Arts. 82–89 RGC)
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">⚠️ 2022 Change: +20 km/h margin ABOLISHED</div>
+          <p>
+            Since March 2022 (Ley 18/2021), you can NEVER exceed the speed limit
+            to overtake — under any circumstances.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>General rules</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Rule</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Which side to overtake</td>
+                <td>LEFT — always, as general rule</td>
+              </tr>
+              <tr>
+                <td>Speed required</td>
+                <td>
+                  Noticeably superior to overtaken vehicle (but never exceeding
+                  speed limit)
+                </td>
+              </tr>
+              <tr>
+                <td>1.5 metre rule</td>
+                <td>
+                  When overtaking pedestrians, animals, two-wheeled vehicles,
+                  immobilised vehicles: min 1.5 m lateral clearance + partial or
+                  complete lane change. Complete lane change mandatory on
+                  multi-lane roads.
+                </td>
+              </tr>
+              <tr>
+                <td>If a problem develops</td>
+                <td>
+                  Slow down immediately and return behind original vehicle using
+                  right indicator
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Overtaking on the RIGHT — permitted exceptions</h3>
+          <ul class="check-list">
+            <li>Vehicle ahead signals left turn or stop on the LEFT side</li>
+            <li>
+              Urban roads with 2+ lanes same direction (bordered by markings)
+            </li>
+            <li>Trams running at the centre of a two-way road</li>
+            <li>
+              Three-lane two-way road: centre lane only (when free of oncoming
+              traffic)
+            </li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>Overtaken vehicle obligations (Art. 86)</h3>
+          <ul class="check-list">
+            <li>Stick to the right kerb — without invading the shoulder</li>
+            <li>Must NOT increase speed</li>
+            <li>Slow down if danger arises mid-overtake</li>
+            <li class="no">
+              Forbidden: increase speed or perform manoeuvres making overtaking
+              dangerous
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-forbidden">
+        <div class="section-title">
+          Where Overtaking is Forbidden — Art. 87 RGC
+        </div>
+        <div class="grid-2">
+          <div>
+            <div class="def-block red">
+              <div class="term">R-305 sign</div>
+              <div class="def">
+                Forbids overtaking all motor vehicles (not two-wheeled
+                motorbikes) without invading opposite lane. 200 € + 4 puntos.
+              </div>
+            </div>
+            <div class="def-block red">
+              <div class="term">Continuous centre line</div>
+              <div class="def">
+                Cannot be crossed, trodden on or driven to the left of. R-305
+                prevails over a broken line.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="highlight important">
+              <div class="hi-title">Also forbidden without signs</div>
+              <ul>
+                <li>Bends and crests with reduced visibility</li>
+                <li>Level crossings and their proximity</li>
+                <li>Pedestrian crossings (unless slow enough to stop)</li>
+                <li>Cycle lane junctions</li>
+                <li>Tunnels with ONE lane per direction</li>
+                <li>
+                  Junctions (exceptions: roundabouts, priority junctions,
+                  two-wheelers)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="highlight tip">
+          <div class="hi-title">✓ Special case — Art. 88–89</div>
+          <p>
+            Even with R-305 or continuous line, the opposite lane MAY be invaded
+            to pass slow/fragile users (cyclists, mopeds, pedestrians, animals,
+            agricultural machinery) or stationary obstacles — if: no oncoming
+            traffic; appropriate signalling; no danger to oncoming cyclists; 1.5
+            m clearance maintained.
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-direction">
+        <div class="section-title">
+          Changing Direction — Giro (Arts. 74–77 RGC)
+        </div>
+        <div class="subsection">
+          <h3>Turning LEFT — position before turning</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Road type</th>
+                <th>Position before turning left</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>One-way street</td>
+                <td>Close to the LEFT edge</td>
+              </tr>
+              <tr>
+                <td>Two-way road (2 lanes)</td>
+                <td>Close to the CENTRE LINE</td>
+              </tr>
+              <tr>
+                <td>Two-way road with 3 lanes (broken lines)</td>
+                <td>CENTRAL lane</td>
+              </tr>
+              <tr>
+                <td>One-way road with 3 lanes</td>
+                <td>LEFTMOST lane</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight warn">
+          <div class="hi-title">
+            Cycles &amp; mopeds turning left on interurban two-way roads
+          </div>
+          <p>
+            Must position on the RIGHT SHOULDER and perform a two-stage turn
+            from there. This rule does NOT apply on urban roads.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Exit ramps — deceleration lane (Art. 77)</h3>
+          <ul class="check-list">
+            <li>Signal well in advance and move to rightmost lane</li>
+            <li>Enter the deceleration lane as early as possible</li>
+            <li>
+              Speed reduction must happen INSIDE the deceleration lane — NEVER
+              on the main carriageway
+            </li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3>When changing direction is FORBIDDEN</h3>
+          <ul class="check-list">
+            <li class="no">
+              R-302 (no right turn) or R-303 (no left turn — also forbids
+              U-turn) sign displayed
+            </li>
+            <li class="no">
+              Continuous longitudinal lines would have to be crossed
+            </li>
+            <li class="no">Visibility insufficient for a left turn</li>
+            <li class="no">Without signalling in advance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-uturn">
+        <div class="section-title">
+          U-Turn — Cambio de Sentido (Arts. 78–79 RGC)
+        </div>
+        <div class="highlight info">
+          <div class="hi-title">Definition</div>
+          <p>
+            180° inversion of direction, completed in a SINGLE forward
+            manoeuvre. Using reverse gear to complete it is NOT permitted.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Where U-turns are FORBIDDEN (Art. 79)</h3>
+          <div class="grid-2">
+            <ul class="check-list">
+              <li class="no">R-304 (no U-turn) or R-303 (no left turn) sign</li>
+              <li class="no">Road markings forbid crossing</li>
+              <li class="no">Bends, crests with reduced visibility</li>
+              <li class="no">Level crossings</li>
+              <li class="no">Tunnels and underpasses (pasos inferiores)</li>
+            </ul>
+            <ul class="check-list">
+              <li class="no">Pedestrian crossings</li>
+              <li class="no">
+                Junctions and their vicinity (except roundabouts)
+              </li>
+              <li class="no">
+                Autopistas and autovías (except at designated openings)
+              </li>
+              <li class="no">All stretches where overtaking is forbidden</li>
+            </ul>
+          </div>
+        </div>
+        <div class="highlight tip">
+          <div class="hi-title">
+            ⚠️ KEY TRAP — paso superior vs paso inferior
+          </div>
+          <p>
+            A flyover (paso superior) is NOT in the forbidden list — U-turns
+            there are ALLOWED if safety conditions are met. Only an underpass
+            (paso inferior) and tunnels are forbidden. Do NOT confuse them!
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-reversing">
+        <div class="section-title">
+          Reversing — Marcha Atrás (Arts. 80–81 RGC)
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">General rule: FORBIDDEN on all roads</div>
+          <p>
+            Driving in reverse gear is forbidden on all roads as a normal mode
+            of circulation. Only permitted in two specific situations.
+          </p>
+        </div>
+        <div class="grid-2">
+          <div class="def-block green">
+            <div class="term">Complementary manoeuvre</div>
+            <div class="def">
+              As part of parking, joining traffic, or leaving a space. Maximum
+              distance: 15 metres. Cannot invade an intersection.
+            </div>
+          </div>
+          <div class="def-block">
+            <div class="term">Dead-end / impossible forward movement</div>
+            <div class="def">
+              Roads where turning is impossible. 15 m limit does NOT apply. May
+              invade a junction if strictly necessary.
+            </div>
+          </div>
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">⛔ Absolute prohibitions</div>
+          <p>
+            Reversing on autopistas and autovías: absolutely FORBIDDEN even if
+            you missed your exit. Continue to the next exit. Penalty: up to 500
+            € + 6 puntos (muy grave).
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>Reversing signal when reverse light fails</h3>
+          <div class="def-block blue">
+            <div class="term">Arm signal</div>
+            <div class="def">
+              Arm extended horizontally with the palm FACING BACK.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-stoppark">
+        <div class="section-title">
+          Stopping &amp; Parking — Arts. 90–94 RGC
+        </div>
+        <div class="subsection">
+          <h3>Where to stop and park</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Situation</th>
+                <th>Permitted side</th>
+                <th>Where</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Urban one-way street</td>
+                <td>BOTH sides</td>
+                <td>On carriageway/shoulder, leaving ≥3 m free</td>
+              </tr>
+              <tr>
+                <td>Urban two-way street</td>
+                <td>RIGHT only</td>
+                <td>On carriageway/shoulder, leaving ≥3 m free</td>
+              </tr>
+              <tr>
+                <td>Interurban</td>
+                <td>RIGHT only</td>
+                <td>OFF the carriageway and hard shoulder</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subsection">
+          <h3>Yellow Line Code</h3>
+          <div class="grid-3">
+            <div class="def-block red">
+              <div class="term">Solid yellow line on kerb</div>
+              <div class="def">
+                Both stopping AND parking forbidden at all times.
+              </div>
+            </div>
+            <div class="def-block">
+              <div class="term">Broken yellow line on kerb</div>
+              <div class="def">
+                Parking forbidden only — parada (≤2 min, driver present) is
+                still permitted.
+              </div>
+            </div>
+            <div class="def-block green">
+              <div class="term">Yellow zig-zag</div>
+              <div class="def">
+                Reserved zone (bus stop, loading). Parking forbidden; parada
+                permitted.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Wheel direction when parked on a slope</h3>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Situation</th>
+                <th>Wheel direction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Facing UPHILL — with kerb</td>
+                <td>Turn wheels AWAY from the kerb</td>
+              </tr>
+              <tr>
+                <td>Facing DOWNHILL — with kerb</td>
+                <td>Turn wheels TOWARD the kerb</td>
+              </tr>
+              <tr>
+                <td>No kerb either direction</td>
+                <td>Turn wheels toward the road EDGE/VERGE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight important">
+          <div class="hi-title">
+            Both stopping AND parking forbidden — Art. 94.1
+          </div>
+          <p>
+            Tunnels and underpasses · Level crossings · Pedestrian crossings ·
+            Cycle lanes · Bus lanes · Junctions (if visibility impaired) ·
+            Motorways (except service areas) · Tramway rails · Where distance to
+            opposite kerb &lt;3 m · Bends and humps with reduced visibility
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-quiz">
+        <div class="quiz-header">
+          <h3>Chapter 3 Quiz — 50 Questions</h3>
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div
+                class="progress-fill"
+                id="progress-fill"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div class="score-display" id="score-display">0/0</div>
+          </div>
+        </div>
+        <div id="quiz-body">
+          <div class="question-card">
+            <div class="question-num" id="q-num"></div>
+            <div class="question-text" id="q-text"></div>
+            <div class="options" id="q-options"></div>
+            <div class="explanation" id="q-exp"></div>
+          </div>
+          <div class="quiz-nav">
+            <div class="quiz-page-info" id="q-page"></div>
+            <div class="quiz-controls">
+              <button class="btn btn-navy" id="btn-next" disabled>
+                Next →
+              </button>
+              <button class="btn btn-outline" id="btn-restart">Restart</button>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-result" id="quiz-result">
+          <div class="result-score">
+            <span id="res-num">0</span>/<span id="res-den">50</span>
+          </div>
+          <div class="result-msg" id="res-msg"></div>
+          <div class="result-grade" id="res-grade"></div>
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 24px;
+            "
+          >
+            <button
+              class="btn btn-gold"
+              onclick="initQuiz()"
+              style="flex: 1; min-width: 140px"
+            >
+              Try Again
+            </button>
+            <button
+              class="btn btn-navy"
+              onclick="window.location.href = 'chapter4_vehicle_lighting.html'"
+              style="flex: 1; min-width: 140px"
+            >
+              Next Chapter →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.QUIZ_QUESTIONS = [
+        {
+          topic: 'OSM Rule',
+          q: 'What is the correct OSM safety routine order?',
+          opts: [
+            'Signal → Observe → Manoeuvre',
+            'Observe → Manoeuvre → Signal',
+            'Observe → Signal → Manoeuvre',
+            'Manoeuvre → Observe → Signal',
+          ],
+          ans: 2,
+          exp: 'The correct sequence is always Observe → Signal → Manoeuvre. Skipping any step is a fault.',
+        },
+        {
+          topic: 'OSM Rule',
+          q: 'The mandatory mirror-check sequence before a lane change to the left is:',
+          opts: [
+            'Left exterior mirror only',
+            'Interior → left exterior → visible head-turn to blind spot',
+            'Left exterior → interior → blind spot',
+            'Blind spot → interior → left exterior',
+          ],
+          ans: 1,
+          exp: 'The mandatory sequence: interior mirror first, then exterior mirror on the side of the manoeuvre, then a visible head-turn (~45°) to check the blind spot.',
+        },
+        {
+          topic: 'OSM Rule',
+          q: 'Does signalling a manoeuvre give you the right of way?',
+          opts: [
+            'Yes – others must yield when you indicate',
+            'Yes – on motorways only',
+            'No – signalling NEVER confers priority',
+            'Only if you signal for more than 3 seconds',
+          ],
+          ans: 2,
+          exp: 'Signalling a manoeuvre NEVER confers right of way (Art. 109 RGC). The indicator only informs other road users of your intention.',
+        },
+        {
+          topic: 'OSM Rule',
+          q: 'Arm signal for turning RIGHT:',
+          opts: [
+            'Arm horizontal, palm facing down',
+            'Arm bent at elbow, palm facing forward',
+            'Arm horizontal, palm facing back',
+            'Arm raised vertically',
+          ],
+          ans: 1,
+          exp: 'Right turn / move to right lane: arm BENT at the elbow with the palm facing forward.',
+        },
+        {
+          topic: 'Joining Traffic',
+          q: 'Resuming motion after a red light – is this classified as joining traffic?',
+          opts: [
+            'Yes – OSM rules apply every time you move off',
+            'No – resuming motion after a traffic stop is NOT joining traffic',
+            'Only if stationary for more than 2 minutes',
+            'Only on dual carriageways',
+          ],
+          ans: 1,
+          exp: 'Resuming motion after a stop caused by a traffic signal is NOT classified as joining traffic. Incorporation rules only apply when moving off from outside the traffic flow.',
+        },
+        {
+          topic: 'Joining Traffic',
+          q: 'Is it ever permitted to stop inside an acceleration lane?',
+          opts: [
+            'No – stopping is always forbidden',
+            'Yes – if no safe gap is available in the main carriageway',
+            'Only for motorcycles',
+            'Only in emergencies',
+          ],
+          ans: 1,
+          exp: 'Stopping at the START of an acceleration lane is permitted when no safe gap exists in the main carriageway. The common belief that stopping is always forbidden is incorrect.',
+        },
+        {
+          topic: 'Joining Traffic',
+          q: 'The bus rule (Art. 73.2 RGC) applies when:',
+          opts: [
+            'Any bus stops anywhere',
+            'A regular-service bus leaving a signalled stop signals its intention to join in poblado (built-up area)',
+            'Any vehicle signals to join traffic',
+            'A school bus is loading children',
+          ],
+          ans: 1,
+          exp: 'Art. 73.2: inside built-up areas, when a regular-service bus at a signalled stop indicates its intention to join traffic, other drivers must facilitate this.',
+        },
+        {
+          topic: 'Lane Change',
+          q: 'When changing lane, which vehicles have priority?',
+          opts: [
+            'The vehicle changing lane (they signalled)',
+            'Vehicles already in the destination lane',
+            'The faster vehicle',
+            'Whichever began the manoeuvre first',
+          ],
+          ans: 1,
+          exp: 'Art. 74.2: when changing lane, the driver must always give way to vehicles already in the destination lane.',
+        },
+        {
+          topic: 'Lane Change',
+          q: 'Two parallel lines – one continuous, one broken – run along the centre. A driver is on the broken-line side. May they cross?',
+          opts: [
+            'No – both lines must be treated as continuous',
+            'Yes – the side with the broken line may cross',
+            'Only to overtake cyclists',
+            'Only with left indicator',
+          ],
+          ans: 1,
+          exp: 'Where a continuous and a broken line lie parallel, ONLY the side with the broken line may cross.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'Can you exceed the speed limit to overtake?',
+          opts: [
+            'Yes – up to 20 km/h extra on conventional roads',
+            'Yes – motorcycles may exceed by 20 km/h',
+            'No – since March 2022 the +20 km/h margin was abolished',
+            'Yes – if the overtake takes less than 30 seconds',
+          ],
+          ans: 2,
+          exp: 'The +20 km/h overtaking margin was derogated by Ley 18/2021 (in force March 2022). You may NEVER exceed the speed limit to overtake.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'Minimum lateral clearance when overtaking a cyclist?',
+          opts: [
+            '0.5 m',
+            '1 m',
+            '1.5 m – with partial or complete lane change',
+            'As much as the road allows',
+          ],
+          ans: 2,
+          exp: 'Art. 85.4 + Ley 6/2015: when overtaking cyclists, two-wheeled vehicles, pedestrians, animals, the lateral separation must be at least 1.5 m, with partial or complete lane change. Complete lane change mandatory on multi-lane roads.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'The vehicle you are about to overtake signals its intention to change lane. What must you do?',
+          opts: [
+            'Overtake quickly before they change',
+            'Give way – they have priority',
+            'Sound the horn and proceed',
+            'Depends on which direction they signal',
+          ],
+          ans: 1,
+          exp: 'The driver must verify that the vehicle ahead has NOT signalled a lane change before beginning to overtake. If the vehicle ahead has signalled, they have priority.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'On a two-way three-lane road with broken lines, overtaking must be carried out in:',
+          opts: [
+            'The rightmost lane',
+            'The leftmost lane',
+            'The CENTRAL lane – only when free of oncoming traffic',
+            'Any lane, as the lines are broken',
+          ],
+          ans: 2,
+          exp: 'On a two-way three-lane road separated by broken lines, overtaking must be carried out in the CENTRAL lane, only when it is free of vehicles travelling in the opposite direction.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'If a problem develops mid-overtake, what must you do?',
+          opts: [
+            'Accelerate to complete the overtake quickly',
+            'Slow down and return to the right lane using the right indicator',
+            'Sound the horn and maintain speed',
+            'Flash headlights and continue',
+          ],
+          ans: 1,
+          exp: 'Art. 85.2: if a problem develops, slow down immediately and pull back to the right-hand lane behind the original vehicle, using the right indicator.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'The overtaken vehicle must NOT increase speed. What else must it do?',
+          opts: [
+            'Move to the right kerb and maintain speed (slow down if danger arises)',
+            'Move to the left to give more room',
+            'Flash hazard lights as a courtesy signal',
+            'Brake hard to let the overtaking driver back in faster',
+          ],
+          ans: 0,
+          exp: 'Art. 86: the overtaken vehicle must stick to the right kerb (without invading the shoulder), must NOT increase speed, and must slow down if danger arises mid-overtake.',
+        },
+        {
+          topic: 'Forbidden Overtaking',
+          q: 'R-305 is displayed and there is also a broken centre line. May you overtake?',
+          opts: [
+            'Yes – the broken line permits crossing',
+            'No – R-305 prevails over the broken line',
+            'Only motorcycles may overtake',
+            'Only if no oncoming traffic is visible',
+          ],
+          ans: 1,
+          exp: 'When R-305 and a broken line are both present, R-305 prevails. The broken line alone would permit crossing, but the sign overrides it.',
+        },
+        {
+          topic: 'Forbidden Overtaking',
+          q: 'Overtaking in tunnels is forbidden when there is:',
+          opts: [
+            'Any tunnel regardless of lanes',
+            'A single lane per direction only. Two or more lanes per direction: overtaking is PERMITTED.',
+            'Only in tunnels over 500 m long',
+            'Only at night',
+          ],
+          ans: 1,
+          exp: 'The overtaking prohibition in tunnels only applies when there is a SINGLE lane per direction. In tunnels with two or more lanes per direction, overtaking is permitted.',
+        },
+        {
+          topic: 'Forbidden Overtaking',
+          q: 'Special case: even with a continuous line, the opposite lane MAY be invaded to pass:',
+          opts: [
+            'Any slow-moving vehicle',
+            'Slow/fragile users (cyclists, mopeds, pedestrians, animals, agricultural machinery) or stationary obstacles – if all safety conditions are met',
+            'Only cyclists – no other exception exists',
+            'Only if the speed limit is below 50 km/h',
+          ],
+          ans: 1,
+          exp: 'Arts. 88–89: even where overtaking is forbidden, the opposite lane may be invaded to pass slow/fragile users or stationary obstacles (breakdown/accident), provided safety conditions are met.',
+        },
+        {
+          topic: 'Direction',
+          q: 'To turn RIGHT: vehicle position before turning?',
+          opts: [
+            'In the centre of the carriageway',
+            'As close as possible to the LEFT edge',
+            'As close as possible to the RIGHT kerb',
+            'Any lane, provided you signal',
+          ],
+          ans: 2,
+          exp: 'Art. 75: to turn right, the driver must position the vehicle as close as possible to the RIGHT kerb before executing the turn.',
+        },
+        {
+          topic: 'Direction',
+          q: 'On a two-way road with 3 lanes (broken lines): which lane to turn left?',
+          opts: [
+            'Rightmost lane',
+            'Leftmost lane',
+            'CENTRAL lane',
+            'Any lane, since lines are broken',
+          ],
+          ans: 2,
+          exp: 'On a two-way three-lane road (broken lines), the central lane is the designated lane for turning left (or overtaking). The leftmost lane is for oncoming traffic.',
+        },
+        {
+          topic: 'Direction',
+          q: 'R-303 sign prohibits:',
+          opts: [
+            'Left turns only',
+            'U-turns only',
+            'Both left turns AND U-turns',
+            'Left turns, U-turns, and changing to the left lane',
+          ],
+          ans: 2,
+          exp: 'R-303 prohibits BOTH left turns AND U-turns. R-304 prohibits U-turns only. R-302 prohibits right turns.',
+        },
+        {
+          topic: 'Direction',
+          q: 'Cycles and mopeds turning left on interurban two-way roads without a left-turn lane must:',
+          opts: [
+            'Turn left from the centre of the carriageway',
+            'Position on the RIGHT SHOULDER and perform a two-stage turn',
+            'Position in the centre lane and wait',
+            'They cannot turn left – must find alternative route',
+          ],
+          ans: 1,
+          exp: 'Art. 76.2: on interurban two-way roads, cycles and mopeds wanting to turn left – where no specific left-turn lane exists – must position on the RIGHT shoulder and perform a two-stage manoeuvre.',
+        },
+        {
+          topic: 'Direction',
+          q: 'Where must speed reduction happen when using an exit ramp?',
+          opts: [
+            'On the main carriageway before the exit',
+            'At the start of the deceleration lane',
+            'In the middle of the deceleration lane',
+            'Anywhere along the exit ramp',
+          ],
+          ans: 1,
+          exp: 'Art. 77: enter the deceleration lane as early as possible and perform the speed reduction INSIDE the deceleration lane – NEVER on the main carriageway.',
+        },
+        {
+          topic: 'U-Turn',
+          q: 'A U-turn must be completed in:',
+          opts: [
+            'Any sequence including reverse gear',
+            'A single FORWARD manoeuvre. Using reverse gear to complete it is not permitted.',
+            'Two stages using reverse gear',
+            'Three-point turn technique',
+          ],
+          ans: 1,
+          exp: 'A U-turn (cambio de sentido) is defined as a 180° rotation reversing the direction of travel, which must be completed in a single forward manoeuvre.',
+        },
+        {
+          topic: 'U-Turn',
+          q: 'Is a U-turn permitted on a flyover (paso superior)?',
+          opts: [
+            'No – flyovers are listed as forbidden locations',
+            'Yes – a flyover is NOT in the Art. 79 forbidden list – allowed if safety conditions are met',
+            'Only if the flyover has 2 lanes per direction',
+            'Only emergency vehicles may perform U-turns on flyovers',
+          ],
+          ans: 1,
+          exp: 'Art. 79 forbids U-turns in underpasses (pasos inferiores) and tunnels – but a flyover (paso superior) is NOT in the forbidden list. A U-turn on a flyover IS permitted if safety conditions are met.',
+        },
+        {
+          topic: 'U-Turn',
+          q: 'R-304 prohibits:',
+          opts: [
+            'Left turns only',
+            'Both left turns and U-turns',
+            'U-turns only',
+            'Right turns and U-turns',
+          ],
+          ans: 2,
+          exp: 'R-304 prohibits U-TURNS ONLY. R-303 prohibits both left turns AND U-turns.',
+        },
+        {
+          topic: 'U-Turn',
+          q: 'U-turns on motorways and dual carriageways are:',
+          opts: [
+            'Permitted anywhere if visibility allows',
+            'Forbidden – except at designated median openings. Crossing the central reservation open area is strictly forbidden.',
+            'Permitted in service areas when the road is clear',
+            'Always absolutely forbidden – no exceptions',
+          ],
+          ans: 1,
+          exp: 'Art. 79: U-turns on autopistas and autovías are forbidden EXCEPT at designated purpose-built openings in the median (lugares habilitados).',
+        },
+        {
+          topic: 'Reversing',
+          q: 'As a complementary manoeuvre, the maximum permitted reversing distance is:',
+          opts: ['5 metres', '10 metres', '15 metres', '25 metres'],
+          ans: 2,
+          exp: 'Art. 81: when reversing as a complementary manoeuvre, the maximum permitted distance is 15 metres. The vehicle cannot invade an intersection.',
+        },
+        {
+          topic: 'Reversing',
+          q: 'A driver misses their motorway exit. May they reverse on the hard shoulder?',
+          opts: [
+            'Yes – reversing on the shoulder is safer',
+            'Yes – if less than 15 m',
+            'No – reversing on motorways is absolutely forbidden. Continue to the next exit.',
+            'Only if no other vehicles are visible',
+          ],
+          ans: 2,
+          exp: 'Reversing on autopistas and autovías is absolutely forbidden – even on the hard shoulder. Continue to the next exit. Penalty: up to 500 € + 6 puntos.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'On a two-way urban street, on which side may you stop or park?',
+          opts: [
+            'Either side',
+            'RIGHT side only',
+            'Left side only',
+            'The side nearest the destination',
+          ],
+          ans: 1,
+          exp: 'On two-way urban streets, stopping and parking is only permitted on the RIGHT. On one-way urban streets, both sides are permitted.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'A SOLID yellow line on the kerb prohibits:',
+          opts: [
+            'Parking only – parada ≤2 min is permitted',
+            'Both stopping AND parking at all times',
+            'Parking only on weekdays',
+            'Only overnight parking',
+          ],
+          ans: 1,
+          exp: 'A yellow SOLID line on the kerb prohibits BOTH stopping and parking at all times. A yellow BROKEN/DASHED line prohibits parking only – parada (≤2 minutes, driver present) is still permitted.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Minimum free space required between a parked vehicle and the opposite kerb:',
+          opts: ['1 metre', '2 metres', '3 metres', '5 metres'],
+          ans: 2,
+          exp: 'Art. 94: stopping or parking is forbidden when the distance to the opposite kerb or a continuous line is less than 3 metres, or when other vehicles cannot pass safely.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Parking facing uphill next to a kerb: wheels must be turned:',
+          opts: [
+            'Toward the kerb',
+            'Away from the kerb (rear of tyre jams kerb if car rolls back)',
+            'Straight ahead',
+            'Toward the centre of the road',
+          ],
+          ans: 1,
+          exp: 'Facing uphill with a kerb: turn wheels AWAY from the kerb. If the vehicle rolls backwards, the rear of the tyre will jam against the kerb.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Before leaving a parked vehicle on an uphill slope, a manual gearbox car should be left in:',
+          opts: [
+            'Neutral',
+            '1st gear (to resist forward roll)',
+            'Reverse gear',
+            'Any gear – only the handbrake matters',
+          ],
+          ans: 1,
+          exp: 'Art. 92.3: when parking on an uphill slope, leave in 1ST GEAR. On a downhill slope, leave in REVERSE gear. Automatic cars must always be in P.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Double parking (doble fila) as estacionamiento is:',
+          opts: [
+            'Permitted only for loading/unloading if driver stays',
+            'NEVER permitted as estacionamiento. Parada allowed only if no space and traffic not obstructed.',
+            'Permitted on urban one-way streets',
+            'Permitted in loading zones during off-hours',
+          ],
+          ans: 1,
+          exp: 'Double parking is NEVER permitted as estacionamiento. As a PARADA (≤2 min, driver present) it is allowed ONLY if no nearby space is available AND traffic is not obstructed.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Stopping and parking are both forbidden inside road tunnels.',
+          opts: [
+            'True – except in emergency lay-bys',
+            'False – stopping for under 2 minutes is permitted',
+            'True – with no exceptions at all',
+            'False – parking is only forbidden in tunnels over 500 m',
+          ],
+          ans: 0,
+          exp: 'Both stopping and parking as normal manoeuvres are forbidden in tunnels, underpasses, and road sections with the S-5 tunnel sign. An emergency stop due to breakdown is governed by Art. 130 emergency procedures.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Which statement about heavy vehicles (>3,500 kg) parked on a slope is correct?',
+          opts: [
+            'Handbrake alone is sufficient',
+            'Must use wheel chocks (calzos). Stones or improvised objects are expressly FORBIDDEN.',
+            'Must use wheel chocks or stones of adequate size',
+            'Chocks are optional if the gradient is less than 10%',
+          ],
+          ans: 1,
+          exp: 'Art. 91: heavy vehicles parked on slopes must use purpose-built wheel chocks. STONES OR OTHER IMPROVISED OBJECTS are expressly forbidden as substitutes. Chocks must be removed before moving off.',
+        },
+        {
+          topic: 'OSM Rule',
+          q: 'Using headlight flashes instead of the horn: permitted in which situations?',
+          opts: [
+            'Only outside urban areas',
+            'Only inside urban areas',
+            'Both inside and outside urban areas – to signal overtaking intention',
+            'Only on motorways',
+          ],
+          ans: 2,
+          exp: 'Flashing headlights can replace the horn both inside and outside urban areas – particularly to signal overtaking intention.',
+        },
+        {
+          topic: 'Overtaking',
+          q: 'Overtaking on the right is permitted in urban roads with how many lanes same direction?',
+          opts: [
+            'Not permitted in urban areas',
+            'When there are at least 2 lanes same direction, bordered by markings',
+            'Only on one-way streets',
+            'Only when the left lane is blocked',
+          ],
+          ans: 1,
+          exp: 'Art. 82.2/82.3: overtaking on the right is permitted inside built-up areas on roads with at least two lanes reserved for the same direction, bordered by longitudinal road markings.',
+        },
+        {
+          topic: 'Forbidden Overtaking',
+          q: 'At a pedestrian crossing, overtaking is:',
+          opts: [
+            'Always completely forbidden',
+            'Permitted if no pedestrians are visible',
+            'Permitted only if at a speed allowing complete stop if a pedestrian appeared',
+            'Forbidden only for heavy vehicles',
+          ],
+          ans: 2,
+          exp: 'At pedestrian crossings, overtaking is forbidden UNLESS you are travelling at a speed that would allow you to stop completely if a pedestrian appeared.',
+        },
+        {
+          topic: 'U-Turn',
+          q: 'Waiting to perform a U-turn is blocking following traffic. What must you do?',
+          opts: [
+            'Continue waiting until a safe gap appears',
+            'Exit the carriageway to the right temporarily until you can perform the manoeuvre',
+            'Sound the horn and wait',
+            'Apply hazard lights and wait',
+          ],
+          ans: 1,
+          exp: 'Art. 78: if waiting to perform the U-turn is blocking following traffic, the driver must exit the carriageway to the right and wait there until they can complete the manoeuvre without obstructing others.',
+        },
+        {
+          topic: 'Lane Change',
+          q: 'Is crossing a continuous line ever permitted?',
+          opts: [
+            'No – a continuous line can never be crossed',
+            "Yes – to overtake cyclists, mopeds, pedestrians, animals; to avoid stationary obstacle; access private property; comply with agent's order",
+            'Only to access private property',
+            'Only on roads under 60 km/h limit',
+          ],
+          ans: 1,
+          exp: 'Although the general rule forbids crossing a continuous line, Arts. 87–88 RGC permit it to pass slow/vulnerable users or bypass stationary obstacles, provided all safety conditions are met.',
+        },
+        {
+          topic: 'Direction',
+          q: 'When turning left at an intersection, the centre of the junction must be kept on:',
+          opts: [
+            "The driver's right",
+            "The driver's LEFT (go around the right side of the junction)",
+            'Directly in front',
+            'Behind the driver',
+          ],
+          ans: 1,
+          exp: "Art. 75: when turning left at an intersection, the centre of the junction must be kept to the driver's LEFT.",
+        },
+        {
+          topic: 'Reversing',
+          q: 'When reversing as a complementary manoeuvre: may you invade an intersection?',
+          opts: [
+            'Yes – always permitted',
+            'No – the vehicle CANNOT invade an intersection (cruce de vías)',
+            'Only if the intersection is clear',
+            'Only if reversing less than 5 m',
+          ],
+          ans: 1,
+          exp: 'Art. 81: when reversing as a complementary manoeuvre, the vehicle cannot invade an intersection. Only when forward movement is completely impossible may a junction be invaded.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'A bus stop that is properly signposted and marked is:',
+          opts: [
+            'A parking-only prohibition',
+            'Both stopping AND parking are forbidden at all times',
+            'A loading/unloading zone',
+            'Only prohibited during service hours',
+          ],
+          ans: 1,
+          exp: 'Art. 94.1: public transport stops that are properly signposted and marked are in the list of places where BOTH stopping and parking are forbidden at all times.',
+        },
+        {
+          topic: 'Stop & Park',
+          q: 'Parking on a cycle lane is:',
+          opts: [
+            'A minor infraction (leve) – 80 €',
+            'A serious infraction (grave) – 200 €',
+            'A very serious infraction (muy grave) – 500 €',
+            'Not an infraction unless cyclists are present',
+          ],
+          ans: 1,
+          exp: 'Parking or stopping on a cycle lane, cycle path or cycle crossing is a GRAVE (serious) infraction – 200 €.',
+        },
+        {
+          topic: 'Joining Traffic',
+          q: 'Which law reference covers the bus joining traffic rule?',
+          opts: [
+            'Art. 74.2 RGC',
+            'Art. 73.2 RGC',
+            'Art. 75.1 RGC',
+            'Art. 82.1 RGC',
+          ],
+          ans: 1,
+          exp: 'The bus incorporation rule is Art. 73.2 RGC. A very common exam trap says Art. 74.2 – this is wrong. Art. 73.2 is the correct reference.',
+        },
+      ];
+    </script>
+    <script>
+      // Tab switching
+      document.querySelectorAll('.tab-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document
+            .querySelectorAll('.tab-btn')
+            .forEach((b) => b.classList.remove('active'));
+          document
+            .querySelectorAll('.tab-panel')
+            .forEach((p) => p.classList.remove('active'));
+          btn.classList.add('active');
+          document
+            .getElementById('tab-' + btn.dataset.tab)
+            .classList.add('active');
+          window.scrollTo(0, 0);
+        });
+      });
+
+      // Quiz engine
+      let qCur = 0,
+        qScore = 0,
+        qAnswered = false;
+      const questions = window.QUIZ_QUESTIONS || [];
+      function initQuiz() {
+        qCur = 0;
+        qScore = 0;
+        qAnswered = false;
+        if (!questions.length) return;
+        document.getElementById('quiz-result').style.display = 'none';
+        document.getElementById('quiz-body').style.display = 'block';
+        renderQuestion();
+        updateProgress();
+      }
+      function renderQuestion() {
+        if (qCur >= questions.length) {
+          showResult();
+          return;
+        }
+        const q = questions[qCur];
+        document.getElementById('q-num').textContent =
+          'Question ' +
+          (qCur + 1) +
+          ' of ' +
+          questions.length +
+          ' · ' +
+          q.topic;
+        document.getElementById('q-text').textContent = q.q;
+        const cont = document.getElementById('q-options');
+        cont.innerHTML = '';
+        q.opts.forEach((opt, i) => {
+          const b = document.createElement('button');
+          b.className = 'option-btn';
+          b.textContent = String.fromCharCode(65 + i) + '. ' + opt;
+          b.addEventListener('click', () => pickAnswer(i, b, q));
+          cont.appendChild(b);
+        });
+        document.getElementById('q-exp').style.display = 'none';
+        document.getElementById('q-exp').textContent = '';
+        qAnswered = false;
+        document.getElementById('btn-next').disabled = true;
+        updateProgress();
+      }
+      function pickAnswer(i, btn, q) {
+        if (qAnswered) return;
+        qAnswered = true;
+        const btns = document.querySelectorAll('#q-options .option-btn');
+        btns.forEach((b) => (b.disabled = true));
+        if (i === q.ans) {
+          btn.classList.add('correct');
+          qScore++;
+        } else {
+          btn.classList.add('wrong');
+          btns[q.ans].classList.add('reveal');
+        }
+        const exp = document.getElementById('q-exp');
+        exp.textContent = q.exp;
+        exp.style.display = 'block';
+        document.getElementById('btn-next').disabled = false;
+        document.getElementById('score-display').textContent =
+          qScore + '/' + (qCur + 1);
+      }
+      function updateProgress() {
+        const pct = questions.length
+          ? Math.round((qCur / questions.length) * 100)
+          : 0;
+        document.getElementById('progress-fill').style.width = pct + '%';
+        document.getElementById('q-page').textContent =
+          qCur + 1 + ' / ' + questions.length;
+      }
+      function showResult() {
+        document.getElementById('quiz-body').style.display = 'none';
+        const res = document.getElementById('quiz-result');
+        res.style.display = 'block';
+        const pct = Math.round((qScore / questions.length) * 100);
+        document.getElementById('res-num').textContent = qScore;
+        document.getElementById('res-den').textContent = questions.length;
+        let msg = '',
+          cls = '';
+        if (pct >= 90) {
+          msg = 'Outstanding! Exam-ready.';
+          cls = 'background:var(--green-light);color:var(--green)';
+        } else if (pct >= 75) {
+          msg = 'Very good – almost there!';
+          cls = 'background:var(--blue-light);color:var(--blue)';
+        } else if (pct >= 60) {
+          msg = 'Good progress – keep studying.';
+          cls = 'background:var(--gold-light);color:var(--gold-dark)';
+        } else {
+          msg = 'Needs more revision.';
+          cls = 'background:var(--red-light);color:var(--red)';
+        }
+        document.getElementById('res-msg').textContent = msg;
+        document.getElementById('res-grade').style.cssText = cls;
+        document.getElementById('res-grade').textContent = pct + '%';
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        initQuiz();
+        document.getElementById('btn-next').addEventListener('click', () => {
+          qCur++;
+          renderQuestion();
+        });
+        document
+          .getElementById('btn-restart')
+          .addEventListener('click', initQuiz);
+      });
+    </script>
+  </body>
+</html>
