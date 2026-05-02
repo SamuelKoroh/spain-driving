@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 5 – Using the Vehicle | Spanish Driving Theory (Licence B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
+.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
+.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
+.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
+.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
+.header-meta{display:flex;gap:24px;margin-top:16px}
+.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
+.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
+.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
+.tab-bar::-webkit-scrollbar{display:none}
+.tab-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 18px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
+.tab-btn:hover{color:rgba(255,255,255,0.85)}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+.content{padding:32px 40px;max-width:960px;margin:0 auto}
+.tab-panel{display:none}.tab-panel.active{display:block}
+.section-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
+.section-desc{color:var(--text-muted);font-size:14px;margin-bottom:24px;margin-top:4px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
+.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.card-title .icon{width:28px;height:28px;background:var(--gold-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.card p{color:var(--text-muted);font-size:14px;line-height:1.6}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+@media(max-width:700px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+.def-block{border-left:3px solid var(--gold);padding:12px 16px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:12px}
+.def-block .term{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.def-block .def{font-size:13px;color:var(--text-muted)}
+.def-block.green{border-left-color:var(--green);background:var(--green-light)}
+.def-block.blue{border-left-color:var(--blue);background:var(--blue-light)}
+.def-block.red{border-left-color:var(--red);background:var(--red-light)}
+.styled-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
+.styled-table th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
+.styled-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
+.styled-table tr:last-child td{border-bottom:none}
+.styled-table tr:hover td{background:var(--bg)}
+.styled-table td:first-child{font-weight:600;color:var(--navy)}
+.badge{display:inline-block;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:2px 8px;border-radius:20px}
+.badge-gold{background:var(--gold-light);color:var(--gold-dark)}
+.badge-green{background:var(--green-light);color:var(--green)}
+.badge-blue{background:var(--blue-light);color:var(--blue)}
+.badge-red{background:var(--red-light);color:var(--red)}
+.badge-navy{background:var(--navy);color:#fff}
+.highlight{border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:16px;font-size:13px}
+.highlight.important{border-left:4px solid var(--red);background:var(--red-light)}
+.highlight.tip{border-left:4px solid var(--green);background:var(--green-light)}
+.highlight.info{border-left:4px solid var(--blue);background:var(--blue-light)}
+.highlight.warn{border-left:4px solid var(--gold);background:var(--gold-light)}
+.highlight .hi-title{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px}
+.highlight.important .hi-title{color:var(--red)}
+.highlight.tip .hi-title{color:var(--green)}
+.highlight.info .hi-title{color:var(--blue)}
+.highlight.warn .hi-title{color:var(--gold-dark)}
+.highlight p,.highlight li{color:var(--text-muted);line-height:1.6}
+.highlight ul{padding-left:18px;margin-top:4px}
+.highlight li{margin-bottom:3px}
+.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.quiz-header h3{font-size:18px;color:#fff}
+.quiz-progress{display:flex;align-items:center;gap:12px}
+.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
+.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
+.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
+.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
+.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
+.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
+.options{display:flex;flex-direction:column;gap:8px}
+.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
+.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
+.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
+.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
+.option-btn:disabled{cursor:default}
+.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
+.quiz-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
+.btn:active{transform:scale(0.97)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
+.btn:hover{opacity:0.88}
+.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
+.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
+.result-score span{color:var(--gold)}
+.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
+.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
+.qr-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px}
+.qr-row:last-child{border-bottom:none}
+.qr-key{font-weight:600;color:var(--navy);min-width:220px;flex-shrink:0}
+.qr-val{color:var(--text-muted);flex:1}
+.subsection{margin-bottom:28px}
+.subsection h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.subsection h3::before{content:'';display:block;width:3px;height:16px;background:var(--gold);border-radius:2px}
+.number-fact{text-align:center;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.number-fact .num{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--navy)}
+.number-fact .unit{font-size:12px;color:var(--gold-dark);font-weight:600}
+.number-fact .desc{font-size:11px;color:var(--text-light);margin-top:3px}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px}
+.quiz-page-info{font-size:13px;color:var(--text-light)}
+ul.check-list{list-style:none;padding:0}
+ul.check-list li{padding:4px 0 4px 22px;position:relative;font-size:14px;color:var(--text-muted)}
+ul.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+ul.check-list li.no::before{content:'✗';color:var(--red)}
+.step-box{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-text{font-size:14px;color:var(--text-muted);flex:1;padding-top:4px}
+@media(max-width:600px){.content{padding:20px 16px}.header{padding:20px 16px}}
+</style>
+</head><body>
+<div class="header">
+  <div class="header-badge">Permiso B – Teoría</div>
+  <h1>Chapter 5: Using the Vehicle</h1>
+  <p>Complete study guide for the Spanish Driving Theory Examination</p>
+  <div class="header-meta">
+    <div class="header-stat"><div class="val">8</div><div class="lbl">Study sections</div></div>
+    <div class="header-stat"><div class="val">27</div><div class="lbl">V-codes covered</div></div>
+    <div class="header-stat"><div class="val">50</div><div class="lbl">Quiz questions</div></div>
+    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
+  </div>
+</div>
+<div class="tab-bar">
+  <button class="tab-btn active" data-tab="passengers">Passengers</button>
+  <button class="tab-btn" data-tab="seatbelts">Seat Belts</button>
+  <button class="tab-btn" data-tab="childseats">Child Seats</button>
+  <button class="tab-btn" data-tab="helmets">Helmets</button>
+  <button class="tab-btn" data-tab="load">Load Rules</button>
+  <button class="tab-btn" data-tab="dimensions">Dimensions &amp; Overhang</button>
+  <button class="tab-btn" data-tab="doors">Doors</button>
+  <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
+</div>
+<div class="content">
+
+<div class="tab-panel active" id="tab-passengers">
+  <div class="section-title">Passenger Transportation</div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Max passengers permitted</span><span class="qr-val">Equal to number of seats — each person occupies one seat regardless of age</span></div>
+    <div class="qr-row"><span class="qr-key">Where to find seat count and MAM</span><span class="qr-val">Technical inspection certificate (ITV) and driving licence</span></div>
+    <div class="qr-row"><span class="qr-key">Outside designated passenger compartment</span><span class="qr-val">FORBIDDEN</span></div>
+    <div class="qr-row"><span class="qr-key">Passengers in a trailer</span><span class="qr-val">FORBIDDEN under any circumstances whatsoever</span></div>
+    <div class="qr-row"><span class="qr-key">Vehicles with passengers AND load simultaneously</span><span class="qr-val">Must carry suitable protection to prevent load becoming a projectile injuring passengers</span></div>
+  </div>
+  <div class="subsection"><h3>Motorcycles &amp; Mopeds — Passenger Rules</h3>
+    <table class="styled-table">
+      <thead><tr><th>Condition</th><th>Requirement</th></tr></thead>
+      <tbody>
+        <tr><td>Maximum extra passengers</td><td>ONE passenger maximum (beside sidecar)</td></tr>
+        <tr><td>Licence condition</td><td>Driving licence must clearly specify carrying a passenger is permitted</td></tr>
+        <tr><td>Minimum passenger age</td><td>At least <strong>12 years old</strong></td></tr>
+        <tr><td>Exception to 12-year rule</td><td>A <strong>7-year-old</strong> may travel if their father, mother, tutor, or authorised person is driving</td></tr>
+        <tr><td>Seating position</td><td>Must sit BEHIND the driver on the saddle — straddling, with feet on foot pegs</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid-2">
+    <div class="def-block green"><div class="term">Bicycle passenger rule</div><div class="def">Driver over 18 may carry a minor up to 7 years old in an approved additional seat fixed to the bicycle.</div></div>
+    <div class="def-block blue"><div class="term">PMV (e-scooter) driver</div><div class="def">Obliged to wear a protective helmet. No passengers permitted on PMVs.</div></div>
+  </div>
+  <div class="highlight warn"><div class="hi-title">Vehicles with more than 9 seats — information obligation</div><p>The driver, guide or person in charge must inform passengers of the seatbelt obligation — by audiovisual means, signs or pictograms on each seat.</p></div>
+</div>
+
+<div class="tab-panel" id="tab-seatbelts">
+  <div class="section-title">Seat Belts — Obligations &amp; Exemptions</div>
+  <div class="highlight info"><div class="hi-title">General rule: mandatory on BOTH urban AND interurban roads</div><p>All drivers and passengers must wear properly fastened authorised seat belts. Penalty: 200 € + 3 puntos.</p></div>
+  <div class="subsection"><h3>Seat belt exemptions — ONLY inside urban areas (NOT on motorways, dual carriageways, or travesías)</h3>
+    <ul class="check-list">
+      <li>Drivers reversing or parking</li>
+      <li>Drivers with a medical exemption certificate</li>
+      <li>Goods delivery handlers on short distances for loading/unloading</li>
+      <li>Drivers and passengers of emergency response vehicles</li>
+      <li>Taxi drivers on duty in built-up areas</li>
+      <li>Persons under 135 cm tall in a REAR seat (must use child restraint instead)</li>
+      <li>Instructors/examiners responsible for additional vehicle controls during tuition or test</li>
+    </ul>
+  </div>
+  <div class="highlight important"><div class="hi-title">⛔ Key exam trap — on motorways, dual carriageways and travesías:</div><p>ALL exemptions cease. Taxi drivers, delivery handlers, emergency vehicle passengers — EVERYONE must wear the belt on these roads, no exceptions.</p></div>
+</div>
+
+<div class="tab-panel" id="tab-childseats">
+  <div class="section-title">Child Restraint Systems — Under 135 cm</div>
+  <div class="highlight warn"><div class="hi-title">General rule</div><p>Children under 135 cm of age ≥ 3 years must use an authorised child restraint system adapted to their size and weight — in the REAR SEAT.</p></div>
+  <div class="subsection"><h3>Exceptional cases to allow front seat</h3>
+    <ul class="check-list">
+      <li>Vehicle has NO rear seats</li>
+      <li>ALL rear seats are already occupied by minors under 135 cm</li>
+      <li>It is not possible to install all child restraint systems in the rear seats</li>
+    </ul>
+  </div>
+  <div class="highlight important"><div class="hi-title">⛔ Rear-facing child seat + front airbag</div><p>If the child is in the front seat in a REAR-FACING child restraint and there is a front passenger airbag — the airbag MUST be DEACTIVATED. A deployed airbag against a rear-facing child can cause fatal injuries.</p></div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Child under 3 years old</span><span class="qr-val">MUST use child restraint system — NO exceptions. Cannot use regular seat belt.</span></div>
+    <div class="qr-row"><span class="qr-key">Child 3+ years under 135 cm — no child seat available</span><span class="qr-val">Use the appropriate regular safety belt</span></div>
+    <div class="qr-row"><span class="qr-key">Who is responsible for child restraint</span><span class="qr-val">The DRIVER — regardless of whether they are the child's parent. 200 € + 3 puntos.</span></div>
+    <div class="qr-row"><span class="qr-key">Forward-facing seat + active front airbag</span><span class="qr-val">Permitted — airbag deactivation only required for REAR-FACING seats</span></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-helmets">
+  <div class="section-title">Helmets — Obligations &amp; Exemptions</div>
+  <div class="subsection"><h3>Vehicles requiring helmets</h3>
+    <table class="styled-table">
+      <thead><tr><th>Vehicle</th><th>Obligation</th></tr></thead>
+      <tbody>
+        <tr><td>Motorcycles with or without sidecar</td><td>MANDATORY — driver and passenger</td></tr>
+        <tr><td>Three-wheeled motorised vehicles, light four-wheeled vehicles</td><td>MANDATORY</td></tr>
+        <tr><td>Mopeds, Quad bikes</td><td>MANDATORY</td></tr>
+        <tr><td>Bicycles on INTERURBAN roads</td><td>MANDATORY — except medical reasons, prolonged uphill, or extremely hot conditions</td></tr>
+        <tr><td>Youths under 16 years old</td><td>MANDATORY without exception — regardless of road type</td></tr>
+        <tr><td>PMV (e-scooter) drivers</td><td>MANDATORY</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight tip"><div class="hi-title">Helmet exemption — self-protective devices</div><p>When a vehicle is fitted with BOTH self-protective devices AND seat belts, AND BOTH are acknowledged by the ITV certificate — drivers and passengers are exempt from the helmet and must wear the seat belt instead.</p></div>
+  <div class="grid-2">
+    <div class="def-block"><div class="term">Youths under 16 — urban road</div><div class="def">MANDATORY without exception — unlike adults over 16 who only need helmets on interurban roads.</div></div>
+    <div class="def-block green"><div class="term">Cyclists over 16 on urban roads</div><div class="def">Helmet RECOMMENDED but NOT legally mandatory.</div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-load">
+  <div class="section-title">Goods &amp; Load Transportation</div>
+  <div class="subsection"><h3>Loading/unloading rules</h3>
+    <ul class="check-list">
+      <li>Must take place OFF the road as a general rule</li>
+      <li>If on the road is necessary: take place on the side nearest to the kerb</li>
+      <li>Immobilise the vehicle properly</li>
+      <li class="no">STRICTLY FORBIDDEN to deposit goods on road, hard shoulder or pedestrian areas</li>
+      <li>Complete in as little time as possible</li>
+    </ul>
+  </div>
+  <div class="subsection"><h3>Load accommodation — what the load must NOT do</h3>
+    <ul class="check-list">
+      <li class="no">Compromise vehicle stability</li>
+      <li class="no">Obscure lighting, number plates, or driver signals</li>
+      <li class="no">Become prone to dragging, falling off, or moving dangerously</li>
+      <li class="no">Produce noise, dust or inconveniences (dusty/at-risk loads must be COMPLETELY covered)</li>
+    </ul>
+  </div>
+  <div class="subsection"><h3>Motorcycles &amp; mopeds towing trailers</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Max trailer MAM</span><span class="qr-val">Must NOT exceed 50% of the motorcycle's unladen weight</span></div>
+      <div class="qr-row"><span class="qr-key">Visibility</span><span class="qr-val">Daytime only, conditions that do not compromise visibility</span></div>
+      <div class="qr-row"><span class="qr-key">Speed reduction</span><span class="qr-val">Reduce by approximately 10% of generic speed limit on interurban roads</span></div>
+      <div class="qr-row"><span class="qr-key">Passengers in trailer</span><span class="qr-val">NEVER allowed — under any circumstances whatsoever</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-dimensions">
+  <div class="section-title">Dimensions, Overhang &amp; Vehicle Markings</div>
+  <div class="subsection"><h3>Maximum vehicle dimensions (including load)</h3>
+    <div class="grid-4">
+      <div class="number-fact"><div class="num">12m</div><div class="unit">Length</div><div class="desc">Motor vehicles &amp; standard trailers</div></div>
+      <div class="number-fact"><div class="num">2.55m</div><div class="unit">Width</div><div class="desc">General (2.60 m for isothermic/prisoner)</div></div>
+      <div class="number-fact"><div class="num">4m</div><div class="unit">Height</div><div class="desc">General (4.20 urban buses; 4.50 m carriers)</div></div>
+      <div class="number-fact"><div class="num">18.75m</div><div class="unit">Length</div><div class="desc">Road trains (maximum)</div></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Load overhang rules</h3>
+    <table class="styled-table">
+      <thead><tr><th>Vehicle type</th><th>Divisible load</th><th>Indivisible load (rear)</th></tr></thead>
+      <tbody>
+        <tr><td>Non-goods (cars, caravans)</td><td>Up to 10% of vehicle total length</td><td>Up to 15% of vehicle total length</td></tr>
+        <tr><td>Goods vehicles — under 5 m long</td><td>CANNOT overhang</td><td>1/3 front + 1/3 rear</td></tr>
+        <tr><td>Goods vehicles — over 5 m long</td><td>CANNOT overhang</td><td>2 m front + 3 m rear</td></tr>
+        <tr><td>Motorcycles / mopeds (&lt;1 m wide)</td><td>N/A</td><td>0.25 m rear · 0.50 m each side · ZERO front</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="subsection"><h3>Key Vehicle Markings (V-codes)</h3>
+    <table class="styled-table">
+      <thead><tr><th>Code</th><th>Name</th><th>Key detail</th></tr></thead>
+      <tbody>
+        <tr><td>V-13</td><td>New driver</td><td>GREEN L-plate. Licence less than 1 year old.</td></tr>
+        <tr><td>V-14</td><td>Learner driver</td><td>White/Red L-plate. Driving tuition or practical test.</td></tr>
+        <tr><td>V-15</td><td>Disabled person</td><td>Front and rear. Allows HOV lane use solo.</td></tr>
+        <tr><td>V-16</td><td>Danger pre-signalling device</td><td>Amber beacon. Mandatory from 1 Jan 2026. Replaces triangles. Placed on ROOF.</td></tr>
+        <tr><td>V-20</td><td>Oversized end marker</td><td>Inverted chevron stripes. Signals overhanging load at rear.</td></tr>
+        <tr><td>V-25</td><td>Environmental badge</td><td>Lower RIGHT-hand corner of front windshield. Voluntary placement.</td></tr>
+        <tr><td>V-26</td><td>Shared use badge</td><td>Upper LEFT-hand corner of front windshield. Driverless rental vehicles.</td></tr>
+        <tr><td>V-5</td><td>Slow vehicle</td><td>Vehicle by construction cannot exceed 40 km/h. Red inverted triangle.</td></tr>
+        <tr><td>V-6</td><td>Large vehicle</td><td>Vehicle or combination exceeding 12 m in length.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-doors">
+  <div class="section-title">Doors — Rules</div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Normal door to use for getting on/off</span><span class="qr-val">Door NEAREST TO THE KERB — general rule</span></div>
+    <div class="qr-row"><span class="qr-key">Driving with doors open</span><span class="qr-val">PROHIBITED</span></div>
+    <div class="qr-row"><span class="qr-key">Opening door before fully immobilised</span><span class="qr-val">PROHIBITED</span></div>
+    <div class="qr-row"><span class="qr-key">Alighting without checking safety</span><span class="qr-val">PROHIBITED — must check for cyclists and other users</span></div>
+    <div class="qr-row"><span class="qr-key">Special attention when opening doors</span><span class="qr-val">Especially regarding CYCLISTS — most at risk from being 'doored'</span></div>
+  </div>
+  <div class="highlight tip"><div class="hi-title">Dutch reach technique (best practice)</div><p>Open the door with the FAR hand — forces your body to turn and look for approaching cyclists before fully opening the door.</p></div>
+</div>
+
+<div class="tab-panel" id="tab-quiz">
+  <div class="quiz-header">
+    <h3>Chapter 5 Quiz — 50 Questions</h3>
+    <div class="quiz-progress">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <div class="score-display" id="score-display">0/0</div>
+    </div>
+  </div>
+  <div id="quiz-body">
+    <div class="question-card">
+      <div class="question-num" id="q-num"></div>
+      <div class="question-text" id="q-text"></div>
+      <div class="options" id="q-options"></div>
+      <div class="explanation" id="q-exp"></div>
+    </div>
+    <div class="quiz-nav">
+      <div class="quiz-page-info" id="q-page"></div>
+      <div class="quiz-controls">
+        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
+        <button class="btn btn-outline" id="btn-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <div class="quiz-result" id="quiz-result">
+    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">50</span></div>
+    <div class="result-msg" id="res-msg"></div>
+    <div class="result-grade" id="res-grade"></div>
+    <button class="btn btn-gold" onclick="initQuiz()">Try Again</button>
+  </div>
+</div>
+</div>
+<script>
+window.QUIZ_QUESTIONS=[
+{topic:"Passengers",q:"The number of passengers must not exceed the number of seats. Each person occupies one seat...",opts:["Except children under 3 — two may share","Regardless of age — always one seat per person","Except for children under 135 cm who may share","Only if the vehicle's MAM is not exceeded"],ans:1,exp:"Each person occupies one seat regardless of age. Also, the MAM must not be exceeded — the weight of passengers and luggage must not be overlooked."},
+{topic:"Passengers",q:"Minimum age for a motorcycle passenger?",opts:["7 years old","10 years old","12 years old — with exception for 7-year-olds if parent/tutor is the driver","16 years old"],ans:2,exp:"Motorcycle passengers must be at least 12 years old. Exception: a 7-year-old may travel if their father, mother, tutor or authorised person is driving."},
+{topic:"Passengers",q:"How must a passenger sit on a motorcycle?",opts:["Side-saddle if preferred","Behind the driver, straddling with feet on foot pegs","In front of the driver if smaller","In any comfortable position"],ans:1,exp:"The passenger must sit BEHIND the driver on the saddle — straddling the bike, with feet on the foot pegs. Side-saddle is forbidden."},
+{topic:"Passengers",q:"A cyclist aged 19 wants to carry their 5-year-old on the bicycle. Is this permitted?",opts:["No — bicycles may never carry children","Yes — a cyclist over 18 may carry a minor up to 7 years in an approved additional seat","Only if riding on a cycle path","Only if both wear helmets"],ans:1,exp:"A bicycle driver over 18 may carry a minor up to 7 years old as long as the child is properly seated in an approved additional seat fixed to the bicycle."},
+{topic:"Passengers",q:"Carrying passengers in a trailer is:",opts:["Permitted if the trailer has seats and seat belts","Permitted only for children under 12","FORBIDDEN under any circumstances whatsoever","Permitted if speed does not exceed 30 km/h"],ans:2,exp:"Carrying passengers in a trailer is FORBIDDEN under any circumstances whatsoever. No exceptions exist."},
+{topic:"Seat Belts",q:"Seat belts are compulsory on urban roads as well as interurban roads?",opts:["Only on interurban roads","Only on motorways and dual carriageways","Yes — mandatory for driver and all passengers on BOTH urban and interurban roads","Only for front-seat occupants in urban areas"],ans:2,exp:"Seat belts are mandatory for the driver and all passengers on BOTH urban and interurban roads."},
+{topic:"Seat Belts",q:"A taxi driver is on duty in a built-up urban area. Must they wear a seat belt?",opts:["Yes — no exemptions for taxi drivers","No — taxi drivers on duty in built-up areas are specifically EXEMPT","Only if carrying a passenger","Only at night"],ans:1,exp:"Taxi drivers on duty in built-up areas are EXEMPT from the seat belt obligation — but ONLY in urban areas. On motorways, dual carriageways, and travesías, even taxi drivers must belt up."},
+{topic:"Seat Belts",q:"On a MOTORWAY, does the taxi driver exemption apply?",opts:["Yes — taxi drivers are always exempt on duty","No — on motorways all seat belt exemptions cease. Everyone must wear the belt.","Only for the driver — passengers must still belt up","Only if the taxi is carrying a fare-paying passenger"],ans:1,exp:"All seat belt exemptions (taxi drivers, delivery handlers, emergency vehicles) ONLY apply in urban areas. On motorways, dual carriageways, and conventional roads going through communities, ALL exemptions cease."},
+{topic:"Seat Belts",q:"A driver is reversing into a parking space. Must they wear a seat belt?",opts:["Yes — always when the engine is running","No — drivers reversing or parking are specifically EXEMPT","Only on interurban roads","Only if reversing more than 15 metres"],ans:1,exp:"Drivers reversing or parking are specifically listed as exempt from the seat belt obligation."},
+{topic:"Child Seats",q:"A child under 135 cm — normal position in a vehicle with up to 9 seats?",opts:["Front seat for driver supervision","REAR seat in an authorised child restraint system adapted to size and weight","Either seat equally","Only in the centre rear seat"],ans:1,exp:"Children under 135 cm must be placed in the REAR SEAT in an authorised child restraint system. They may only sit in the front in exceptional circumstances."},
+{topic:"Child Seats",q:"Three exceptional cases allowing a child under 135 cm in the FRONT seat:",opts:["Parent's preference, short journeys, or motorway driving","Vehicle has no rear seats; all rear seats occupied by minors under 135 cm; or impossible to install all CRS in rear","Only if all windows are closed","Any time the parent is driving"],ans:1,exp:"Three exceptions: (1) vehicle has no rear seats; (2) all rear seats already occupied by minors under 135 cm; (3) not possible to install all child restraint systems in the rear seats."},
+{topic:"Child Seats",q:"Rear-facing child seat in the FRONT seat — front airbag present. What MUST happen?",opts:["Nothing — the airbag protects the child","The airbag MUST be DEACTIVATED — a deployed airbag against a rear-facing child can cause fatal injuries","Move the seat back as far as possible","Ensure the child weighs over 9 kg"],ans:1,exp:"If a rear-facing child restraint is used in the front seat and there is a front passenger airbag, the airbag MUST be deactivated. If deactivation is not possible, a rear-facing seat cannot be used in the front."},
+{topic:"Child Seats",q:"A child is 2 years old. Can they use a regular seat belt?",opts:["Yes — if the parent is present","Yes — at 90 cm a normal belt is adequate","No — children under 3 MUST use a child restraint system. No exceptions for under-3s.","Only on short journeys under 10 km"],ans:2,exp:"Children under 3 years old MUST use a child restraint system — no exceptions. The requirement continues until the child exceeds 135 cm in height."},
+{topic:"Child Seats",q:"Who is responsible if a passenger under 12 is not properly restrained?",opts:["The child's parent if they are a passenger","The vehicle owner","The DRIVER — regardless of relationship to the child","The vehicle manufacturer"],ans:2,exp:"The DRIVER is responsible for ensuring all passengers under 12 are properly restrained. The driver receives the penalty (200 € + 3 puntos) even if not related to the child."},
+{topic:"Helmets",q:"Which vehicles require helmets for both driver AND passenger?",opts:["Only motorcycles without sidecars","Motorcycles, mopeds, three-wheeled vehicles, light four-wheeled vehicles, quad bikes, and PMV drivers","Only mopeds under 125cc","Only open-road motorcycles"],ans:1,exp:"Approved helmets are mandatory for drivers and passengers of: motorcycles (with/without sidecar), mopeds, three-wheeled vehicles, light four-wheeled vehicles, and quad bikes. PMV drivers must also wear a helmet."},
+{topic:"Helmets",q:"A cyclist aged 14 rides on an urban road. Is a helmet compulsory?",opts:["Yes — all cyclists must wear helmets","Yes — youths under 16 must wear a helmet WITHOUT EXCEPTION, regardless of road type","No — helmets are only for cyclists on interurban roads","No — helmets are not required under 16 on urban roads"],ans:1,exp:"Youths under 16 must wear a helmet WITHOUT EXCEPTION, regardless of the road they are riding on — urban or interurban."},
+{topic:"Helmets",q:"A motorcycle has self-protective devices AND seat belts, both acknowledged by the ITV. Must the driver wear a helmet?",opts:["Yes — helmets always mandatory on motorcycles","No — when both devices are ITV-acknowledged, drivers are EXEMPT from the helmet and must wear the seat belt instead","Only if travelling over 90 km/h","Driver chooses either helmet or seat belt"],ans:1,exp:"When a vehicle is fitted with BOTH self-protective devices AND seat belts, acknowledged by the ITV, drivers and passengers are exempt from the helmet — they must wear the seat belt instead."},
+{topic:"Load",q:"Where must loading/unloading normally take place?",opts:["On the right-hand lane","On the hard shoulder","OFF the road as a general rule. If on the road is necessary, specific rules apply.","At any convenient point on the carriageway"],ans:2,exp:"Loading and unloading must take place OFF the road as a general rule. When necessary on the road: side nearest to the kerb; stop/park rules apply; as little time as possible."},
+{topic:"Load",q:"Is it permitted to deposit goods temporarily on the road or hard shoulder?",opts:["Yes — briefly while the vehicle is immobilised","Yes — if no pedestrians are present","No — strictly FORBIDDEN to deposit goods on road, hard shoulder, or pedestrian areas","Only if they are covered"],ans:2,exp:"It is STRICTLY FORBIDDEN to deposit any goods on the road, hard shoulder, or pedestrian areas."},
+{topic:"Load",q:"A motorcycle tows a trailer. Maximum trailer MAM allowed?",opts:["Equal to the motorcycle's unladen weight","50% of the motorcycle's unladen weight","25% of the total permitted mass","No trailer is permitted behind a motorcycle"],ans:1,exp:"Motorcycles may tow a trailer provided the trailer does NOT exceed 50% of the motorcycle's UNLADEN weight."},
+{topic:"Dimensions",q:"Maximum permitted length for a standard motor vehicle including load?",opts:["10 m","12 m","14 m","18 m"],ans:1,exp:"The general maximum length for motor vehicles and standard trailers is 12 metres. Road trains: 18.75 m; articulated: 16.50 m; semi-trailers: 14.04 m."},
+{topic:"Dimensions",q:"Maximum permitted width for a general vehicle?",opts:["2.00 m","2.20 m","2.55 m","3.00 m"],ans:2,exp:"The general maximum width is 2.55 metres. Exception: isothermic box vehicles and prisoner transport vehicles may be up to 2.60 m wide."},
+{topic:"Dimensions",q:"Maximum permitted height for a general vehicle?",opts:["3.50 m","3.80 m","4.00 m","4.50 m"],ans:2,exp:"The general maximum height is 4 metres. Exceptions: urban buses (4.20 m); vehicle carriers, containers, live animals, bales of straw, supplies (4.50 m)."},
+{topic:"Overhang",q:"A private car carries an indivisible surfboard overhanging the rear. Maximum permitted rear overhang?",opts:["10% of the vehicle's total length","15% of the vehicle's total length","25%","3 metres"],ans:1,exp:"For non-goods vehicles (cars, mixed, caravans): rear load may overhang up to 10% (divisible) or 15% (indivisible) of the vehicle's total length. Front and side overhanging are FORBIDDEN."},
+{topic:"Overhang",q:"A car carries a DIVISIBLE load that overhangs the rear. Maximum?",opts:["15% of the vehicle's total length","10% of the vehicle's total length","3 metres","Divisible loads cannot overhang on any vehicle"],ans:1,exp:"For non-goods vehicles: divisible loads may overhang up to 10% of the vehicle's total length. For goods vehicles (lorries, vans): divisible loads CANNOT overhang at all."},
+{topic:"Overhang",q:"A lorry over 5 m long carries an indivisible steel beam. Maximum overhang?",opts:["1/3 front and 1/3 rear","2 m front and 2 m rear","2 m front and 3 m rear","1 m front and 4 m rear"],ans:2,exp:"For goods vehicles over 5 metres in length: maximum 2 metres front overhang and 3 metres rear overhang — for INDIVISIBLE loads only."},
+{topic:"Overhang",q:"A motorcycle carries a rear overhanging load. Maximum permitted rear overhang?",opts:["0.10 m","0.25 m","0.50 m","1/3 of the motorcycle's length"],ans:1,exp:"For vehicles under 1 metre wide (motorcycles, mopeds): load may overhang 0.25 m to the rear and 0.50 m on each side. Load may NOT overhang at the front."},
+{topic:"V-codes",q:"What does the V-13 marking indicate?",opts:["A learner driver vehicle on practical test","Vehicle driven by someone whose licence is LESS than one year old — a new driver","A vehicle with a speed limitation","A taxi"],ans:1,exp:"V-13 (green L-plate) indicates a NEW DRIVER — someone whose driving licence is less than one year old. V-14 indicates a learner driver pursuing driving tuition or practical test."},
+{topic:"V-codes",q:"V-16 — from when is it mandatory?",opts:["Has always been mandatory","From 1 January 2024","From 1 January 2026 — replacing warning triangles","From 1 January 2028"],ans:2,exp:"V-16 is the amber luminous danger pre-signalling beacon (360° visibility). From 1 January 2026 it is MANDATORY — replacing warning triangles. Must be placed on the ROOF and activated from inside the cabin."},
+{topic:"V-codes",q:"Where must the V-25 environmental badge be placed?",opts:["Upper left corner of the front windshield","Lower RIGHT-hand corner of the front windshield","Centre of the rear windshield","Dashboard, driver's side"],ans:1,exp:"The V-25 environmental badge must be located in the LOWER RIGHT-HAND CORNER of the front windshield. Voluntary placement — but if used, this specific location is mandatory."},
+{topic:"V-codes",q:"V-5 marking on a vehicle means:",opts:["Vehicle is a slow vehicle by construction — cannot exceed 40 km/h","Vehicle is an obstacle on the road below 40 km/h","Vehicle is a special transport convoy","Vehicle has a speed limitation imposed by law"],ans:0,exp:"V-5 is the slow vehicle marking (red inverted triangle): identifies a motor vehicle or combination that by CONSTRUCTION cannot exceed 40 km/h."},
+{topic:"V-codes",q:"V-11 dangerous goods transport marking must be displayed:",opts:["Only at the rear","Only at the front","In pairs — one front AND one rear","On the sides only"],ans:2,exp:"V-11 (dangerous goods transport) must be displayed in PAIRS — one at the FRONT AND one at the REAR of the vehicle."},
+{topic:"V-codes",q:"V-15 badge allows its holder to:",opts:["Drive on the hard shoulder of motorways","Use HOV (VAO) lanes even when travelling alone without additional passengers","Exceed the speed limit by 10%","Park on cycle lanes"],ans:1,exp:"V-15 identifies a disabled person. Vehicles with V-15 are allowed to use HOV (VAO) lanes even with only the driver occupying the vehicle."},
+{topic:"Doors",q:"Through which door should passengers normally exit a vehicle?",opts:["The furthest door from the kerb — safer","The door closest to where they need to go","The door NEAREST TO THE KERB — general rule","The front passenger door only"],ans:2,exp:"Getting on and off must be through the door NEAREST TO THE KERB as a general rule. This minimises the risk of opening into passing traffic or cyclists."},
+{topic:"Doors",q:"Opening a car door before the vehicle is fully stopped is:",opts:["Permitted if using a mirror first","Permitted at speeds below 10 km/h","PROHIBITED","Only prohibited for the driver's door"],ans:2,exp:"It is prohibited to open vehicle doors before the vehicle is fully immobilised. Also prohibited: driving with doors open, and alighting without checking it does not endanger or obstruct other users."},
+{topic:"Doors",q:"When opening car doors, which road users require SPECIAL attention?",opts:["Pedestrians on crossings","CYCLISTS — most at risk from being struck by a carelessly opened door","Motorcyclists only","Bus passengers disembarking"],ans:1,exp:"The regulation specifically mentions CYCLISTS as requiring special attention when opening vehicle doors. A carelessly opened door in the path of a cyclist ('dooring') can cause serious injury or death."},
+{topic:"Load",q:"A dusty load on a lorry — what must be done?",opts:["Drive at reduced speed to prevent dust spreading","Use rear fog lamps to warn other drivers","The load must be COMPLETELY COVERED — all loads producing dust or at risk of falling must be fully covered","Report the transport to the DGT"],ans:2,exp:"All load producing dust or at risk of falling must be COMPLETELY COVERED. This is a mandatory requirement to prevent road hazards."},
+{topic:"Seat Belts",q:"A person is under 135 cm in the rear seat of an urban road. Are they exempt from wearing a seat belt?",opts:["Yes — they are exempt from the belt obligation in urban areas (must use child restraint instead)","No — they must wear the regular belt","Yes — no restriction applies to anyone under 135 cm","No — only adults can be exempt from the belt"],ans:0,exp:"Persons under 135 cm in a rear seat in urban areas are listed as exempt from the general seat belt obligation — they must use an authorised child restraint system instead. (Note: this exemption does NOT apply on motorways or travesías.)"},
+{topic:"Helmets",q:"A cyclist aged 30 on an interurban road in extreme heat — is helmet exemption allowed?",opts:["No — helmets always mandatory on interurban roads","Yes — extremely hot conditions that do not recommend use are one of the three exceptions for adult cyclists on interurban roads","Only with a medical certificate","Only on uphill sections"],ans:1,exp:"Adult cyclists on interurban roads may be exempt from the helmet in three cases: medical reasons, prolonged uphill ramps, or extremely hot conditions that do not recommend use."},
+{topic:"Overhang",q:"How must a rear-overhanging load be signalled at night?",opts:["Hazard lights only","V-20 marker only (same as daytime)","Front: white light. Rear: V-20 marker + red light. If width exceeds 0.40 m over vehicle width: white reflective front lights AND red reflective rear lights added.","No night signalling required for loads under 3 m overhang"],ans:2,exp:"Between sunset and sunrise: front: white light; rear: V-20 marker plus a red light. If the oversized load exceeds the vehicle's width by more than 0.40 m, white reflective front and red reflective rear lights must also be added."},
+{topic:"Passengers",q:"The driver of a PMV (e-scooter) — must they wear a helmet?",opts:["No — PMVs are not required to have helmets","Only at speeds over 25 km/h","Yes — the driver of a PMV is obliged to wear a protective helmet","Only if using a shared rental PMV"],ans:2,exp:"Yes. The driver of a personal mobility vehicle (PMV/VMP) is specifically OBLIGED to wear a protective helmet."},
+{topic:"V-codes",q:"V-26 shared use badge must be placed:",opts:["Lower right windshield","Upper LEFT-hand corner of the front windshield","Rear window, centre","Dashboard, passenger side"],ans:1,exp:"V-26 identifies a shared-use vehicle for driverless rental. It must be placed in the UPPER LEFT-HAND CORNER of the front windshield."},
+{topic:"V-codes",q:"V-6 'Large vehicle' marking is required when the vehicle exceeds:",opts:["10 metres in length","12 metres in length","3,500 kg MAM","2.55 m in width"],ans:1,exp:"V-6 must be displayed (visible from the rear) when a vehicle or combination of vehicles exceeds 12 metres in length."}
+];
+</script>
+<script>
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+    window.scrollTo(0,0);
+  });
+});
+
+// Quiz engine
+let qCur=0,qScore=0,qAnswered=false;
+const questions=window.QUIZ_QUESTIONS||[];
+function initQuiz(){
+  qCur=0;qScore=0;qAnswered=false;
+  if(!questions.length)return;
+  document.getElementById('quiz-result').style.display='none';
+  document.getElementById('quiz-body').style.display='block';
+  renderQuestion();
+  updateProgress();
+}
+function renderQuestion(){
+  if(qCur>=questions.length){showResult();return;}
+  const q=questions[qCur];
+  document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;
+  document.getElementById('q-text').textContent=q.q;
+  const cont=document.getElementById('q-options');
+  cont.innerHTML='';
+  q.opts.forEach((opt,i)=>{
+    const b=document.createElement('button');
+    b.className='option-btn';
+    b.textContent=String.fromCharCode(65+i)+'. '+opt;
+    b.addEventListener('click',()=>pickAnswer(i,b,q));
+    cont.appendChild(b);
+  });
+  document.getElementById('q-exp').style.display='none';
+  document.getElementById('q-exp').textContent='';
+  qAnswered=false;
+  document.getElementById('btn-next').disabled=true;
+  updateProgress();
+}
+function pickAnswer(i,btn,q){
+  if(qAnswered)return;
+  qAnswered=true;
+  const btns=document.querySelectorAll('#q-options .option-btn');
+  btns.forEach(b=>b.disabled=true);
+  if(i===q.ans){btn.classList.add('correct');qScore++;}
+  else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}
+  const exp=document.getElementById('q-exp');
+  exp.textContent=q.exp;
+  exp.style.display='block';
+  document.getElementById('btn-next').disabled=false;
+  document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);
+}
+function updateProgress(){
+  const pct=questions.length?Math.round(qCur/questions.length*100):0;
+  document.getElementById('progress-fill').style.width=pct+'%';
+  document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;
+}
+function showResult(){
+  document.getElementById('quiz-body').style.display='none';
+  const res=document.getElementById('quiz-result');
+  res.style.display='block';
+  const pct=Math.round(qScore/questions.length*100);
+  document.getElementById('res-num').textContent=qScore;
+  document.getElementById('res-den').textContent=questions.length;
+  let msg='',cls='';
+  if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}
+  else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}
+  else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}
+  else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}
+  document.getElementById('res-msg').textContent=msg;
+  document.getElementById('res-grade').style.cssText=cls;
+  document.getElementById('res-grade').textContent=pct+'%';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  initQuiz();
+  document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});
+  document.getElementById('btn-restart').addEventListener('click',initQuiz);
+});
+</script>
+</body></html>

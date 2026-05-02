@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 7 – Road Accidents & Intervening Factors | Spanish Driving Theory</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--orange:#d16a0d;--orange-light:#faeadb;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--radius:8px;--radius-lg:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+h1,h2,h3,h4{font-family:'Syne',sans-serif}
+.header{background:var(--navy);color:#fff;padding:24px 36px 20px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-20px;right:-30px;width:180px;height:180px;border:35px solid rgba(232,160,32,0.1);border-radius:50%}
+.badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:8px}
+.header h1{font-size:24px;font-weight:700;color:#fff;margin-bottom:3px}
+.header p{font-size:13px;color:rgba(255,255,255,0.6);font-weight:300}
+.header-stats{display:flex;gap:20px;margin-top:14px;flex-wrap:wrap}
+.hstat .val{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--gold)}
+.hstat .lbl{font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px}
+.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 20px;overflow-x:auto;scrollbar-width:none}
+.tab-bar::-webkit-scrollbar{display:none}
+.tab-btn{background:none;border:none;color:rgba(255,255,255,0.45);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;padding:11px 14px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
+.tab-btn:hover{color:rgba(255,255,255,0.8)}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+.content{padding:28px 36px;max-width:960px;margin:0 auto}
+.tab-panel{display:none}.tab-panel.active{display:block}
+.sec-title{font-family:'Syne',sans-serif;font-size:19px;font-weight:700;color:var(--navy);margin-bottom:5px;padding-bottom:7px;border-bottom:2px solid var(--gold);display:inline-block}
+.sec-desc{color:var(--text-muted);font-size:13px;margin-bottom:22px;margin-top:4px}
+.sub{margin-bottom:26px}
+.sub h3{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.sub h3::before{content:'';display:block;width:3px;height:14px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin-bottom:14px}
+.card-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:7px}
+.card-title .ico{width:26px;height:26px;background:var(--gold-light);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.card p,.card li{color:var(--text-muted);font-size:13px;line-height:1.6}
+.card ul{padding-left:16px;margin-top:4px}
+.card li{margin-bottom:3px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+@media(max-width:680px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+.def{border-left:3px solid var(--gold);padding:10px 14px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:10px}
+.def.green{border-left-color:var(--green);background:var(--green-light)}
+.def.blue{border-left-color:var(--blue);background:var(--blue-light)}
+.def.red{border-left-color:var(--red);background:var(--red-light)}
+.def.orange{border-left-color:var(--orange);background:var(--orange-light)}
+.def .term{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.def .body{font-size:12.5px;color:var(--text-muted);line-height:1.55}
+.hi{border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;margin-bottom:14px;font-size:13px}
+.hi.imp{border-left:4px solid var(--red);background:var(--red-light)}
+.hi.tip{border-left:4px solid var(--green);background:var(--green-light)}
+.hi.info{border-left:4px solid var(--blue);background:var(--blue-light)}
+.hi.warn{border-left:4px solid var(--orange);background:var(--orange-light)}
+.hi-title{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+.hi.imp .hi-title{color:var(--red)}.hi.tip .hi-title{color:var(--green)}.hi.info .hi-title{color:var(--blue)}.hi.warn .hi-title{color:var(--orange)}
+.hi p,.hi li{color:var(--text-muted);line-height:1.6}.hi ul{padding-left:16px;margin-top:4px}.hi li{margin-bottom:3px}
+.tbl{width:100%;border-collapse:collapse;font-size:12.5px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:20px}
+.tbl th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;padding:9px 12px;text-align:left}
+.tbl td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}.tbl tr:hover td{background:var(--bg)}
+.tbl td:first-child{font-weight:600;color:var(--navy)}
+.num-box{text-align:center;padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.num-box .num{font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--navy)}
+.num-box .unit{font-size:11px;color:var(--gold-dark);font-weight:600}
+.num-box .desc{font-size:10.5px;color:var(--text-light);margin-top:2px}
+.tag{display:inline-block;background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 7px;font-size:11px;color:var(--text-muted);margin:2px}
+.tag.red{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.tag.green{background:var(--green-light);border-color:var(--green);color:var(--green)}
+.tag.blue{background:var(--blue-light);border-color:var(--blue);color:var(--blue)}
+.tag.gold{background:var(--gold-light);border-color:var(--gold-dark);color:var(--gold-dark)}
+ul.chk{list-style:none;padding:0}.chk li{padding:3px 0 3px 20px;position:relative;font-size:13px;color:var(--text-muted)}.chk li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}.chk li.no::before{content:'✗';color:var(--red)}
+.qr-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12.5px}.qr-row:last-child{border-bottom:none}.qr-key{font-weight:600;color:var(--navy);min-width:190px;flex-shrink:0}.qr-val{color:var(--text-muted);flex:1}
+.quiz-hdr{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:18px 22px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.quiz-hdr h3{font-size:17px;color:#fff}.quiz-hdr p{font-size:12px;color:rgba(255,255,255,0.55);margin-top:2px}
+.prog-bar{width:180px;height:5px;background:rgba(255,255,255,0.2);border-radius:3px}
+.prog-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
+.score-disp{font-family:'Syne',sans-serif;font-size:15px;color:var(--gold)}
+.q-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 22px;margin-bottom:14px}
+.q-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:7px}
+.q-text{font-family:'Syne',sans-serif;font-size:14px;font-weight:600;color:var(--navy);margin-bottom:14px;line-height:1.5}
+.opts{display:flex;flex-direction:column;gap:7px}
+.opt{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:9px 14px;text-align:left;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
+.opt.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
+.opt.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.opt:disabled{cursor:default}
+.expl{margin-top:9px;padding:9px 12px;background:var(--bg);border-radius:var(--radius);font-size:12.5px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
+.quiz-ctrl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.btn{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;padding:9px 18px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s;border:none}
+.btn:active{transform:scale(0.97)}.btn:hover{opacity:.85}
+.btn-gold{background:var(--gold);color:var(--navy)}.btn-navy{background:var(--navy);color:#fff}.btn-out{background:transparent;border:1.5px solid var(--border);color:var(--text)}
+.q-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:12px;color:var(--text-light)}
+.dot-nav{display:flex;gap:5px}
+.result-box{text-align:center;padding:36px 20px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
+.result-score{font-family:'Syne',sans-serif;font-size:58px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:6px}
+.result-score span{color:var(--gold)}
+.result-msg{font-size:16px;color:var(--text-muted);margin-bottom:20px}
+.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:13px;font-weight:700;padding:7px 20px;border-radius:30px;margin-bottom:20px}
+.adas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:20px}
+.adas-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:13px 15px}
+.adas-card .code{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--gold-dark);margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px}
+.adas-card .name{font-family:'Syne',sans-serif;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.adas-card .desc{font-size:11.5px;color:var(--text-muted);line-height:1.5}
+.adas-card.mandatory{border-left:3px solid var(--green)}
+.adas-card.test{border-left:3px solid var(--gold)}
+.adas-card.other{border-left:3px solid var(--border)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.@media(max-width:650px){.two-col{grid-template-columns:1fr}}
+.alcohol-box{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
+.alcohol-box h3{font-size:16px;font-weight:700;color:var(--gold);margin-bottom:12px}
+.alcohol-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:13px}
+.alcohol-row:last-child{border-bottom:none}
+.alcohol-row .who{color:rgba(255,255,255,0.8);flex:1}
+.alcohol-row .breath{font-family:'Syne',sans-serif;font-weight:700;color:var(--gold);min-width:80px;text-align:center}
+.alcohol-row .blood{font-family:'Syne',sans-serif;font-weight:700;color:#93c5fd;min-width:80px;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="badge">Theme 7 – AEOL Study Guide</div>
+  <h1>Road Accidents &amp; Intervening Factors</h1>
+  <p>Complete study guide based on the attached AEOL textbook (pages 91–116)</p>
+  <div class="header-stats">
+    <div class="hstat"><div class="val">4</div><div class="lbl">Main sections</div></div>
+    <div class="hstat"><div class="val">26</div><div class="lbl">Source pages</div></div>
+    <div class="hstat"><div class="val">15+</div><div class="lbl">ADAS systems</div></div>
+    <div class="hstat"><div class="val">100</div><div class="lbl">Quiz questions</div></div>
+  </div>
+</div>
+
+<div class="tab-bar" id="tabBar">
+  <button class="tab-btn active" data-tab="accidents">Accident Facts</button>
+  <button class="tab-btn" data-tab="speed">Speed &amp; Fatigue</button>
+  <button class="tab-btn" data-tab="substances">Substances &amp; Distractions</button>
+  <button class="tab-btn" data-tab="vehicle">Vehicle Safety</button>
+  <button class="tab-btn" data-tab="adas">ADAS Systems</button>
+  <button class="tab-btn" data-tab="road">Road &amp; Environment</button>
+  <button class="tab-btn" data-tab="quickref">Quick Reference</button>
+  <button class="tab-btn" data-tab="quiz">Quiz (100 Qs)</button>
+</div>
+
+<div class="content">
+
+<!-- ═══ TAB 1: ACCIDENT FACTS ═══ -->
+<div class="tab-panel active" id="tab-accidents">
+  <div class="sec-title">1. The Serious Problem of Road Accidents</div>
+  <p class="sec-desc">Section 1 of the AEOL textbook – causes, statistics, where/when accidents happen, and vulnerable groups.</p>
+
+  <div class="sub">
+    <h3>1.1 A Real Tragedy – Accident Costs</h3>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Traffic accidents are one of the main causes of mortality and injuries. They also have an enormous economic impact which, directly or indirectly, we all assume.</p>
+    <table class="tbl">
+      <thead><tr><th>Material damage</th><th>Sanitary damages</th><th>Administrative damages</th><th>Human damages</th></tr></thead>
+      <tbody><tr><td>Vehicles, road, environment, etc.</td><td>First aid, care for the wounded, etc.</td><td>Police and firemen, legal costs, etc.</td><td>Loss of productive capacity, physical and psychological suffering, etc.</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="sub">
+    <h3>1.2 Causes of Road Traffic Accidents</h3>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title"><span class="ico">👤</span> Human factor</div>
+        <div style="font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--red);margin-bottom:4px">70–90%</div>
+        <p>The main responsible. Mitigating driver's risk factors (distractions, speed, fatigue, alcohol) can reduce and avoid tragic consequences.</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🛣️</span> Road &amp; surroundings</div>
+        <div style="font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--orange);margin-bottom:4px">10–35%</div>
+        <p>Present when driving is not conform to road or weather conditions. Responsible for defects is still ultimately the human factor (proper maintenance could avoid most).</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🚗</span> Vehicle factor</div>
+        <div style="font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--blue);margin-bottom:4px">4–13%</div>
+        <p>Most common defects: <strong>tyre (most frequent)</strong>, brakes and lighting, steering, overload or deficient distribution. Vehicles over 10 years old have more accidents.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>1.3 Where and When Accidents Are Produced</h3>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">📍</span> Most dangerous places</div>
+        <ul class="chk">
+          <li>More accidents occur on <strong>straight roads</strong> than on bends</li>
+          <li>Most fatalities on <strong>interurban roads</strong></li>
+          <li>Motorways and dual carriageways are <strong>safer</strong> than conventional highways</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🕐</span> Most dangerous moments</div>
+        <ul class="chk">
+          <li>Hours: <strong>entering or leaving working places</strong></li>
+          <li>Days: <strong>weekends and public holidays</strong>, especially at dawn</li>
+          <li>During holidays especially <strong>Easter, summer and Christmas</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hi imp"><div class="hi-title">Exam fact</div><p>More accidents occur on straight roads than bends – but most fatalities occur on interurban roads. These are often confused in exam questions.</p></div>
+  </div>
+
+  <div class="sub">
+    <h3>1.4 Most Vulnerable Groups</h3>
+
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🧑</span> Young drivers (15–29 years)</div>
+      <div class="grid-2" style="margin-top:10px;gap:10px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy)">Where &amp; when:</strong>
+          <ul class="chk" style="margin-top:5px"><li>Urban centres and outskirts – commuting to work/leisure</li><li>Night and dawn; weekends; summer; Christmas</li></ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy)">Why so many accidents:</strong>
+          <ul class="chk" style="margin-top:5px"><li>Alcohol and drugs consumption</li><li>Disrespect for rules (especially speed limits)</li><li>Lack of experience; taking too many risks</li><li>Danger not properly evaluated</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">👴</span> Older drivers</div>
+      <p>More accidents in <strong>complex situations requiring a quick answer</strong>: junctions, joining/leaving lanes where traffic is speeding. Caused mainly by physical and mental deterioration (less attention, eye and ear conditions, reaction time increased, pill consumption).</p>
+    </div>
+
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🏍️</span> Moped and motorcycle operators</div>
+      <p>Accidents increasingly deadly if <strong>use of the helmet is overlooked</strong>. In the event of a fall, the driver will <strong>slide casually along the ground to minimise injury</strong>. To avoid accidents: check no vehicles in opposite direction, respect right of way, do not ride parallel, keep proper safe distance, be cautious in bad weather.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🚲</span> Cyclists</div>
+      <p>More accidents at <strong>weekends on conventional roads</strong> (straight stretches and intersections). Most serious injuries are to the <strong>head</strong>. Most frequent accident: <strong>front-lateral collision</strong> with another vehicle. Main causes: violations by cyclists AND other drivers. Be careful: when overtaking, near stationary vehicles/obstacles, in built-up areas during summer, in bad weather, do not use acoustic signals near them.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🚶</span> Pedestrians</div>
+      <p>More accidents in the city (more than half of deaths from being run over). Fewer accidents on the road but <strong>more serious due to high speed</strong>. High degree of uncertainty in behaviour. Precautions: slow down near stationary buses, pedestrian crossings, school zones, taking car out from garage (especially ramps), before stationary vehicle ahead (doors may be open), before distracted pedestrians (mobile phone), near built-up/leisure areas in summer, under adverse weather (pedestrians more unpredictable). <strong>Do not signal pedestrians to cross</strong> (other drivers may not have seen your signals). Be careful reversing. Do not park over the kerb.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">👵</span> Elderly pedestrians</div>
+        <p>More accidents when walking <strong>alone</strong> than with children. Difficulties: excessive noise (can't hear vehicles), difficulty perceiving vehicle speed and traffic light colours, lack of pedestrian crossings, poor street lighting, time needed to cross wide streets, kerb height, orientation problems in unfamiliar streets.</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">👶</span> Children pedestrians</div>
+        <ul class="chk">
+          <li><strong>40% less visual field</strong> when walking through parked cars</li>
+          <li>Under 7 years: cannot figure out vehicle direction from sound</li>
+          <li>Under 10 years: get distracted very easily</li>
+          <li>Assume that if they see a car, the driver has seen them</li>
+          <li>Ignorance of rules, signs, proper behaviours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TAB 2: SPEED & FATIGUE ═══ -->
+<div class="tab-panel" id="tab-speed">
+  <div class="sec-title">2. The Human Factor – Speed &amp; Fatigue</div>
+  <p class="sec-desc">Sections 2.1 and 2.2 of the textbook. Heavy exam content – know every number.</p>
+
+  <div class="sub">
+    <h3>2.1 Speed</h3>
+    <div class="hi imp"><div class="hi-title">Negative effects of increasing speed</div><ul>
+      <li>Visual field is <strong>reduced → tunnel effect</strong> (eye perception reduced to centre lane). Extremely dangerous at junctions and when changing lanes.</li>
+      <li>Ability to capture surroundings worsens → ability to anticipate and react is reduced.</li>
+      <li>Injuries from accident are <strong>more serious</strong>. At 50 km/h the collision energy = falling from a 3rd floor.</li>
+      <li>After a while on large roads you tend to think you're travelling slower than you actually are.</li>
+      <li>Driving too long at high speed → increases tension, accelerates fatigue, leads to hostile/aggressive behaviour.</li>
+    </ul></div>
+
+    <div class="grid-4">
+      <div class="num-box"><div class="num">104°</div><div class="unit">visual field</div><div class="desc">at 35 km/h</div></div>
+      <div class="num-box"><div class="num">70°</div><div class="unit">visual field</div><div class="desc">at 65 km/h</div></div>
+      <div class="num-box"><div class="num">42°</div><div class="unit">visual field</div><div class="desc">at 100 km/h</div></div>
+      <div class="num-box"><div class="num">30°</div><div class="unit">visual field</div><div class="desc">at 130 km/h</div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">⏱️</span> Reaction time</div>
+      <p>Time elapsed between the stimulus perceived by the driver and their reaction to it. Average = <strong>0.75 seconds</strong>. May INCREASE due to:</p>
+      <div class="grid-3" style="margin-top:10px">
+        <span class="tag red">Age</span>
+        <span class="tag red">Fatigue &amp; sleepiness</span>
+        <span class="tag red">Alcohol / drugs / medicines</span>
+        <span class="tag red">Mood</span>
+        <span class="tag red">High temperature inside vehicle</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">📏</span> Reaction distance (metres in 1 second)</div>
+      <table class="tbl" style="margin-bottom:0">
+        <thead><tr><th>km/h</th><th>40</th><th>50</th><th>60</th><th>70</th><th>80</th><th>90</th><th>100</th><th>110</th><th>120</th><th>130</th><th>140</th></tr></thead>
+        <tbody><tr><td>Metres</td><td>11</td><td>14</td><td>17</td><td>20</td><td>22</td><td>25</td><td>28</td><td>31</td><td>33</td><td>36</td><td>39</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">🛑</span> Braking distance</div>
+      <p>Distance travelled from when brakes are applied to complete stop. Depends on:</p>
+      <div class="grid-3" style="margin-top:8px">
+        <div class="def"><div class="term">Speed</div><div class="body">Higher speed → higher proportion (not linear)</div></div>
+        <div class="def"><div class="term">Vehicle mass / load / management</div><div class="body">Heavier vehicle = longer braking</div></div>
+        <div class="def"><div class="term">Driving technique</div><div class="body">Experience, training, etc.</div></div>
+        <div class="def"><div class="term">Road conditions</div><div class="body">Surface, adherence, etc.</div></div>
+        <div class="def green"><div class="term">Weather – rain</div><div class="body">Braking distance ×2</div></div>
+        <div class="def red"><div class="term">Weather – snow/ice</div><div class="body">Braking distance ×10</div></div>
+      </div>
+    </div>
+
+    <div class="hi info"><div class="hi-title">Stopping distance = reaction distance + braking distance</div><p>Starting from when the driver perceives the obstacle, to coming to a complete stop. This is the total distance the vehicle travels before halting.</p></div>
+  </div>
+
+  <div class="sub">
+    <h3>2.2 Fatigue and Sleepiness</h3>
+    <div class="hi warn"><div class="hi-title">Key statistic</div><p>Driving in a state of sleepiness produces <strong>between 15 and 30% of road accidents</strong>, usually very serious. You do not have to fall asleep – risks appear long before that. Does not only happen at night.</p></div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">😴</span> Effects of fatigue</div>
+      <ul class="chk">
+        <li>Muscular stiffness – increases movements in seat</li>
+        <li>Slowness and lack of precision in movements</li>
+        <li>Decrease of attention, concentration, ability to receive stimuli (prone to errors)</li>
+        <li>Change of humour (irritation, takes more risks)</li>
+        <li>Reduction of the ability to react (reaction time increased)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">⚠️</span> Signs of sleepiness at the wheel</div>
+      <div class="grid-2" style="margin-top:8px">
+        <ul class="chk">
+          <li>Reaction time increase (making decisions takes longer)</li>
+          <li>Monotonous atmospheres and low traffic flow → distractions</li>
+          <li>Errors increase, especially in complex situations</li>
+          <li>Slow, imprecise and thoughtless movements</li>
+        </ul>
+        <ul class="chk">
+          <li>Micro sleep (brief episodes with no recollection)</li>
+          <li>Eye strain, blurred vision, dazzling</li>
+          <li>Different moods: restlessness, hostility, greater risk acceptance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">🔧</span> Factors contributing to fatigue</div>
+      <div class="grid-3" style="margin-top:8px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:6px">Driver related</strong>
+          <ul class="chk" style="font-size:12px">
+            <li>Lack of experience</li>
+            <li>Driving long periods without proper rest</li>
+            <li>Adopting bad postures</li>
+            <li>Over-speeding for long periods</li>
+            <li>Driving sleepy, under alcohol or sick</li>
+            <li>Change in driving habits</li>
+          </ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:6px">Road related</strong>
+          <ul class="chk" style="font-size:12px">
+            <li>Heavy congested roads</li>
+            <li>Damaged road surface</li>
+            <li>Unknown roads (require attentiveness)</li>
+            <li>Adverse weather (hard driving)</li>
+          </ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:6px">Vehicle related</strong>
+          <ul class="chk" style="font-size:12px">
+            <li>Faulty maintenance (suspension, steering, lighting)</li>
+            <li>Poor ventilation or high temperature (must be <strong>20–23°C</strong>, air not blown at eyes)</li>
+            <li>Poor ergonomic seats and interior</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">💡</span> To mitigate sleep driving, consider</div>
+      <div class="grid-2" style="margin-top:8px;gap:10px">
+        <ul class="chk" style="font-size:12px">
+          <li>Moment of day: <strong>dawn (3–5am)</strong> and early afternoon (<strong>14–16</strong>)</li>
+          <li>Changes in sleep habits, especially in shift work</li>
+          <li>Sleep quality AND quantity (a bad sleep = dangerous as a short sleep)</li>
+          <li>Monotony: be active while night driving on motorways</li>
+        </ul>
+        <ul class="chk" style="font-size:12px">
+          <li>Sedative and stimulant substances: alcohol and medicines can produce sleepiness. Stimulants (tea, coffee) may have a <strong>rebound effect</strong></li>
+          <li>Abundant food: induces sedative effect</li>
+          <li>Interior temperature and ventilation: hot temperatures may set off somnolence</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hi tip"><div class="hi-title">Recommendations</div><ul>
+      <li>Whenever tired or sleepy: pull over in a quiet place and <strong>take a nap</strong></li>
+      <li>Take a rest at least <strong>20–30 minutes every 2 hours or 200 km</strong></li>
+      <li>Take fatigue and sleep symptoms very seriously</li>
+    </ul></div>
+  </div>
+</div>
+
+<!-- ═══ TAB 3: SUBSTANCES & DISTRACTIONS ═══ -->
+<div class="tab-panel" id="tab-substances">
+  <div class="sec-title">2. Human Factor – Substances &amp; Distractions</div>
+  <p class="sec-desc">Sections 2.3–2.8: Illnesses, medicines, heat, distractions, alcohol, drugs and legal detection.</p>
+
+  <div class="sub">
+    <h3>2.3 Illnesses and Medicines</h3>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">🤧</span> Allergies</div>
+        <p>Symptoms similar to a cold: miscalculates distances, reduces concentration (especially during sneezing fit). Antihistamines → heavy somnolence. Advice: <em>don't open windows, keep AC low, clean ventilation ducts, never drink alcohol while taking medicines, don't do long trips without doctor's advice, wear sunglasses, avoid driving at dawn and in moist zones, don't self-medicate.</em></p>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">😤</span> Stress effects on driver</div>
+        <ul class="chk">
+          <li>Higher level of aggressiveness, hostility and competitiveness</li>
+          <li>Behaviour turns increasingly imprudent</li>
+          <li>Tendency to disrespect rules and signs</li>
+          <li>Slower decision making / poor judgement</li>
+          <li>Higher level of distracted conduct</li>
+          <li>Higher level of fatigue</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">😔</span> Depression effects on driver</div>
+        <ul class="chk">
+          <li>Higher level of distracted behaviour</li>
+          <li>Loss of perception of surroundings</li>
+          <li>More prone to sleepiness and fatigue</li>
+          <li>Higher levels of exasperation, anxiety and insecurity</li>
+          <li>Associated with prescribed drugs consumption</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">💊</span> Prescribed drugs</div>
+        <ul class="chk">
+          <li>Always ask doctor or pharmacist's advice on risks</li>
+          <li>Use them properly (no self-medication, no mix with alcohol)</li>
+          <li>Read the prescription form – check effects on driving</li>
+          <li>Follow doctor's prescription (frequency and dosage)</li>
+          <li>Don't drive or be very prudent at the <strong>beginning of treatment</strong></li>
+          <li>Don't mix medicines not prescribed by doctor</li>
+          <li>Be aware of coffee and other substances changing effects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>2.4 Heat</h3>
+    <div class="card">
+      <p>Driving under hot weather conditions affects driver abilities dangerously: needs <strong>more time to react</strong>, becomes <strong>vulnerable to errors</strong>, hot weather increases fatigue, sleep and distractions, as well as <strong>hostility and aggressiveness</strong>.</p>
+      <div class="hi tip" style="margin-top:10px;margin-bottom:0"><div class="hi-title">Recommendations</div><ul>
+        <li>Stop as much as you can and preferably not under the sun</li>
+        <li>Drink as much water or juices; avoid abundant meals; be extremely careful after each meal</li>
+        <li>Wear light clothes and sunglasses</li>
+        <li>Switch on air conditioning at an average temperature of <strong>20 to 23°C</strong></li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>2.5 Distractions</h3>
+    <div class="hi info"><div class="hi-title">When distraction accidents are most frequent</div><ul>
+      <li>Among <strong>young drivers 18–25</strong> years or aged <strong>over 70</strong></li>
+      <li>While driving <strong>in company</strong> of others (friends, family)</li>
+      <li>During <strong>summer season, weekends</strong>, in daylight and leisure trips</li>
+      <li>In <strong>motorways and dual carriageways</strong> for their monotony</li>
+    </ul></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">👤</span> Internal causes (driver)</div>
+        <ul class="chk" style="font-size:12px">
+          <li>Attitudes requiring your attention (GPS, map, looking for a direction)</li>
+          <li>Fatigue and sleepiness</li>
+          <li>Stress, anxiety and/or depression</li>
+          <li>Old age</li>
+          <li>Alcohol, drugs or prescribed drugs</li>
+          <li>Certain personality characteristics</li>
+          <li>Use of mobile phone or radio</li>
+          <li>Being absorbed by thoughts or discussions</li>
+          <li>Turning head back to talk or play with children</li>
+          <li>Throw insects out of car</li>
+          <li>Eating, drinking, smoking</li>
+          <li>Looking at rear-view mirror</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🌆</span> External causes</div>
+        <ul class="chk" style="font-size:12px">
+          <li>Familiar roads</li>
+          <li>Low street lights and sudden changes in lighting (tunnels, glare)</li>
+          <li>Complex situations (many road signs, vehicles, pedestrians)</li>
+          <li>Partially concealed signs or locations on edges of visual field</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">📱</span> Mobile phone – risk equivalent to 1 g/l alcohol (4× bigger risk)</div>
+      <div class="grid-2" style="margin-top:8px;gap:10px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Effects while using phone (incl. hands-free):</strong>
+          <ul class="chk" style="font-size:12px">
+            <li>Attention diminished (looking, manipulating, talking)</li>
+            <li>More infractions: after 90s, <strong>40% of road signs overlooked</strong></li>
+            <li>Distances miscalculated, safe distance shortened</li>
+            <li>Speed miscalculated: <strong>after 90s speed drops ~12%</strong></li>
+            <li>Trajectory deviations (most frequent: swerving off road)</li>
+            <li>You become disorientated → wrong and dangerous decisions</li>
+          </ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Most dangerous moments:</strong>
+          <div style="margin-top:4px"><span class="tag red">Receiving a call</span><span class="tag red">Texting messages</span><span class="tag red">Talking</span><span class="tag red">Hanging up the phone</span></div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px;margin-top:10px">Recommendations:</strong>
+          <ul class="chk" style="font-size:12px">
+            <li>Be aware if phone is on – sounds can catch you off guard</li>
+            <li>Do not use phone: find a safe place to stop</li>
+            <li>If hands-free: tell partner you're driving; keep under <strong>1 minute</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">🗺️</span> GPS navigators</div>
+        <ul class="chk" style="font-size:12px">
+          <li>Plan your trip before starting (do not navigate while driving)</li>
+          <li>Listen to voice instructions (don't look at screen)</li>
+          <li>Let the <strong>driver's reasoning prevail at all times</strong></li>
+          <li>Main source of information = speedometer (not GPS)</li>
+          <li>Proper support: high enough, don't look away from road, not close to airbag</li>
+          <li>Cable arrangement: steering wheel and transmission must not be hindered</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🚬</span> Smoking</div>
+        <ul class="chk" style="font-size:12px">
+          <li>Lose ability to operate vehicle or focus while lighting or smoking</li>
+          <li>Underestimate traffic situations → more risks</li>
+          <li>Carbon monoxide in tobacco reduces concentration and creates vision disturbances</li>
+          <li>Carbon monoxide poisoning → severe medical conditions, especially cardiovascular</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>2.6 Alcohol</h3>
+    <div class="alcohol-box">
+      <h3>Legal alcohol limits in Spain</h3>
+      <div style="display:grid;grid-template-columns:1fr 120px 100px;gap:8px;margin-bottom:10px">
+        <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:.5px">Driver category</div>
+        <div style="font-size:11px;font-weight:700;color:var(--gold);text-align:center">Breath (mg/l)</div>
+        <div style="font-size:11px;font-weight:700;color:#93c5fd;text-align:center">Blood (g/l)</div>
+      </div>
+      <div class="alcohol-row"><span class="who">Underage</span><span class="breath">0.0</span><span class="blood">0.0</span></div>
+      <div class="alcohol-row"><span class="who">Transport goods (+3.5t), travellers (+9 places), schoolchildren, dangerous goods, special transport, public/emergency services, <strong>novice drivers (first 2 years)</strong></span><span class="breath">0.15</span><span class="blood">0.3</span></div>
+      <div class="alcohol-row"><span class="who">Bicycles and personal mobility vehicles (VMP)<br>Other drivers (after 2 years)</span><span class="breath">0.25</span><span class="blood">0.5</span></div>
+    </div>
+    <div class="hi imp"><div class="hi-title">Critical exam point</div><p>Even driving with a level below the maximum allowed, you can suffer a road accident with origin on alcohol effects. <strong>The only level actually safe is 0.0 g/l.</strong> From July 2022, buses with more than 9 seats must be equipped with immobilising breathalyser interface.</p></div>
+
+    <div class="card">
+      <div class="card-title"><span class="ico">🍷</span> What affects blood alcohol level</div>
+      <div class="grid-2" style="margin-top:8px;gap:10px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Driver's inherent characteristics:</strong>
+          <ul class="chk" style="font-size:12px">
+            <li>Weight: thin people reach higher levels</li>
+            <li>Sex: women generally reach higher blood alcohol levels</li>
+            <li>Age: under 18 and over 65 are more vulnerable</li>
+            <li>Personal circumstances: fatigue, sleep, disabilities, etc.</li>
+          </ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">How you take it:</strong>
+          <ul class="chk" style="font-size:12px">
+            <li><strong>Amount</strong> taken = most important factor</li>
+            <li>Time elapsed: detected after 5 min; peak after 30–90 min</li>
+            <li>Frequency: time between drinks allows liver to metabolise</li>
+            <li>Time of day: eliminated more slowly during sleeping hours</li>
+            <li>Type: fermentation (beer/wine) absorbed slower; distillation (gin/rum/whisky) faster; sparkling/hot beverages stimulate level</li>
+            <li>Empty stomach: alcohol reaches bloodstream faster</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hi imp"><div class="hi-title">NOT effective to reduce blood alcohol</div><p>Physical activity, chewing gum or candies, drinking or chewing coffee, ingesting olive oil, smoking, cocaine intake, mouth sprays, drinking significant amounts of water, eating egg white.</p></div>
+  </div>
+
+  <div class="sub">
+    <h3>2.7 Drugs</h3>
+    <div class="hi imp"><div class="hi-title">Key statistic</div><p>Around <strong>10% of serious road accidents</strong> are directly or indirectly related to drugs. No driver is allowed under the effects of narcotics, psychoactive drugs, stimulants, pharmaceutical drugs or any substance altering physical or psychological condition to drive.</p></div>
+    <div class="grid-3">
+      <div class="def red"><div class="term">Cannabis</div><div class="body">Alters perception (surroundings, time, space). Reduces concentration. Increases sleepiness and reaction time.</div></div>
+      <div class="def red"><div class="term">Cocaine</div><div class="body">Alters perception, produces aggressiveness/impulsiveness. Competence overestimated; risks better tolerated.</div></div>
+      <div class="def red"><div class="term">Ecstasy (MDMA)</div><div class="body">Visual illusion, dazzling, blurred vision. Reduces concentration. Episodic depression/anxiety. Physical/mental exhaustion after effects disappear. Flashbacks.</div></div>
+      <div class="def red"><div class="term">LSD</div><div class="body">Strong distortion and hallucinations. Emotional alterations (aggressiveness, anxiety, panic). Effects last up to 10–12 hours. Flashbacks occur.</div></div>
+      <div class="def red"><div class="term">Amphetamines</div><div class="body">Impatience, impulsiveness, violence. False self-confidence. Repetitive movements limiting mobility. Sense of fatigue decreases (producing exhaustion). Delays sleep-phase → irrepressible need for sleeping (rebound effect).</div></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>2.8 Legal Detection of Alcohol and/or Drug Consumption</h3>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">🔬</span> Who must be tested</div>
+        <ul class="chk">
+          <li>All road users directly involved as possible responsible for accidents</li>
+          <li>All road users, cyclists included, upon Law Enforcement Officers' request</li>
+        </ul>
+        <div style="margin-top:10px"><span class="tag blue">Blood alcohol → breathalyser</span> <span class="tag blue">Drugs → physical exam + blood/urine</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">⚖️</span> Rights of the driver</div>
+        <ul class="chk" style="font-size:12px">
+          <li>A second test using similar procedure must be performed</li>
+          <li>Right to check that <strong>10-minute period</strong> has elapsed between tests</li>
+          <li>Right to make allegations or observations</li>
+          <li>Right to contrast results with blood/urine analysis (pays in advance; reimbursed if negative)</li>
+          <li>Vehicle can be seized if driver refuses OR if results positive (unless another entitled driver can take it)</li>
+        </ul>
+      </div>
+    </div>
+    <table class="tbl">
+      <thead><tr><th>Offence</th><th>Fine</th><th>Points lost</th><th>Criminal sentence (if above 0.60 mg/l or 1.2 g/l blood)</th></tr></thead>
+      <tbody>
+        <tr><td>Positive breath test</td><td>€500 or €1,000</td><td>4 or 6 points</td><td rowspan="3">Imprisonment 3–6 months or 6–12 months fine + community service 31–90 days + licence ban 1–4 years</td></tr>
+        <tr><td>Presence of drugs in body</td><td>€1,000</td><td>6 points</td></tr>
+        <tr><td>Refuse to undergo tests</td><td>€1,000</td><td>6 points</td></tr>
+        <tr><td>Refuse tests (criminal)</td><td colspan="2">Imprisonment 6 months–1 year + licence deprivation over 1 year (max 4 years)</td><td>–</td></tr>
+      </tbody>
+    </table>
+    <div class="hi imp"><div class="hi-title">Double penalty rule</div><p>The €1,000 penalty applies to those already sanctioned in the previous year OR those driving with an alcohol blood rate that <strong>more than doubles</strong> the allowed level.</p></div>
+  </div>
+</div>
+
+<!-- ═══ TAB 4: VEHICLE SAFETY ═══ -->
+<div class="tab-panel" id="tab-vehicle">
+  <div class="sec-title">3. The Vehicle Factor</div>
+  <p class="sec-desc">Sections 3.1–3.3: Driver's seat, vehicle controls, and all safety components (active, passive, preventive).</p>
+
+  <div class="sub">
+    <h3>3.1 Accommodation and Adjustments in the Driver's Seat</h3>
+    <div class="hi tip"><div class="hi-title">Why it matters</div><p>A correct posture facilitates a better and faster reaction in view of an unpredictable event.</p></div>
+    <div class="grid-3">
+      <div class="def"><div class="term">Car seat position</div><div class="body">Feet should press the pedals with legs slightly bent.</div></div>
+      <div class="def"><div class="term">Backrest and steering wheel</div><div class="body">Arms stretched forward; back flat against backrest; wrists should reach the upper steering wheel (arms slightly bent).</div></div>
+      <div class="def"><div class="term">Height</div><div class="body">Seat and steering wheel height enough to enable the driver to see above the wheel.</div></div>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:10px">Also adjust: <span class="tag">headrest</span><span class="tag">rear-view mirrors</span><span class="tag">seatbelt</span></p>
+    <div class="grid-2">
+      <div class="hi imp"><div class="hi-title">Seat too close to steering wheel</div><p>Produces fatigue, restrains mobility (forced and slow movements), particularly dangerous in vehicles with airbag devices.</p></div>
+      <div class="hi imp"><div class="hi-title">Seat too far from steering wheel</div><p>Delays reaction speed and promptness, compromising the effectiveness of security devices.</p></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>3.2 Vehicle Controls</h3>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title"><span class="ico">🦶</span> Feet operated</div>
+        <ul class="chk" style="font-size:12px"><li>Clutch – left foot</li><li>Service brake – right foot</li><li>Accelerator – right foot</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">✋</span> Hand operated</div>
+        <ul class="chk" style="font-size:12px"><li>Steering wheel</li><li>Parking brake</li><li>Gearshift</li></ul>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:8px">Hands grip outer steering wheel at <strong>quarter to three position</strong>.</p>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🏍️</span> Motorcycle controls</div>
+        <ul class="chk" style="font-size:12px"><li>Gearbox – left foot</li><li>Clutch lever – left hand</li><li>Rear brake – right foot</li><li>Accelerator – right hand</li><li>Front brake – right hand</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>3.3.1 Active (Primary) Safety – Tyres</h3>
+    <div class="hi imp"><div class="hi-title">Tyres – most important component</div><p>Poor condition of tyres represents the <strong>main cause of road accidents attributed to mechanical failure</strong>. The vehicle loses grip and brakes worse. This component requires the most attention of all.</p></div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title" style="color:var(--red)">Under-inflated</div>
+        <ul class="chk" style="font-size:12px"><li>Worn out on the <strong>sidewalls</strong></li><li>Become deformed and heat faster</li><li>May burst</li><li>Grip decreases; hydroplaning risk increases</li><li>Fuel consumption increases</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:var(--orange)">Over-inflated</div>
+        <ul class="chk" style="font-size:12px"><li>Worn out on the <strong>centre</strong></li><li>Tread reduced; grip reduced</li><li>Road irregularities not well absorbed (more vibrations; suspension deteriorates)</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:var(--blue)">Unbalanced pressure</div>
+        <ul class="chk" style="font-size:12px"><li>Each wheel adheres and wears differently</li><li>Vehicle likely to turn to under-inflated side</li><li>Braking more irregular (deviation more pronounced)</li></ul>
+      </div>
+    </div>
+    <div class="grid-3">
+      <div class="def blue"><div class="term">Tubeless tyre</div><div class="body">Air stored in assembly formed by wheel and tyre. If punctured, loses air slowly. Safest type.</div></div>
+      <div class="def"><div class="term">Tube type</div><div class="body">Air stored in chamber inside. Less safe than tubeless.</div></div>
+      <div class="def green"><div class="term">Radial tyre</div><div class="body">Frame has ropes and wires placed in the form of spokes.</div></div>
+    </div>
+    <div class="hi info"><div class="hi-title">When to change tyres</div><ul>
+      <li>When tread grooves depth is about <strong>1.6 mm</strong> (you should change before this)</li>
+      <li>Check date of manufacture: after <strong>5 years</strong> a tyre may have lost its properties</li>
+      <li>Tyres of the same construction must be fitted into all wheels (or at least per steerable axle)</li>
+      <li>Never fit tyres with inferior load or speed ratings to what the manufacturer recommends</li>
+    </ul></div>
+    <div class="hi warn"><div class="hi-title">Tyre burst – what to do</div><ul>
+      <li>Keep calm; maintain hands firmly on steering wheel and correct possible route deviations</li>
+      <li>Do <strong>NOT</strong> release the accelerator at once</li>
+      <li>Brake as little as possible and very smoothly</li>
+    </ul></div>
+  </div>
+
+  <div class="sub">
+    <h3>3.3.1 Active Safety – Brakes</h3>
+    <table class="tbl">
+      <thead><tr><th>Type</th><th>Use</th><th>Applied on</th></tr></thead>
+      <tbody>
+        <tr><td>Service brake (foot-operated)</td><td>To slow and stop the vehicle</td><td>All wheels</td></tr>
+        <tr><td>Panic brake (last pump on pedal brake)</td><td>To slow/stop in absence of service brake</td><td>At least 2 wheels</td></tr>
+        <tr><td>Parking brake (hand-operated)</td><td>Vehicle immobilisation</td><td>Usually rear wheels</td></tr>
+        <tr><td>Motor brake</td><td>Deceleration when releasing accelerator (wheels keep rotating without changing gears or pressing clutch)</td><td>Engine compression</td></tr>
+      </tbody>
+    </table>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">⚠️</span> Emergency – without ABS</div>
+        <ul class="chk" style="font-size:12px"><li>Pump brake pedal fairly rapidly but <strong>without letting wheels lock up</strong></li><li>If wheels about to lock up: reduce brake pedal pressure</li><li>Do not press clutch until close to stop (motor brake is cancelled)</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">✅</span> Emergency – with ABS</div>
+        <ul class="chk" style="font-size:12px"><li>Step on brake pedal <strong>thoroughly</strong></li><li>Maintain <strong>maximum pressure</strong>, even if vibrations or noise are produced</li><li>ABS avoids blockade of wheels in abrupt braking</li></ul>
+      </div>
+    </div>
+    <div class="hi warn"><div class="hi-title">Brake failure – what to do</div><ol style="padding-left:18px;font-size:13px;color:var(--text-muted)">
+      <li>Pump the brake pedal</li>
+      <li>If over-heated: release pedal and let them air</li>
+      <li>Keep driving close to right-hand side and engage lower gears (use motor brake)</li>
+      <li>If needed: pull handbrake but in a smooth and progressive way</li>
+      <li>If still unable to stop: find emergency brake bay. If not: find emergency exit preferably into an upward hill</li>
+    </ol></div>
+  </div>
+
+  <div class="sub">
+    <h3>3.3.2 Passive Safety – Seat Belt</h3>
+    <div class="card">
+      <p>Retains body in case of collision or overturning, avoids physical injury or being thrown out. <strong>Reduces chances of being killed by nearly a half</strong>.</p>
+      <div class="grid-2" style="margin-top:10px;gap:10px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Correct positioning:</strong>
+          <ul class="chk" style="font-size:12px"><li>Shoulder strap over <strong>collarbone and across chest</strong></li><li>Lap strap over <strong>pelvis and hip bones</strong></li><li>Tight against body – do not use a clip</li><li>Avoid voluminous outerwear</li><li>Effective during pregnancy</li><li>Must replace after previous accident</li></ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Submarine effect:</strong>
+          <p style="font-size:12px;color:var(--text-muted)">During accident, body slips below lap strap as seat belt unable to restrain. To avoid: don't add towels/cushions/covers to seat; adjust seat belt and seat properly; don't recline excessively or drive lying down.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>3.3.2 Passive Safety – Child Seats, Airbags, Headrests</h3>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title"><span class="ico">👶</span> SRIR – Child Restraint System</div>
+        <ul class="chk" style="font-size:12px"><li>Central rear seat is <strong>safest</strong> (least affected in side impacts)</li><li>Old models: grouped by child's weight</li><li>Current i-Size models: by height range (i-Size)</li><li>i-Size system includes top tether or support leg + ISOFIX</li><li>Travel in opposite direction until at least <strong>15 months or 83 cm</strong></li><li>Deactivate frontal passenger airbag if placing rear-facing baby seat</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">💥</span> Air bags</div>
+        <ul class="chk" style="font-size:12px"><li>Avoid direct impact of occupants against vehicle components</li><li>Airbag is <strong>complementary</strong> to seat belt – not a substitute</li><li>Allow <strong>25 cm distance</strong> from steering wheel</li><li>Wear seat belt</li><li>Deactivate frontal passenger airbag for rear-facing baby seat</li><li>Keep area clear of objects</li><li>Never allow passenger feet on dashboard</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🪑</span> Headrest</div>
+        <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px">Prevents cervical injuries from whiplash especially in rear-end accidents.</p>
+        <ul class="chk" style="font-size:12px"><li>Height: upper part of headrest = upper part of head (broader part in line with occupant's eyes)</li><li>Distance: as minimal as possible (<strong>never over 4 cm</strong>)</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>3.3.2 Passive Safety – Motorcycle Equipment</h3>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">🪖</span> Helmet</div>
+        <ul class="chk" style="font-size:12px"><li>Must be <strong>homologated</strong> (passed safety tests)</li><li>Full face helmets = most recommended</li><li>Polycarbonate helmets: don't last long; no paints or stickers</li><li>Size: well adjusted to head</li><li>Visor: preferably anti-fog</li><li>Buckle claps: prevent accidental throwing off</li><li>Colour: light, bright, reflecting = safest</li><li>Well ventilated = more comfortable and safe</li></ul>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🧥</span> Other equipment</div>
+        <ul class="chk" style="font-size:12px"><li>Jacket/suit: leather or abrasion-resistant fabric; armour protection; colour should attract attention at distance</li><li>Footwear: protect feet, closed and tight-fitting; heel allows adequate motorcycle handling</li><li>Gloves: protect from cold and in event of falling over</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>3.3.3 Preventive Safety – Mirrors</h3>
+    <div class="card">
+      <div class="grid-2" style="margin-top:4px;gap:10px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Cars, vans, lorries up to 2 tons MAM must have:</strong>
+          <ul class="chk" style="font-size:12px"><li>Left wing mirror (category III)</li><li>Rear-view mirror (category I): see at least 60m behind and 20m side to side</li><li>If rear window covered or towing trailer/luggage: two wing mirrors (one each side)</li></ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Motorcycles (category L):</strong>
+          <ul class="chk" style="font-size:12px"><li>Speed ≤100 km/h: at least one on left side</li><li>Speed &gt;100 km/h: one on each side</li><li>Two-wheeled mopeds: one side mirror on left handlebar</li><li>Three-wheeled/quadricycle without body covering: left and right rearview mirror</li></ul>
+        </div>
+      </div>
+      <div class="hi info" style="margin-top:10px;margin-bottom:0"><div class="hi-title">Blind spot</div><p>An area that cannot be seen from the rear and sides of the vehicle, even if all mirrors are well regulated. Always check blind spot physically when changing lanes or turning.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TAB 5: ADAS ═══ -->
+<div class="tab-panel" id="tab-adas">
+  <div class="sec-title">3.4 Advanced Driver-Assistance Systems (ADAS)</div>
+  <p class="sec-desc">Section 3.4 of the textbook. ADAS use sensors and smart cameras to improve active safety. The driver retains full responsibility even when ADAS is active.</p>
+
+  <div class="hi imp"><div class="hi-title">Key rule</div><p>ADAS can be disconnected permanently or temporarily by the driver, who must have <strong>absolute control of the vehicle</strong>. Their use does NOT exempt the driver from responsibility for causing an accident or dangerous situation.</p></div>
+
+  <div class="sub">
+    <h3>Systems that count in the driving test marking</h3>
+    <div class="adas-grid">
+      <div class="adas-card test"><div class="code">TPMS</div><div class="name">Tyre Pressure Monitoring System</div><div class="desc">Evaluates tyre pressure or variation and transmits info to the user while vehicle is in motion.</div></div>
+      <div class="adas-card test"><div class="code">AEB</div><div class="name">Advanced Emergency Braking</div><div class="desc">Detects imminent rear-end danger; issues visual/acoustic warning; performs emergency braking if driver doesn't respond.</div></div>
+      <div class="adas-card test"><div class="code">AUTO</div><div class="name">Auto lighting &amp; wipers</div><div class="desc">Activated when sensor detects decrease in visibility or presence of rain. If sensor defective, system cannot perform its function.</div></div>
+      <div class="adas-card test"><div class="code">VIS-DET</div><div class="name">Pedestrian &amp; cyclist collision warning</div><div class="desc">Sends visual and audio alert in event of imminent collision with a pedestrian or cyclist.</div></div>
+      <div class="adas-card test"><div class="code">AEB-PCD</div><div class="name">Advanced Pedestrian &amp; Cyclist Emergency Braking</div><div class="desc">Detects emergency situation with pedestrians/cyclists and applies vehicle brakes to avoid or mitigate collision.</div></div>
+      <div class="adas-card test"><div class="code">RCTA</div><div class="name">Rear Cross Traffic Alert</div><div class="desc">Monitors rear traffic crosswise when backing out. If collision estimated within 2–3.5s, emits warning. May apply maximum braking force if speed below 15 km/h.</div></div>
+      <div class="adas-card test"><div class="code">DDR</div><div class="name">Fatigue / Drowsiness Detection</div><div class="desc">Alerts driver via text message, steaming cup image, or steering wheel vibrations if losing concentration due to fatigue/sleepiness.</div></div>
+      <div class="adas-card test"><div class="code">ADR</div><div class="name">Advanced Driver Distraction Warning</div><div class="desc">Facial monitoring via cameras detects gaze deviations implying inattention; warns driver when distracted.</div></div>
+      <div class="adas-card test"><div class="code">BSIS-BSM</div><div class="name">Blind Spot Monitoring</div><div class="desc">Informs of possible collision in blind spot via optical/acoustic warnings. May act on steering or stop vehicle.</div></div>
+      <div class="adas-card test"><div class="code">LDW</div><div class="name">Lane Departure Warning</div><div class="desc">Monitors lane position; warns visually, acoustically or by vibration if vehicle leaves lane unintentionally. If defective: driver warned camera cannot function.</div></div>
+      <div class="adas-card test"><div class="code">LKA</div><div class="name">Advanced Lane Keeping System</div><div class="desc">Maintains safe position in lane/road. Combined with LDW which acts in advance when vehicle leaves or is about to leave.</div></div>
+      <div class="adas-card test"><div class="code">HILL</div><div class="name">Slope Exit Support (Hill Holder)</div><div class="desc">Detects inclination angle; prevents rolling backwards when foot removed from brake. Some allow keeping vehicle stopped on slope.</div></div>
+      <div class="adas-card test"><div class="code">REV / 360°</div><div class="name">Reversing Camera &amp; Parking Sensors</div><div class="desc">Improve vision and perception of surroundings when parking/reversing. Parking sensors emit light/sound alert detecting objects behind without intervening in steering or braking. 360° simulates zenithal view.</div></div>
+      <div class="adas-card test"><div class="code">EBD</div><div class="name">Emergency Braking Display</div><div class="desc">Rapid flashing of brake lights when brakes applied powerfully and rapidly in emergency. Helps driver behind detect emergency braking ahead.</div></div>
+      <div class="adas-card test"><div class="code">SLI / ISA</div><div class="name">Speed Limiting Device / Intelligent Speed Assist</div><div class="desc">Controls fuel flow to limit vehicle speed to specified value. Helps driver maintain appropriate speed for road environment.</div></div>
+      <div class="adas-card test"><div class="code">EDR</div><div class="name">Incidence Data Recorder (Black Box)</div><div class="desc">Records and stores critical parameters and information related to a collision, shortly before, during and immediately after.</div></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>Systems allowed in test but NOT counted in marking</h3>
+    <div class="grid-3">
+      <div class="adas-card other"><div class="code">Start-Stop</div><div class="name">Start-Stop System</div><div class="desc">Switches engine off when idling; back on when clutch depressed. Reduces CO2 and saves fuel.</div></div>
+      <div class="adas-card other"><div class="code">TSR</div><div class="name">Traffic Signal Recognition</div><div class="desc">Reads speed limits/overtaking prohibition signs via sensor/camera at rear of interior mirror.</div></div>
+      <div class="adas-card other"><div class="code">AUTO-L</div><div class="name">Automatic Lights</div><div class="desc">When &gt;50 km/h or out of town, automatically controls road lights via camera/sensor to avoid dazzling others.</div></div>
+    </div>
+    <div class="hi warn"><div class="hi-title">Cannot be deactivated = NOT eligible for skills tests</div><p>Traffic Signal Recognition and Automatic Lights systems shall not be eligible for the skills and behavioural tests if they <strong>cannot be deactivated</strong>.</p></div>
+  </div>
+
+  <div class="sub">
+    <h3>Mandatory ADAS – Implementation Timeline</h3>
+    <table class="tbl">
+      <thead><tr><th>Date</th><th>Mandatory systems</th></tr></thead>
+      <tbody>
+        <tr><td>July 2022 (new manufacturing)<br>July 2024 (new registration)</td><td>REV (Reversing Detector) · AEB · ISA (Intelligent Speed Assistant) · EBD (Emergency braking signal) · LDW (Emergency Lane Keeping System) · Interface for breathalyser pre-installation · DDR (Driver drowsiness and loss of attention warning) · EDR (Black Box)</td></tr>
+        <tr><td>July 2024 (new manufacturing)<br>July 2026 (new registration)</td><td>AEB-PCD (Advanced emergency braking for pedestrians and cyclists) · ADR (Advanced Driver Distraction Warning System)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══ TAB 6: ROAD & ENVIRONMENT ═══ -->
+<div class="tab-panel" id="tab-road">
+  <div class="sec-title">4. The Road and Its Surroundings</div>
+  <p class="sec-desc">Sections 4.1–4.4: Adherence, bends, skidding, and all adverse weather conditions.</p>
+
+  <div class="sub">
+    <h3>4.1 Adherence</h3>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">🔴</span> Surfaces that reduce adherence</div>
+        <div><span class="tag red">Shiny</span><span class="tag red">Cobblestone</span><span class="tag red">Poor condition</span><span class="tag red">Dirty</span><span class="tag red">Wet</span><span class="tag red">Snowy</span><span class="tag red">Icy</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">🟢</span> Surfaces that improve adherence</div>
+        <div><span class="tag green">Good condition</span><span class="tag green">Asphalted</span><span class="tag green">Cemented</span><span class="tag green">Rough</span><span class="tag green">Without shine</span></div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted)">Adherence depends on the condition of the vehicle itself AND the type and condition of the road surface.</p>
+  </div>
+
+  <div class="sub">
+    <h3>4.2 Bends</h3>
+    <div class="grid-2">
+      <div class="def blue"><div class="term">Centripetal force</div><div class="body">Consequence of the driver's actions to perform cornering. Works inward.</div></div>
+      <div class="def red"><div class="term">Centrifugal force (most dangerous)</div><div class="body">Pushes the vehicle outwards while performing the curve. Increases as: curve sharpens (reduced radius), speed increases, vehicle is heavier.</div></div>
+    </div>
+    <div class="hi tip"><div class="hi-title">Good cornering technique (4 steps)</div><ol style="padding-left:18px;font-size:13px;color:var(--text-muted)">
+      <li><strong>Apply the brakes before you initiate</strong> the curve and engage a gear that allows suitable acceleration</li>
+      <li><strong>Turn the steering wheel</strong> with precision but smoothly</li>
+      <li><strong>Accelerate gently but sustainably</strong> when exiting the curve</li>
+      <li><strong>Unwind softly the steering wheel</strong> without letting it loose</li>
+    </ol></div>
+    <p style="font-size:13px;color:var(--text-muted)">Permanent deviation panels show how dangerous the curve is: <em>multiple panels = increasing danger; single panel = informing of design only</em>.</p>
+  </div>
+
+  <div class="sub">
+    <h3>4.3 Skidding</h3>
+    <div class="hi imp"><div class="hi-title">Skidding is produced by lack of adherence of the tyres</div><p>Most frequent causes: inadequate use of vehicle controls (main cause); excessive speed combined with worn/under-inflated tyres, poor shock absorbers/brakes, and a slippery surface.</p></div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span class="ico">⚠️</span> Front skidding – traction vehicles</div>
+        <div class="def red" style="margin-bottom:8px"><div class="term">Wheel locking (no response to steering)</div><div class="body">Stop applying the brakes at once.</div></div>
+        <div class="def red" style="margin-bottom:8px"><div class="term">Too much acceleration</div><div class="body">Stop accelerating.</div></div>
+        <div class="def red"><div class="term">Over-speeding</div><div class="body">Accelerate smoothly and unwind the steering wheel until the vehicle recuperates adherence.</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span class="ico">⚠️</span> Rear axle skidding – traction vehicles</div>
+        <div class="def orange" style="margin-bottom:8px"><div class="term">Step 1</div><div class="body">Accelerate gently – do NOT apply the brakes nor the clutch.</div></div>
+        <div class="def orange"><div class="term">Step 2 (counter steering)</div><div class="body">Turn the steering wheel very gently to the <strong>same side that the rear wheels skid</strong>.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>4.4 Adverse Weather Conditions</h3>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">☀️</span> Sun</div>
+      <ul class="chk" style="font-size:12px"><li>Select the most convenient hour: <strong>avoid driving between sunset and sunrise</strong></li><li>Keep the windows clean and adjust the sun visor</li><li>Wear sunglasses (note: in night driving, sunglasses are forbidden)</li></ul>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">💨</span> Wind</div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:8px">Especially dangerous blowing sideways or in gusts. Risk of losing control and overturning. Particularly dangerous for <strong>motorcycles, mopeds, large vehicles and those pulling trailers</strong>.</p>
+      <ul class="chk" style="font-size:12px"><li>Slow down speed</li><li>Keep hands firmly on wheel and pull AGAINST the wind direction (blowing left to right → pull left)</li><li>Careful when passing a shield object (tall buildings, mountains, tunnels, large vehicles) – they can generate gusts of opposite directions</li></ul>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🌧️</span> Rain</div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:8px">Produces decrease in visibility and adherence. Road surface becomes <strong>slippery at the first rain drops</strong>.</p>
+      <ul class="chk" style="font-size:12px"><li>Keep moderate speed and <strong>double the safety distance</strong></li><li>Brake sooner and smoothly (braking distance may double)</li><li>Check brake efficiency after flooded section (apply brakes several times to dry them)</li><li>At high speed: risk of <strong>hydroplaning</strong> (grooves can't disperse water → lose grip)</li><li>Motorcycle: keep perpendicular to ground; decrease speed in sliding areas, avoid sudden acceleration/braking; bends: don't lean too much and open angle of rotation</li></ul>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🌫️</span> Fog</div>
+      <ul class="chk" style="font-size:12px"><li>Extremely careful near <strong>rivers or humid zones</strong> and in presence of cyclists</li><li>Switch on headlights; keep windscreen clean and interior ventilated</li><li>Increase safety distance and <strong>adapt speed to vision field</strong></li><li>Do NOT overtake unless you can see clearly</li><li><strong>Stop driving if visibility is poor</strong></li></ul>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">❄️</span> Snow</div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:8px">Especially slippery when first snowflakes fall. Even more dangerous when it hardens (same effect as ice).</p>
+      <div class="grid-2" style="gap:8px;margin-top:8px">
+        <ul class="chk" style="font-size:12px"><li>Drive in <strong>highest gear possible</strong> (2nd or 3rd gear)</li><li>Moving off: wheels straight, release clutch gently, accelerate smoothly/steadily</li><li>Cornering: keep steady speed, avoid braking</li><li>Uphill: drive slowly and at a steady speed</li></ul>
+        <ul class="chk" style="font-size:12px"><li>Downhill: <strong>lowest gear</strong>; descend slowly; avoid brakes (use motor brake)</li><li>Avoid sudden steering; change gears smoothly</li><li>Slow down and increase safety distance; guide through ruts left by other vehicles if snow is abundant</li><li>On hard snow or ice: <strong>do not accelerate nor brake</strong></li></ul>
+      </div>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="ico">🧊</span> Ice – adherence virtually non-existent</div>
+      <div class="grid-2" style="gap:8px;margin-top:6px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Effects:</strong>
+          <ul class="chk" style="font-size:12px"><li>Wheels do not respond to steering wheel turn (too soft)</li><li>Braking distance may be <strong>up to 10 times bigger</strong></li></ul>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px;margin-top:8px">Find ice more often:</strong>
+          <ul class="chk" style="font-size:12px"><li>At night or at dawn</li><li>Outside temperature around or below 0°C</li><li>Dark areas (near trees, mountains, under bridges)</li><li>Humid areas, especially at night</li><li>On bridges, flyovers, subways and ditches</li></ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Icy windows:</strong>
+          <ul class="chk" style="font-size:12px"><li>Direct AC at the glass</li><li>Switch on rear window demister</li><li>Scrub with a non-scratching scraper</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="ico">⛓️</span> Devices to improve traction (snow/ice)</div>
+      <div class="grid-2" style="margin-top:8px;gap:10px">
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Snow chains (steel or textile fibre):</strong>
+          <ul class="chk" style="font-size:12px"><li>Both types must be removed when they are not necessary</li></ul>
+        </div>
+        <div>
+          <strong style="font-size:12px;color:var(--navy);display:block;margin-bottom:5px">Special tyres:</strong>
+          <ul class="chk" style="font-size:12px"><li>For mud and snow: must have <strong>M+S, M&amp;S or MS</strong> inscription</li><li>With metal studs: round-cornered, cannot stand out more than <strong>2 mm</strong></li><li>Fit when temperature drops below <strong>7°C</strong> approximately</li></ul>
+        </div>
+      </div>
+      <div class="hi info" style="margin-top:10px;margin-bottom:0"><div class="hi-title">Where to mount them</div><p>All traction devices (chains or special tyres) must be mounted <strong>at least on the driving wheels</strong> – those receiving torque from the engine.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TAB 7: QUICK REF ═══ -->
+<div class="tab-panel" id="tab-quickref">
+  <div class="sec-title">Quick Reference – Cheat Sheet</div>
+  <p class="sec-desc">All critical numbers and one-line facts from Chapter 7. Use for last-minute revision.</p>
+
+  <div class="sub">
+    <h3>Key Numbers</h3>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Human factor in accidents</span><span class="qr-val">70–90% of all road accidents</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Road factor in accidents</span><span class="qr-val">10–35%</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Vehicle factor in accidents</span><span class="qr-val">4–13%</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Sleep driving – % of accidents</span><span class="qr-val">15–30% (usually very serious)</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Average reaction time</span><span class="qr-val">0.75 seconds</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Reaction distance at 120 km/h</span><span class="qr-val">33 metres (in 1 second)</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Braking distance multiplier – rain</span><span class="qr-val">×2</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Braking distance multiplier – snow/ice</span><span class="qr-val">×10</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Visual field at 35 km/h</span><span class="qr-val">104°</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Visual field at 130 km/h</span><span class="qr-val">30°</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">50 km/h collision energy</span><span class="qr-val">Equivalent to falling from 3rd floor</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Rest recommendation</span><span class="qr-val">20–30 minutes every 2 hours or 200 km</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Optimal vehicle interior temperature</span><span class="qr-val">20–23°C (air not blown directly at eyes)</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Drug-related serious accidents</span><span class="qr-val">Around 10%</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Mobile phone risk multiplier</span><span class="qr-val">4× bigger risk (like 1 g/l of alcohol)</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Alcohol – only truly safe level</span><span class="qr-val">0.0 g/l</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Alcohol limit – standard driver (breath)</span><span class="qr-val">0.25 mg/l</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Alcohol limit – novice/professional (breath)</span><span class="qr-val">0.15 mg/l</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Alcohol limit – underage</span><span class="qr-val">0.0 mg/l</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Alcohol intoxication peak</span><span class="qr-val">30–90 minutes after consumption</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Alcohol detected in bloodstream after</span><span class="qr-val">5 minutes</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">10-minute rule – breath test</span><span class="qr-val">Driver has right to 10 mins between 1st and 2nd test</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Tread groove change depth</span><span class="qr-val">~1.6 mm (change before this)</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Tyre replacement after manufacture</span><span class="qr-val">After 5 years may lose properties</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Seatbelt reduces death risk by</span><span class="qr-val">Nearly a half</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Airbag – distance from steering wheel</span><span class="qr-val">Allow 25 cm minimum</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Headrest – maximum head-to-headrest distance</span><span class="qr-val">Never over 4 cm</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Child seat (i-Size) – rear-facing until</span><span class="qr-val">At least 15 months or 83 cm height</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Ice – braking distance increase</span><span class="qr-val">Up to 10 times bigger than dry road</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Special tyres – fit when temperature below</span><span class="qr-val">7°C approximately</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Metal studs on tyres – max protrusion</span><span class="qr-val">2 mm</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">RCTA – applies brakes at speed below</span><span class="qr-val">15 km/h</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Positive breath test – fine range</span><span class="qr-val">€500 or €1,000</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Drug driving / refuse test – fine</span><span class="qr-val">€1,000 + 6 points</span></div>
+      <div class="qr-row" style="padding:8px 16px"><span class="qr-key">Sleepiness – most dangerous hours</span><span class="qr-val">Dawn 3–5am; early afternoon 14–16h</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TAB 8: QUIZ ═══ -->
+<div class="tab-panel" id="tab-quiz">
+  <div class="sec-title">Exam-Style Quiz – 100 Questions</div>
+  <p class="sec-desc">All questions are based strictly on the AEOL Chapter 7 textbook content.</p>
+
+  <div class="quiz-hdr">
+    <div><h3>Chapter 7 – Road Accidents &amp; Intervening Factors</h3><p>Spanish Driving Theory – Licence B</p></div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div><div style="font-size:11px;color:rgba(255,255,255,0.45);margin-bottom:3px">Progress</div><div class="prog-bar"><div class="prog-fill" id="pf" style="width:0%"></div></div></div>
+      <div class="score-disp" id="sd">0/100</div>
+    </div>
+  </div>
+  <div class="quiz-ctrl">
+    <button class="btn btn-gold" onclick="startQuiz()">Start / Restart</button>
+    <button class="btn btn-out" onclick="prevPg()">← Previous</button>
+    <button class="btn btn-out" onclick="nextPg()">Next →</button>
+    <button class="btn btn-navy" onclick="showRes()">See Results</button>
+  </div>
+  <div class="q-nav"><span id="pi">Showing questions 1–10 of 100</span><div class="dot-nav" id="dots"></div></div>
+  <div id="qc"></div>
+  <div class="result-box" id="rb">
+    <div class="result-score" id="rs">0<span>/100</span></div>
+    <div class="result-msg" id="rm"></div>
+    <div class="result-grade" id="rg"></div>
+    <button class="btn btn-gold" onclick="startQuiz()">Retake Quiz</button>
+  </div>
+</div>
+
+</div><!-- /content -->
+
+<script>
+document.querySelectorAll('.tab-btn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById('tab-'+b.dataset.tab).classList.add('active');
+    if(b.dataset.tab==='quiz'&&!qi) initQ();
+  });
+});
+
+const Q=[
+  // Section 1 – Accident Facts (1-20)
+  {q:"Between what percentage of road accidents is the human factor responsible for?",o:["4–13%","10–35%","70–90%","50–60%"],a:2,e:"The human factor is the main responsible for between 70 and 90% of road traffic accidents."},
+  {q:"What percentage of road accidents is the road and its surroundings present in?",o:["70–90%","10–35%","4–13%","1–5%"],a:1,e:"The road and its surroundings are present in about 10 to 35% of road traffic accidents."},
+  {q:"The vehicle factor contributes to what proportion of road accidents?",o:["70–90%","10–35%","4–13%","50–65%"],a:2,e:"The vehicle factor contributes to between 4 and 13% of road accidents."},
+  {q:"Which vehicle defect is the most frequent contributor to mechanical accidents?",o:["Brakes defect","Steering defect","Tyre defect","Lighting defect"],a:2,e:"Tyre defect is the most frequent vehicle-related cause of road accidents. Poor tyre condition causes the vehicle to lose grip and brake worse."},
+  {q:"Vehicles older than how many years tend to suffer more accidents?",o:["5 years","7 years","10 years","15 years"],a:2,e:"Vehicles that are more than ten years old tend to suffer more accidents, as they are more prone to mechanical failure."},
+  {q:"Where do more accidents occur?",o:["On bends","On straight roads","On motorways","In tunnels"],a:1,e:"More accidents occur on straight roads than on bends – drivers tend to be less cautious on long, clear straights."},
+  {q:"Where do most fatalities occur?",o:["On motorways","In urban areas","On interurban roads","In tunnels"],a:2,e:"Most fatalities occur on interurban roads, where higher speeds mean collisions are more deadly."},
+  {q:"Which type of road is safer: motorways/dual carriageways or conventional highways?",o:["Conventional highways","Motorways and dual carriageways","Both equally dangerous","Depends on the time of day"],a:1,e:"Motorways and dual carriageways are safer than conventional highways due to separation of opposing traffic flows, better design and emergency lanes."},
+  {q:"What are the most dangerous hours for road accidents?",o:["Mid-morning","Entering or leaving working places","Early afternoon","Late evening"],a:1,e:"The most dangerous hours are when people are entering or leaving working places (commuting times)."},
+  {q:"Road accidents are particularly frequent during which holidays?",o:["Christmas only","Easter and summer only","Easter (Holy Week), summer and Christmas","New Year and summer"],a:2,e:"During holidays, especially Easter (Holy Week), summer and Christmas, road accidents are significantly more frequent."},
+  {q:"Among which age group are road accidents the main cause of death?",o:["Under 15","15 to 29 years","30 to 45 years","Over 65"],a:1,e:"Road accidents are the main cause of death among the population aged between 15 and 29 years of age."},
+  {q:"Young driver accident rates start increasing rapidly from what age?",o:["12–13 years","14–15 years","16–17 years","18 years"],a:1,e:"Starting at the age of 14–15 years the number of casualties increases rapidly as the legal age to ride a moped starts there."},
+  {q:"What is the main characteristic of motorcycle accidents that makes them deadly?",o:["High speed is always involved","The absence of a helmet","Alcohol is always involved","They always involve other vehicles"],a:1,e:"Moped and motorcycle accidents are often deadly if the use of the helmet is overlooked. The helmet absorbs impact energy and avoids abrasion."},
+  {q:"In the event of a motorcycle fall, the driver should:",o:["Try to stop immediately using the brakes","Jump off the motorcycle","Slide casually along the ground to minimise injury","Keep the engine on and steer away"],a:2,e:"In the event of a fall, the driver will slide casually along the ground to minimise injury – this reduces the impact compared to trying to stop suddenly."},
+  {q:"Where do cyclists tend to have the most accidents?",o:["Motorways","Weekends on conventional roads, especially straight stretches and intersections","Urban cycle lanes on weekdays","Roundabouts"],a:1,e:"Cyclists tend to have more accidents at weekends and on conventional roads, especially on straight stretches of road and at intersections."},
+  {q:"What is the most frequent accident type suffered by cyclists?",o:["Rear-end collision","Overturning on bends","Front-lateral collision with another vehicle","Falling due to road surface"],a:2,e:"The most frequent accident suffered by cyclists is a front-lateral collision with another vehicle."},
+  {q:"Where do pedestrians suffer more accidents?",o:["On motorways","In the city","On rural roads","On cycle lanes"],a:1,e:"Pedestrians suffer more accidents in the city, where more than half of deaths are caused by being run over."},
+  {q:"Why should a driver NOT signal a pedestrian to cross the street?",o:["It is not polite","Other drivers may not have seen your signals","Pedestrians always have priority","It is illegal to signal"],a:1,e:"You should not signal pedestrians to cross the street because other drivers may not have seen your signals, causing a dangerous situation."},
+  {q:"How much less visual field can children have compared to adults when walking through parked cars?",o:["10%","20%","40%","60%"],a:2,e:"Children might have around 40% less visual field than adults when walking through parked cars, making them extremely vulnerable."},
+  {q:"Which group of elderly pedestrians is more likely to suffer accidents?",o:["Those walking with children","Those using wheelchairs","Those walking alone","Those walking in groups"],a:2,e:"The elderly are likely to suffer more accidents when walking alone rather than walking with children."},
+
+  // Section 2 – Speed & Fatigue (21-45)
+  {q:"What is the average reaction time of a driver?",o:["0.5 seconds","0.75 seconds","1 second","1.5 seconds"],a:1,e:"An average reaction time is 0.75 seconds, although it may vary and increase due to several factors."},
+  {q:"Which of these factors does NOT increase reaction time?",o:["Age","Fatigue and sleepiness","Good road surface","Alcohol consumption"],a:2,e:"A good road surface does not affect reaction time. Reaction time increases with age, fatigue, alcohol/drugs/medicines, mood, and high interior temperature."},
+  {q:"What is the reaction distance in metres per second at 100 km/h?",o:["22 metres","25 metres","28 metres","31 metres"],a:2,e:"At 100 km/h, the vehicle travels 28 metres during the average reaction time of 0.75–1 second."},
+  {q:"What is the reaction distance at 70 km/h?",o:["17 metres","20 metres","22 metres","25 metres"],a:1,e:"At 70 km/h the reaction distance (metres travelled in 1 second) is 20 metres."},
+  {q:"By what factor does the braking distance increase under rain?",o:["Same as dry","×2","×5","×10"],a:1,e:"Braking distance doubles (×2) under rain conditions. Under snow or ice it increases by a factor of 10."},
+  {q:"By what factor does the braking distance increase under snow or ice?",o:["×2","×5","×10","×15"],a:2,e:"Under snow or ice, braking distance can be up to 10 times greater than on a dry road."},
+  {q:"What is the stopping distance?",o:["Only the distance while braking","The distance from when the driver reacts to when the vehicle stops","The distance from when the driver perceives the obstacle to complete stop (reaction + braking)","The distance from when the vehicle is in gear to when it stops"],a:2,e:"Stopping distance (or technical immobilisation distance) = reaction distance + braking distance. It starts from when the driver perceives the obstacle."},
+  {q:"What is the 'tunnel effect' in relation to speed?",o:["Reduced lighting in tunnels","The reduction of visual field as speed increases, where eye perception is reduced to the centre lane","The delay in vision when exiting a tunnel","The tendency to speed up inside tunnels"],a:1,e:"The tunnel effect occurs as speed increases, causing the available visual field to reduce so that eye perception is reduced to the centre lane – extremely dangerous at junctions and when changing lanes."},
+  {q:"At what speed does visual field reduce to approximately 30°?",o:["65 km/h","100 km/h","120 km/h","130 km/h"],a:3,e:"At 130 km/h, the visual field reduces to approximately 30°. At 35 km/h it is 104°."},
+  {q:"A collision at 50 km/h produces energy equivalent to:",o:["Falling from the 1st floor","Falling from the 2nd floor","Falling from the 3rd floor","Falling from the 4th floor"],a:2,e:"At 50 km/h traffic collision, the accumulated energy equals that of falling from a third floor."},
+  {q:"What percentage of road accidents is attributed to sleepiness at the wheel?",o:["5–10%","15–30%","35–50%","50–70%"],a:1,e:"Driving in a state of sleepiness produces between 15 and 30% of road accidents, and these accidents are usually very serious."},
+  {q:"Do you have to actually fall asleep to cause a sleepiness-related accident?",o:["Yes, you must fall asleep","No – the risks of sleepiness appear long before falling asleep","Yes, micro-sleep episodes are necessary","No, but only at night"],a:1,e:"You do not have to fall asleep – the risks produced by the state of sleepiness appear long before you fall asleep. These accidents can also happen during day-time hours."},
+  {q:"What is 'micro sleep'?",o:["Sleeping for exactly 1 minute","Brief sleep episodes with no recollection","Sleeping with eyes open","Dreaming while driving"],a:1,e:"Micro sleep refers to brief sleep episodes with no recollection – the driver briefly loses consciousness without realising it."},
+  {q:"How often and for how long should a driver rest to prevent fatigue accidents?",o:["Every 4 hours for 10 minutes","Every 3 hours for 15 minutes","Every 2 hours or 200 km for 20–30 minutes","Every hour for 5 minutes"],a:2,e:"Recommendations: take a rest of at least 20–30 minutes every 2 hours or 200 km."},
+  {q:"At what time of day is sleepiness at the wheel most dangerous?",o:["Mid-morning (9–11am) and evening (6–8pm)","Dawn (3–5am) and early afternoon (14–16h)","Late evening (10pm–midnight)","Only at night"],a:1,e:"The most dangerous times for sleepiness-related accidents are dawn (3–5am) and early afternoon (14–16h)."},
+  {q:"What is the optimal interior vehicle temperature to avoid fatigue?",o:["15–18°C","20–23°C","24–27°C","28–30°C"],a:1,e:"The vehicle's interior temperature should be set between 20 and 23°C, and the air must not be blown directly at the eye area."},
+  {q:"Which of these is a vehicle-related cause of fatigue?",o:["Heavy congested roads","Unknown roads","Poor ventilation or high temperature inside the vehicle","Adverse weather conditions"],a:2,e:"Vehicle-related causes of fatigue include faulty maintenance, poor ventilation or high temperature inside the vehicle, and poor ergonomic seat design."},
+  {q:"What is the 'rebound effect' of stimulants (coffee, tea) when driving while sleepy?",o:["Stimulants always prevent sleepiness","Once the stimulant effect is gone, a sudden sleepy sensation follows","Stimulants permanently increase reaction time","Stimulants have no effect on sleepiness"],a:1,e:"Stimulants such as coffee or tea can produce a rebound effect: once the stimulant effect is gone, the driver falls into a sudden sleepy sensation."},
+  {q:"According to the textbook, what is the effect of abundant food on the driver?",o:["Improves concentration","Reduces reaction time","Induces a sedative effect","Has no effect on driving"],a:2,e:"Abundant food induces a sedative effect, which contributes to sleepiness while driving."},
+  {q:"Which of these best describes the effect of stress on driving behaviour?",o:["Increases alertness and improves reaction","Leads to imprudent behaviour, disrespect for rules and poor judgement","Has no effect on driving","Reduces fatigue"],a:1,e:"Stress effects on the driver include higher levels of aggressiveness, imprudent behaviour, tendency to disrespect rules, slower decision making, and higher levels of distracted conduct and fatigue."},
+  {q:"What effect does hot weather have on a driver?",o:["Improves alertness","Increases fatigue, sleep, distractions, and hostility/aggressiveness","Reduces reaction time only at night","Has minimal impact"],a:1,e:"Driving under hot weather conditions dangerously affects driver abilities: needs more time to react, becomes vulnerable to errors, increases fatigue, sleep, distractions, and hostility/aggressiveness."},
+  {q:"When is it recommended to take a nap if you feel tired while driving?",o:["At the next petrol station","After completing the current journey","Immediately: pull over in a proper quiet place","Only if the journey is longer than 4 hours"],a:2,e:"Whenever tired or sleepy, you should pull over in a proper quiet place and take a nap immediately."},
+  {q:"Which of these is a road-related factor contributing to fatigue?",o:["Driving feeling sleepy","Heavy congested roads","Poor ergonomic seats","Lack of experience"],a:1,e:"Road-related causes of fatigue include heavy congested roads, damaged road surface, unknown roads requiring attentiveness, and adverse weather."},
+  {q:"The braking distance depends on: speed, vehicle mass, driving technique, road conditions and:",o:["Type of fuel","Weather conditions","Driver's age","Road markings"],a:1,e:"Braking distance depends on speed, vehicle mass/load/management, driving technique, road conditions (adherence), and weather conditions (×2 in rain, ×10 in snow/ice)."},
+  {q:"At 60 km/h, what is the reaction distance (metres in 1 second)?",o:["14 metres","17 metres","20 metres","22 metres"],a:1,e:"At 60 km/h the reaction distance is 17 metres per second."},
+
+  // Section 3 – Substances & Distractions (46-70)
+  {q:"Distraction-related accidents are most common among which age groups?",o:["30–50 years old","Young drivers 18–25 OR aged over 70","Only teenagers","Only professional drivers"],a:1,e:"Accidents due to distraction happen more frequently amongst young drivers between 18 and 25 years of age or aged over 70."},
+  {q:"The use of a mobile phone while driving increases accident risk by a factor of:",o:["2×","4×","6×","8×"],a:1,e:"The risk of accident from using a mobile phone is 4 times bigger, similar to a 1 g/l blood alcohol level."},
+  {q:"After using a mobile phone for about 90 seconds, what percentage of road signs are overlooked?",o:["10%","20%","40%","60%"],a:2,e:"After talking on the phone for about 90 seconds, approximately 40% of road signs are overlooked."},
+  {q:"What happens to speed after using a mobile phone for 90 seconds?",o:["Increases by 12%","Drops by about 12%","Remains constant","Increases by 30%"],a:1,e:"Speed becomes miscalculated: after 90 seconds the average speed drops by about 12%, meaning the driver unknowingly slows down."},
+  {q:"What is the most frequent mobile phone-related road accident?",o:["Rear-end collision","Swerving off the road","Running a red light","Head-on collision"],a:1,e:"The most frequent mobile phone-related road accident is swerving off the road, caused by trajectory deviations."},
+  {q:"When using a hands-free kit while driving, what is the recommended maximum conversation length?",o:["5 minutes","3 minutes","Not over 1 minute","30 seconds"],a:2,e:"If your vehicle is equipped with a hands-free kit, keep your conversation short – not over 1 minute – and let your conversation partner know you are driving."},
+  {q:"What should a driver do to prevent GPS from becoming a distraction?",o:["Always look at the GPS screen when it speaks","Navigate while driving for up-to-date routing","Plan the trip before starting and listen to voice instructions only","Use a hand-held GPS placed on the passenger seat"],a:2,e:"To prevent GPS distraction: plan your trip before starting; listen to voice instructions; let the driver's reasoning prevail; the main source of information must be the speedometer, not the GPS."},
+  {q:"Which is the most important factor affecting blood alcohol level?",o:["The type of beverage","The time of day","The amount of alcohol taken","The driver's sex"],a:2,e:"The amount of alcohol taken is the most important factor affecting blood alcohol level."},
+  {q:"How quickly is alcohol detected in the bloodstream after consumption?",o:["30–90 minutes","15 minutes","5 minutes","2 hours"],a:2,e:"Alcohol is detected in the bloodstream after 5 minutes. However, the intoxication peak is reached after 30 to 90 minutes."},
+  {q:"Why is it more dangerous to drink alcohol on an empty stomach?",o:["Alcohol is more concentrated when the stomach is empty","On an empty stomach, alcohol reaches the bloodstream faster","Food produces more alcohol","The liver cannot process alcohol when empty"],a:1,e:"When drinking on an empty stomach, alcohol reaches the bloodstream faster, resulting in a higher and quicker blood alcohol peak."},
+  {q:"Which type of alcoholic beverage is absorbed more slowly?",o:["Gin","Rum","Whisky","Beer and wine (fermentation products)"],a:3,e:"Those produced by fermentation (beer, wine, etc.) are more slowly absorbed than those suffering a subsequent distillation (gin, rum, whisky). Sparkling or hot beverages stimulate blood alcohol level."},
+  {q:"Which of these is effective in reducing blood alcohol level?",o:["Drinking coffee","Chewing gum","Physical exercise","None – nothing effectively reduces blood alcohol except time"],a:3,e:"None of the following are effective: physical activity, chewing gum or candies, drinking coffee, olive oil, smoking, cocaine, water, eating egg white. Only time allows the liver to metabolise alcohol."},
+  {q:"What is the alcohol breath limit for a novice driver (first 2 years) in Spain?",o:["0.0 mg/l","0.25 mg/l","0.15 mg/l","0.5 mg/l"],a:2,e:"Novice drivers (first 2 years) have a stricter limit of 0.15 mg/l in breath (0.3 g/l in blood), same as professional drivers."},
+  {q:"What is the alcohol breath limit for a standard driver (after 2 years) in Spain?",o:["0.15 mg/l","0.25 mg/l","0.5 mg/l","0.3 mg/l"],a:1,e:"Standard drivers (after 2 years) have a breath limit of 0.25 mg/l (0.5 g/l blood)."},
+  {q:"What is the alcohol limit for an underage driver?",o:["0.15 mg/l","0.1 mg/l","0.25 mg/l","0.0 mg/l"],a:3,e:"The alcohol limit for underage drivers is 0.0 mg/l in breath and 0.0 g/l in blood – zero tolerance."},
+  {q:"What is the only truly safe blood alcohol level for driving?",o:["0.5 g/l","0.3 g/l","0.1 g/l","0.0 g/l"],a:3,e:"Even though you're driving with a level below the maximum allowed, you can suffer a road accident with origin on alcohol effects. The only level actually safe is 0.0 g/l."},
+  {q:"What must the driver wait for after a positive breathalyser result before the second test?",o:["5 minutes","10 minutes","15 minutes","20 minutes"],a:1,e:"The driver has the right to check that a 10-minute period of time has elapsed between the two tests."},
+  {q:"Can police seize a vehicle if the driver refuses to undergo a breathalyser test?",o:["No, they can only issue a fine","Yes, unless another entitled driver can drive the vehicle","Only if the driver is underage","Only if the car is registered in the driver's name"],a:1,e:"Law enforcement agents can seize the vehicle if the driver refuses to undergo the tests, unless another entitled driver can drive the vehicle."},
+  {q:"What are the consequences of driving under the influence with blood alcohol over 1.2 g/l?",o:["Fine only","Fine and 6 points withdrawal only","Imprisonment 3–6 months or fine + community service + licence ban 1–4 years","Immediate licence cancellation"],a:2,e:"Driving under the influence with blood alcohol over 0.60 mg/l or 1.2 g/l: imprisonment 3–6 months or a 6–12 months fine, community service 31–90 days, and/or driving licence ban 1–4 years."},
+  {q:"Which drug increases sleepiness and reaction time while altering perception of time and space?",o:["Cocaine","Amphetamines","Cannabis","LSD"],a:2,e:"Cannabis alters the perception of surroundings, time and space; reduces concentration; and increases sleepiness and reaction time."},
+  {q:"Which drug produces a 'rebound effect' causing an irrepressible need for sleeping?",o:["Cannabis","Cocaine","Ecstasy (MDMA)","Amphetamines"],a:3,e:"Amphetamines delay sleep-phase, provoking an irrepressible need for sleeping – this is the rebound effect."},
+  {q:"LSD's driving effects can last up to:",o:["2–4 hours","6–8 hours","10–12 hours","24 hours"],a:2,e:"LSD effects may last up to 10–12 hours, and flashbacks can occur hours after the effects are gone."},
+  {q:"Which drug causes a driver to overestimate their competence and better tolerate risks?",o:["Cannabis","Cocaine","LSD","Ecstasy"],a:1,e:"Cocaine alters perception, produces aggressiveness and impulsiveness, causes competence to be overestimated and risks are better tolerated."},
+  {q:"Who is required to undergo alcohol or drug detection tests?",o:["Only drivers involved in accidents","Only drivers requested by police","All road users involved in accidents AND all road users upon law enforcement request","Only professional drivers"],a:2,e:"All road users directly involved as possible responsible for road accidents AND all road users, cyclists included, upon Law Enforcement Officers' request."},
+  {q:"How are drugs detected during roadside checks?",o:["Breathalyser only","Through a blood sample only","Usually through physical examination and blood and urine analysis","Through a saliva test only"],a:2,e:"Drug tests are usually conducted through physical examination and blood and urine analysis, unlike alcohol which is detected through a breath sample (breathalyser)."},
+
+  // Section 3 – Vehicle Safety (71-85)
+  {q:"What is the correct position of hands on the steering wheel?",o:["Ten to two position","Quarter to three position","Half past six position","Twelve o'clock position"],a:1,e:"The hands must grip the outer steering wheel at a quarter to three position (9 and 3 o'clock)."},
+  {q:"Why is it dangerous to sit too close to the steering wheel?",o:["It reduces vision of the road ahead","It is particularly dangerous in vehicles fitted with airbag devices, and produces fatigue and slow movements","It limits use of the gearbox","It does not affect airbag deployment"],a:1,e:"Sitting too close produces fatigue, restrains mobility (forced and slow movements), and is particularly dangerous in vehicles fitted with airbag devices."},
+  {q:"What does 'passive safety' in a vehicle refer to?",o:["Crash avoidance systems","Systems that reduce damages when an accident occurs (chassis, seatbelts, airbags, headrests)","Systems that assist driver concentration","Speed limiting devices"],a:1,e:"Passive (secondary) safety refers to systems whose aim is to avoid or reduce the damages produced by accidents – chassis, seatbelts, airbags, headrests, etc."},
+  {q:"What is 'active safety' in a vehicle?",o:["Systems designed to reduce injury when a crash occurs","Systems that record accident data","Crash avoidance systems: brakes, steering, lighting, stability and traction control, speed limiters","Systems that warn the driver of fatigue"],a:2,e:"Active (primary) safety refers to crash avoidance systems: wheels, brakes, steering, lighting, stability and traction control systems, speed limiter devices, etc."},
+  {q:"Under-inflated tyres wear out mainly on:",o:["The centre of the tread","The sidewalls","Both sides evenly","The inner edge only"],a:1,e:"Under-inflated tyres become worn out on the sidewalls, become deformed and heat faster, and may burst."},
+  {q:"Over-inflated tyres wear out mainly on:",o:["The sidewalls","The inner edge","The centre of the tread","All areas evenly"],a:2,e:"Over-inflated tyres become worn out on the centre of the tyre, and their tread and grip are reduced."},
+  {q:"When should tyres be changed?",o:["Every 2 years regardless of condition","When tread grooves depth is about 1.6 mm (change before this)","Only when the tyre bursts","Every 5 years regardless of condition"],a:1,e:"Tyres should be changed when the tread grooves depth is about 1.6 mm – and you should change them before reaching this minimum."},
+  {q:"What is a tubeless tyre?",o:["A tyre with no air at all","A tyre where air is stored in a chamber inside","A tyre where air is stored in the assembly formed by wheel and tyre; if punctured it loses air slowly","A radial tyre with reinforced sidewalls"],a:2,e:"In a tubeless tyre, the air is stored inside the assembly formed by the wheel and the tyre. If it is punctured, it loses air slowly – making it the safest type."},
+  {q:"In an emergency without ABS, how should you brake?",o:["Press the pedal to the floor and hold","Pump the brake pedal fairly rapidly without letting wheels lock up","Release the brakes completely and steer away","Press the clutch first, then brake"],a:1,e:"Without ABS: pump the brake pedal fairly rapidly but without letting the wheels lock up. If wheels are about to lock up, reduce pedal pressure. Do not press the clutch until close to stop."},
+  {q:"In an emergency with ABS brakes, how should you brake?",o:["Pump the pedal rapidly","Step on the pedal thoroughly and maintain maximum pressure even if vibrations or noise are produced","Release the clutch first","Apply brakes gently and progressively"],a:1,e:"With ABS: step on the brake pedal thoroughly and maintain maximum pressure, even if vibrations or noise are produced. ABS avoids wheel blockade."},
+  {q:"What is the purpose of a seat belt?",o:["To keep the driver in a comfortable position","To retain the body in case of collision or overturning, reducing risk of death by nearly a half","To comply with legal requirements only","To activate the airbag system"],a:1,e:"The seat belt retains the body in case of collision or overturning, avoiding physical injury or being thrown out. Its use may reduce the chances of being killed in a road accident by nearly a half."},
+  {q:"What is the 'submarine effect' with regard to seat belts?",o:["The vehicle sinking in water","The body slipping below the lap strap during an accident as the seat belt is unable to restrain it","The seat belt cutting into the neck","The airbag pushing the occupant down"],a:1,e:"The submarine effect occurs when, during an accident, the body slips below the lap strap as the seat belt is unable to restrain the body. To avoid it: don't add cushions/covers to the seat; don't recline excessively."},
+  {q:"The airbag is complementary to the seat belt. This means:",o:["You do not need to wear a seat belt if the car has an airbag","The airbag is a backup safety device – you must still always wear the seat belt","The airbag is more effective than the seat belt","Airbags only work without seat belts"],a:1,e:"The airbag is COMPLEMENTARY to the seat belt, not its substitute. You must always wear the seat belt even in vehicles with airbags."},
+  {q:"What is the maximum distance between the head and the headrest for it to be correctly adjusted?",o:["1 cm","2 cm","4 cm","6 cm"],a:2,e:"The distance between the head and the headrest should be as minimal as possible – never over 4 cm."},
+  {q:"When should you deactivate the frontal passenger airbag?",o:["Always when carrying passengers","When transporting goods","When you have a rear-facing baby seat in the front passenger seat","Only if the passenger is pregnant"],a:2,e:"You must deactivate the frontal passenger airbag whenever you have to accommodate a rear-facing baby seat, as the airbag could injure the child."},
+
+  // Section 4 – Road & Environment (86-100)
+  {q:"What force during cornering pushes the vehicle outwards and is considered the most dangerous?",o:["Centripetal force","Gravitational force","Centrifugal force","Friction force"],a:2,e:"Centrifugal force is the most dangerous force during cornering – it pushes the vehicle outwards while performing the curve."},
+  {q:"When does centrifugal force increase during a bend?",o:["As the curve widens, as speed decreases, and as the vehicle gets lighter","As the curve sharpens (reduced radius), as speed increases, and as the vehicle is heavier","Only when the road is wet","Only when the vehicle is overloaded"],a:1,e:"Centrifugal force increases: as the curve sharpens (reduced radius), as speed increases, and the heavier the vehicle and its load are."},
+  {q:"What should you do FIRST when approaching a bend?",o:["Accelerate to get through quickly","Engage a higher gear","Apply the brakes before initiating the curve and engage a suitable gear","Sound the horn to warn oncoming traffic"],a:2,e:"The correct cornering technique starts by applying the brakes BEFORE initiating the curve and engaging a gear that allows suitable acceleration."},
+  {q:"What is skidding caused by?",o:["Excessive weight in the vehicle","A defective gearbox","Lack of adherence of the tyres","Brake failure"],a:2,e:"Skidding is produced by lack of adherence of the tyres. It is caused most frequently by inadequate use of vehicle controls or excessive speed combined with worn/under-inflated tyres."},
+  {q:"If the rear wheels skid (rear axle skidding), what should the driver do?",o:["Apply the brakes firmly","Turn the steering wheel to the opposite side of the skid","Accelerate gently and turn the steering wheel to the same side as the rear wheels skid","Release the clutch immediately"],a:2,e:"For rear axle skidding: accelerate gently (do not apply brakes nor clutch) and turn the steering wheel very gently to the SAME side that the rear wheels skid (counter steering)."},
+  {q:"When does the road surface become most slippery in rain?",o:["After an hour of heavy rain","At the first rain drops","Only when it is raining very hard","When there is standing water only"],a:1,e:"The road surface becomes slippery at the first rain drops, as the water mixes with dust and oil residue on the surface."},
+  {q:"What safety precaution should you take in rain regarding safety distance?",o:["Keep the normal safety distance","Reduce the safety distance to react faster","Double the safety distance","Keep 50 metres behind all vehicles"],a:2,e:"In rain, you should keep a moderate speed and increase the safety distance by doubling it, as braking distances increase significantly."},
+  {q:"What is hydroplaning?",o:["Driving through a flooded road","When tyre grooves cannot disperse water quickly enough, causing the vehicle to lose grip and float on water","A water-related suspension failure","When brakes fail in wet conditions"],a:1,e:"Hydroplaning occurs when travelling at high speed in rain – the tyre grooves are unable to disperse the water from beneath the tyres, causing them to lose grip."},
+  {q:"In fog, when should a driver stop driving?",o:["When there is any fog present","When the headlights are not powerful enough","When visibility is poor","Only in zero visibility"],a:2,e:"You should stop driving if visibility is poor. Also: do not overtake unless you can see clearly; increase safety distance; adapt speed to your vision field."},
+  {q:"When driving in snow, what gear should you use?",o:["The lowest gear possible at all times","A high gear (2nd or 3rd) to avoid wheel spin","Only 1st gear","No specific gear is recommended"],a:1,e:"When driving in snow, drive in the highest gear possible (2nd or 3rd gear) to reduce the risk of wheel spin and loss of adherence."},
+  {q:"In icy conditions, the braking distance may be up to how many times bigger than normal?",o:["2 times","5 times","10 times","20 times"],a:2,e:"With ice, the braking distance may be up to 10 times bigger than on a dry road. Adherence is virtually non-existent."},
+  {q:"Where are you most likely to find ice on the road?",o:["Only on mountain roads","At night or at dawn; under bridges; near trees; in humid areas; on bridges, flyovers and ditches","Only when outside temperature is below -5°C","Only in northern Spain"],a:1,e:"Ice is found more often: at night or at dawn; when outside temperature is around/below 0°C; in dark areas (near trees, mountains, under bridges); in humid areas at night; on bridges, flyovers, subways and ditches."},
+  {q:"At what temperature should winter/special tyres be fitted?",o:["Below 0°C","Below 3°C","Below 7°C","Below 10°C"],a:2,e:"If you decide to fit special (winter) tyres, it must be done when the temperature drops below 7°C, approximately."},
+  {q:"Snow chains and special tyres must be mounted at least on which wheels?",o:["Front wheels only","Rear wheels only","All four wheels","The driving wheels (those receiving torque from the engine)"],a:3,e:"All traction devices (snow chains or special tyres) must be mounted at least on the driving wheels – those receiving torque from the engine."},
+  {q:"What is the purpose of the EDR (Incidence Data Recorder)?",o:["To record the driver's heart rate during driving","To record and store critical parameters before, during and immediately after a collision","To count speeding violations","To monitor tyre pressure"],a:1,e:"The EDR (also known as the Black Box) records and stores critical parameters and information related to a collision, shortly before, during and immediately after the collision."}
+];
+
+let ua=new Array(100).fill(null),cp=0,qi=false;
+const QPP=10;
+
+function initQ(){qi=true;render();dots();upd()}
+function startQuiz(){ua=new Array(100).fill(null);cp=0;document.getElementById('rb').style.display='none';document.getElementById('qc').style.display='block';render();dots();upd()}
+function render(){
+  const s=cp*QPP,e=Math.min(s+QPP,100);
+  document.getElementById('pi').textContent=`Showing questions ${s+1}–${e} of 100`;
+  const html=[];
+  for(let i=s;i<e;i++){
+    const q=Q[i],ans=ua[i],done=ans!==null;
+    html.push(`<div class="q-card"><div class="q-num">Question ${i+1} of 100</div><div class="q-text">${q.q}</div><div class="opts">`);
+    q.o.forEach((o,oi)=>{
+      let cls='';
+      if(done){if(oi===q.a)cls='correct';else if(oi===ans)cls='wrong';}
+      html.push(`<button class="opt ${cls}" ${done?'disabled':''} onclick="pick(${i},${oi})">${o}</button>`);
+    });
+    html.push(`</div><div class="expl" id="ex${i}" style="${done?'display:block':'display:none'}">${q.e}</div></div>`);
+  }
+  document.getElementById('qc').innerHTML=html.join('');
+}
+function pick(qi,oi){
+  if(ua[qi]!==null)return;
+  ua[qi]=oi;
+  const q=Q[qi];
+  document.querySelectorAll(`#qc .q-card:nth-child(${qi-cp*QPP+1}) .opt`).forEach((b,bi)=>{
+    b.disabled=true;
+    if(bi===q.a)b.classList.add('correct');
+    else if(bi===oi)b.classList.add('wrong');
+  });
+  document.getElementById('ex'+qi).style.display='block';
+  upd();
+}
+function upd(){
+  const ans=ua.filter(x=>x!==null).length;
+  const cor=ua.filter((x,i)=>x===Q[i].a).length;
+  document.getElementById('pf').style.width=(ans/100*100)+'%';
+  document.getElementById('sd').textContent=cor+'/'+ans+' correct';
+}
+function nextPg(){if(cp<9){cp++;render();dots();document.getElementById('qc').scrollIntoView({behavior:'smooth',block:'start'})}}
+function prevPg(){if(cp>0){cp--;render();dots();document.getElementById('qc').scrollIntoView({behavior:'smooth',block:'start'})}}
+function dots(){
+  let h='';
+  for(let i=0;i<10;i++){
+    const s=i*QPP,done=ua.slice(s,s+QPP).filter(x=>x!==null).length;
+    const col=done===QPP?'var(--green)':done>0?'var(--gold)':'var(--border)';
+    h+=`<div onclick="jp(${i})" style="width:17px;height:17px;border-radius:50%;background:${i===cp?'var(--navy)':col};cursor:pointer;border:2px solid ${i===cp?'var(--navy)':col};display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;font-weight:700">${i+1}</div>`;
+  }
+  document.getElementById('dots').innerHTML=h;
+}
+function jp(p){cp=p;render();dots();document.getElementById('qc').scrollIntoView({behavior:'smooth',block:'start'})}
+function showRes(){
+  const ans=ua.filter(x=>x!==null).length;
+  const cor=ua.filter((x,i)=>x===Q[i].a).length;
+  const pct=ans>0?Math.round(cor/100*100):0;
+  document.getElementById('qc').style.display='none';
+  const rb=document.getElementById('rb');rb.style.display='block';
+  document.getElementById('rs').innerHTML=cor+'<span>/100</span>';
+  const msg=pct>=90?'Excellent! You are exam ready.':pct>=75?'Good work – review your mistakes.':pct>=60?'Keep studying – you are getting there!':'More revision needed.';
+  document.getElementById('rm').textContent=msg+' ('+ans+' questions answered)';
+  const g=document.getElementById('rg');
+  if(pct>=90){g.textContent='PASS ✓';g.style.cssText='background:var(--green-light);color:var(--green)'}
+  else if(pct>=75){g.textContent='Nearly there';g.style.cssText='background:var(--gold-light);color:var(--gold-dark)'}
+  else{g.textContent='Keep studying';g.style.cssText='background:var(--red-light);color:var(--red)'}
+}
+</script>
+</body>
+</html>

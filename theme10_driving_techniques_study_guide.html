@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme 10 – Driving Techniques | Spanish Driving Theory (Licence B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a; --navy2: #1b2d42; --gold: #e8a020; --gold-light: #faecd6; --gold-dark: #b57d10;
+    --green: #1a6e3c; --green-light: #e0f2e9; --red: #b52b27; --red-light: #fce8e8;
+    --blue: #1a4e8a; --blue-light: #e4eef9; --text: #0d1b2a; --text-muted: #4a5568;
+    --text-light: #718096; --bg: #f7f5f0; --surface: #ffffff; --border: #e2ddd4;
+    --border-strong: #c9c0b4; --radius: 8px; --radius-lg: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.65; }
+  h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
+
+  .header { background: var(--navy); color: #fff; padding: 28px 40px 24px; position: relative; overflow: hidden; }
+  .header::before { content:''; position: absolute; top: -30px; right: -40px; width: 220px; height: 220px; border: 40px solid rgba(232,160,32,0.12); border-radius: 50%; }
+  .header-badge { display: inline-block; background: var(--gold); color: var(--navy); font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 10px; }
+  .header h1 { font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .header p { font-size: 14px; color: rgba(255,255,255,0.65); font-weight: 300; }
+  .header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+  .header-stat .val { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: var(--gold); }
+  .header-stat .lbl { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; }
+
+  .tab-bar { background: var(--navy2); display: flex; gap: 2px; padding: 0 24px; overflow-x: auto; scrollbar-width: none; }
+  .tab-bar::-webkit-scrollbar { display: none; }
+  .tab-btn { background: none; border: none; color: rgba(255,255,255,0.5); font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; padding: 12px 18px; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; transition: color .2s, border-color .2s; }
+  .tab-btn:hover { color: rgba(255,255,255,0.85); }
+  .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  .content { padding: 32px 40px; max-width: 960px; margin: 0 auto; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .section-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 6px; padding-bottom: 8px; border-bottom: 2px solid var(--gold); display: inline-block; }
+  .section-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 24px; margin-top: 4px; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 16px; }
+  .card-title { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .card-title .icon { width: 28px; height: 28px; background: var(--gold-light); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+  .card p, .card li { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+  .card ul { padding-left: 18px; margin-top: 6px; }
+  .card li { margin-bottom: 4px; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+  @media(max-width:700px) { .grid-2,.grid-3,.grid-4 { grid-template-columns: 1fr; } }
+
+  .def-block { border-left: 3px solid var(--gold); padding: 12px 16px; background: var(--gold-light); border-radius: 0 var(--radius) var(--radius) 0; margin-bottom: 12px; }
+  .def-block .term { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .def-block .def { font-size: 13px; color: var(--text-muted); }
+  .def-block.green { border-left-color: var(--green); background: var(--green-light); }
+  .def-block.blue { border-left-color: var(--blue); background: var(--blue-light); }
+  .def-block.red { border-left-color: var(--red); background: var(--red-light); }
+
+  .styled-table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); margin-bottom: 24px; }
+  .styled-table th { background: var(--navy); color: #fff; font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; padding: 10px 14px; text-align: left; }
+  .styled-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+  .styled-table tr:last-child td { border-bottom: none; }
+  .styled-table tr:hover td { background: var(--bg); }
+  .styled-table td:first-child { font-weight: 600; color: var(--navy); }
+
+  .badge { display: inline-block; font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; }
+  .badge-gold { background: var(--gold-light); color: var(--gold-dark); }
+  .badge-green { background: var(--green-light); color: var(--green); }
+  .badge-blue { background: var(--blue-light); color: var(--blue); }
+  .badge-red { background: var(--red-light); color: var(--red); }
+  .badge-navy { background: var(--navy); color: #fff; }
+
+  .highlight { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; font-size: 13px; }
+  .highlight.important { border-left: 4px solid var(--red); background: var(--red-light); }
+  .highlight.tip { border-left: 4px solid var(--gold); background: var(--gold-light); }
+  .highlight.info { border-left: 4px solid var(--blue); background: var(--blue-light); }
+  .highlight.ok { border-left: 4px solid var(--green); background: var(--green-light); }
+  .highlight .hi-title { font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px; }
+  .highlight.important .hi-title { color: var(--red); }
+  .highlight.tip .hi-title { color: var(--gold-dark); }
+  .highlight.info .hi-title { color: var(--blue); }
+  .highlight.ok .hi-title { color: var(--green); }
+  .highlight p, .highlight li { color: var(--text-muted); line-height: 1.6; }
+  .highlight ul { padding-left: 18px; margin-top: 4px; }
+  .highlight li { margin-bottom: 3px; }
+
+  .subsection { margin-bottom: 28px; }
+  .subsection h3 { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .subsection h3::before { content: ''; display: block; width: 3px; height: 16px; background: var(--gold); border-radius: 2px; }
+
+  .number-fact { text-align: center; padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+  .number-fact .num { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 700; color: var(--navy); }
+  .number-fact .unit { font-size: 12px; color: var(--gold-dark); font-weight: 600; }
+  .number-fact .desc { font-size: 11px; color: var(--text-light); margin-top: 3px; }
+
+  .qr-row { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .qr-row:last-child { border-bottom: none; }
+  .qr-key { font-weight: 600; color: var(--navy); min-width: 240px; }
+  .qr-val { color: var(--text-muted); flex: 1; }
+
+  .gear-row { display: flex; align-items: center; gap: 14px; padding: 8px 12px; border-bottom: 1px solid var(--border); background: var(--surface); }
+  .gear-row:first-child { border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .gear-row:last-child { border-bottom: none; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+  .gear-badge { width: 32px; height: 32px; border-radius: 50%; background: var(--navy); color: var(--gold); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .gear-desc { font-size: 13px; color: var(--text-muted); flex: 1; }
+  .gear-speed { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 600; color: var(--navy); }
+
+  .label-row { display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 10px; }
+  .label-circle { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; flex-shrink: 0; }
+  .lz { background: #1a6bb5; color: #fff; }
+  .le { background: #5a9e3a; color: #fff; }
+  .lc { background: #2a7a3a; color: #fff; }
+  .lb { background: #c9a800; color: #fff; }
+
+  /* Quiz */
+  .quiz-header { background: var(--navy); color: #fff; border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .quiz-header h3 { font-size: 18px; color: #fff; }
+  .progress-bar { width: 200px; height: 6px; background: rgba(255,255,255,0.2); border-radius: 3px; }
+  .progress-fill { height: 100%; background: var(--gold); border-radius: 3px; transition: width .3s; }
+  .score-display { font-family: 'Syne', sans-serif; font-size: 16px; color: var(--gold); }
+  .question-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 24px; margin-bottom: 16px; }
+  .question-card.q-correct { border-color: var(--green); }
+  .question-card.q-wrong { border-color: var(--red); }
+  .question-num { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); margin-bottom: 8px; }
+  .question-text { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 16px; line-height: 1.5; }
+  .options { display: flex; flex-direction: column; gap: 8px; }
+  .option-btn { background: var(--bg); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 10px 16px; text-align: left; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text); cursor: pointer; transition: background .15s, border-color .15s; line-height: 1.4; }
+  .option-btn:hover:not(:disabled) { background: var(--blue-light); border-color: var(--blue); }
+  .option-btn.correct { background: var(--green-light); border-color: var(--green); color: var(--green); font-weight: 500; }
+  .option-btn.wrong { background: var(--red-light); border-color: var(--red); color: var(--red); }
+  .option-btn:disabled { cursor: default; }
+  .explanation { margin-top: 10px; padding: 10px 14px; background: var(--bg); border-radius: var(--radius); font-size: 13px; color: var(--text-muted); line-height: 1.6; border-left: 3px solid var(--gold); display: none; }
+  .quiz-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
+  .btn { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 600; padding: 10px 22px; border-radius: var(--radius); cursor: pointer; transition: opacity .15s, transform .1s; border: none; }
+  .btn:active { transform: scale(0.97); }
+  .btn-gold { background: var(--gold); color: var(--navy); }
+  .btn-navy { background: var(--navy); color: #fff; }
+  .btn-outline { background: transparent; border: 1.5px solid var(--border-strong); color: var(--text); }
+  .btn:hover { opacity: 0.88; }
+  .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .filter-btn { background: var(--surface); border: 1.5px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s; font-family: 'DM Sans', sans-serif; }
+  .filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+  p { color: var(--text-muted); font-size: 14px; line-height: 1.65; margin-bottom: 10px; }
+  ul { padding-left: 18px; margin-bottom: 12px; }
+  li { color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 4px; }
+  strong { color: var(--navy); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-badge">Permiso B – Teoría</div>
+  <h1>Theme 10: Driving Techniques</h1>
+  <p>Complete study guide for the Spanish Driving Theory Examination</p>
+  <div class="header-meta">
+    <div class="header-stat"><div class="val">5</div><div class="lbl">Study sections</div></div>
+    <div class="header-stat"><div class="val">3</div><div class="lbl">Core principles</div></div>
+    <div class="header-stat"><div class="val">100</div><div class="lbl">Quiz questions</div></div>
+    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
+  </div>
+</div>
+
+<div class="tab-bar" id="tabBar">
+  <button class="tab-btn active" data-tab="preventive">Preventive Driving</button>
+  <button class="tab-btn" data-tab="efficient">Efficient Driving</button>
+  <button class="tab-btn" data-tab="gears">Gears &amp; Speed</button>
+  <button class="tab-btn" data-tab="contamination">Contamination</button>
+  <button class="tab-btn" data-tab="uvar">UVAR &amp; Labels</button>
+  <button class="tab-btn" data-tab="quickref">Quick Reference</button>
+  <button class="tab-btn" data-tab="quiz">Quiz (100 Qs)</button>
+</div>
+
+<div class="content">
+
+<!-- PREVENTIVE DRIVING -->
+<div class="tab-panel active" id="tab-preventive">
+  <div class="section-title">1: Preventive Driving Techniques</div>
+  <p class="section-desc">Preventive driving allows you to acquire information from your surroundings and react rapidly to any unpredictable incident. Based on three core principles.</p>
+
+  <div class="grid-3">
+    <div class="card"><div class="card-title"><div class="icon">👁</div>Vision</div><p>Look further ahead as speed increases. Check mirrors regularly. Look sideways frequently. Control dead angles by turning your head.</p></div>
+    <div class="card"><div class="card-title"><div class="icon">🧠</div>Anticipation</div><p>Never take other road users for granted. Predict the worst. Adapt speed to circumstances. Make yourself visible and signal clearly.</p></div>
+    <div class="card"><div class="card-title"><div class="icon">📐</div>Space</div><p>Manage the space in front, behind, to the sides, and when stopping. Minimum 2-second front gap; 2–3 m when stopped.</p></div>
+  </div>
+
+  <div class="subsection">
+    <h3>1.1 Vision techniques</h3>
+    <ul>
+      <li><strong>See at distance</strong> — as your speed increases you must look further ahead; you need more time and distance to react.</li>
+      <li><strong>Look sideways frequently</strong> — to react to events at the edge of the road.</li>
+      <li><strong>Check rear-view mirrors frequently</strong> — even when not manoeuvring:
+        <ul style="margin-top:6px">
+          <li>Urban areas and main roads with intense traffic: every <strong>5–10 seconds</strong></li>
+          <li>Low-traffic main roads and dual carriageways: every <strong>10–15 seconds</strong></li>
+        </ul>
+      </li>
+      <li><strong>Turn your head</strong> briefly to look through the windows — to control the mirror's dead angle.</li>
+    </ul>
+    <div class="highlight info"><div class="hi-title">Key principle</div><p>You should not only look at the vehicle ahead — gather all the remaining information to process it and react accordingly.</p></div>
+  </div>
+
+  <div class="subsection">
+    <h3>1.2 Anticipation techniques</h3>
+    <ul>
+      <li><strong>Never take other road users for granted</strong> — predict the worst that can happen and prepare for it. This reduces your effective reaction time.</li>
+      <li><strong>Adapt speed to the circumstances</strong> — allows you to anticipate hazardous situations and stop safely.</li>
+      <li><strong>Make yourself seen and clear</strong> — signal all manoeuvres clearly, use the lighting system, and avoid other drivers' dead angles.</li>
+    </ul>
+    <div class="highlight ok"><div class="hi-title">The preventive driver</div><p>A preventive driver is aware that mistakes happen to all road users — and anticipates the risk rather than assuming others will always act correctly.</p></div>
+  </div>
+
+  <div class="subsection">
+    <h3>1.3 Space management</h3>
+    <div class="grid-2">
+      <div class="def-block"><div class="term">Front space</div><div class="def">Keep at least a <strong>2-second gap</strong> from the vehicle ahead in urban areas and on highways. Increase by at least 1 second in bad weather, fatigue, or when being tailgated.</div></div>
+      <div class="def-block green"><div class="term">Rear space</div><div class="def">If the vehicle behind is too close: increase front gap (1 second), signal earlier, and brake progressively and in time.</div></div>
+      <div class="def-block blue"><div class="term">Side space — Uncertainty zone</div><div class="def">Avoid invading the space occupied by other road users — they may make sudden, unpredictable moves into it.</div></div>
+      <div class="def-block red"><div class="term">Stopping space</div><div class="def">Keep <strong>2 or 3 metres</strong> from the vehicle ahead when stopped — to avoid impact if they reverse, to overtake if needed, and to avoid rear-ending them.</div></div>
+    </div>
+    <div class="highlight tip"><div class="hi-title">If you are last in a queue</div>
+      <ul>
+        <li>Increase the gap ahead to <strong>5 or 6 metres</strong></li>
+        <li>Keep your foot on the brake</li>
+        <li>Watch the rear-view mirror — do not trust anyone within reach</li>
+        <li>If a vehicle approaches fast from behind: <strong>engage 1st gear and prepare to move forward</strong></li>
+        <li>Maintain these distances until you have <strong>2 or 3 cars behind you</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- EFFICIENT DRIVING -->
+<div class="tab-panel" id="tab-efficient">
+  <div class="section-title">2: Efficient Driving Techniques</div>
+  <p class="section-desc">Efficient driving reduces contaminating emissions, improves air quality, saves fuel, and reduces maintenance costs.</p>
+
+  <div class="grid-4">
+    <div class="number-fact"><div class="num">25%</div><div class="unit">fuel reduction</div><div class="desc">possible through efficient driving</div></div>
+    <div class="number-fact"><div class="num">80%</div><div class="unit">emission reduction</div><div class="desc">possible through efficient driving</div></div>
+    <div class="number-fact"><div class="num">23°C</div><div class="unit">A/C target</div><div class="desc">optimal efficiency temperature</div></div>
+    <div class="number-fact"><div class="num">60 s</div><div class="unit">engine off</div><div class="desc">switch off if stationary longer</div></div>
+  </div>
+
+  <div class="subsection">
+    <h3>Benefits of efficient driving</h3>
+    <div class="grid-2">
+      <div class="card"><div class="card-title"><div class="icon">🛡</div>Increased safety</div><p>Efficient driving requires applying preventive driving techniques — making you a safer driver overall.</p></div>
+      <div class="card"><div class="card-title"><div class="icon">💰</div>Reduced costs</div><p>Lower fuel consumption and reduced wear extend the vehicle's useful life and lower repair and maintenance costs.</p></div>
+      <div class="card"><div class="card-title"><div class="icon">😌</div>Greater comfort</div><p>Avoiding bursts of acceleration and sudden braking keeps a steady speed and reduces passenger discomfort.</p></div>
+      <div class="card"><div class="card-title"><div class="icon">🔇</div>Noise reduction</div><p>Smoother driving produces less engine and tyre noise — improving quality of life in cities.</p></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>2.1 Starting the vehicle and moving off</h3>
+    <div class="grid-2">
+      <div class="def-block"><div class="term">General rule</div><div class="def">Ignite the engine without accelerating — modern vehicles do not require revving to start.</div></div>
+      <div class="def-block green"><div class="term">Petrol engine</div><div class="def">Move off <strong>immediately</strong> after the engine is ignited.</div></div>
+      <div class="def-block blue"><div class="term">Diesel engine</div><div class="def">Wait <strong>a few seconds</strong> after starting before moving off — to allow proper lubrication.</div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>2.5 Other recommendations</h3>
+    <ul>
+      <li>Avoid driving in <strong>urban centres and intense traffic</strong> where maintaining a cruising speed is difficult.</li>
+      <li>Switch off the engine when stationary for more than <strong>60 seconds</strong> to avoid idle fuel consumption.</li>
+      <li>Set air conditioning to <strong>23°C</strong> — the best balance of comfort and efficiency. Remember: A/C increases fuel consumption.</li>
+      <li>Use the vehicle's own cooling devices — <strong>lowered windows increase aerodynamic resistance</strong> and fuel consumption.</li>
+      <li>Do not use petrol with an <strong>inferior octane rating</strong> to that recommended by the manufacturer.</li>
+      <li><strong>Avoid over-loading</strong> — arrange load correctly. The roof rack increases consumption even when empty.</li>
+      <li>Have the vehicle <strong>regularly checked</strong> (tyres, air filter, etc.) to avoid unnecessary breakdowns and excess emissions.</li>
+      <li>Do not change the exterior of the vehicle as its <strong>aerodynamic resistance</strong> may be affected.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- GEARS & SPEED -->
+<div class="tab-panel" id="tab-gears">
+  <div class="section-title">2.2–2.4: Gears &amp; Driving Speed</div>
+  <p class="section-desc">Correct gear selection is the single most impactful efficient driving skill — tested heavily in the theory exam.</p>
+
+  <div class="subsection">
+    <h3>Moving up through gears</h3>
+    <ul>
+      <li>Use 1st gear as <strong>little as possible</strong> — change to 2nd after just 2 seconds or 6 metres.</li>
+      <li>Change gears up <strong>as soon as you can</strong> — accelerate smoothly and progressively.</li>
+      <li><strong>You do not need to use gears in exact sequence</strong> — skipping gears is efficient and correct.</li>
+      <li>Use the <strong>highest gear possible (4th or 5th)</strong> even in urban centres — keep the engine running at low revolutions.</li>
+    </ul>
+    <div class="card" style="margin-bottom:24px">
+      <div style="border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden">
+        <div class="gear-row"><div class="gear-badge">1</div><div class="gear-desc">Moving off only</div><div class="gear-speed">Change to 2nd after 2 sec / 6 m</div></div>
+        <div class="gear-row"><div class="gear-badge">2</div><div class="gear-desc">Low speed</div><div class="gear-speed">After 2 sec or 6 metres from start</div></div>
+        <div class="gear-row"><div class="gear-badge">3</div><div class="gear-desc">Building speed</div><div class="gear-speed">At 30 km/h</div></div>
+        <div class="gear-row"><div class="gear-badge">4</div><div class="gear-desc">Urban / residential</div><div class="gear-speed">At 40 km/h</div></div>
+        <div class="gear-row"><div class="gear-badge">5</div><div class="gear-desc">Open roads / urban main</div><div class="gear-speed">At 50 or 60 km/h</div></div>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="number-fact"><div class="num">1,300–2,000</div><div class="unit">rpm</div><div class="desc">Diesel — change up in this range</div></div>
+      <div class="number-fact"><div class="num">2,000–2,500</div><div class="unit">rpm</div><div class="desc">Petrol — change up in this range</div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>2.3 Changing down through gears</h3>
+    <div class="highlight ok"><div class="hi-title">Zero fuel at deceleration</div><p>When driving in gear at more than 20 km/h and you <strong>stop accelerating</strong>, the fuel consumption is <strong>zero</strong>. This is the most efficient way to decelerate.</p></div>
+    <ul>
+      <li>Apply the brakes <strong>smoothly and progressively</strong>.</li>
+      <li>When changing down, <strong>the later the better</strong> — no need to change gears sequentially going down either.</li>
+    </ul>
+  </div>
+
+  <div class="subsection">
+    <h3>2.4 Driving speed</h3>
+    <p>Both fuel consumption and contaminating emissions increase with speed because higher speed increases <strong>rolling resistance</strong> and especially <strong>air resistance</strong>. Drive at a moderate, steady speed.</p>
+    <div class="highlight info"><div class="hi-title">How to maintain a cruising speed</div><p>Avoid unnecessary bursts of acceleration and sudden braking. Keep an average cruising speed most of the time. This is achieved through the <strong>vision, anticipation, and space</strong> techniques of preventive driving — increasing your gap allows you to maintain flow without braking cycles.</p></div>
+  </div>
+</div>
+
+<!-- CONTAMINATION -->
+<div class="tab-panel" id="tab-contamination">
+  <div class="section-title">2.6: Measures to Reduce Contamination</div>
+  <p class="section-desc">Motor vehicles produce air pollution (harmful to health) and noise pollution (may cause nerve disorders). This section covers the DPF and legal prohibitions.</p>
+
+  <div class="subsection">
+    <h3>Active Particulate Filter (FAP / DPF)</h3>
+    <p>Fitted in the <strong>exhaust pipe of diesel engines</strong>. Retains solid particles from combustion. When full, particles are burned off in a process called <strong>regeneration</strong>. Ideal regeneration temperature: <strong>600°C</strong>.</p>
+    <div class="grid-4">
+      <div class="number-fact"><div class="num">600°C</div><div class="unit">ideal temp</div><div class="desc">For effective regeneration</div></div>
+      <div class="number-fact"><div class="num">1,500</div><div class="unit">km interval</div><div class="desc">Drive 30 min at 2,500+ rpm</div></div>
+    </div>
+    <div class="highlight tip"><div class="hi-title">DPF recommendations</div>
+      <ul>
+        <li>Avoid <strong>short trips</strong> — filter never reaches 600°C and saturates early.</li>
+        <li>Do <strong>not switch off the engine</strong> during regeneration (warning light will show).</li>
+        <li>Use <strong>Low SAPS oil</strong> — specifically for diesel engines with a particle filter.</li>
+        <li>Follow all manufacturer maintenance instructions.</li>
+        <li>At least every 1,500 km: drive for <strong>half an hour at over 2,500 rpm</strong>.</li>
+      </ul>
+    </div>
+    <div class="highlight important"><div class="hi-title">Warning</div><p>Interrupting the regeneration cycle can solidify partially burned particles, blocking the DPF permanently and requiring expensive replacement.</p></div>
+  </div>
+
+  <div class="subsection">
+    <h3>Prohibited vehicle operation</h3>
+    <p>Circulation of motor vehicles and mopeds is <strong>strictly forbidden</strong> when they:</p>
+    <ul>
+      <li>Lack a suitable complete silencer, or use <strong>roaring cutout pipes</strong></li>
+      <li>Are fitted with straight exhaust systems without proper silencing devices</li>
+      <li>Lack the device that prevents spraying of non-burned fuel</li>
+      <li>Expel harmful fumes that hinder visibility or cause danger</li>
+      <li>Produce unnecessary noise (horn, loud music, etc.) or electromagnetic disturbances</li>
+      <li>Produce noises, fumes, or gases above the legal limits</li>
+    </ul>
+    <div class="highlight important"><div class="hi-title">Legal consequence</div><p>Police authorities not only sanction offenders — they may also <strong>seize the vehicle</strong>.</p></div>
+  </div>
+</div>
+
+<!-- UVAR & LABELS -->
+<div class="tab-panel" id="tab-uvar">
+  <div class="section-title">3: UVAR &amp; Environmental Labels</div>
+  <p class="section-desc">Urban Vehicle Access Regulations and the DGT environmental classification system — a major exam topic.</p>
+
+  <div class="subsection">
+    <h3>3. Urban Vehicle Access Regulations (UVAR)</h3>
+    <div class="def-block"><div class="term">UVAR definition</div><div class="def">"A measure regulating vehicle access to the road infrastructure of an urban area."</div></div>
+    <p>Municipalities with <strong>more than 50,000 inhabitants</strong>, island territories with more than 20,000, and any municipality exceeding pollution limits must adopt <strong>sustainable urban mobility plans</strong> by 2023. These introduce low-emission zones (ZBE), cycling promotion, public transport improvements, and EV charging infrastructure.</p>
+  </div>
+
+  <div class="subsection">
+    <h3>3.1 Low Emission Zones (ZBE / LEZ)</h3>
+    <p>Delimited areas where <strong>access, circulation, and parking restrictions</strong> apply to improve air quality and reduce greenhouse gas emissions.</p>
+    <div class="highlight info"><div class="hi-title">Sign R-120</div><p>Entry prohibited to vehicles based on their <strong>environmental badge or other environmental criteria</strong>. Conditions are specified on supplementary panels or signs.</p></div>
+    <div class="highlight tip"><div class="hi-title">Badge placement</div>
+      <ul>
+        <li>Placement is voluntary, but cities with mobility ordinances may restrict vehicles without one</li>
+        <li>Must be placed on the <strong>lower right corner of the front windshield</strong> (or clearly visible location if no windshield)</li>
+        <li>Can be purchased at: Post Offices, CETRAA workshop network, authorised administrative managers, or the IDEAU-TO — presenting the vehicle registration certificate</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>3.2 Environmental classification — DGT labels</h3>
+    <p>The <strong>National Air Quality and Atmospheric Protection Plan (Plan Aire)</strong> classifies vehicles by their polluting potential. The DGT badge contains: EURO emission level (4, 5, or 6), licence plate number, fuel type, and a QR code.</p>
+
+    <div class="label-row"><div class="label-circle lz">0</div><div><strong style="font-size:14px">Zero Emissions Label</strong><p style="margin:3px 0 0">Battery electric (BEV), extended-range electric (REEV), plug-in hybrid (PHEV) with <strong>≥40 km</strong> electric range, fuel cell vehicles. <span class="badge badge-green">Most favourable</span></p></div></div>
+    <div class="label-row"><div class="label-circle le">E</div><div><strong style="font-size:14px">ECO Label</strong><p style="margin:3px 0 0">PHEV with &lt;40 km range, non-plug-in hybrids (HEV), CNG, LNG, LPG vehicles — provided they also meet Label C criteria.</p></div></div>
+    <div class="label-row"><div class="label-circle lc">C</div><div><strong style="font-size:14px">Label C</strong><p style="margin:3px 0 0">Petrol cars/vans from <strong>January 2006</strong>; diesel from <strong>September 2015</strong>. Petrol and diesel buses/trucks from <strong>2014</strong>.</p></div></div>
+    <div class="label-row"><div class="label-circle lb">B</div><div><strong style="font-size:14px">Label B</strong><p style="margin:3px 0 0">Petrol cars/vans from <strong>January 2001</strong>; diesel from <strong>2006</strong>. Buses/trucks from <strong>2006</strong>.</p></div></div>
+
+    <div class="highlight important" style="margin-top:12px"><div class="hi-title">No label</div><p>Vehicles without any label are the most polluting (older/higher emission) and are excluded from ZBE zones.</p></div>
+    <p style="font-size:13px;color:var(--text-light)">Label order (most → least environmentally favourable): Zero → ECO → C → B → no label</p>
+  </div>
+</div>
+
+<!-- QUICK REFERENCE -->
+<div class="tab-panel" id="tab-quickref">
+  <div class="section-title">Quick Reference</div>
+  <p class="section-desc">Key numbers, rules, and facts to memorise before the exam.</p>
+
+  <div class="subsection">
+    <h3>Critical numbers — preventive driving</h3>
+    <div class="card">
+      <div class="qr-row"><div class="qr-key">Mirror check — urban / intense traffic</div><div class="qr-val">Every 5–10 seconds</div></div>
+      <div class="qr-row"><div class="qr-key">Mirror check — quiet roads / dual carriageway</div><div class="qr-val">Every 10–15 seconds</div></div>
+      <div class="qr-row"><div class="qr-key">Minimum front gap (urban and highways)</div><div class="qr-val">2 seconds — increase by 1 second in bad weather / fatigue / tailgating</div></div>
+      <div class="qr-row"><div class="qr-key">Stopping distance gap</div><div class="qr-val">2–3 metres from vehicle ahead</div></div>
+      <div class="qr-row"><div class="qr-key">Gap when last in queue</div><div class="qr-val">5–6 metres or more</div></div>
+      <div class="qr-row"><div class="qr-key">Maintain last-in-queue distances until</div><div class="qr-val">2 or 3 cars are behind you</div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>Critical numbers — efficient driving &amp; gears</h3>
+    <div class="card">
+      <div class="qr-row"><div class="qr-key">Fuel consumption saving</div><div class="qr-val">Up to 25%</div></div>
+      <div class="qr-row"><div class="qr-key">Emission reduction possible</div><div class="qr-val">Up to 80%</div></div>
+      <div class="qr-row"><div class="qr-key">Petrol: move off</div><div class="qr-val">Immediately after ignition</div></div>
+      <div class="qr-row"><div class="qr-key">Diesel: move off</div><div class="qr-val">Wait a few seconds after ignition</div></div>
+      <div class="qr-row"><div class="qr-key">1st gear: change to 2nd</div><div class="qr-val">After 2 seconds or 6 metres</div></div>
+      <div class="qr-row"><div class="qr-key">3rd gear engages at</div><div class="qr-val">30 km/h</div></div>
+      <div class="qr-row"><div class="qr-key">4th gear engages at</div><div class="qr-val">40 km/h</div></div>
+      <div class="qr-row"><div class="qr-key">5th gear engages at</div><div class="qr-val">50 or 60 km/h</div></div>
+      <div class="qr-row"><div class="qr-key">Diesel gear change rpm</div><div class="qr-val">1,300–2,000 rpm</div></div>
+      <div class="qr-row"><div class="qr-key">Petrol gear change rpm</div><div class="qr-val">2,000–2,500 rpm</div></div>
+      <div class="qr-row"><div class="qr-key">Fuel consumption in gear above 20 km/h</div><div class="qr-val">Zero (when not accelerating)</div></div>
+      <div class="qr-row"><div class="qr-key">Switch engine off when stationary for</div><div class="qr-val">More than 60 seconds</div></div>
+      <div class="qr-row"><div class="qr-key">Optimal A/C temperature</div><div class="qr-val">23°C</div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>DPF / FAP key facts</h3>
+    <div class="card">
+      <div class="qr-row"><div class="qr-key">Ideal regeneration temperature</div><div class="qr-val">600°C</div></div>
+      <div class="qr-row"><div class="qr-key">Maintenance drive interval</div><div class="qr-val">Every 1,500 km</div></div>
+      <div class="qr-row"><div class="qr-key">Maintenance drive: duration and rpm</div><div class="qr-val">30 minutes at over 2,500 rpm</div></div>
+      <div class="qr-row"><div class="qr-key">Oil type required</div><div class="qr-val">Low SAPS oil only</div></div>
+      <div class="qr-row"><div class="qr-key">Avoid during regeneration</div><div class="qr-val">Switching off the engine</div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>UVAR &amp; environmental labels</h3>
+    <div class="card">
+      <div class="qr-row"><div class="qr-key">UVAR applies to municipalities with</div><div class="qr-val">&gt;50,000 inhabitants; island territories &gt;20,000; or those exceeding pollution limits</div></div>
+      <div class="qr-row"><div class="qr-key">Zero label: PHEV minimum electric range</div><div class="qr-val">40 km or more</div></div>
+      <div class="qr-row"><div class="qr-key">Label C petrol registration from</div><div class="qr-val">January 2006</div></div>
+      <div class="qr-row"><div class="qr-key">Label C diesel registration from</div><div class="qr-val">September 2015</div></div>
+      <div class="qr-row"><div class="qr-key">Label B petrol registration from</div><div class="qr-val">January 2001</div></div>
+      <div class="qr-row"><div class="qr-key">Label B diesel registration from</div><div class="qr-val">2006</div></div>
+      <div class="qr-row"><div class="qr-key">Label C buses/trucks from</div><div class="qr-val">2014 (both petrol and diesel)</div></div>
+      <div class="qr-row"><div class="qr-key">Badge placement location</div><div class="qr-val">Lower right corner of the front windshield</div></div>
+      <div class="qr-row"><div class="qr-key">Sign R-120 means</div><div class="qr-val">Entry prohibited based on environmental badge / criteria</div></div>
+      <div class="qr-row"><div class="qr-key">HEV (non-plug-in hybrid) label</div><div class="qr-val">ECO</div></div>
+      <div class="qr-row"><div class="qr-key">LPG / CNG / LNG vehicle label</div><div class="qr-val">ECO (if meeting Label C criteria)</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div class="tab-panel" id="tab-quiz">
+  <div class="quiz-header">
+    <div><h3>Theme 10 Quiz — 100 Questions</h3><p style="color:rgba(255,255,255,0.6);font-size:13px;margin:0">Click an option to answer. Explanations appear after each question.</p></div>
+    <div>
+      <div class="score-display" id="scoreDisplay">0 / 0 correct</div>
+      <div class="progress-bar" style="margin-top:6px"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="quiz-controls">
+    <button class="btn btn-gold" onclick="resetQuiz()">Reset Quiz</button>
+    <button class="filter-btn active" onclick="filterQuiz('all',this)">All (100)</button>
+    <button class="filter-btn" onclick="filterQuiz('wrong',this)">Wrong only</button>
+    <button class="filter-btn" onclick="filterQuiz('Preventive',this)">Preventive</button>
+    <button class="filter-btn" onclick="filterQuiz('Efficient',this)">Efficient</button>
+    <button class="filter-btn" onclick="filterQuiz('Gears',this)">Gears &amp; Speed</button>
+    <button class="filter-btn" onclick="filterQuiz('Contamination',this)">Contamination</button>
+    <button class="filter-btn" onclick="filterQuiz('UVAR',this)">UVAR &amp; Labels</button>
+  </div>
+  <div id="quizContainer"></div>
+</div>
+
+</div>
+
+<script>
+var qs=[
+{n:1,cat:"Preventive",q:"Preventive driving techniques are based on three principles. What are they?",opts:["Speed, distance, and reflexes","Vision, anticipation, and space","Braking, steering, and accelerating","Observation, signalling, and manoeuvring"],a:1,exp:"The three principles of preventive driving are: Vision, Anticipation, and Space management."},
+{n:2,cat:"Preventive",q:"As your speed increases, you should look:",opts:["Closer to the front of the vehicle","At the speedometer more frequently","Further ahead","At your mirrors more often"],a:2,exp:"The faster you travel, the further ahead you must look — you need more time and distance to react and stop safely."},
+{n:3,cat:"Preventive",q:"In urban areas and main roads with intense traffic, how often should you check rear-view mirrors?",opts:["Every 1–2 seconds","Every 5–10 seconds","Every 10–15 seconds","Every 20–30 seconds"],a:1,exp:"In urban and intense-traffic main roads, check mirrors every 5–10 seconds to maintain an up-to-date picture of surrounding traffic."},
+{n:4,cat:"Preventive",q:"On low-traffic main roads and dual carriageways, mirrors should be checked every:",opts:["5–10 seconds","10–15 seconds","20–30 seconds","30–40 seconds"],a:1,exp:"On quieter main roads and dual carriageways, checking mirrors every 10–15 seconds is sufficient."},
+{n:5,cat:"Preventive",q:"Why should you look sideways frequently while driving?",opts:["To check your speed","To react to events at the edge of the road","To monitor fuel consumption","To check your lane position"],a:1,exp:"Lateral glances allow you to detect hazards developing at the roadside — pedestrians stepping out, vehicles emerging from side roads, etc."},
+{n:6,cat:"Preventive",q:"To control the rear-view mirror's dead angle, you should:",opts:["Install additional external mirrors","Turn your head briefly to look through the windows","Rely only on the interior mirror","Slow down before every manoeuvre"],a:1,exp:"Turning your head to look briefly through the side windows allows you to check the blind spot not covered by any mirror."},
+{n:7,cat:"Preventive",q:"The main aim of preventive driving techniques is to:",opts:["Reduce fuel consumption primarily","Allow the driver to acquire information and react rapidly to unpredictable incidents","Improve vehicle performance","Reduce tyre wear"],a:1,exp:"Preventive driving is about information gathering — acquiring data from your surroundings so you can react quickly to any incident."},
+{n:8,cat:"Preventive",q:"Anticipation techniques involve:",opts:["Always driving at maximum legal speed","Never changing lanes unnecessarily","Never taking other road users for granted and preparing for the worst","Following the vehicle ahead closely at all times"],a:2,exp:"Anticipation means assuming other road users may make errors and preparing yourself for the worst outcome before it happens."},
+{n:9,cat:"Preventive",q:"To make yourself visible and predictable to other road users, you should:",opts:["Only use the horn to warn others","Signal all manoeuvres clearly and use the lighting system appropriately","Flash headlights constantly","Drive in the centre of the road"],a:1,exp:"Signal clearly in advance, use your lights appropriately, and avoid other drivers' blind spots so they can anticipate your behaviour."},
+{n:10,cat:"Preventive",q:"Adapting your speed to circumstances allows you to:",opts:["Reach destinations faster","Anticipate hazardous situations and stop the vehicle safely","Reduce tyre wear only","Improve fuel efficiency only"],a:1,exp:"Appropriate speed gives you the time and distance needed to recognise and respond to developing hazards safely."},
+{n:11,cat:"Preventive",q:"Front space management requires keeping at least what gap from the vehicle ahead?",opts:["1 second","2 seconds","3 seconds","4 seconds"],a:1,exp:"Maintain at least a 2-second gap in urban areas and on highways — increase this in poor conditions."},
+{n:12,cat:"Preventive",q:"You should increase the 2-second front gap in which situations?",opts:["Good weather with an alert driver","Bad weather, driver fatigue, or when the vehicle behind is too close","Only on motorways","Only when carrying passengers"],a:1,exp:"The gap should be increased by at least 1 second in bad weather, when fatigued, or when the vehicle behind is following too closely."},
+{n:13,cat:"Preventive",q:"If the vehicle behind you is too close, you should:",opts:["Brake suddenly to warn the driver","Speed up to create space","Increase your gap ahead, signal earlier, and brake progressively","Move to the hard shoulder immediately"],a:2,exp:"If tailgated: increase your front gap (at least 1 second), signal manoeuvres with more anticipation, and brake in time and progressively."},
+{n:14,cat:"Preventive",q:"Side space management means:",opts:["Keeping close to the vehicle on your left","Avoiding invading the uncertainty zone of other road users","Keeping a fixed 1 metre gap from all vehicles","Applies only when overtaking"],a:1,exp:"The 'uncertainty zone' is the space occupied by other road users who may move suddenly. Avoid entering it."},
+{n:15,cat:"Preventive",q:"What is the 'uncertainty zone'?",opts:["A road section with unclear signs","The space in use by other road users which they may suddenly and unpredictably occupy more of","The dead angle of the rear-view mirror","A junction with unclear right of way"],a:1,exp:"The uncertainty zone is the space currently occupied by another road user — they may expand into it at any moment without warning."},
+{n:16,cat:"Preventive",q:"Stopping space management requires maintaining what distance from the vehicle ahead when stationary?",opts:["1 metre","2 or 3 metres","5 or 6 metres","10 metres"],a:1,exp:"Keep 2 or 3 metres when stopped — enough to avoid an impact if the vehicle ahead reverses, to overtake if needed, and to avoid rear-ending it."},
+{n:17,cat:"Preventive",q:"Keeping a 2–3 metre stopping distance allows you to do which of these?",opts:["Park safely","Avoid impact if the vehicle ahead reverses, overtake safely, and avoid rear-end collision","Prevent aquaplaning","Reduce braking distance"],a:1,exp:"The three purposes of 2–3 m stopping distance: avoid impact from a reversing vehicle, allow safe overtaking, and avoid rear-ending the vehicle ahead."},
+{n:18,cat:"Preventive",q:"When you are last in a queue, to reduce rear-end impact risk you should increase the gap to:",opts:["2–3 metres","5–6 metres or more","10 metres","A 1-second gap"],a:1,exp:"Being the last in line makes you vulnerable to rear-end impacts. Increase the gap to 5–6 metres to absorb any forward impact without hitting the car in front."},
+{n:19,cat:"Preventive",q:"If you are at the back of a queue and a vehicle approaches very fast from behind, you should:",opts:["Move immediately to the left lane","Sound the horn repeatedly","Engage first gear and prepare to move forward","Apply the handbrake"],a:2,exp:"If a fast-approaching vehicle threatens a rear collision, engaging 1st gear allows you to move forward quickly, reducing the impact force."},
+{n:20,cat:"Preventive",q:"The 5–6 metre rear-queue gap should be maintained until:",opts:["You switch off the engine","You reach a junction","You have 2 or 3 cars behind you","Traffic clears completely"],a:2,exp:"Maintain the increased gap until 2 or 3 other vehicles have stopped behind you — they then absorb the rear impact risk."},
+{n:21,cat:"Preventive",q:"When the vehicle behind is too close, you should brake:",opts:["Suddenly and firmly","Using the handbrake","In time and progressively, to warn the driver behind","Not at all — speed up instead"],a:2,exp:"Progressive, anticipatory braking gives the following driver time to react — sudden braking when tailgated risks a rear-end collision."},
+{n:22,cat:"Preventive",q:"Which of the following is NOT a principle of preventive driving?",opts:["Vision","Anticipation","Speed maximisation","Space management"],a:2,exp:"The three principles are Vision, Anticipation, and Space. Speed maximisation is the opposite of preventive driving."},
+{n:23,cat:"Preventive",q:"Predicting the worst that can happen while driving allows you to:",opts:["Drive faster with confidence","Reduce your reaction time by being pre-prepared","Reduce fuel consumption","Improve tyre grip"],a:1,exp:"By anticipating the worst-case scenario, your brain is already processing a response — dramatically reducing effective reaction time."},
+{n:24,cat:"Preventive",q:"Rear-view mirrors should be checked:",opts:["Only when manoeuvring","Frequently, even when not manoeuvring","Only at junctions and traffic lights","Never — they cause distraction"],a:1,exp:"Mirrors must be checked regularly even without a specific manoeuvre planned — traffic behind changes constantly."},
+{n:25,cat:"Preventive",q:"A preventive driver understands that:",opts:["Mistakes are only made by inexperienced drivers","Mistakes happen to all road users and the risk should be anticipated","Speed is the most important safety factor","Traffic rules are purely advisory"],a:1,exp:"Preventive driving acknowledges human fallibility — all drivers make mistakes. The preventive driver anticipates this and prepares accordingly."},
+{n:26,cat:"Efficient",q:"Efficient driving techniques primarily aim to:",opts:["Increase maximum speed","Reduce contaminating emissions and promote environmentally sustainable vehicle use","Reduce journey time","Eliminate vehicle maintenance needs"],a:1,exp:"Efficient driving reduces fuel use and contaminating emissions, contributing to environmental sustainability and improved air quality."},
+{n:27,cat:"Efficient",q:"Efficient driving can reduce fuel consumption by up to:",opts:["5%","10%","25%","50%"],a:2,exp:"According to the DGT, applying efficient driving techniques can reduce fuel consumption by up to 25%."},
+{n:28,cat:"Efficient",q:"Efficient driving can reduce contaminating emissions by up to:",opts:["20%","40%","60%","80%"],a:3,exp:"Contaminating emissions can be reduced by up to 80% through efficient driving — a major environmental benefit."},
+{n:29,cat:"Efficient",q:"Which of the following is NOT a stated benefit of efficient driving?",opts:["Increased safety","Lower repair and maintenance costs","Greater comfort","Increased engine power output"],a:3,exp:"Efficient driving benefits: safety, lower costs, greater comfort, and noise reduction. Increased engine power is not a benefit."},
+{n:30,cat:"Efficient",q:"When starting a modern vehicle, you should:",opts:["Rev the engine to warm it before moving off","Ignite the engine without accelerating","Wait 5 minutes before driving","Apply full throttle briefly to warm the engine"],a:1,exp:"Modern vehicles do not require warming up with acceleration — just start the engine and move off (petrol immediately, diesel after a few seconds)."},
+{n:31,cat:"Efficient",q:"After starting a petrol engine, you should:",opts:["Wait a few seconds for lubrication","Move off immediately after ignition","Rev to 3,000 rpm to warm up","Wait until the temperature gauge rises"],a:1,exp:"Petrol engines can be driven off immediately after starting — no waiting period is required."},
+{n:32,cat:"Efficient",q:"After starting a diesel engine, you should:",opts:["Move off immediately","Rev to 2,000 rpm first","Wait a few seconds for proper lubrication before moving off","Wait until the engine reaches normal temperature"],a:2,exp:"Diesel engines require a few seconds after starting to allow proper oil lubrication before the vehicle is put in motion."},
+{n:33,cat:"Gears",q:"When moving off, the 1st gear should be used:",opts:["For as long as possible","As little as possible — change to 2nd after 2 seconds or 6 metres","Up to 20 km/h","Only for reversing"],a:1,exp:"1st gear is only for moving off. Change to 2nd as quickly as possible — after about 2 seconds or 6 metres."},
+{n:34,cat:"Gears",q:"Gears should be changed upward:",opts:["Only when the engine warning light appears","As soon as you can, accelerating smoothly and progressively","Only at fixed speed checkpoints","When the engine reaches maximum rpm"],a:1,exp:"Change up early and smoothly — keeping the engine in the efficient rev range reduces fuel consumption and emissions."},
+{n:35,cat:"Gears",q:"When changing up through gears, you:",opts:["Must always change in strict sequence (1→2→3→4→5)","Can skip gears — no need to use them in exact sequence","Must always use every gear","Should only skip gears on motorways"],a:1,exp:"You do not need to go through every gear in sequence — you can skip gears when changing up, which is more efficient."},
+{n:36,cat:"Gears",q:"At what speed should 3rd gear be engaged?",opts:["20 km/h","30 km/h","40 km/h","50 km/h"],a:1,exp:"According to the gear change guide, 3rd gear should be engaged at approximately 30 km/h."},
+{n:37,cat:"Gears",q:"At what speed should 4th gear be engaged?",opts:["30 km/h","40 km/h","50 km/h","60 km/h"],a:1,exp:"4th gear should be engaged at approximately 40 km/h."},
+{n:38,cat:"Gears",q:"At what speed should 5th gear be engaged?",opts:["40 km/h","50 km/h","50 or 60 km/h","70 km/h"],a:2,exp:"5th gear is appropriate at 50 or 60 km/h — use the highest gear possible to keep engine revs low."},
+{n:39,cat:"Gears",q:"The recommended gear change rpm range for a diesel engine is approximately:",opts:["1,000–1,500 rpm","1,300–2,000 rpm","2,000–2,500 rpm","2,500–3,000 rpm"],a:1,exp:"Diesel engines should be shifted up between 1,300 and 2,000 rpm for optimal efficiency."},
+{n:40,cat:"Gears",q:"The recommended gear change rpm range for a petrol engine is approximately:",opts:["1,000–1,500 rpm","1,300–2,000 rpm","2,000–2,500 rpm","3,000–4,000 rpm"],a:2,exp:"Petrol engines should be shifted up between 2,000 and 2,500 rpm for efficient driving."},
+{n:41,cat:"Gears",q:"In urban centres, you should use the highest gear possible in order to:",opts:["Increase speed in traffic","Make the engine run at low revolutions","Prevent overheating","Reduce braking distance"],a:1,exp:"Using 4th or 5th gear even in urban centres keeps engine revolutions low, significantly reducing fuel consumption and emissions."},
+{n:42,cat:"Gears",q:"When driving in gear at more than 20 km/h and you release the accelerator, fuel consumption is:",opts:["At its maximum","Normal for that speed","Zero","Reduced by 25%"],a:2,exp:"When decelerating in gear above 20 km/h with no throttle input, the engine management system cuts fuel injection — consumption drops to zero."},
+{n:43,cat:"Gears",q:"When decelerating, brakes should be applied:",opts:["Suddenly and firmly to maximise deceleration","Smoothly and progressively","Only in emergencies","In short, sharp pulses"],a:1,exp:"Smooth, progressive braking is more comfortable, reduces wear, and gives following traffic more warning time."},
+{n:44,cat:"Gears",q:"When changing down through gears, the ideal timing is:",opts:["As early as possible to slow the vehicle","As late as possible — the later the better","Always follow the exact sequence down","Change immediately when braking begins"],a:1,exp:"Change down as late as possible — the longer you stay in a higher gear with no throttle, the longer fuel consumption remains at zero."},
+{n:45,cat:"Gears",q:"When changing down through gears, must you go through each gear sequentially?",opts:["Yes — always go down one gear at a time","No — there is no need to change them sequentially","Only on downhill roads","Only in automatic vehicles"],a:1,exp:"Just as when changing up, you can skip gears when changing down — no sequential order is required."},
+{n:46,cat:"Gears",q:"Fuel consumption and contaminating emissions increase with speed because:",opts:["The engine runs at lower temperature at speed","Speed increases rolling resistance and air resistance","The gearbox becomes less efficient at speed","The cooling system demands more power"],a:1,exp:"Higher speeds dramatically increase aerodynamic drag (air resistance) and rolling resistance — both requiring more engine power and fuel."},
+{n:47,cat:"Gears",q:"To maintain a steady cruising speed, you should:",opts:["Brake frequently and accelerate hard","Avoid unnecessary bursts of acceleration and sudden braking","Use the lowest gear possible","Accelerate to maximum then coast in neutral"],a:1,exp:"A steady cruising speed is the most efficient driving state — achieved by smooth throttle management and good anticipation."},
+{n:48,cat:"Gears",q:"The technique for maintaining a steady cruising speed is achieved through:",opts:["Frequent gear changes","Vision, anticipation, and space management of preventive driving","Maximum engine revolutions","Keeping close to the vehicle ahead"],a:1,exp:"Anticipating traffic flow through vision and space management allows you to avoid stop-start driving and maintain efficient cruising."},
+{n:49,cat:"Efficient",q:"You should switch off the engine when stationary for longer than:",opts:["15 seconds","30 seconds","60 seconds","2 minutes"],a:2,exp:"If stationary for more than 60 seconds, switch off the engine — idling wastes fuel and produces unnecessary emissions."},
+{n:50,cat:"Efficient",q:"The recommended air conditioning temperature for efficiency is:",opts:["18°C","20°C","23°C","26°C"],a:2,exp:"23°C is the recommended setting — it provides comfort without excessive air conditioning load on the engine."},
+{n:51,cat:"Efficient",q:"Driving with windows lowered:",opts:["Has no effect on fuel consumption","Increases aerodynamic resistance and fuel consumption","Cools the engine compartment","Improves braking effectiveness"],a:1,exp:"Open windows disrupt aerodynamic airflow significantly at higher speeds — use the vehicle's own cooling/ventilation systems instead."},
+{n:52,cat:"Efficient",q:"You should NOT use petrol with:",opts:["The correct octane rating","An inferior octane rating to that recommended by the manufacturer","Super unleaded grade","Fuel from a motorway service station"],a:1,exp:"Using a lower octane petrol than recommended can cause engine knock, reduce performance, and increase fuel consumption."},
+{n:53,cat:"Efficient",q:"Over-loading your vehicle or using a roof rack has what effect?",opts:["No effect on fuel consumption","Increases fuel consumption — even the empty roof rack increases consumption","Only affects handling","Only matters at high speed"],a:1,exp:"Extra weight and the roof rack's aerodynamic drag both increase fuel consumption. Use the roof rack only when absolutely necessary."},
+{n:54,cat:"Contamination",q:"The Diesel Particulate Filter (FAP/DPF) is a device placed in:",opts:["The air intake system","The exhaust pipe — to retain solid particles from diesel combustion","The engine oil circuit","The fuel tank"],a:1,exp:"The DPF is fitted in the exhaust pipe. It captures soot particles generated by diesel combustion and burns them off periodically."},
+{n:55,cat:"Contamination",q:"The process by which the DPF burns collected particles is called:",opts:["Oxidation","Combustion","Regeneration","Filtration"],a:2,exp:"Regeneration is the process where accumulated soot particles in the DPF are burned off, restoring the filter's capacity."},
+{n:56,cat:"Contamination",q:"What is the ideal operating temperature for effective DPF regeneration?",opts:["200°C","400°C","600°C","800°C"],a:2,exp:"The DPF requires approximately 600°C to effectively burn off retained particles. Short urban trips may never reach this temperature."},
+{n:57,cat:"Contamination",q:"Short trips should be avoided with a DPF-equipped diesel vehicle because:",opts:["Fuel consumption is too high on short trips","The filter never reaches ideal temperature and saturates prematurely","The battery discharges on short trips","Oil pressure drops on short trips"],a:1,exp:"Without reaching 600°C, the DPF cannot self-clean — it fills up more quickly and may require forced regeneration or replacement."},
+{n:58,cat:"Contamination",q:"When a DPF regeneration warning light appears, you should:",opts:["Stop and switch off the engine immediately","Pull over to let the filter cool down","NOT switch off the engine — allow regeneration to complete","Reduce speed to below 30 km/h"],a:2,exp:"Stopping the engine mid-regeneration leaves partially burned particles that can solidify and block the filter, causing serious damage."},
+{n:59,cat:"Contamination",q:"The correct oil type for diesel engines fitted with a DPF is:",opts:["Any mineral 10W-40","Standard 5W-30 synthetic","Low SAPS oil","Fully synthetic 15W-50"],a:2,exp:"Low SAPS (Sulphated Ash, Phosphorus, Sulphur) oil is specifically formulated for DPF-equipped diesels — standard oils can poison the filter."},
+{n:60,cat:"Contamination",q:"To help maintain the DPF, at least every 1,500 km you should:",opts:["Replace the DPF filter","Drive for at least 30 minutes at over 2,500 rpm","Add a DPF cleaning additive to the fuel","Have the filter professionally cleaned"],a:1,exp:"A 30-minute drive at over 2,500 rpm every 1,500 km creates the heat needed for passive DPF regeneration, keeping the filter clean."},
+{n:61,cat:"Contamination",q:"Vehicle circulation is strictly forbidden when the exhaust gases are expelled through:",opts:["A standard catalytic converter","A complete and suitable silencer","Roaring cutout pipes or straight exhaust without silencing devices","A DPF-equipped exhaust"],a:2,exp:"Vehicles with straight exhaust systems or roaring cutout pipes that bypass silencing devices are prohibited from circulating."},
+{n:62,cat:"Contamination",q:"Police can seize a vehicle if it:",opts:["Lacks a spare tyre","Has a faulty air conditioner","Produces noises, fumes, or gases above the set limits","Has expired insurance"],a:2,exp:"Under Spanish traffic law, vehicles producing excessive noise, fumes, or gases face sanctions and potential vehicle seizure."},
+{n:63,cat:"Contamination",q:"Motor vehicles produce two main types of pollution. They are:",opts:["Thermal and visual pollution","Air pollution and noise pollution","Chemical and physical pollution","Fuel and oil pollution"],a:1,exp:"Vehicles produce air pollution (harmful to health and ecosystems) and noise pollution (which can cause nerve disorders)."},
+{n:64,cat:"Contamination",q:"Noise pollution from vehicles can cause:",opts:["Engine overheating","Tyre wear","Nerve disorders","Increased fuel consumption"],a:2,exp:"The textbook specifically states that noise pollution from vehicles 'may cause nerve disorders' in affected populations."},
+{n:65,cat:"Efficient",q:"To reduce fuel consumption, you should avoid driving in:",opts:["Rural roads at moderate speed","Urban centres and intense traffic where maintaining a cruising speed is difficult","All areas with speed limits over 50 km/h","Motorways in all circumstances"],a:1,exp:"Urban congestion forces constant stop-start driving, making it impossible to maintain an efficient cruising speed."},
+{n:66,cat:"UVAR",q:"What does UVAR stand for?",opts:["Universal Vehicle Access Regulation","Urban Vehicle Access Regulations","United Vehicle Administration Rules","Urban Velocity and Access Restrictions"],a:1,exp:"UVAR = Urban Vehicle Access Regulations — measures that regulate vehicle access within urban road infrastructure."},
+{n:67,cat:"UVAR",q:"UVAR is formally defined as:",opts:["The speed limit applicable within urban areas","A measure regulating vehicle access to the road infrastructure of an urban area","The urban vehicle emissions standard","A vehicle classification and tax system"],a:1,exp:"The official definition: 'A measure regulating vehicle access to the road infrastructure of an urban area.'"},
+{n:68,cat:"UVAR",q:"Which municipalities must adopt sustainable urban mobility plans?",opts:["Only capital cities","Municipalities over 50,000 inhabitants; island territories over 20,000; and those exceeding pollution limits","All municipalities in Spain","Only municipalities in Madrid and Barcelona"],a:1,exp:"Obligations apply to: municipalities >50,000 inhabitants; island territories >20,000; and any municipality exceeding environmental pollutant limits."},
+{n:69,cat:"UVAR",q:"Low Emission Zones (ZBE/LEZ) are areas where:",opts:["Only electric vehicles are permitted","Access, circulation, and parking restrictions apply to improve air quality","Speed is limited to 30 km/h universally","Only public transport may circulate"],a:1,exp:"ZBEs are delimited areas where access, circulation, and parking restrictions reduce vehicle emissions to improve local air quality."},
+{n:70,cat:"UVAR",q:"The road sign R-120 indicates:",opts:["Maximum speed of 120 km/h","Entry prohibited to vehicles based on environmental badge or environmental criteria","Only electric vehicles permitted beyond this point","No entry for heavy goods vehicles"],a:1,exp:"R-120 prohibits entry to vehicles that do not meet the environmental badge or criteria specified on supplementary panels."},
+{n:71,cat:"UVAR",q:"Where must the DGT environmental badge be placed?",opts:["On the rear windshield","On the lower right corner of the front windshield","On the dashboard","On the rear number plate"],a:1,exp:"The badge must be placed on the lower right corner of the front windshield. If no windshield, in a clearly visible location."},
+{n:72,cat:"UVAR",q:"Badge placement is described as voluntary, however:",opts:["Vehicles without one face higher road tax","Cities with mobility ordinances may restrict vehicles without a badge","It is only voluntary for electric vehicles","All vehicles must have one from 2025"],a:1,exp:"Placement is technically voluntary, but cities may — and do — use the badge system to restrict access, penalising vehicles without one."},
+{n:73,cat:"UVAR",q:"The DGT environmental badge contains:",opts:["Only the vehicle registration number","EURO emission level, licence plate number, fuel type, and a QR code","The owner's driving licence information","The vehicle's ITV expiry date"],a:1,exp:"The badge includes: EURO emission level (4, 5, or 6), licence plate number, fuel used, and a QR code linking to vehicle information."},
+{n:74,cat:"UVAR",q:"The Zero Emissions Label is awarded to:",opts:["All hybrid vehicles regardless of type","BEV, REEV, PHEV with ≥40 km electric range, and fuel cell vehicles","Only fully battery electric vehicles","Vehicles registered after 2020"],a:1,exp:"Zero label: BEV, REEV, PHEV with at least 40 km electric range, and hydrogen fuel cell vehicles."},
+{n:75,cat:"UVAR",q:"The ECO Label includes which vehicle types?",opts:["All diesel vehicles","PHEV <40 km range, non-plug-in hybrids (HEV), CNG, LNG, and LPG (meeting Label C criteria)","All petrol vehicles registered after 2010","Natural gas vehicles only"],a:1,exp:"ECO label: PHEV with <40 km range, HEV (non-plug-in hybrids), and vehicles running on CNG, LNG, or LPG — if they meet C criteria."},
+{n:76,cat:"UVAR",q:"The Label C is awarded to petrol passenger cars and light vans registered from:",opts:["January 2001","January 2006","September 2015","January 2014"],a:1,exp:"Label C: petrol cars/vans from January 2006 onwards; diesel from September 2015; buses/trucks (both fuels) from 2014."},
+{n:77,cat:"UVAR",q:"The Label B is awarded to petrol passenger cars and light vans registered from:",opts:["January 1996","January 2001","January 2006","September 2015"],a:1,exp:"Label B: petrol cars/light vans from January 2001; diesel from 2006; buses/trucks from 2006."},
+{n:78,cat:"UVAR",q:"Vehicles without any DGT environmental label represent:",opts:["The most environmentally friendly vehicles","The most polluting vehicles with the highest emissions","Only vehicles over 20 years old","Only motorcycles and mopeds"],a:1,exp:"Vehicles without a label are those that do not meet even the Label B criteria — the oldest, most polluting vehicles on the road."},
+{n:79,cat:"UVAR",q:"A plug-in hybrid vehicle with a 35 km electric range receives which label?",opts:["Zero label","ECO label","Label C","Label B"],a:1,exp:"PHEVs with less than 40 km electric range receive the ECO label (not Zero) — provided they also meet Label C criteria."},
+{n:80,cat:"UVAR",q:"Environmental badges can be purchased at:",opts:["Only DGT offices","Post offices, CETRAA workshop network, authorised administrative managers, or the IDEAU-TO","Only online through the DGT website","Local police stations"],a:1,exp:"The badge network includes Post Offices, CETRAA workshops, administrative managers, and the IDEAU-TO — presenting the vehicle registration certificate."},
+{n:81,cat:"UVAR",q:"The National Air Quality and Atmospheric Protection Plan is known as:",opts:["Plan Verde","Plan Aire","Plan Eco","Plan DGT"],a:1,exp:"'Plan Aire' is Spain's national plan to reduce atmospheric pollution from the most health-impacting sources, including road vehicles."},
+{n:82,cat:"UVAR",q:"Plan Aire classifies vehicles by their polluting potential to:",opts:["Set speed limits by vehicle type","Distinguish less polluting vehicles and provide mobility, tax, and parking incentives","Regulate fuel prices","Determine insurance premiums"],a:1,exp:"The environmental classification system provides incentives: mobility rights, tax benefits, parking advantages, traffic restriction exemptions, and HOV lane access."},
+{n:83,cat:"UVAR",q:"Environmental classification provides incentives in the form of:",opts:["Engine power limits only","Mobility, tax management, parking regulations, traffic restriction exemptions, and HOV lane access","Parking benefits only","Insurance discounts only"],a:1,exp:"The full range of incentives: mobility rights, tax benefits, parking regulations, traffic restriction exemptions, and access to HOV/reserved lanes."},
+{n:84,cat:"UVAR",q:"Sustainable urban mobility plans include measures such as:",opts:["Building more motorways","Low-emission zones, promoting cycling, improving public transport, and adding EV charging stations","Increasing urban parking capacity","Removing traffic lights"],a:1,exp:"The measures include: establishing ZBEs, promoting cycling, improving public transport networks, and installing electric vehicle charging infrastructure."},
+{n:85,cat:"UVAR",q:"The Label C applies to petrol and diesel buses and trucks registered from:",opts:["2006","2010","2014","2015"],a:2,exp:"Both petrol and diesel buses and trucks are eligible for Label C if registered from 2014 onwards."},
+{n:86,cat:"UVAR",q:"Which vehicle type is NOT eligible for the Zero Emissions Label?",opts:["Battery electric vehicle (BEV)","Fuel cell hydrogen vehicle","PHEV with 45 km electric range","Non-plug-in hybrid (HEV)"],a:3,exp:"Non-plug-in hybrids (HEV) cannot qualify for the Zero label — they still use petrol/diesel as primary energy. They qualify for ECO instead."},
+{n:87,cat:"UVAR",q:"A non-plug-in hybrid (HEV) would receive which DGT label?",opts:["Zero","ECO","C","B"],a:1,exp:"Non-plug-in hybrids (HEV) qualify for the ECO label, provided they also meet the criteria for Label C."},
+{n:88,cat:"UVAR",q:"A petrol car registered in March 2003 would receive which DGT label?",opts:["Zero","ECO","C","B"],a:3,exp:"Label B covers petrol cars registered from January 2001. A 2003 petrol car falls in this range and receives Label B."},
+{n:89,cat:"Efficient",q:"Changing the exterior of your vehicle can:",opts:["Improve engine performance","Increase aerodynamic resistance and fuel consumption","Improve fuel quality","Extend battery life"],a:1,exp:"Exterior modifications (spoilers, body kits, extra accessories) can disrupt the vehicle's designed aerodynamics and increase drag."},
+{n:90,cat:"Efficient",q:"The roof rack should be used:",opts:["As a standard fitting on all journeys","Only when absolutely necessary — it increases fuel consumption even when empty","Only on motorways","Only at speeds below 80 km/h"],a:1,exp:"Even an empty roof rack creates significant aerodynamic drag — remove it when not in use to reduce unnecessary fuel consumption."},
+{n:91,cat:"Efficient",q:"Regularly checking tyres, air filter, and other components helps:",opts:["Increase the vehicle's speed","Avoid unnecessary breakdowns, excess fuel consumption, and contaminating emissions","Qualify for a better environmental label","Extend the vehicle warranty automatically"],a:1,exp:"Regular maintenance keeps the vehicle running at peak efficiency, preventing the performance degradation that leads to excess fuel use and emissions."},
+{n:92,cat:"UVAR",q:"The R-120 sign restricts access based on:",opts:["Vehicle weight","Vehicle age","Environmental badge or environmental criteria","Time of day"],a:2,exp:"R-120 restricts entry based on the vehicle's environmental badge classification or other established environmental criteria."},
+{n:93,cat:"Contamination",q:"Which type of journeys should be avoided with a DPF diesel vehicle?",opts:["Long motorway journeys","Short trips that prevent the filter from reaching operating temperature","Night journeys","Journeys in rain or wet conditions"],a:1,exp:"Short urban trips are the enemy of the DPF — the filter never reaches 600°C and gradually clogs without ever self-cleaning."},
+{n:94,cat:"Contamination",q:"Producing unnecessary noise from the horn or loud music while driving is:",opts:["A minor infraction with no legal consequence","Strictly forbidden and subject to sanction","Only prohibited between 10 pm and 8 am","Only an issue in residential areas"],a:1,exp:"Unnecessary noise from the horn, loud music, or electromagnetic disturbances is strictly forbidden under Spanish traffic law."},
+{n:95,cat:"Contamination",q:"A vehicle expelling gases through roaring cutout pipes is:",opts:["Permitted at speeds under 50 km/h","Permitted if it has a valid ITV","Strictly forbidden","Allowed only outside urban areas"],a:2,exp:"Using roaring cutout pipes that bypass the exhaust silencer is strictly prohibited — regardless of speed or location."},
+{n:96,cat:"Efficient",q:"To reduce aerodynamic resistance and fuel consumption, you should:",opts:["Open all windows","Use the roof rack as standard","Use the vehicle's own air conditioning/ventilation instead of opening windows at speed","Overload the vehicle to lower its centre of gravity"],a:2,exp:"Using the internal climate control maintains vehicle aerodynamics. Open windows at speed create significant drag, increasing fuel consumption."},
+{n:97,cat:"UVAR",q:"An LPG (liquefied petroleum gas) vehicle qualifies for which DGT label?",opts:["Zero","ECO","C","B"],a:1,exp:"LPG vehicles qualify for the ECO label, provided they also meet Label C criteria (typically Euro 4 or better)."},
+{n:98,cat:"UVAR",q:"The correct order of DGT labels from most to least environmentally favourable is:",opts:["B, C, ECO, Zero","Zero, ECO, C, B (then unlabelled as most polluting)","ECO, Zero, C, B","C, B, ECO, Zero"],a:1,exp:"Most to least favourable: Zero → ECO → C → B → (no label = most polluting)."},
+{n:99,cat:"Gears",q:"According to efficient driving, gear changes should be guided by:",opts:["A single fixed rpm for all vehicle types","Diesel 1,300–2,000 rpm / petrol 2,000–2,500 rpm, or the speed guide","Waiting until the engine reaches maximum rpm","Only changing when the gearbox warning light activates"],a:1,exp:"The gear change guide provides: rpm ranges (diesel 1,300–2,000 / petrol 2,000–2,500) and speed targets (2nd after 6m; 3rd at 30; 4th at 40; 5th at 50–60 km/h)."},
+{n:100,cat:"UVAR",q:"UVAR obligations apply to municipalities that have:",opts:["More than 100,000 inhabitants only","More than 50,000 inhabitants; island territories with over 20,000; or municipalities exceeding pollution limits","Only coastal municipalities","Only municipalities with an existing ZBE"],a:1,exp:"UVAR obligations cover: municipalities >50,000 inhabitants; island territories >20,000; and any municipality exceeding environmental pollutant limit values."}
+];
+
+var answered={};
+var currentFilter='all';
+
+function renderQuiz(){
+  var c=document.getElementById('quizContainer');
+  if(!c)return;
+  var toShow=qs;
+  if(currentFilter==='wrong') toShow=qs.filter(function(q){return answered[q.n]===false;});
+  else if(currentFilter!=='all') toShow=qs.filter(function(q){return q.cat===currentFilter;});
+  var html='';
+  toShow.forEach(function(q){
+    var state=answered[q.n];
+    var cls='question-card'+(state===true?' q-correct':state===false?' q-wrong':'');
+    html+='<div class="'+cls+'" id="qw-'+q.n+'">';
+    html+='<div class="question-num">Question '+q.n+' &mdash; '+q.cat+'</div>';
+    html+='<div class="question-text">'+q.q+'</div>';
+    html+='<div class="options">';
+    q.opts.forEach(function(o,i){
+      var ocls='option-btn';
+      if(state!==undefined){
+        if(i===q.a) ocls+=' correct';
+        else if(answered[q.n+'_c']===i) ocls+=' wrong';
+      }
+      html+='<button class="'+ocls+'"'+(state!==undefined?' disabled':'')+' onclick="answer('+q.n+','+i+')">'+String.fromCharCode(65+i)+'. '+o+'</button>';
+    });
+    html+='</div>';
+    html+='<div class="explanation" id="qe-'+q.n+'"'+(state!==undefined?' style="display:block"':'')+'>'+q.exp+'</div>';
+    html+='</div>';
+  });
+  if(toShow.length===0) html='<div class="card"><p>No questions match this filter yet — answer some questions first!</p></div>';
+  c.innerHTML=html;
+  updateScore();
+}
+
+function answer(n,chosen){
+  var q=qs.find(function(x){return x.n===n;});
+  answered[n]=(chosen===q.a);
+  answered[n+'_c']=chosen;
+  var wrap=document.getElementById('qw-'+n);
+  if(wrap){
+    wrap.className='question-card '+(answered[n]?'q-correct':'q-wrong');
+    wrap.querySelectorAll('.option-btn').forEach(function(b,i){
+      b.disabled=true;
+      if(i===q.a) b.className='option-btn correct';
+      else if(i===chosen) b.className='option-btn wrong';
+    });
+    var exp=document.getElementById('qe-'+n);
+    if(exp) exp.style.display='block';
+  }
+  updateScore();
+}
+
+function updateScore(){
+  var ans=Object.keys(answered).filter(function(k){return!isNaN(k);}).length;
+  var correct=Object.keys(answered).filter(function(k){return!isNaN(k)&&answered[k]===true;}).length;
+  var pct=ans>0?Math.round(correct/ans*100):0;
+  var pf=document.getElementById('progressFill');
+  var sd=document.getElementById('scoreDisplay');
+  if(pf) pf.style.width=pct+'%';
+  if(sd) sd.textContent=correct+' / '+ans+' correct';
+}
+
+function filterQuiz(type,btn){
+  currentFilter=type;
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  renderQuiz();
+}
+
+function resetQuiz(){
+  answered={};
+  currentFilter='all';
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  document.querySelector('.filter-btn').classList.add('active');
+  renderQuiz();
+}
+
+document.getElementById('tabBar').addEventListener('click',function(e){
+  var btn=e.target.closest('.tab-btn');
+  if(!btn)return;
+  var id=btn.dataset.tab;
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+  btn.classList.add('active');
+  document.getElementById('tab-'+id).classList.add('active');
+  if(id==='quiz') renderQuiz();
+});
+
+renderQuiz();
+</script>
+</body>
+</html>

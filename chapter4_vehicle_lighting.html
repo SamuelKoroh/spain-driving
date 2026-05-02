@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 4 – Vehicle Lighting | Spanish Driving Theory (Licence B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
+.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
+.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
+.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
+.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
+.header-meta{display:flex;gap:24px;margin-top:16px}
+.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
+.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
+.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
+.tab-bar::-webkit-scrollbar{display:none}
+.tab-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 18px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
+.tab-btn:hover{color:rgba(255,255,255,0.85)}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+.content{padding:32px 40px;max-width:960px;margin:0 auto}
+.tab-panel{display:none}.tab-panel.active{display:block}
+.section-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
+.section-desc{color:var(--text-muted);font-size:14px;margin-bottom:24px;margin-top:4px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
+.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.card-title .icon{width:28px;height:28px;background:var(--gold-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.card p{color:var(--text-muted);font-size:14px;line-height:1.6}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+@media(max-width:700px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+.def-block{border-left:3px solid var(--gold);padding:12px 16px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:12px}
+.def-block .term{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.def-block .def{font-size:13px;color:var(--text-muted)}
+.def-block.green{border-left-color:var(--green);background:var(--green-light)}
+.def-block.blue{border-left-color:var(--blue);background:var(--blue-light)}
+.def-block.red{border-left-color:var(--red);background:var(--red-light)}
+.styled-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
+.styled-table th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
+.styled-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
+.styled-table tr:last-child td{border-bottom:none}
+.styled-table tr:hover td{background:var(--bg)}
+.styled-table td:first-child{font-weight:600;color:var(--navy)}
+.badge{display:inline-block;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:2px 8px;border-radius:20px}
+.badge-gold{background:var(--gold-light);color:var(--gold-dark)}
+.badge-green{background:var(--green-light);color:var(--green)}
+.badge-blue{background:var(--blue-light);color:var(--blue)}
+.badge-red{background:var(--red-light);color:var(--red)}
+.badge-navy{background:var(--navy);color:#fff}
+.highlight{border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:16px;font-size:13px}
+.highlight.important{border-left:4px solid var(--red);background:var(--red-light)}
+.highlight.tip{border-left:4px solid var(--green);background:var(--green-light)}
+.highlight.info{border-left:4px solid var(--blue);background:var(--blue-light)}
+.highlight.warn{border-left:4px solid var(--gold);background:var(--gold-light)}
+.highlight .hi-title{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px}
+.highlight.important .hi-title{color:var(--red)}
+.highlight.tip .hi-title{color:var(--green)}
+.highlight.info .hi-title{color:var(--blue)}
+.highlight.warn .hi-title{color:var(--gold-dark)}
+.highlight p,.highlight li{color:var(--text-muted);line-height:1.6}
+.highlight ul{padding-left:18px;margin-top:4px}
+.highlight li{margin-bottom:3px}
+.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.quiz-header h3{font-size:18px;color:#fff}
+.quiz-progress{display:flex;align-items:center;gap:12px}
+.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
+.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
+.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
+.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
+.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
+.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
+.options{display:flex;flex-direction:column;gap:8px}
+.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
+.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
+.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
+.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
+.option-btn:disabled{cursor:default}
+.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
+.quiz-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
+.btn:active{transform:scale(0.97)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
+.btn:hover{opacity:0.88}
+.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
+.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
+.result-score span{color:var(--gold)}
+.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
+.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
+.qr-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px}
+.qr-row:last-child{border-bottom:none}
+.qr-key{font-weight:600;color:var(--navy);min-width:220px;flex-shrink:0}
+.qr-val{color:var(--text-muted);flex:1}
+.subsection{margin-bottom:28px}
+.subsection h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.subsection h3::before{content:'';display:block;width:3px;height:16px;background:var(--gold);border-radius:2px}
+.number-fact{text-align:center;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.number-fact .num{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--navy)}
+.number-fact .unit{font-size:12px;color:var(--gold-dark);font-weight:600}
+.number-fact .desc{font-size:11px;color:var(--text-light);margin-top:3px}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px}
+.quiz-page-info{font-size:13px;color:var(--text-light)}
+ul.check-list{list-style:none;padding:0}
+ul.check-list li{padding:4px 0 4px 22px;position:relative;font-size:14px;color:var(--text-muted)}
+ul.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+ul.check-list li.no::before{content:'✗';color:var(--red)}
+.step-box{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-text{font-size:14px;color:var(--text-muted);flex:1;padding-top:4px}
+@media(max-width:600px){.content{padding:20px 16px}.header{padding:20px 16px}}
+</style>
+</head><body>
+<div class="header">
+  <div class="header-badge">Permiso B – Teoría</div>
+  <h1>Chapter 4: Vehicle Lighting</h1>
+  <p>Complete study guide for the Spanish Driving Theory Examination</p>
+  <div class="header-meta">
+    <div class="header-stat"><div class="val">9</div><div class="lbl">Study sections</div></div>
+    <div class="header-stat"><div class="val">3</div><div class="lbl">Lighting purposes</div></div>
+    <div class="header-stat"><div class="val">50</div><div class="lbl">Quiz questions</div></div>
+    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
+  </div>
+</div>
+<div class="tab-bar">
+  <button class="tab-btn active" data-tab="overview">Overview &amp; Colours</button>
+  <button class="tab-btn" data-tab="position">Position Lights</button>
+  <button class="tab-btn" data-tab="dipped">Dipped Beam</button>
+  <button class="tab-btn" data-tab="highbeam">High Beam</button>
+  <button class="tab-btn" data-tab="fog">Fog Lamps</button>
+  <button class="tab-btn" data-tab="warning">Warning Lights</button>
+  <button class="tab-btn" data-tab="other">Other Lights</button>
+  <button class="tab-btn" data-tab="glare">Glare &amp; Dazzle</button>
+  <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
+</div>
+<div class="content">
+
+<div class="tab-panel active" id="tab-overview">
+  <div class="section-title">Vehicle Lighting — Purposes &amp; Colour Code</div>
+  <p class="section-desc">Three purposes: indicate vehicle presence (be seen) · illuminate the road (see and be seen) · warn other users (signal and be seen).</p>
+  <div class="subsection"><h3>Colour Code — Quick Reference</h3>
+    <table class="styled-table">
+      <thead><tr><th>Colour</th><th>Used for</th></tr></thead>
+      <tbody>
+        <tr><td>WHITE</td><td>Front sidelights, dipped-beam, high-beam, front fog lamps, reversing lights, registration plate light</td></tr>
+        <tr><td>RED</td><td>Rear tail lights, rear fog lamps, brake lights — NEVER at the front</td></tr>
+        <tr><td>YELLOW / AMBER</td><td>Indicators, side repeaters</td></tr>
+        <tr><td>WHITE or YELLOW (selective)</td><td>Front fog lamps</td></tr>
+        <tr><td>BLUE (flashing)</td><td>Priority emergency vehicles ONLY (police, fire, ambulance — V-1)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="subsection"><h3>Complete lighting system at a glance</h3>
+    <div class="grid-3">
+      <div class="def-block blue"><div class="term">Position (sidelights)</div><div class="def">White front / Red rear / Yellow side repeaters. Show width &amp; presence. Activate automatically with dipped/high/fog.</div></div>
+      <div class="def-block blue"><div class="term">Parking lights</div><div class="def">Replaces sidelights when parked in a built-up area. 2 white front + 2 red rear.</div></div>
+      <div class="def-block blue"><div class="term">Retro-reflectors</div><div class="def">Reflect light passively. Triangular shape ONLY for rear trailers/semi-trailers.</div></div>
+      <div class="def-block"><div class="term">Dipped-beam</div><div class="def">White. Mandatory sunset–sunrise + tunnels any time + poor visibility + motorcycles always.</div></div>
+      <div class="def-block"><div class="term">High-beam</div><div class="def">White. Only poorly-lit interurban roads at night or at ≤40 km/h on any road. Forbidden in urban areas and when stationary.</div></div>
+      <div class="def-block red"><div class="term">Rear fog lamps</div><div class="def">Red. Mandatory (1 or 2). Only in especially severe conditions. Does NOT illuminate road.</div></div>
+      <div class="def-block red"><div class="term">Hazard lights</div><div class="def">All indicators flashing. Mandatory cars; optional motorcycles. Use in emergency whether stationary or moving.</div></div>
+      <div class="def-block red"><div class="term">Brake lights</div><div class="def">Red, at the back. 2 red lights (cars, trailers, mopeds). Third brake light calls extra attention.</div></div>
+      <div class="def-block green"><div class="term">Reversing lights</div><div class="def">White. Mandatory for cars (not motorcycles). Auto-activates with reverse gear.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-position">
+  <div class="section-title">Position Lights, Parking Lights &amp; Retro-reflectors</div>
+  <div class="subsection"><h3>When MUST position lights be on?</h3>
+    <ul class="check-list">
+      <li>Between sunset and sunrise on any road</li>
+      <li>When stationary on the carriageway or hard shoulder of ANY road (tunnels, subways, indoor areas)</li>
+      <li>When meteorological/environmental conditions compromise visibility</li>
+      <li>Parked on hard shoulder NOT fit for traffic of an interurban road</li>
+      <li>Parked on carriageway/shoulder of a poorly-illuminated crossing</li>
+      <li>Parked on urban carriageway where vehicle is NOT well perceived at close distance</li>
+    </ul>
+    <div class="highlight warn"><div class="hi-title">Poorly illuminated street definition</div><p>Plate numbers cannot be read at more than 10 metres away AND dark vehicles are not perceptible at 50 metres. Both conditions must apply.</p></div>
+  </div>
+  <div class="subsection"><h3>Retro-reflectors</h3>
+    <table class="styled-table">
+      <thead><tr><th>Vehicle</th><th>Front</th><th>Rear</th><th>Lateral</th></tr></thead>
+      <tbody>
+        <tr><td>Motorcycles / 3-wheeled</td><td>None required</td><td>1 or 2 required (NOT triangular)</td><td>Optional (NOT triangular)</td></tr>
+        <tr><td>Other vehicles (cars)</td><td>2 optional (NOT triangular)</td><td>2 required (NOT triangular)</td><td>Min. 2 optional (NOT triangular)</td></tr>
+        <tr><td>Trailers &amp; semi-trailers</td><td>2 required (NOT triangular)</td><td>2 required — TRIANGULAR ①</td><td>Required (NOT triangular)</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:var(--text-light)">① Trailers exceeding 2.10 m width may carry 2 non-triangular ones instead.</p>
+  </div>
+  <div class="subsection"><h3>End Outline Markers (Luces de gálibo)</h3>
+    <div class="grid-3">
+      <div class="def-block red"><div class="term">Width &gt; 2.10 m</div><div class="def">MANDATORY (2 front white + 2 rear red)</div></div>
+      <div class="def-block"><div class="term">Width 1.80 m – 2.10 m</div><div class="def">Discretionary (optional)</div></div>
+      <div class="def-block green"><div class="term">Width &lt; 1.80 m</div><div class="def">FORBIDDEN — use is prohibited</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-dipped">
+  <div class="section-title">Dipped-Beam Headlights — Luces de Cruce</div>
+  <div class="highlight info"><div class="hi-title">White colour. Purpose: illuminate road WITHOUT blinding other users.</div><p>Must always be used together with sidelights. Motorcycles: dipped-beam ALWAYS on any public road, day and night.</p></div>
+  <div class="subsection"><h3>When MUST dipped-beam be used?</h3>
+    <table class="styled-table">
+      <thead><tr><th>Situation</th><th>Time</th></tr></thead>
+      <tbody>
+        <tr><td>ALL town roads (urban, crossings, tunnels) — regardless of street lighting</td><td>Between sunset and sunrise</td></tr>
+        <tr><td>Interurban roads — fairly illuminated sections</td><td>Between sunset and sunrise</td></tr>
+        <tr><td>Tunnels, subways, and road sections with S-5 tunnel sign</td><td>ANY time of day</td></tr>
+        <tr><td>Motorcycles — any public road</td><td>ANY time of day</td></tr>
+        <tr><td>Meteorological/environmental conditions significantly reducing visibility</td><td>ANY time of day</td></tr>
+        <tr><td>Reversible lanes, contra-flow lanes, adjacent with-flow lanes, additional lanes</td><td>Day and night — mandatory</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight warn"><div class="hi-title">The 40 km/h Rule</div><p>Vehicles at NOT over 40 km/h may use EITHER dipped OR high-beam on ANY road at any time of day.</p></div>
+</div>
+
+<div class="tab-panel" id="tab-highbeam">
+  <div class="section-title">High-Beam Headlights — Luces de Carretera</div>
+  <div class="highlight important"><div class="hi-title">⛔ High-beam FORBIDDEN in:</div><ul><li>Stationary or parked vehicles (at all times)</li><li>When travelling in urban areas (speeds over 40 km/h)</li><li>Whenever there is any possibility of dazzling another road user</li></ul></div>
+  <div class="subsection"><h3>When MAY high-beam be used?</h3>
+    <ul class="check-list">
+      <li>Between sunset and sunrise on poorly illuminated INTERURBAN roads — at speed over 40 km/h</li>
+      <li>In poorly illuminated tunnels/subways — at speed over 40 km/h</li>
+      <li>Any road — at speed NOT over 40 km/h (either dipped or high-beam)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Cars — number of high-beam headlamps</span><span class="qr-val">In pairs (2 headlamps)</span></div>
+    <div class="qr-row"><span class="qr-key">Motorcycles / three-wheeled vehicles</span><span class="qr-val">1 or 2 headlamps</span></div>
+    <div class="qr-row"><span class="qr-key">Vehicle without high-beam fitted</span><span class="qr-val">Must use dipped-beam in all situations requiring high-beam</span></div>
+    <div class="qr-row"><span class="qr-key">High-beam illumination range</span><span class="qr-val">≥ 100 metres ahead</span></div>
+    <div class="qr-row"><span class="qr-key">Dipped-beam illumination range</span><span class="qr-val">≥ 40 metres ahead (hence the 40 km/h rule)</span></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-fog">
+  <div class="section-title">Fog Lamps — Luces Antiniebla</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><div class="icon">🔦</div>Front fog lamps</div>
+      <p>Colour: WHITE or SELECTIVE YELLOW. OPTIONAL (not mandatory). In pairs. Used together with sidelights. Can be used alone (but may dazzle — not advisable).</p>
+      <p style="margin-top:8px"><strong>When to use:</strong> fog · heavy rain · snow · dust or smoke clouds · road narrows &lt;6.5 m with warning signs.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="icon">🔴</div>Rear fog lamps</div>
+      <p>Colour: RED. MANDATORY (singly or in pairs). Does NOT illuminate road — enhances rear conspicuity only. Used with dipped/high-beam or front fog lamps.</p>
+      <p style="margin-top:8px"><strong>Only in especially severe:</strong> THICK fog · VERY heavy rain · HEAVY snow · dense dust/smoke clouds.</p>
+    </div>
+  </div>
+  <div class="highlight important"><div class="hi-title">⛔ Rear fog lamps misuse</div><p>Using them in ordinary rain or light fog is prohibited and dazzles following drivers. This is a sanctionable offence.</p></div>
+  <div class="subsection"><h3>Fog lamp usage summary by time of day</h3>
+    <div class="def-block blue"><div class="term">DAYTIME — adverse visibility conditions</div><div class="def">At least sidelights ON + either fog lamps, dipped-beam, or high-beam ON.</div></div>
+    <div class="def-block"><div class="term">NIGHT-TIME — adverse visibility conditions</div><div class="def">At least sidelights AND dipped-beam ON. Fog or high-beam: optional.</div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-warning">
+  <div class="section-title">Warning Lights — Indicators, Hazard, Brake &amp; Reversing</div>
+  <div class="subsection"><h3>Indicators</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Colour</span><span class="qr-val">YELLOW. Obligatory for all motor vehicles, trailers, semi-trailers.</span></div>
+      <div class="qr-row"><span class="qr-key">Must stay on</span><span class="qr-val">For the entire duration of the manoeuvre</span></div>
+      <div class="qr-row"><span class="qr-key">Must be cancelled</span><span class="qr-val">Once vehicle is properly positioned after the manoeuvre</span></div>
+      <div class="qr-row"><span class="qr-key">Never confers</span><span class="qr-val">Right of way</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Hazard / Emergency Lights</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">What they are</span><span class="qr-val">ALL indicators flashing simultaneously</span></div>
+      <div class="qr-row"><span class="qr-key">Mandatory for</span><span class="qr-val">All cars and their trailers</span></div>
+      <div class="qr-row"><span class="qr-key">Optional for</span><span class="qr-val">Motorcycles</span></div>
+      <div class="qr-row"><span class="qr-key">Must be used</span><span class="qr-val">In emergency situations: breakdown, accident, transporting injured, OR when minimum speed cannot be reached and rear-end collision risk is real</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Brake Lights</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Colour / position</span><span class="qr-val">RED — at the back, usually at outer edges. Auto-activated by foot pedal.</span></div>
+      <div class="qr-row"><span class="qr-key">Standard cars, trailers, mopeds, light quads</span><span class="qr-val">2 red lights</span></div>
+      <div class="qr-row"><span class="qr-key">Third brake light</span><span class="qr-val">At a higher position. Used repeatedly to warn of need to stop or decelerate considerably.</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Reversing Lights</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Colour</span><span class="qr-val">WHITE. Illuminates road behind AND warns others vehicle is reversing.</span></div>
+      <div class="qr-row"><span class="qr-key">Mandatory for</span><span class="qr-val">All cars except motorcycles</span></div>
+      <div class="qr-row"><span class="qr-key">Optional for</span><span class="qr-val">Trailers, semi-trailers, three-wheeled vehicles</span></div>
+      <div class="qr-row"><span class="qr-key">Activated by</span><span class="qr-val">Engaging reverse gear + ignition in contact position — AUTOMATIC</span></div>
+      <div class="qr-row"><span class="qr-key">If reversing light fails</span><span class="qr-val">Arm extended horizontally, palm FACING BACK</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-other">
+  <div class="section-title">Other Lights — DRL, Interior, Registration Plate</div>
+  <div class="subsection"><h3>Daytime Running Lights (DRL)</h3>
+    <div class="highlight important"><div class="hi-title">⚠️ Key exam trap — DRL do NOT illuminate the rear</div><p>DRL are white front lights that auto-activate with the engine. They do NOT activate rear lights. In fog or reduced visibility, the driver MUST switch on proper dipped-beam headlights — DRL alone leave the rear of the vehicle completely unlit.</p></div>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Mandatory since 2011 on</span><span class="qr-val">All new passenger cars, vans, and light commercial vehicles sold in the EU</span></div>
+      <div class="qr-row"><span class="qr-key">Activation</span><span class="qr-val">Automatically when engine starts; automatically deactivated/dimmed when dipped-beam is activated</span></div>
+      <div class="qr-row"><span class="qr-key">Do they replace headlights?</span><span class="qr-val">NO — DRL are for daytime conspicuity only. Dipped-beam required for all poor visibility and night situations.</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Interior &amp; Registration Plate Lights</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Interior lights — mandatory for</span><span class="qr-val">Public passenger service vehicles AND rental vehicles with driver</span></div>
+      <div class="qr-row"><span class="qr-key">Interior lights at night</span><span class="qr-val">Can make forward vision difficult (windscreen reflections)</span></div>
+      <div class="qr-row"><span class="qr-key">Registration plate light</span><span class="qr-val">Auto-illuminates when sidelights are on. SP signal also auto-illuminates when applicable.</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Technical Requirements</h3>
+    <ul class="check-list">
+      <li>Lights in pairs: same colour + positioned symmetrically</li>
+      <li>No steady light may emit flashing or variable-intensity glare (except as regulated)</li>
+      <li class="no">Number of headlamps cannot exceed the authorised amount</li>
+      <li class="no">Decorative painting, extra lighting or unauthorised reflective devices: FORBIDDEN</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-glare">
+  <div class="section-title">Glare &amp; Dazzle Rules</div>
+  <div class="highlight important"><div class="hi-title">If YOU are dazzled — do NOT pull onto the hard shoulder!</div><p>Slow down as far as possible or come to a complete stop. There is a risk of leaving the road or meeting other users on the shoulder.</p></div>
+  <div class="subsection"><h3>When to switch from high-beam to dipped-beam</h3>
+    <table class="styled-table">
+      <thead><tr><th>Situation</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td>Any possibility of dazzling another road user</td><td>Switch to dipped-beam IMMEDIATELY</td></div></tr>
+        <tr><td>Bend to the RIGHT</td><td>Switch to dipped-beam FIRST — your lights project directly at oncoming drivers. Drivers on left bends may delay switching slightly.</td></tr>
+        <tr><td>Urban area (speed &gt;40 km/h)</td><td>High-beam FORBIDDEN — dipped-beam mandatory</td></tr>
+        <tr><td>Stationary or parked vehicle</td><td>High-beam FORBIDDEN at all times</td></tr>
+        <tr><td>During overtake — both vehicles alongside</td><td>High-beam appropriate for overtaking vehicle. Overtaken vehicle must switch to dipped-beam.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight tip"><div class="hi-title">Headlamp adjustment obligation</div><p>Heavy rear cargo tilts headlamps upward — even dipped-beam can dazzle. The driver must ensure headlamps are correctly adjusted for any load. This is a continuous obligation.</p></div>
+  <div class="subsection"><h3>Complete situation reference table</h3>
+    <table class="styled-table">
+      <thead><tr><th>Situation</th><th>Minimum lights required</th></tr></thead>
+      <tbody>
+        <tr><td>Urban road — night</td><td>Sidelights + dipped-beam (high-beam forbidden)</td></tr>
+        <tr><td>Interurban — night — poorly illuminated</td><td>Sidelights + high-beam (if speed &gt;40 km/h)</td></tr>
+        <tr><td>Tunnel — any time of day</td><td>Sidelights + dipped-beam (mandatory always)</td></tr>
+        <tr><td>Fog / heavy rain / snow — day</td><td>Sidelights + dipped-beam or fog or high-beam</td></tr>
+        <tr><td>THICK fog / VERY heavy rain / HEAVY snow</td><td>Sidelights + dipped-beam + REAR FOG LAMPS</td></tr>
+        <tr><td>Motorcycle — any road, any time</td><td>Sidelights + dipped-beam (always)</td></tr>
+        <tr><td>Speed ≤ 40 km/h — any road, any time</td><td>Sidelights + dipped OR high-beam</td></tr>
+        <tr><td>Reversible / contra-flow / additional lane</td><td>Sidelights + dipped-beam (minimum)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-quiz">
+  <div class="quiz-header">
+    <h3>Chapter 4 Quiz — 50 Questions</h3>
+    <div class="quiz-progress">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <div class="score-display" id="score-display">0/0</div>
+    </div>
+  </div>
+  <div id="quiz-body">
+    <div class="question-card">
+      <div class="question-num" id="q-num"></div>
+      <div class="question-text" id="q-text"></div>
+      <div class="options" id="q-options"></div>
+      <div class="explanation" id="q-exp"></div>
+    </div>
+    <div class="quiz-nav">
+      <div class="quiz-page-info" id="q-page"></div>
+      <div class="quiz-controls">
+        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
+        <button class="btn btn-outline" id="btn-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <div class="quiz-result" id="quiz-result">
+    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">50</span></div>
+    <div class="result-msg" id="res-msg"></div>
+    <div class="result-grade" id="res-grade"></div>
+    <button class="btn btn-gold" onclick="initQuiz()">Try Again</button>
+  </div>
+</div>
+</div>
+<script>
+window.QUIZ_QUESTIONS=[
+{topic:"Colour Code",q:"What colour are front sidelights?",opts:["Red","Yellow","White","Amber"],ans:2,exp:"Front sidelights are WHITE. Rear tail lights are RED. Side repeaters are YELLOW (or red if close to tail lights). Red lights are NEVER permitted at the front of a vehicle."},
+{topic:"Colour Code",q:"What colour are rear fog lamps?",opts:["White","Yellow","Amber","Red"],ans:3,exp:"Rear fog lamps are RED. They enhance conspicuity from behind. Front fog lamps are white or selective yellow."},
+{topic:"Colour Code",q:"What colour are vehicle indicators (flashers)?",opts:["White","Red","Yellow","Blue"],ans:2,exp:"Indicators are YELLOW. They are obligatory for all motor vehicles, trailers and semi-trailers. Blue flashing lights are exclusively for priority emergency vehicles."},
+{topic:"Colour Code",q:"Reversing lights are which colour?",opts:["Red","Yellow","White","Amber"],ans:2,exp:"Reversing lights are WHITE. They illuminate the road behind AND warn others the vehicle is reversing. They activate automatically when reverse gear is engaged."},
+{topic:"Position Lights",q:"When MUST position lights be switched on?",opts:["Only at night on interurban roads","Between sunset and sunrise, or when meteorological conditions compromise visibility — and when stationary on the carriageway/hard shoulder of ANY road","Only in tunnels","Only in fog"],ans:1,exp:"Position lights must be on: (1) between sunset and sunrise; (2) when conditions compromise visibility; (3) when stationary on carriageway or hard shoulder of ANY road including tunnels, subways, indoor areas."},
+{topic:"Position Lights",q:"Sidelights must light automatically when which other lights are switched on?",opts:["Only when dipped-beam is activated","When dipped-beam, high-beam OR fog lamps are activated","Only when fog lamps are on","Only when the indicator is active"],ans:1,exp:"Sidelights must light automatically whenever dipped-beam, high-beam OR fog lamps are activated."},
+{topic:"Retro-reflectors",q:"Which vehicle is the ONLY one permitted to have triangular-shaped retro-reflectors?",opts:["All vehicles","Cars over 3,500 kg MAM","Trailers and semi-trailers — REAR only","Motorcycles and mopeds"],ans:2,exp:"The triangular shape is exclusively reserved for retro-reflectors installed on the REAR of trailers and semi-trailers. All other vehicles must use non-triangular retro-reflectors."},
+{topic:"End Outline Markers",q:"End outline marker lamps are MANDATORY for vehicles exceeding what width?",opts:["1.80 m","2.00 m","2.10 m","2.55 m"],ans:2,exp:"Mandatory for vehicles over 2.10 m wide. Discretionary for 1.80–2.10 m. FORBIDDEN for vehicles under 1.80 m wide."},
+{topic:"Dipped Beam",q:"Must a driver use dipped-beam in an urban area at night even if streets are well lit?",opts:["No — street lighting is sufficient","Yes — dipped-beam is mandatory in ALL town roads between sunset and sunrise, regardless of street lighting","Only above 50 km/h","Only outside urban areas"],ans:1,exp:"Yes. Between sunset and sunrise, dipped-beam is mandatory in ALL town roads — urban roads, crossings, tunnels — regardless of street lighting."},
+{topic:"Dipped Beam",q:"At what time of day must dipped-beam be used in a tunnel?",opts:["Only between sunset and sunrise","Only tunnels over 500 m","At ANY time of day — both day and night","Only during adverse weather"],ans:2,exp:"In tunnels, subways, and road sections with the S-5 tunnel sign, dipped-beam must be used at ANY time of day — regardless of the tunnel's lighting level."},
+{topic:"Dipped Beam",q:"Must motorcycles use dipped-beam during the day in clear weather?",opts:["No — only at night","Yes — motorcycles must use dipped-beam at ALL times on any public road, day and night","Only on interurban roads","Only above 50 km/h"],ans:1,exp:"Motorcycles must use dipped-beam at all times on any public road — day and night, in any weather. This is a unique rule applying exclusively to motorcycles."},
+{topic:"High Beam",q:"Where is high-beam FORBIDDEN?",opts:["On conventional highways","In stationary or parked vehicles, and when travelling in urban areas","Only in tunnels","Only when following another vehicle"],ans:1,exp:"High-beam is FORBIDDEN in: (1) stationary or parked vehicles; (2) when travelling in urban areas. Additionally, must be replaced by dipped-beam whenever there is any possibility of dazzling another road user."},
+{topic:"High Beam",q:"A driver travels at 35 km/h on a well-lit urban road at night. May they use high-beam?",opts:["No — high-beam always forbidden in urban areas","Yes — at ≤40 km/h, either dipped OR high-beam is permitted on any road","Only if street lights are not working","Only motorcycles may use high-beam at low speeds in urban areas"],ans:1,exp:"Vehicles travelling at NOT over 40 km/h are allowed to use either dipped-beam OR high-beam. This exception applies on any road at any time of day."},
+{topic:"Fog Lamps",q:"Are rear fog lamps mandatory or optional on a car?",opts:["Optional — same as front fog lamps","Mandatory — installed singly or in pairs","Optional — only trucks need them","Mandatory only on vehicles over 3,500 kg MAM"],ans:1,exp:"Rear fog lamps are MANDATORY on all cars (installed singly or in pairs). Front fog lamps are OPTIONAL."},
+{topic:"Fog Lamps",q:"Under which MORE SEVERE conditions should REAR fog lamps be activated?",opts:["Same conditions as front fog lamps","Only under especially reduced visibility: THICK fog, VERY heavy rain, HEAVY snow, dense dust/smoke clouds","At all times between sunset and sunrise","Only on motorways"],ans:1,exp:"Rear fog lamps require MORE SEVERE conditions: thick fog, VERY heavy rain, HEAVY snow, or dense dust/smoke clouds. Using them in ordinary rain is forbidden."},
+{topic:"Fog Lamps",q:"What is the minimum lighting required during DAYTIME in adverse visibility-reducing weather?",opts:["Position lights alone","At least sidelights ON + either fog lamps, dipped-beam, or high-beam ON","Rear fog lamps only","Hazard lights and position lights"],ans:1,exp:"Daytime under adverse conditions: at least sidelights PLUS one of: fog lamps, dipped-beam, or high-beam. Night-time requires at minimum sidelights AND dipped-beam."},
+{topic:"Fog Lamps",q:"What colour are front fog lamps?",opts:["Red only","Blue","White or selective yellow","Amber only"],ans:2,exp:"Front fog lamps are WHITE or SELECTIVE YELLOW. They are optional and installed in pairs."},
+{topic:"Hazard Lights",q:"Hazard lights are mandatory on motorcycles?",opts:["Yes — all vehicles including motorcycles","No — mandatory for cars and their trailers; OPTIONAL for motorcycles","Yes — only motorcycles over 125cc","No — motorcycles never need them"],ans:1,exp:"Hazard lights are MANDATORY for all cars and their trailers. For motorcycles, they are OPTIONAL."},
+{topic:"Brake Lights",q:"What is the purpose of the third brake light?",opts:["Illuminate the rear number plate when braking","Warn drivers behind — at a higher position to call attention; used repeatedly for need to stop or decelerate considerably","Replace the two main brake lights if they fail","Signal the vehicle's width when braking"],ans:1,exp:"The third brake light is at a HIGHER position at the rear to better attract following drivers' attention. Used repeatedly to warn of the need to stop the vehicle or decelerate considerably."},
+{topic:"Reversing Lights",q:"Reversing lights activate automatically when:",opts:["Manually by the driver","Reverse gear is engaged + ignition in contact position","Only when the driver presses brake pedal while in reverse","They are always on when the engine is running"],ans:1,exp:"Reversing lights switch on AUTOMATICALLY when reverse gear is engaged AND the ignition key is in the contact position."},
+{topic:"Glare",q:"You are dazzled by oncoming headlights. You must:",opts:["Pull onto the hard shoulder and stop","Slow down as far as possible or stop — do NOT pull onto the hard shoulder","Flash your own high-beam","Activate hazard lights and continue"],ans:1,exp:"A dazzled driver must slow down as far as possible, or if necessary stop. Must NOT pull onto the hard shoulder — risk of leaving the road or meeting users on the shoulder."},
+{topic:"Glare",q:"Approaching a RIGHT-hand bend at night — when must you switch to dipped-beam?",opts:["After seeing oncoming headlights","BEFORE entering the bend — your lights project directly at oncoming drivers","Only if you see oncoming lights","You may keep high-beam through a right bend"],ans:1,exp:"On bends to the RIGHT, the light beams are projected at oncoming drivers — switch to dipped-beam BEFORE you enter the bend. On left bends you may delay switching slightly."},
+{topic:"DRL",q:"Daytime Running Lights (DRL) — do they activate rear lights?",opts:["Yes — DRL activate both front and rear lights","No — DRL are front lights ONLY. The rear of the vehicle remains unlit when only DRL is on.","Yes — but only the tail lights","Only if the vehicle's settings are configured accordingly"],ans:1,exp:"DRL do NOT activate rear lights. In fog or reduced visibility, the driver MUST switch on proper dipped-beam headlights to illuminate the rear. Using DRL alone in fog leaves the rear unlit — a dangerous and common mistake."},
+{topic:"Dipped Beam",q:"Driving in a reversible lane during the daytime — what headlights must be on?",opts:["No special lighting during daytime","At least dipped-beam headlights — mandatory day and night in reversible lanes","Only position lights","High-beam is required"],ans:1,exp:"Vehicles in reversible lanes, contra-flow lanes, adjacent with-flow lanes, and additional circumstantial lanes must have at least DIPPED-BEAM on — both day and night."},
+{topic:"Glare",q:"Headlamp adjustment — heavy rear cargo must be adjusted to prevent:",opts:["Fuel consumption increase","Even dipped-beam headlamps from dazzling other drivers due to the upward tilt from cargo weight","The headlamp housings from being damaged","Excessive forward illumination range"],ans:1,exp:"Heavy rear cargo tilts the vehicle backwards and points headlamps upward. Even dipped-beam can dazzle if mis-adjusted. Drivers must compensate by adjusting headlamps for any significant load."},
+{topic:"Position Lights",q:"Parking lights (luces de estacionamiento) — what do they replace?",opts:["Dipped-beam when parked","Front and rear position sidelights when parked in a built-up area","The indicator when parking","Hazard lights when parked"],ans:1,exp:"Parking lights signal the presence of a vehicle parked in a built-up area. They replace the front and rear position sidelights. Consist of 2 front white + 2 rear red lights, coinciding with sidelights."},
+{topic:"High Beam",q:"How many high-beam headlamps are required on a car?",opts:["1","2 — in pairs","3","4"],ans:1,exp:"Cars must have high-beam headlamps in PAIRS (2 headlamps). Motorcycles and three-wheeled vehicles may have 1 or 2."},
+{topic:"Fog Lamps",q:"Using front fog lamps WITHOUT dipped-beam in fog — what is the risk?",opts:["No risk — they are designed for solo use","May dazzle oncoming drivers due to their low position and angle — not advisable","The vehicle won't be seen from the side","The rear of the vehicle will be dark"],ans:1,exp:"Front fog lamps used solo without dipped-beam can dazzle oncoming drivers. While technically allowed, the regulation notes it is NOT ADVISABLE. Dipped-beam should accompany fog lamps."},
+{topic:"Glare",q:"During an overtake with both vehicles alongside: which lights should the OVERTAKED vehicle use?",opts:["Continue with high-beam","Must switch to DIPPED-BEAM to avoid dazzling the overtaking driver through their mirrors","Activate hazard lights","No change required"],ans:1,exp:"During an overtake, when both vehicles are side by side, the OVERTAKEN vehicle must switch to dipped-beam. The overtaking vehicle may use high-beam at that exact moment to see ahead."},
+{topic:"Technical",q:"May a driver install extra headlamps beyond the authorised number?",opts:["Yes — if they don't dazzle others","Yes — auxiliary fog lamps always permitted","No — the number of headlamps cannot exceed the authorised amount. Decorative lighting also FORBIDDEN.","Only homologated spot lights may be added"],ans:2,exp:"The headlamps installed cannot exceed the authorised amount. Decorative painting, extra lighting or additional reflective devices not authorised by regulation are forbidden."},
+{topic:"Technical",q:"May a steady (non-flashing) light emit a flashing or variable-intensity glare?",opts:["Yes — any light may flash to attract attention","No — no steady light may emit flashing or variable-intensity glare, except those specifically indicated by regulation","Only rear lights may flash","Only front lights may flash"],ans:1,exp:"No steady light may emit flashing or variable-intensity glare, except those specifically regulated (indicators, hazard lights, V-16 beacon, etc.)."},
+{topic:"Position Lights",q:"What is a 'poorly illuminated street' as defined for parking light purposes?",opts:["Any street without street lamps","Plate numbers cannot be read at more than 10 m away AND dark vehicles not perceptible at 50 m — BOTH conditions","Any urban street between 11 PM and 6 AM","Any street with fewer than 3 lamps per 100 m"],ans:1,exp:"A poorly illuminated street: plate text cannot be read at more than 10 metres away AND dark vehicles are not perceptible at 50 metres. Both conditions must apply simultaneously."},
+{topic:"Reversing Lights",q:"If the reversing light fails, what arm signal must the driver use?",opts:["Left indicator","Hazard lights","Arm extended horizontally, palm FACING BACK","No signal is required"],ans:2,exp:"When the reverse light is not functioning, the arm signal is: arm extended HORIZONTALLY with the palm FACING BACK."},
+{topic:"Fog Lamps",q:"Night-time, THICK fog. What is the minimum required lighting?",opts:["Sidelights only","Sidelights and dipped-beam are the MINIMUM; rear fog lamps must also be activated","High-beam only","Front fog lamps alone"],ans:1,exp:"Night-time under adverse conditions: minimum is sidelights AND dipped-beam. For especially severe conditions (thick fog, very heavy rain, heavy snow), rear fog lamps must additionally be activated."},
+{topic:"Dipped Beam",q:"A car suffers an irreparable lighting breakdown forcing only low-intensity glare. What must the driver do?",opts:["Continue slowly with hazard lights on","Reduce speed until reaching a conspicuous area where the vehicle can stop safely","Pull immediately onto the hard shoulder","Switch to parking lights and continue"],ans:1,exp:"If an irreparable lighting breakdown forces the vehicle to emit only low-intensity glare, the driver must reduce speed until reaching a conspicuous area where the vehicle can be stopped safely."},
+{topic:"High Beam",q:"A vehicle does not have high-beam headlights fitted. What must it use when high-beam would be required?",opts:["Any combination of fog lamps and sidelights","Dipped-beam headlights — vehicles without high-beam must use dipped-beam in all such situations","Front fog lamps replace high-beam","The vehicle is exempt from all lighting obligations"],ans:1,exp:"Vehicles that lack high-beam headlamps must use dipped-beam headlights in all situations where high-beam would normally be required."},
+{topic:"Dipped Beam",q:"Which lights are mandatory at ≤40 km/h on any road at any time?",opts:["No headlights required at low speed","Sidelights only","Sidelights + either dipped-beam OR high-beam","Position lights alone"],ans:2,exp:"Vehicles travelling at NOT over 40 km/h are allowed to use either dipped-beam OR high-beam — on any road, day or night. Both options require sidelights to also be on."},
+{topic:"Warning Lights",q:"Hazard lights must also be used when:",opts:["Only when stationary due to breakdown","When minimum speed cannot be reached and danger of rear-end collision is real — whether in MOTION or stationary","Only when transferring injured persons","Only if police are present"],ans:1,exp:"Hazard lights must be used in emergency situations whether IN MOTION or stationary: breakdown, accident, transporting injured, OR when minimum speed cannot be reached and rear-end collision risk is real."},
+{topic:"Retro-reflectors",q:"What colour are lateral retro-reflectors?",opts:["Red","White","Yellow","Amber"],ans:2,exp:"Lateral (side) retro-reflectors are YELLOW (automatic yellow). Front retro-reflectors are WHITE; rear retro-reflectors are RED."},
+{topic:"Dipped Beam",q:"A car drives through a tunnel in the middle of the day in clear weather. Are headlights required?",opts:["No — tunnel is well lit and it's daytime","No — headlights only required in tunnels at night","Yes — dipped-beam is mandatory in tunnels at ANY time of day regardless of lighting level","Only high-beam is required in tunnels"],ans:2,exp:"Dipped-beam is mandatory in ALL tunnels, subways and road sections with the S-5 tunnel sign at ANY time of day, regardless of the tunnel's lighting level."},
+{topic:"Fog Lamps",q:"Front fog lamps must be used together with which other lights?",opts:["They must always be used with high-beam","Together with sidelights ON. Can be used solo (though not advisable) or with dipped-beam.","Only together with rear fog lamps","They have no requirement — fully independent"],ans:1,exp:"Front fog lamps must be used together with sidelights on. They are often used with dipped-beam (though solo use with only sidelights is technically allowed but may dazzle)."},
+{topic:"DRL",q:"DRL (Daytime Running Lights) — do they replace proper headlights in fog?",opts:["Yes — DRL are designed for adverse weather use","No — DRL are for daytime conspicuity only. Dipped-beam must be activated in fog — DRL leave the rear unlit.","Yes — if the vehicle is less than 3 years old","Only on motorways"],ans:1,exp:"No. DRL are white front lights for daytime conspicuity only. In fog, the driver MUST switch on dipped-beam headlights. DRL do not activate rear lights, leaving the rear of the vehicle completely dark."},
+{topic:"Position Lights",q:"V-19 sticker (ITV) placement on vehicles WITH a windshield:",opts:["Lower left corner of exterior face","Upper LEFT corner of interior face","Upper RIGHT corner of interior face","Centre of the dashboard"],ans:2,exp:"The V-19 ITV sticker must be placed on the upper RIGHT CORNER of the INTERIOR FACE of the windshield."},
+{topic:"Colour Code",q:"Which statement about red lights is correct?",opts:["Red lights may be used at the front in emergency situations","Red lights are NEVER permitted at the front of a vehicle","Red may be used at the front for brake lights","Only emergency vehicles may have red front lights"],ans:1,exp:"Red lights are NEVER permitted at the front of a vehicle under any circumstances. Front lights must be white or amber/yellow. Brake lights, tail lights, and rear fog lamps are all red but located exclusively at the REAR."},
+{topic:"High Beam",q:"On a poorly illuminated interurban road at night at 80 km/h — which lights are appropriate?",opts:["Dipped-beam only","High-beam is permitted and appropriate — if it does not dazzle other road users","Only front fog lamps","Position lights alone are sufficient"],ans:1,exp:"Between sunset and sunrise, on poorly illuminated interurban roads, at speed over 40 km/h, high-beam is permitted and recommended — provided it is switched to dipped-beam when another road user might be dazzled."},
+{topic:"Technical",q:"Lighting devices in pairs must be:",opts:["Any colour as long as both are visible","The SAME COLOUR and positioned SYMMETRICALLY","One facing forward and one backward","At least 50 cm apart"],ans:1,exp:"Lighting and signalling devices installed in pairs with the same purpose must be the SAME COLOUR and positioned SYMMETRICALLY. This ensures other users receive consistent visual signals."},
+{topic:"Glare",q:"Why must headlamps be kept well adjusted?",opts:["Poor adjustment only affects fuel consumption","Mis-adjusted headlamps can dazzle other road users even with dipped-beam on","Adjustment only matters for high-beam","Headlamp alignment is only a legal concern at ITV inspection"],ans:1,exp:"Even dipped-beam headlamps can dazzle if mis-adjusted. Heavy rear loads tilt the vehicle backwards, pointing headlamps upward. Drivers must adjust headlamps to compensate for any load at all times."},
+{topic:"Position Lights",q:"Interior passenger compartment lights are mandatory for:",opts:["All private cars at all times","Public passenger service vehicles and rental vehicles with a driver","All vehicles with more than 4 passengers","Only taxis and buses"],ans:1,exp:"Interior passenger compartment lights are mandatory for PUBLIC PASSENGER SERVICE vehicles and RENTAL VEHICLES WITH A DRIVER. For private cars they are optional (but can hinder vision at night)."}
+];
+</script>
+<script>
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+    window.scrollTo(0,0);
+  });
+});
+
+// Quiz engine
+let qCur=0,qScore=0,qAnswered=false;
+const questions=window.QUIZ_QUESTIONS||[];
+function initQuiz(){
+  qCur=0;qScore=0;qAnswered=false;
+  if(!questions.length)return;
+  document.getElementById('quiz-result').style.display='none';
+  document.getElementById('quiz-body').style.display='block';
+  renderQuestion();
+  updateProgress();
+}
+function renderQuestion(){
+  if(qCur>=questions.length){showResult();return;}
+  const q=questions[qCur];
+  document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;
+  document.getElementById('q-text').textContent=q.q;
+  const cont=document.getElementById('q-options');
+  cont.innerHTML='';
+  q.opts.forEach((opt,i)=>{
+    const b=document.createElement('button');
+    b.className='option-btn';
+    b.textContent=String.fromCharCode(65+i)+'. '+opt;
+    b.addEventListener('click',()=>pickAnswer(i,b,q));
+    cont.appendChild(b);
+  });
+  document.getElementById('q-exp').style.display='none';
+  document.getElementById('q-exp').textContent='';
+  qAnswered=false;
+  document.getElementById('btn-next').disabled=true;
+  updateProgress();
+}
+function pickAnswer(i,btn,q){
+  if(qAnswered)return;
+  qAnswered=true;
+  const btns=document.querySelectorAll('#q-options .option-btn');
+  btns.forEach(b=>b.disabled=true);
+  if(i===q.ans){btn.classList.add('correct');qScore++;}
+  else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}
+  const exp=document.getElementById('q-exp');
+  exp.textContent=q.exp;
+  exp.style.display='block';
+  document.getElementById('btn-next').disabled=false;
+  document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);
+}
+function updateProgress(){
+  const pct=questions.length?Math.round(qCur/questions.length*100):0;
+  document.getElementById('progress-fill').style.width=pct+'%';
+  document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;
+}
+function showResult(){
+  document.getElementById('quiz-body').style.display='none';
+  const res=document.getElementById('quiz-result');
+  res.style.display='block';
+  const pct=Math.round(qScore/questions.length*100);
+  document.getElementById('res-num').textContent=qScore;
+  document.getElementById('res-den').textContent=questions.length;
+  let msg='',cls='';
+  if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}
+  else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}
+  else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}
+  else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}
+  document.getElementById('res-msg').textContent=msg;
+  document.getElementById('res-grade').style.cssText=cls;
+  document.getElementById('res-grade').textContent=pct+'%';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  initQuiz();
+  document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});
+  document.getElementById('btn-restart').addEventListener('click',initQuiz);
+});
+</script>
+</body></html>

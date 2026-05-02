@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 6 – Documentation | Spanish Driving Theory (Licence B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#e8a020;--gold-light:#faecd6;--gold-dark:#b57d10;--green:#1a6e3c;--green-light:#e0f2e9;--red:#b52b27;--red-light:#fce8e8;--blue:#1a4e8a;--blue-light:#e4eef9;--text:#0d1b2a;--text-muted:#4a5568;--text-light:#718096;--bg:#f7f5f0;--surface:#ffffff;--border:#e2ddd4;--border-strong:#c9c0b4;--radius:8px;--radius-lg:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
+.header{background:var(--navy);color:#fff;padding:28px 40px 24px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-30px;right:-40px;width:220px;height:220px;border:40px solid rgba(232,160,32,0.12);border-radius:50%}
+.header-badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:10px}
+.header h1{font-size:26px;font-weight:700;color:#fff;margin-bottom:4px}
+.header p{font-size:14px;color:rgba(255,255,255,0.65);font-weight:300}
+.header-meta{display:flex;gap:24px;margin-top:16px}
+.header-stat .val{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold)}
+.header-stat .lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
+.tab-bar{background:var(--navy2);display:flex;gap:2px;padding:0 24px;overflow-x:auto;scrollbar-width:none}
+.tab-bar::-webkit-scrollbar{display:none}
+.tab-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:12px 18px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
+.tab-btn:hover{color:rgba(255,255,255,0.85)}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+.content{padding:32px 40px;max-width:960px;margin:0 auto}
+.tab-panel{display:none}.tab-panel.active{display:block}
+.section-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
+.section-desc{color:var(--text-muted);font-size:14px;margin-bottom:24px;margin-top:4px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px}
+.card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.card-title .icon{width:28px;height:28px;background:var(--gold-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.card p{color:var(--text-muted);font-size:14px;line-height:1.6}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+@media(max-width:700px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+.def-block{border-left:3px solid var(--gold);padding:12px 16px;background:var(--gold-light);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:12px}
+.def-block .term{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.def-block .def{font-size:13px;color:var(--text-muted)}
+.def-block.green{border-left-color:var(--green);background:var(--green-light)}
+.def-block.blue{border-left-color:var(--blue);background:var(--blue-light)}
+.def-block.red{border-left-color:var(--red);background:var(--red-light)}
+.styled-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:24px}
+.styled-table th{background:var(--navy);color:#fff;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
+.styled-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-muted);vertical-align:top}
+.styled-table tr:last-child td{border-bottom:none}
+.styled-table tr:hover td{background:var(--bg)}
+.styled-table td:first-child{font-weight:600;color:var(--navy)}
+.badge{display:inline-block;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;padding:2px 8px;border-radius:20px}
+.badge-gold{background:var(--gold-light);color:var(--gold-dark)}
+.badge-green{background:var(--green-light);color:var(--green)}
+.badge-blue{background:var(--blue-light);color:var(--blue)}
+.badge-red{background:var(--red-light);color:var(--red)}
+.badge-navy{background:var(--navy);color:#fff}
+.highlight{border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:16px;font-size:13px}
+.highlight.important{border-left:4px solid var(--red);background:var(--red-light)}
+.highlight.tip{border-left:4px solid var(--green);background:var(--green-light)}
+.highlight.info{border-left:4px solid var(--blue);background:var(--blue-light)}
+.highlight.warn{border-left:4px solid var(--gold);background:var(--gold-light)}
+.highlight .hi-title{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px}
+.highlight.important .hi-title{color:var(--red)}
+.highlight.tip .hi-title{color:var(--green)}
+.highlight.info .hi-title{color:var(--blue)}
+.highlight.warn .hi-title{color:var(--gold-dark)}
+.highlight p,.highlight li{color:var(--text-muted);line-height:1.6}
+.highlight ul{padding-left:18px;margin-top:4px}
+.highlight li{margin-bottom:3px}
+.quiz-header{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.quiz-header h3{font-size:18px;color:#fff}
+.quiz-progress{display:flex;align-items:center;gap:12px}
+.progress-bar{width:200px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px}
+.progress-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .3s}
+.score-display{font-family:'Syne',sans-serif;font-size:16px;color:var(--gold)}
+.question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px;margin-bottom:16px}
+.question-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:8px}
+.question-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:16px;line-height:1.5}
+.options{display:flex;flex-direction:column;gap:8px}
+.option-btn{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 16px;text-align:left;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;transition:background .15s,border-color .15s;line-height:1.4}
+.option-btn:hover:not(:disabled){background:var(--blue-light);border-color:var(--blue)}
+.option-btn.correct{background:var(--green-light);border-color:var(--green);color:var(--green);font-weight:500}
+.option-btn.wrong{background:var(--red-light);border-color:var(--red);color:var(--red)}
+.option-btn.reveal{background:var(--green-light);border-color:var(--green);color:var(--green)}
+.option-btn:disabled{cursor:default}
+.explanation{margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:var(--radius);font-size:13px;color:var(--text-muted);line-height:1.6;border-left:3px solid var(--gold);display:none}
+.quiz-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.btn{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:opacity .15s,transform .1s;border:none}
+.btn:active{transform:scale(0.97)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-outline{background:transparent;border:1.5px solid var(--border-strong);color:var(--text)}
+.btn:hover{opacity:0.88}
+.quiz-result{text-align:center;padding:40px 24px;background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);display:none}
+.result-score{font-family:'Syne',sans-serif;font-size:64px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:8px}
+.result-score span{color:var(--gold)}
+.result-msg{font-size:18px;color:var(--text-muted);margin-bottom:24px}
+.result-grade{display:inline-block;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;padding:8px 24px;border-radius:30px;margin-bottom:24px}
+.qr-row{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px}
+.qr-row:last-child{border-bottom:none}
+.qr-key{font-weight:600;color:var(--navy);min-width:220px;flex-shrink:0}
+.qr-val{color:var(--text-muted);flex:1}
+.subsection{margin-bottom:28px}
+.subsection h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.subsection h3::before{content:'';display:block;width:3px;height:16px;background:var(--gold);border-radius:2px}
+.number-fact{text-align:center;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.number-fact .num{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--navy)}
+.number-fact .unit{font-size:12px;color:var(--gold-dark);font-weight:600}
+.number-fact .desc{font-size:11px;color:var(--text-light);margin-top:3px}
+.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;margin-bottom:8px}
+.quiz-page-info{font-size:13px;color:var(--text-light)}
+ul.check-list{list-style:none;padding:0}
+ul.check-list li{padding:4px 0 4px 22px;position:relative;font-size:14px;color:var(--text-muted)}
+ul.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+ul.check-list li.no::before{content:'✗';color:var(--red)}
+.step-box{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-text{font-size:14px;color:var(--text-muted);flex:1;padding-top:4px}
+@media(max-width:600px){.content{padding:20px 16px}.header{padding:20px 16px}}
+</style>
+</head><body>
+<div class="header">
+  <div class="header-badge">Permiso B – Teoría</div>
+  <h1>Chapter 6: Documentation</h1>
+  <p>Complete study guide for the Spanish Driving Theory Examination</p>
+  <div class="header-meta">
+    <div class="header-stat"><div class="val">9</div><div class="lbl">Study sections</div></div>
+    <div class="header-stat"><div class="val">12+</div><div class="lbl">Points table</div></div>
+    <div class="header-stat"><div class="val">50</div><div class="lbl">Quiz questions</div></div>
+    <div class="header-stat"><div class="val">B</div><div class="lbl">Licence class</div></div>
+  </div>
+</div>
+<div class="tab-bar">
+  <button class="tab-btn active" data-tab="categories">Licence Categories</button>
+  <button class="tab-btn" data-tab="blicence">B Licence &amp; Other</button>
+  <button class="tab-btn" data-tab="validity">Validity &amp; New Drivers</button>
+  <button class="tab-btn" data-tab="vehicle">Vehicle Documents</button>
+  <button class="tab-btn" data-tab="itv">ITV Inspection</button>
+  <button class="tab-btn" data-tab="insurance">Insurance</button>
+  <button class="tab-btn" data-tab="points">Points System</button>
+  <button class="tab-btn" data-tab="infractions">Infractions &amp; Points</button>
+  <button class="tab-btn" data-tab="quiz">Quiz (50 Qs)</button>
+</div>
+<div class="content">
+
+<div class="tab-panel active" id="tab-categories">
+  <div class="section-title">Driving Licence Categories</div>
+  <table class="styled-table">
+    <thead><tr><th>Category</th><th>Min age</th><th>Vehicles covered</th></tr></thead>
+    <tbody>
+      <tr><td>AM</td><td>15</td><td>Two/three-wheeled mopeds; light quadricycles.</td></tr>
+      <tr><td>A1</td><td>16</td><td>Motorcycles (incl. sidecar) ≤125cc, ≤11 kW, ratio ≤0.1 kW/kg. Powered three-wheeled ≤15 kW. Light four-wheeled vehicles.</td></tr>
+      <tr><td>A2</td><td>18</td><td>Motorcycles (incl. sidecar) ≤35 kW, ratio ≤0.2 kW/kg, NOT derived from a vehicle twice its power. Also covers AM, A1.</td></tr>
+      <tr><td>A</td><td>20</td><td>All motorcycles and three-wheeled motor vehicles. Three-wheeled &gt;15 kW requires age 21. Also covers AM, A1, A2. A2 holders need 2 years A2 experience to progress.</td></tr>
+      <tr><td>B</td><td>18</td><td>Cars ≤3,500 kg MAM, max 8 passengers + driver. Also: mopeds, tricycles, quads, agricultural vehicles ≤40 km/h ≤3,500 kg MAM.</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight warn"><div class="hi-title">Progression A2 → A</div><p>Holders of the A2 permit with at least <strong>2 years</strong> of A2 experience are allowed to obtain the A permit by progression rather than taking the full test from scratch.</p></div>
+</div>
+
+<div class="tab-panel" id="tab-blicence">
+  <div class="section-title">Category B — What it Covers &amp; Other Permits</div>
+  <div class="subsection"><h3>Towing rules for B licence holders</h3>
+    <div class="grid-3">
+      <div class="def-block green"><div class="term">Trailer ≤750 kg MAM</div><div class="def">OK — no additional authorisation required.</div></div>
+      <div class="def-block green"><div class="term">Trailer &gt;750 kg — total ≤3,500 kg</div><div class="def">OK — still within B licence.</div></div>
+      <div class="def-block red"><div class="term">Total 3,500–4,250 kg</div><div class="def">B-96 authorisation required (skills &amp; behaviour control test).</div></div>
+    </div>
+  </div>
+  <div class="highlight important"><div class="hi-title">⛔ B licence does NOT cover motorcycles</div><p>However, B holders with MORE THAN 3 YEARS experience may drive A1-category motorcycles (≤125cc, ≤11kW) within national territory.</p></div>
+  <div class="subsection"><h3>Higher categories</h3>
+    <table class="styled-table">
+      <thead><tr><th>Category</th><th>Age</th><th>Vehicles</th></tr></thead>
+      <tbody>
+        <tr><td>B+E</td><td>18</td><td>B-authorised vehicle + trailer/semi-trailer with GMA ≤3,500 kg</td></tr>
+        <tr><td>C1</td><td>18</td><td>Goods vehicles GVW 3,500–7,500 kg. Can tow a light trailer.</td></tr>
+        <tr><td>C</td><td>21</td><td>Goods vehicles GVW &gt;3,500 kg. (18 with CAP ordinary mode.)</td></tr>
+        <tr><td>D1</td><td>21</td><td>Buses max 16 pass. + driver; max 8 m length. (18 with CAP ordinary mode, national territory.)</td></tr>
+        <tr><td>D</td><td>24</td><td>Buses &gt;8 passengers + driver. (21 with CAP ordinary; 23 with CAP accelerated.)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-validity">
+  <div class="section-title">Validity Periods &amp; New Drivers</div>
+  <div class="grid-2">
+    <div class="number-fact"><div class="num">10 yrs</div><div class="unit">AM, A1, A2, A, B, B+E</div><div class="desc">Until holder reaches age 65</div></div>
+    <div class="number-fact"><div class="num">5 yrs</div><div class="unit">AM, A1, A2, A, B, B+E</div><div class="desc">When holder is over 65 years old</div></div>
+  </div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Notify licence information changes</span><span class="qr-val">Within 15 DAYS of the change — to Jefatura Provincial de Tráfico</span></div>
+    <div class="qr-row"><span class="qr-key">Theft, loss or deterioration</span><span class="qr-val">Notify Provincial Traffic Headquarters; issue duplicate; return original where appropriate</span></div>
+    <div class="qr-row"><span class="qr-key">Driving with lapsed licence</span><span class="qr-val">FORBIDDEN</span></div>
+    <div class="qr-row"><span class="qr-key">Licence renewal condition</span><span class="qr-val">All requirements must be met, including NOT having lost all credited points</span></div>
+  </div>
+  <div class="subsection"><h3>New Drivers (Noveles)</h3>
+    <div class="grid-2">
+      <div class="def-block"><div class="term">Definition</div><div class="def">Any driver during the FIRST YEAR after obtaining their first driving permit or licence.</div></div>
+      <div class="def-block red"><div class="term">Starting points</div><div class="def">8 points (not 12). Green V-13 L-plate must be displayed at the BACK of the vehicle.</div></div>
+      <div class="def-block red"><div class="term">Blood alcohol limit</div><div class="def">0.15 mg/l in expired air (stricter than the 0.25 mg/l general limit).</div></div>
+      <div class="def-block red"><div class="term">Max speed on motorways</div><div class="def">100 km/h (vs 120 km/h standard).</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-vehicle">
+  <div class="section-title">Vehicle Documentation</div>
+  <div class="subsection"><h3>Registration Certificate (Permiso de Circulación)</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Contains</span><span class="qr-val">Vehicle ID data (make, model, seats, MAM, plates), owner details, degree of automation</span></div>
+      <div class="qr-row"><span class="qr-key">Required for</span><span class="qr-val">All motorcars, trailers and semi-trailers over 750 kg MAM</span></div>
+      <div class="qr-row"><span class="qr-key">Vehicle data change</span><span class="qr-val">Owner has 15 DAYS to communicate to Vehicle Registry</span></div>
+      <div class="qr-row"><span class="qr-key">Sale notification</span><span class="qr-val">Traffic Authorities within 10 DAYS. Buyer has 30 DAYS to apply for renewal certificate.</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Registration Plates</h3>
+    <table class="styled-table">
+      <thead><tr><th>Vehicle type</th><th>Plates</th></tr></thead>
+      <tbody>
+        <tr><td>Standard motorcars</td><td>Front + Rear</td></tr>
+        <tr><td>Taxis and driver rental cars</td><td>Rear plate: BLUE background</td></tr>
+        <tr><td>Motorcycles, mopeds, special self-propelled</td><td>ONE plate — REAR only</td></tr>
+        <tr><td>Light trailers (≤750 kg MAM)</td><td>ONE plate identical to towing vehicle (centre or left side)</td></tr>
+        <tr><td>Heavy trailers (&gt;750 kg MAM)</td><td>TWO plates: one identical to towing vehicle (right) + one red background (centre)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-itv">
+  <div class="section-title">Technical Inspection — ITV</div>
+  <div class="highlight important"><div class="hi-title">Exception: light trailers (≤750 kg MAM) do NOT undergo ITV</div></div>
+  <div class="subsection"><h3>Inspection frequency</h3>
+    <table class="styled-table">
+      <thead><tr><th>Vehicle</th><th>Schedule</th></tr></thead>
+      <tbody>
+        <tr><td>Private cars and motor-caravans</td><td>Up to 4 years: exempt · 4–10 years: every 2 years · Over 10 years: every year</td></tr>
+        <tr><td>Motorcycles, three-wheeled vehicles, light quads</td><td>Up to 4 years: exempt · Over 4 years: every 2 years</td></tr>
+        <tr><td>Two-wheeled mopeds</td><td>Up to 3 years: exempt · Over 3 years: every 2 years</td></tr>
+        <tr><td>Goods vehicles (MAM ≤3.5 t)</td><td>Up to 2 years: exempt · 2–6 years: every 2 years · 6–10 years: every year · Over 10 years: every 6 months</td></tr>
+        <tr><td>Heavy trailers (MAM &gt;750 kg)</td><td>Up to 10 years: every year · Over 10 years: every 6 months</td></tr>
+        <tr><td>Towed caravans (750 kg – 3.5 t)</td><td>Up to 6 years: exempt · Over 6 years: every 2 years</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="subsection"><h3>ITV Results</h3>
+    <div class="grid-3">
+      <div class="def-block green"><div class="term">✓ FAVOURABLE</div><div class="def">Fit for circulation. Slight defects (DL): repair within 2 months, no new inspection needed. V-19 sticker issued — upper RIGHT corner interior windshield.</div></div>
+      <div class="def-block"><div class="term">⚠ UNFAVOURABLE</div><div class="def">Serious defects (DG). Vehicle disabled EXCEPT to travel to workshop or return to ITV station within 2 months from first unfavourable result.</div></div>
+      <div class="def-block red"><div class="term">✗ FAILED</div><div class="def">Very serious defects (DMG). Vehicle disabled — must be transported by crane. Once repaired, must be re-inspected within 2 months.</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Early renewal (up to 30 days before expiry)</span><span class="qr-val">Permitted — new validity begins when PREVIOUS one ends (not from inspection date)</span></div>
+    <div class="qr-row"><span class="qr-key">Vehicle not up to date with ITV</span><span class="qr-val">10-day period granted to submit to inspection. After 10 days: deregistration procedure initiated.</span></div>
+    <div class="qr-row"><span class="qr-key">Insurance required for ITV (since 24 May 2010)</span><span class="qr-val">Valid vehicle insurance policy required to pass the inspection</span></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-insurance">
+  <div class="section-title">Compulsory Civil Liability Insurance</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><div class="icon">✓</div>COVERS</div>
+      <p>Damage to OTHER persons (personal injury).<br>Property of THIRD PARTIES when civilly liable.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><div class="icon">✗</div>DOES NOT COVER</div>
+      <p>Motorist's OWN bodily injuries.<br>Property of policy holder/insured/owner/driver/spouse or relatives up to 3rd degree.<br>Personnel and materials if vehicle was stolen.<br>Car failures and breakdowns (NOT unforeseen events).</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="qr-row"><span class="qr-key">Mandatory for</span><span class="qr-val">All motor vehicles (cars, motorcycles, heavy vehicles, mopeds) + trailers/semi-trailers &gt;750 kg MAM</span></div>
+    <div class="qr-row"><span class="qr-key">Exempt from insurance</span><span class="qr-val">Trailers/semi-trailers ≤750 kg MAM; special towing machines ≤750 kg; deregistered vehicles</span></div>
+    <div class="qr-row"><span class="qr-key">Must be kept even when</span><span class="qr-val">The vehicle is NOT on the road</span></div>
+    <div class="qr-row"><span class="qr-key">Sanction for driving without insurance</span><span class="qr-val">€601–€3,005. Vehicle immobilised. 1-month blockage. Relapses: 3-month, then 1-year disqualification.</span></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-points">
+  <div class="section-title">Points Driving Permit System</div>
+  <div class="grid-4">
+    <div class="number-fact"><div class="num">12</div><div class="desc">Starting points (experienced drivers)</div></div>
+    <div class="number-fact"><div class="num">8</div><div class="desc">New drivers (first 2 years) &amp; after regaining licence</div></div>
+    <div class="number-fact"><div class="num">15</div><div class="desc">Maximum achievable (with bonus points)</div></div>
+    <div class="number-fact"><div class="num">2 yrs</div><div class="desc">Period without offences for automatic recovery</div></div>
+  </div>
+  <div class="subsection"><h3>Accumulating bonus points</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">First 3 years without penalty (from 12 points)</span><span class="qr-val">+2 bonus points</span></div>
+      <div class="qr-row"><span class="qr-key">Next 3 years without penalty</span><span class="qr-val">+1 bonus point</span></div>
+      <div class="qr-row"><span class="qr-key">Safety and efficiency driving courses</span><span class="qr-val">+2 points (up to 15 max, ONLY with positive balance)</span></div>
+      <div class="qr-row"><span class="qr-key">Partial recovery course (10 hours)</span><span class="qr-val">Maximum 4 points. Regular drivers: once every 2 years. Professional: once every year.</span></div>
+    </div>
+  </div>
+  <div class="subsection"><h3>Losing ALL points</h3>
+    <div class="card">
+      <div class="qr-row"><span class="qr-key">Wait before applying for new permit</span><span class="qr-val">6 months from notification (regular). 3 months (professional drivers).</span></div>
+      <div class="qr-row"><span class="qr-key">Recovery requirement</span><span class="qr-val">20-hour course + theory test at Jefatura de Tráfico</span></div>
+      <div class="qr-row"><span class="qr-key">Regained licence — starting points</span><span class="qr-val">8 points (not 12)</span></div>
+      <div class="qr-row"><span class="qr-key">Fails the test</span><span class="qr-val">May retake up to 2 more times; each requires a 4-hour training course first</span></div>
+      <div class="qr-row"><span class="qr-key">Loses all points again within 3 years</span><span class="qr-val">Recovery period DOUBLES</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-infractions">
+  <div class="section-title">Infractions Implying Loss of Points</div>
+  <div class="subsection"><h3>3 Points Loss — Serious offences</h3>
+    <ul class="check-list">
+      <li class="no">Changing direction against Traffic Law dispositions</li>
+      <li class="no">Using audio headphones/headsets that reduce attention — or manually using mobile phone, browser, communication systems while driving</li>
+      <li class="no">Driving vehicles fitted with radar detection mechanisms or kinemometers</li>
+    </ul>
+  </div>
+  <div class="subsection"><h3>4 Points Loss — Serious or very serious offences</h3>
+    <ul class="check-list">
+      <li class="no">Driving without a permit/licence for the category of vehicle</li>
+      <li class="no">Not respecting right of way; not stopping at STOP/GIVE WAY; ignoring red traffic light</li>
+      <li class="no">Breaking overtaking rules; hazard/obstructing oncoming; overtaking in low visibility</li>
+      <li class="no">Reversing on motorways and dual carriageways</li>
+      <li class="no">Ignoring Traffic Officer's signals</li>
+      <li class="no">Not maintaining safe distance from preceding vehicle</li>
+      <li class="no">Not using/improperly using seat belt, child restraints, helmet and mandatory protection</li>
+      <li class="no">Drink driving: expired air 0.25–0.50 mg/l (general) / 0.15–0.30 mg/l (new/professional)</li>
+    </ul>
+  </div>
+  <div class="subsection"><h3>6 Points Loss — Very serious offences</h3>
+    <ul class="check-list">
+      <li class="no">Drink driving — TWICE the limit: expired air &gt;0.50 mg/l (general) / &gt;0.30 mg/l (new/professional)</li>
+      <li class="no">Driving under influence of drugs, stimulants, or other identical substances</li>
+      <li class="no">Refusing to undergo alcohol/drug tests</li>
+      <li class="no">Reckless driving; contra-flow driving; non-authorised races or competitions</li>
+      <li class="no">Devices to ELUDE traffic police controls or radar speed trap detectors (jammers)</li>
+      <li class="no">Using a HAND-HELD mobile phone device while driving</li>
+      <li class="no">Throwing objects on road or vicinity that could cause fires or accidents</li>
+      <li class="no">Overtaking endangering cyclists or without leaving minimum 1.5 m separation</li>
+    </ul>
+  </div>
+  <div class="highlight warn"><div class="hi-title">Alcohol limits reference</div>
+    <table class="styled-table" style="margin-bottom:0">
+      <thead><tr><th>Driver type</th><th>Limit (expired air)</th><th>Limit (blood)</th></tr></thead>
+      <tbody>
+        <tr><td>General (experienced)</td><td>0.25 mg/l</td><td>0.5 g/l</td></tr>
+        <tr><td>New drivers (≤2 years) / Professional</td><td>0.15 mg/l</td><td>0.3 g/l</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-quiz">
+  <div class="quiz-header">
+    <h3>Chapter 6 Quiz — 50 Questions</h3>
+    <div class="quiz-progress">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <div class="score-display" id="score-display">0/0</div>
+    </div>
+  </div>
+  <div id="quiz-body">
+    <div class="question-card">
+      <div class="question-num" id="q-num"></div>
+      <div class="question-text" id="q-text"></div>
+      <div class="options" id="q-options"></div>
+      <div class="explanation" id="q-exp"></div>
+    </div>
+    <div class="quiz-nav">
+      <div class="quiz-page-info" id="q-page"></div>
+      <div class="quiz-controls">
+        <button class="btn btn-navy" id="btn-next" disabled>Next →</button>
+        <button class="btn btn-outline" id="btn-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <div class="quiz-result" id="quiz-result">
+    <div class="result-score"><span id="res-num">0</span>/<span id="res-den">50</span></div>
+    <div class="result-msg" id="res-msg"></div>
+    <div class="result-grade" id="res-grade"></div>
+    <button class="btn btn-gold" onclick="initQuiz()">Try Again</button>
+  </div>
+</div>
+</div>
+<script>
+window.QUIZ_QUESTIONS=[
+{topic:"Categories",q:"Minimum age for category AM licence?",opts:["14","15","16","18"],ans:1,exp:"Category AM (mopeds and light quadricycles) requires a minimum age of 15."},
+{topic:"Categories",q:"Category A1 permits motorcycles up to what power output?",opts:["25 kW","11 kW","35 kW","50 kW"],ans:1,exp:"A1: motorcycles up to 125cc, ≤11 kW, ratio ≤0.1 kW/kg."},
+{topic:"Categories",q:"To progress from A2 to A by direct progression, how long must the driver hold A2?",opts:["1 year","2 years","3 years","5 years"],ans:1,exp:"Holders of A2 with at least 2 years of A2 experience may obtain the A permit by progression."},
+{topic:"Category B",q:"Maximum MAM of a car that can be driven with a standard B licence?",opts:["2,500 kg","3,000 kg","3,500 kg","4,250 kg"],ans:2,exp:"Category B covers cars with MAM not exceeding 3,500 kg, max 8 passengers + driver."},
+{topic:"Category B",q:"A B driver wants to tow a trailer with 900 kg MAM — total combination 4,000 kg. What authorisation is needed?",opts:["None — B covers all trailers","B+E licence","B-96 authorisation (skills and behaviour control test)","C1 licence"],ans:2,exp:"B-96 is required when trailer MAM exceeds 750 kg AND total combination exceeds 3,500 kg but does not exceed 4,250 kg."},
+{topic:"Category B",q:"Does a B licence allow driving motorcycles with a sidecar?",opts:["Yes — sidecars are covered","Yes — if the engine is under 125cc","No — B does NOT permit motorcycles. Exception: B holders with more than 3 years may drive A1 motorcycles in national territory.","Only if the B licence holder has over 5 years experience"],ans:2,exp:"B does NOT allow motorcycles. However, B holders with MORE THAN 3 YEARS of B experience may drive A1-category motorcycles within national territory."},
+{topic:"Category B",q:"A B holder has had their licence for 4 years. May they drive an A1 motorcycle?",opts:["No — B never covers motorcycles","Yes — B holders with more than 3 years experience may drive A1-category motorcycles within national territory","Only on urban roads","Only after a short theory test"],ans:1,exp:"B licence holders with MORE THAN 3 YEARS of B experience may drive A1-category motorcycles (≤125cc, ≤11kW) within national territory."},
+{topic:"Validity",q:"How long is a B licence valid for a 40-year-old holder?",opts:["5 years","10 years","15 years","Indefinitely"],ans:1,exp:"AM, A1, A2, A, B and B+E licences: valid for 10 years until the holder reaches age 65. Over 65: 5 years."},
+{topic:"Validity",q:"A driver changes their address. Within how many days must they notify the Jefatura Provincial de Tráfico?",opts:["30 days","10 days","15 days","7 days"],ans:2,exp:"Any change in information on the driving permit must be disclosed to the Jefatura Provincial de Tráfico within 15 DAYS of the change."},
+{topic:"New Drivers",q:"How many points does a new driver start with?",opts:["12","10","8","6"],ans:2,exp:"New drivers start with 8 points during the first two years of their first driving permit or licence. Standard experienced drivers start with 12."},
+{topic:"New Drivers",q:"Maximum speed for a new driver on a motorway?",opts:["120 km/h","110 km/h","100 km/h","90 km/h"],ans:2,exp:"New drivers (first year) are limited to 100 km/h on motorways and dual carriageways, versus the standard 120 km/h."},
+{topic:"New Drivers",q:"Blood alcohol limit for new drivers in expired air?",opts:["0.25 mg/l — same as experienced","0.20 mg/l","0.15 mg/l","0.10 mg/l"],ans:2,exp:"New drivers (≤2 years licence) and professional drivers have a stricter limit of 0.15 mg/l in expired air (0.3 g/l in blood)."},
+{topic:"Vehicle Documents",q:"Within how many days must a vehicle buyer apply for renewal of the registration certificate after purchase?",opts:["10 days","15 days","30 days","60 days"],ans:2,exp:"Traffic Authorities must be notified within 10 days of the sale. The BUYER has 30 days to apply for renewal of the registration certificate."},
+{topic:"Vehicle Documents",q:"Motorcycles display their registration plate where?",opts:["Front only","Both front and rear","REAR only — one sole registration plate at the rear","On the sides"],ans:2,exp:"Motorcycles, mopeds, and special self-propelled vehicles display ONE SOLE registration plate — at the REAR only."},
+{topic:"Vehicle Documents",q:"How many registration plates does a heavy trailer (>750 kg MAM) display?",opts:["None","One identical to towing vehicle","TWO: one identical to towing vehicle (right) + one red background (centre)","Three plates"],ans:2,exp:"Heavy trailers (MAM >750 kg) display TWO plates: one identical to the towing vehicle (right side) and one with red background identifying the trailer (centre)."},
+{topic:"ITV",q:"How often must a 7-year-old private car undergo ITV?",opts:["Every 6 months","Every year","Every 2 years","No inspection until 10 years old"],ans:2,exp:"Private cars 4–10 years old: every 2 years. A 7-year-old car falls in this bracket."},
+{topic:"ITV",q:"How often must a 12-year-old private car undergo ITV?",opts:["Every 2 years","Every year","Every 6 months","Only when requested"],ans:1,exp:"Cars over 10 years old must undergo ITV every YEAR."},
+{topic:"ITV",q:"Do light trailers (MAM up to 750 kg) require ITV inspection?",opts:["Yes — every 2 years","Yes — every year once over 10 years","No — light trailers do NOT undergo ITV inspections","Yes — once at 4 years old"],ans:2,exp:"Light trailers (MAM up to 750 kg) are specifically EXEMPT from ITV inspections — they do not undergo any ITV at any age."},
+{topic:"ITV",q:"An UNFAVOURABLE ITV result (serious defects): what may the vehicle do?",opts:["It is completely banned from all roads","Travel ONLY to a workshop or return to an ITV station — within 2 months","Continue normal circulation for 30 days","Must be transported by crane"],ans:1,exp:"An unfavourable result (serious defects — DG) disables the vehicle EXCEPT for transfer to a workshop or return to an ITV station for re-inspection within 2 months."},
+{topic:"ITV",q:"A FAILED ITV result (very serious defects) — how must the vehicle be transported to a workshop?",opts:["May drive slowly to nearest workshop","Transport only at night","Must be transported by means OTHER than the vehicle itself — such as a crane","Driver may request a 7-day temporary permit"],ans:2,exp:"A failed result (very serious defects — DMG) disables the vehicle from circulating under its own power. Must be transported by crane or other means."},
+{topic:"ITV",q:"V-19 ITV sticker on a vehicle with windshield — where?",opts:["Lower left corner, exterior","Upper LEFT corner, interior","Upper RIGHT corner, interior","Centre of the dashboard"],ans:2,exp:"The V-19 ITV sticker must be placed on the upper RIGHT CORNER of the INTERIOR FACE of the windshield."},
+{topic:"Insurance",q:"Does compulsory insurance cover the motorist's own bodily injuries?",opts:["Yes — all injuries in any accident","No — it does NOT cover the motorist's own bodily injuries","Only if caused by another driver","Only up to the policy limit"],ans:1,exp:"Compulsory insurance does NOT cover the motorist's own bodily injuries. It covers damage to OTHER persons and property of THIRD PARTIES."},
+{topic:"Insurance",q:"Does compulsory insurance cover damage to the insured's own vehicle?",opts:["Yes — if damage exceeds €1,000","No — damage to the insured's own vehicle or property of the policy holder, insured, owner, driver, spouse or relatives up to 3rd degree is NOT covered","Yes — if a third party caused the accident","Only for fire damage"],ans:1,exp:"Compulsory insurance does NOT cover damage to the insured's own vehicle or property belonging to the policy holder, insured, owner, driver, spouse, or relatives up to 3rd degree."},
+{topic:"Insurance",q:"What is the financial sanction for driving without insurance?",opts:["€200 fixed fine","€600 fixed fine","Between €601 and €3,005","€500 and 6 months suspension"],ans:2,exp:"Driving without valid compulsory insurance: pecuniary sanction between €601 and €3,005. Vehicle also immobilised."},
+{topic:"Insurance",q:"Is a light trailer (MAM ≤750 kg) required to have its own insurance?",opts:["Yes — all trailers must have insurance","No — trailers ≤750 kg MAM are EXEMPT from insurance obligation","Only if the trailer carries goods","Only if towing vehicle's insurance doesn't cover it"],ans:1,exp:"Trailers and semi-trailers with MAM NOT exceeding 750 kg, and special towing machines ≤750 kg, are EXEMPT from the insurance obligation."},
+{topic:"Points",q:"Starting points for a standard experienced driver?",opts:["15","12 — unless a new driver (8) or just regained licence (8)","10","8 for everyone"],ans:1,exp:"Standard experienced drivers start with 12 points. New drivers (first 2 years) start with 8. Drivers who have lost all points and regained their licence also start with 8."},
+{topic:"Points",q:"Maximum points achievable?",opts:["12","13","14","15"],ans:3,exp:"Maximum is 15 points — earned through 2 bonus points in first 3 clean years, then 1 point in next 3 years. Safety courses can add 2 more (up to 15 max, only with positive balance)."},
+{topic:"Points",q:"How many points does a 10-hour partial recovery course provide?",opts:["2 points","3 points","Maximum 4 points","6 points"],ans:2,exp:"A 10-hour partial points recovery course allows a MAXIMUM of 4 points recovery. Regular drivers: once every 2 years; professional: once per year."},
+{topic:"Points",q:"How long must a driver go without point-penalty offences for automatic point recovery?",opts:["1 year","2 years","3 years","5 years"],ans:1,exp:"Lost points are automatically recovered after 2 YEARS without committing offences that entail penalty in points loss."},
+{topic:"Points",q:"All points lost. How long must a regular driver wait before applying for a new permit?",opts:["Immediately","After 3 months","After 6 months from notification","After 1 year"],ans:2,exp:"If all points are lost: 6 MONTHS for regular drivers; 3 MONTHS for professional drivers. Then a 20-hour course + theory test are required."},
+{topic:"Points",q:"A driver regains their licence after losing all points. Starting points credit?",opts:["12 — restored to full","10","8","The same number lost with"],ans:2,exp:"The regained permit has the same category and validity — but only 8 POINTS credit."},
+{topic:"Infractions",q:"Using a hand-held mobile phone while driving — points lost?",opts:["3","4","6","No points — just a fine"],ans:2,exp:"Using a HAND-HELD mobile phone device while driving is a 6-POINT LOSS offence (very serious)."},
+{topic:"Infractions",q:"Not stopping at a STOP sign — points lost?",opts:["3","4","6","2"],ans:1,exp:"Not stopping at STOP or GIVE WAY signs, not respecting right of way, and ignoring a red light all result in 4-POINT LOSS."},
+{topic:"Infractions",q:"A driver has expired air alcohol of 0.60 mg/l (general). Points lost?",opts:["3","4","6","All remaining"],ans:2,exp:"6 points are lost when alcohol is TWICE the maximum: expired air over 0.50 mg/l for general drivers. At 0.60 mg/l, this is a 6-point loss."},
+{topic:"Infractions",q:"A general driver has expired air alcohol of 0.35 mg/l. Points lost?",opts:["3","4","6","No points — only a fine"],ans:1,exp:"4 points are lost when alcohol exceeds the limit but does not reach twice the limit: 0.25 to 0.50 mg/l for general drivers. 0.35 mg/l falls in this bracket."},
+{topic:"Infractions",q:"Refusing an alcohol or drug test — points lost?",opts:["3","4","6","The same as the underlying offence"],ans:2,exp:"Refusing to undergo tests for alcohol, drugs, stimulants and other substances is a 6-POINT LOSS offence."},
+{topic:"Infractions",q:"Overtaking a cyclist without the mandatory 1.5 m clearance — points lost?",opts:["3","4","6","No points"],ans:2,exp:"Overtaking endangering or hindering cyclists, or overtaking without the minimum 1.5 m separation, results in 6-POINT LOSS."},
+{topic:"Infractions",q:"Reversing on a motorway — points lost?",opts:["3","4","6","No points"],ans:1,exp:"Reversing on motorways and dual carriageways is a 4-POINT LOSS offence (serious or very serious)."},
+{topic:"Infractions",q:"A passive radar detector (showing camera positions) in a car — points lost?",opts:["3 points — for driving with radar detection mechanisms","4 points","6 points","No points — radar detectors are legal"],ans:0,exp:"Driving with radar detection mechanisms or kinemometers results in 3-POINT LOSS. NOTE: driving with devices that ELUDE traffic police (jammers) results in 6 points — an important distinction."},
+{topic:"Liability",q:"A motorcycle driver's passenger is not wearing a helmet. Who is liable?",opts:["The passenger","The vehicle owner","The DRIVER — liable for non-use of helmet by passengers and for carrying underage passengers","The police officer who failed to notice"],ans:2,exp:"Drivers of motorcycles and similar vehicles are liable not only for the non-use of helmet by the passenger but also for carrying underage passengers."},
+{topic:"Liability",q:"A traffic offence is committed by someone under 18. Who is jointly liable?",opts:["The vehicle owner only","The minor alone","The minor is jointly liable with parents, tutors or guardians — restricted to the pecuniary sanction","The driving instructor if present"],ans:2,exp:"When the responsible person is under 18, they are jointly liable with parents, tutors, or guardians. This joint liability is restricted to the pecuniary sanction (fine)."},
+{topic:"Liability",q:"A vehicle with a regular driver assigned is caught speeding. The regular driver says someone else drove. Who is liable?",opts:["Vehicle owner — always","The regular driver — UNLESS they can prove someone else was driving OR the vehicle was stolen","The person who was actually driving — but only if ID'd within 3 days","No one can be held liable without direct identification"],ans:1,exp:"The regular driver is liable — EXCEPT if they can prove someone else was driving at the time, or that the vehicle was stolen."},
+{topic:"Liability",q:"A vehicle owner refuses to identify the driver responsible for an infraction. What sanction applies?",opts:["The same fine as the original infraction","TWICE the fine if original was minor; TRIPLE if original was serious or very serious","The vehicle is automatically immobilised","No additional sanction"],ans:1,exp:"Failure to identify the responsible driver is a very serious infraction, sanctioned with: TWICE the fine if the original infraction was minor; TRIPLE if it was serious or very serious."},
+{topic:"ITV",q:"A vehicle that undergoes a major reform must:",opts:["Wait 6 months before using the road again","Pass an EXCEPTIONAL ITV inspection before being allowed on the road","Continue using the road if the reform was minor","Notify the DGT only — no inspection needed"],ans:1,exp:"If a vehicle undergoes a major reform, it must pass an exceptional ITV inspection before being allowed back on the road."},
+{topic:"Points",q:"Safety and efficiency driving courses can add bonus points: under what condition?",opts:["Unconditionally — anyone can attend","Only when the driver has a POSITIVE point balance — cannot restore negative deficit","Only for new drivers in their first year","Only for professional drivers"],ans:1,exp:"Safety courses compensate with 2 additional points up to a maximum of 15 — but only when the driver has a POSITIVE BALANCE. They cannot be used to restore points when the driver is in deficit."},
+{topic:"Points",q:"How many points can a driver lose in a single day?",opts:["Any number with no daily limit","Maximum 8 in a day — except for very serious infractions causing 6-point loss (numbers 1–6), where all points for those offences are lost","Maximum 6 points per day","Maximum 4 points per day"],ans:1,exp:"It is unlikely to lose more than 8 points in a single day, except for speed-related very serious infractions or the 6-point loss offences (numbers 1–6) where the total amount of points for those offences is lost."},
+{topic:"Liability",q:"The owner of a vehicle (listed in Registro de Vehículos) is liable for:",opts:["All infractions committed by anyone driving the vehicle","Vehicle documentation infractions, regular inspections and maintenance. Also parking tickets (unless regular driver assigned or offender identified).","Only financial penalties — not licence suspensions","Nothing — liability always transfers to the driver"],ans:1,exp:"The owner or leasing contract user is liable for offences related to vehicle DOCUMENTATION, regular inspections and maintenance. Parking tickets are also the owner's responsibility unless a regular driver is assigned or the offender is identified."}
+];
+</script>
+<script>
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+    window.scrollTo(0,0);
+  });
+});
+
+// Quiz engine
+let qCur=0,qScore=0,qAnswered=false;
+const questions=window.QUIZ_QUESTIONS||[];
+function initQuiz(){
+  qCur=0;qScore=0;qAnswered=false;
+  if(!questions.length)return;
+  document.getElementById('quiz-result').style.display='none';
+  document.getElementById('quiz-body').style.display='block';
+  renderQuestion();
+  updateProgress();
+}
+function renderQuestion(){
+  if(qCur>=questions.length){showResult();return;}
+  const q=questions[qCur];
+  document.getElementById('q-num').textContent='Question '+(qCur+1)+' of '+questions.length+' · '+q.topic;
+  document.getElementById('q-text').textContent=q.q;
+  const cont=document.getElementById('q-options');
+  cont.innerHTML='';
+  q.opts.forEach((opt,i)=>{
+    const b=document.createElement('button');
+    b.className='option-btn';
+    b.textContent=String.fromCharCode(65+i)+'. '+opt;
+    b.addEventListener('click',()=>pickAnswer(i,b,q));
+    cont.appendChild(b);
+  });
+  document.getElementById('q-exp').style.display='none';
+  document.getElementById('q-exp').textContent='';
+  qAnswered=false;
+  document.getElementById('btn-next').disabled=true;
+  updateProgress();
+}
+function pickAnswer(i,btn,q){
+  if(qAnswered)return;
+  qAnswered=true;
+  const btns=document.querySelectorAll('#q-options .option-btn');
+  btns.forEach(b=>b.disabled=true);
+  if(i===q.ans){btn.classList.add('correct');qScore++;}
+  else{btn.classList.add('wrong');btns[q.ans].classList.add('reveal');}
+  const exp=document.getElementById('q-exp');
+  exp.textContent=q.exp;
+  exp.style.display='block';
+  document.getElementById('btn-next').disabled=false;
+  document.getElementById('score-display').textContent=qScore+'/'+(qCur+1);
+}
+function updateProgress(){
+  const pct=questions.length?Math.round(qCur/questions.length*100):0;
+  document.getElementById('progress-fill').style.width=pct+'%';
+  document.getElementById('q-page').textContent=(qCur+1)+' / '+questions.length;
+}
+function showResult(){
+  document.getElementById('quiz-body').style.display='none';
+  const res=document.getElementById('quiz-result');
+  res.style.display='block';
+  const pct=Math.round(qScore/questions.length*100);
+  document.getElementById('res-num').textContent=qScore;
+  document.getElementById('res-den').textContent=questions.length;
+  let msg='',cls='';
+  if(pct>=90){msg='Outstanding! Exam-ready.';cls='background:var(--green-light);color:var(--green)';}
+  else if(pct>=75){msg='Very good – almost there!';cls='background:var(--blue-light);color:var(--blue)';}
+  else if(pct>=60){msg='Good progress – keep studying.';cls='background:var(--gold-light);color:var(--gold-dark)';}
+  else{msg='Needs more revision.';cls='background:var(--red-light);color:var(--red)';}
+  document.getElementById('res-msg').textContent=msg;
+  document.getElementById('res-grade').style.cssText=cls;
+  document.getElementById('res-grade').textContent=pct+'%';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  initQuiz();
+  document.getElementById('btn-next').addEventListener('click',()=>{qCur++;renderQuestion();});
+  document.getElementById('btn-restart').addEventListener('click',initQuiz);
+});
+</script>
+</body></html>
