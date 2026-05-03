@@ -64,8 +64,8 @@ h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
     <div class="header-stat"><div class="val">Section 3</div><div class="lbl">Chapter</div></div>
   </div>
 </div>
-<div class="content">
-  <div class="quiz-header">
+<div class="tab-bar"><button class="tab-btn active" onclick="showTab('notes')">Study Notes</button><button class="tab-btn" onclick="showTab('quiz')">Practice Quiz</button></div><div class="content"><div id="notes-section" class="tab-content active"><div class="notes-content">The driving test evaluates your ability to safely control a vehicle and demonstrate road awareness. You must apply for the test online at www.rsa.ie. Requirements include holding a valid learner permit for the relevant category, completion of mandatory training (EDT for cars, IBT for motorcycles), being at least 17 (B category), passing a theory test within 2 years, and meeting medical/eyesight requirements. The practical test includes vehicle checks, manoeuvres, road driving, and emergency procedures. You must have valid insurance, tax, and MOT/NCT. The test duration is approximately 40-50 minutes for category B vehicles. You must also carry your original documents and learner permit to the test center.</div></div>
+      <div id="quiz-section" class="tab-content"><div class="quiz-header">
     <h3>Section 3 Quiz</h3>
     <div class="quiz-progress">
       <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
@@ -96,8 +96,14 @@ h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
       <button class="btn btn-navy" onclick="window.location.href='section4_vehicle_safety.html'" style="flex:1;min-width:140px">Next Section →</button>
     </div>
   </div>
-</div>
+</div></div></div>
 <script>
+function showTab(tab) { 
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active')); 
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active')); 
+  document.getElementById(tab + '-section').classList.add('active'); 
+  document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add('active'); 
+}
 let qCur=0,qScore=0,qAnswered=false;
 const questions=[
   {

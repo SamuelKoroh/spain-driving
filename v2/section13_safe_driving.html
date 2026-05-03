@@ -64,8 +64,8 @@ h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
     <div class="header-stat"><div class="val">Section 13</div><div class="lbl">Chapter</div></div>
   </div>
 </div>
-<div class="content">
-  <div class="quiz-header">
+<div class="tab-bar"><button class="tab-btn active" onclick="showTab('notes')">Study Notes</button><button class="tab-btn" onclick="showTab('quiz')">Practice Quiz</button></div><div class="content"><div id="notes-section" class="tab-content active"><div class="notes-content">Safe driving requires avoiding alcohol (limit 20mg per 100ml for learners - far lower than regular drivers), drugs, and fatigue. Tiredness significantly impairs judgment and reaction time. Road rage and aggressive driving endanger everyone. Littering is illegal and disrespectful. Maintain concentration, follow speed limits, and respect other road users. Regular breaks on long journeys help prevent fatigue. Insurance must be informed of medical changes that affect driving ability.</div></div>
+      <div id="quiz-section" class="tab-content"><div class="quiz-header">
     <h3>Section 13 Quiz</h3>
     <div class="quiz-progress">
       <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
@@ -96,8 +96,14 @@ h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
       <button class="btn btn-navy" onclick="window.location.href='section14_accidents.html'" style="flex:1;min-width:140px">Next Section →</button>
     </div>
   </div>
-</div>
+</div></div></div>
 <script>
+function showTab(tab) { 
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active')); 
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active')); 
+  document.getElementById(tab + '-section').classList.add('active'); 
+  document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add('active'); 
+}
 let qCur=0,qScore=0,qAnswered=false;
 const questions=[
   {

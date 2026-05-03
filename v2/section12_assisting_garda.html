@@ -64,8 +64,8 @@ h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
     <div class="header-stat"><div class="val">Section 12</div><div class="lbl">Chapter</div></div>
   </div>
 </div>
-<div class="content">
-  <div class="quiz-header">
+<div class="tab-bar"><button class="tab-btn active" onclick="showTab('notes')">Study Notes</button><button class="tab-btn" onclick="showTab('quiz')">Practice Quiz</button></div><div class="content"><div id="notes-section" class="tab-content active"><div class="notes-content">Gardaí use hand and arm signals to direct traffic at busy junctions and accident scenes. You must obey these signals even if they contradict normal traffic signs. Emergency service vehicles (ambulances, fire, garda cars) have priority. Pull over and let them pass safely. When an emergency vehicle approaches with lights and sirens, stop safely and do not block their path. Always follow gardaí instructions during traffic stops.</div></div>
+      <div id="quiz-section" class="tab-content"><div class="quiz-header">
     <h3>Section 12 Quiz</h3>
     <div class="quiz-progress">
       <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
@@ -96,8 +96,14 @@ h1,h2,h3,h4,h5{font-family:'Syne',sans-serif}
       <button class="btn btn-navy" onclick="window.location.href='section13_safe_driving.html'" style="flex:1;min-width:140px">Next Section →</button>
     </div>
   </div>
-</div>
+</div></div></div>
 <script>
+function showTab(tab) { 
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active')); 
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active')); 
+  document.getElementById(tab + '-section').classList.add('active'); 
+  document.querySelector(`[onclick="showTab('${tab}')"]`).classList.add('active'); 
+}
 let qCur=0,qScore=0,qAnswered=false;
 const questions=[
   {
